@@ -65,7 +65,10 @@ Text Domain:  storefront
 :root {
   --darkblue-color: #294060;
   --nero-color: #fff;
-  --text-color: #212529;
+  --text-color: #294060;
+  --purple-color: #F40C63;
+  --dark-color: #05041B;
+
   --burgundy-color: #8C3C63;
   --pink-color: #E7E6E2;
   --olive-color: #819C84;
@@ -295,7 +298,7 @@ iframe {
   align-items: center;
 }
 .header-desktop .header-content .header-logo {
-  width: 92px;
+  width: 78px;
   margin: 0 20px 0 0;
   text-align: center;
   flex-shrink: 0;
@@ -305,78 +308,73 @@ iframe {
 }
 .header-desktop .header-content .header-content-btn {
   display: flex;
-  height: 62px;
+  height: 48px;
   margin: 0 10px 0 0;
-  border-radius: 10px;
+  border-radius: 24px;
   background-color: var(--darkblue-color);
   color: var(--nero-color);
-  gap: 15px;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 .header-desktop .header-content .catalog-btn {
-  width: 164px;
+  width: 127px;
   margin: 0 20px 0 0;
 }
 .header-desktop .header-content .select-salt-btn {
   width: 219px;
 }
 .header-desktop .header-content .catalog-btn__image {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 .header-desktop .header-content .catalog-btn__text {
   font-family: "Roboto-CondensedSemiBold";
-  font-size: 20px;
 }
 .header-desktop .header-content .header-search {
   width: 52%;
 }
 .header-desktop .header-login {
   position: relative;
-  display: flex;
-  width: 126px;
-  height: 62px;
-  padding: 0 20px;
-  border-radius: 31px;
-  background-color: var(--darkblue-color);
-  gap: 5px;
-  justify-content: space-between;
-  align-items: center;
+  width: 48px;
+  height: 48px;
 }
 .header-desktop .header-login .header-login__image {
-  width: 28px;
-}
-.header-desktop .header-login .header-login__text {
-  color: var(--nero-color);;
+  width: 48px;
 }
 .header-desktop .header-content .header-cart {
   position: relative;
-  width: 92px;
-  height: 62px;
+  display: flex;
+  width: 126px;
+  height: 48px;
   margin: 0 0 0 10px;
   padding: 14px 0;
-  border-radius: 31px;
-  background-color: var(--darkblue-color);
-  text-align: center;
+  border-radius: 24px;
+  background-color: #eaecf0;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 .header-desktop .header-content .header-cart img {
-  width: 32px;
-  margin: 0 auto;
+  width: 24px;
+}
+.header-desktop .header-content .header-cart__text {
+  font-size: 14px;
 }
 .header-desktop .header-content .header-cart__counter {
   position: absolute;
-  top: -3px;
+  top: -10px;
   right: -3px;
   z-index: 1;
   width: max-content;
-  height: 24px;
+  height: 22px;
   padding: 0 7px;
-  border-radius: 12px;
-  background-color: var(--nero-color);
-  font-size: 15px;
-  color: #000;
+  border-radius: 11px;
+  background-color: var(--purple-color);
+  font-size: 14px;
+  color: var(--nero-color);
   line-height: 1.6;
   text-align: center;
 }
@@ -439,7 +437,9 @@ iframe {
   border-color: var(--darkblue-color);
 }
 .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp input[type="search"].dgwt-wcas-search-input {
-  padding: 17px 88px 17px 48px !important;
+  height: 50px;
+  padding: 14px 88px 14px 48px !important;
+  font-size: 15px;
 }
 .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp button.dgwt-wcas-search-submit {
   top: 0 !important;
@@ -817,7 +817,7 @@ iframe {
   font-family: 'Roboto-Light';
   font-size: 20px;
   line-height: 1.2;
-  color: #05041B;
+  color: var(--dark-color);
 }
 
 /* view more btn */
@@ -1816,7 +1816,7 @@ ul.products li.product .added_to_cart:hover {
 }
 .about-salts-page .pink-bg {
   background-color: var(--pink-color);
-  color: #05041B;
+  color: var(--dark-color);
 }
 .about-salts-page .burgundy-bg {
   background-color: var(--burgundy-color);

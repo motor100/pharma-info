@@ -57,7 +57,7 @@
               <div class="header-logo">
                 <a href="/" class="header-logo__link">
                   <img src="/wp-content/themes/store-child/includes/images/logo_header.png" alt="лого">
-                  <div class="underlogo-text">since 1873</div>
+                  <!-- <div class="underlogo-text">since 1873</div> -->
                 </a>
               </div>
               <a href="/catalog/product-category/soli-schuesslera/" class="catalog-btn header-content-btn">
@@ -65,19 +65,19 @@
                 <span class="catalog-btn__text">Каталог</span>
               </a>
               <a href="/expert-system" class="select-salt-btn header-content-btn">
-                <img src="/wp-content/themes/store-child/includes/images/svg/magic-wand.svg" class="catalog-btn__image" alt="">
-                <span class="catalog-btn__text">Подбор солей</span>
+                <img src="/wp-content/themes/store-child/includes/images/svg/notepad.svg" class="catalog-btn__image" alt="">
+                <span class="catalog-btn__text">Рецепт онлaйн</span>
               </a>
               <div class="header-search">
                 <?php echo do_shortcode('[fibosearch]'); ?>
               </div>
               <div class="header-login">
                 <img src="/wp-content/themes/store-child/includes/images/svg/user.svg" class="header-login__image" alt="">
-                <span class="header-login__text">Войти</span>
                 <a href="/nn-cnt" class="full-link"></a>
               </div>
               <div class="header-cart">
                 <img src="/wp-content/themes/store-child/includes/images/svg/basket.svg" class="header-cart__basket" alt="корзина">
+                <span class="header-cart__text">Корзина</span>
                 <span class="header-cart__counter"><?php global $woocommerce; echo $woocommerce->cart->get_cart_contents_count(); ?></span>
                 <a href="/cart" class="full-link"></a>
               </div>
@@ -129,7 +129,7 @@
           <div class="container">
             <div class="logo">
               <img src="/wp-content/themes/store-child/includes/images/logo_header.png" class="header-logo__image" alt="лого">
-              <div class="underlogo-text">since 1873</div>
+              <!-- <div class="underlogo-text">since 1873</div> -->
             </div>
           </div>
         </div>
