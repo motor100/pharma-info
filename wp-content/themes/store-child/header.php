@@ -88,26 +88,46 @@
           <div class="container">
             <div class="menu-header_menu-container">
               <ul id="header_menu" class="menu">
-                <li class="menu-item">
-                  <a href="/about-salts">О солях</a>
+                <li class="menu-item menu-item-has-children">
+                  <span>О нас</span>
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item">
+                      <a href="#">Миссия</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="#">Для кого</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="#">Как это работает</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="#">Как сделать заказ</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="#">Вопрос-ответ</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="menu-item">
-                  <a href="/expert-system">Сервис подбора</a>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Лекарства</a>
                 </li>
-                <li class="menu-item">
-                  <a href="https://funmed.ru/soli_doktora_shyusslera" target="_blank">Обучение</a>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Добавки</a>
                 </li>
-                <li class="menu-item">
-                  <a href="/specialisty">Специалисты</a>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Натуропатия</a>
                 </li>
-                <li class="menu-item">
-                  <a href="/bolezni-ot-a-do-ya">Болезни от А до Я</a>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Наружные средства</a>
                 </li>
-                <li class="menu-item">
-                  <a href="/wherebuy">Где купить</a>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Для животных</a>
                 </li>
-                <li class="menu-item">
-                  <a href="/service">Сервис</a>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">NaturaProf</a>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Ресурсы</a>
                 </li>
               </ul>
             </div>
