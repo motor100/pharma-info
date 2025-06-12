@@ -14,6 +14,196 @@
 
 <footer class="footer">
   <div class="container">
+    <div class="footer-menu">
+      <div class="footer-menu-column">
+        <div class="footer-menu-item">
+          <div class="footer-menu-item__title">О нас</div>
+          <div class="menu-item">
+            <a href="#">Миссия</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Для кого</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Как это работает</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Как сделать заказ</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Вопрос-ответ</a>
+          </div>
+        </div>
+        <div class="footer-menu-item">
+          <div class="footer-menu-item__title">Лекарства</div>
+          <div class="menu-item">
+            <a href="#">Персональный рецепт</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Внутриаптечные прописи</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Субстанции</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-menu-column">
+        <div class="footer-menu-item">
+          <div class="footer-menu-item__title">Добавки</div>
+          <div class="menu-item">
+            <a href="#">Минералы</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Витамины</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">БАД</a>
+          </div>
+        </div>
+        <div class="footer-menu-item">
+          <div class="footer-menu-item__title">Натуропатия</div>
+          <div class="menu-item">
+            <a href="#">Соли Шюсслера</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Цветочные эссенции Баха</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Гомеопатия</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Травы</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-menu-column">
+        <div class="footer-menu-item">
+          <div class="footer-menu-item__title">Наружные средства</div>
+        </div>
+        <div class="footer-menu-item">
+          <div class="footer-menu-item__title">Для животных</div>
+          <div class="menu-item">
+            <a href="#">Персональный рецепт</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Внутриаптечные прописи</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Субстанции</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Натуропатия для животных</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Наружные средства</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-menu-column">
+        <div class="footer-menu-item">
+          <div class="footer-menu-item__title">NaturaProf</div>
+          <div class="menu-item">
+            <a href="#">Консультации</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Врачи</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Натуропаты</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Психологи</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Практики</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Партнерская программа</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Обучающие материалы</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Сотрудничество</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Партнеры</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">White lable</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-menu-column">
+        <div class="footer-menu-item">
+          <div class="footer-menu-item__title">Ресурсы</div>
+          <div class="menu-item">
+            <a href="#">Состояния от А до Я</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Обучение</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Новости</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Блог Статьи</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Где купить</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Контакты</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Сообщество инфлюэнсеров</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="flex-container">
+        <div class="phone-wrapper pe-wrapper">
+          <a href="#" class="pe-link">
+            <img src="/wp-content/themes/store-child/includes/images/svg/circle-call.svg" class="pe-image" alt="">
+          </a>
+          <a href="#" class="pe-link">
+            <img src="/wp-content/themes/store-child/includes/images/svg/circle-tg.svg" class="pe-image" alt="">
+          </a>
+          <a href="#" class="pe-link">
+            <img src="/wp-content/themes/store-child/includes/images/svg/circle-wa.svg" class="pe-image" alt="">
+          </a>
+          <span class="footer-phone pe-text">+7 (495) 927-4-928</span>
+        </div>
+        <div class="email-wrapper pe-wrapper">
+          <img src="/wp-content/themes/store-child/includes/images/svg/circle-email.svg" class="pe-image" alt="">
+          <span class="footer-email pe-text">info@naturapharma.ru</span>
+        </div>
+      </div>
+      <div class="working-time">Пн, Вт, Ср, Чт, Пт: С 10:00 до 20:00<br>Сб, Вс: выходной</div>
+      <div class="footer-address">Московская область, совхоз им. Ленина, Техцентр</div>
+    </div>
+    <div class="required-links">
+      <div class="required-links-item">
+        <a href="/polzovatelskoe-soglashenie" class="polzovatelskoe-soglashenie footer-pa">Пользовательское соглашение</a>
+      </div>
+      <div class="required-links-item">
+        <a href="/politika-v-otnoshenii-obrabotki-personalnyh-dannyh" class="privacy-policy footer-pa">Политика конфиденциальности</a>
+      </div>
+      <div class="required-links-item">
+        <a href="/soglasie-posetitelya-sajta-na-obrabotku-personalnyh-dannyh" class="agreement footer-pa">Согласие на обработку персональных данных</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="copyright">© <?php echo date("Y"); ?> Все права защищены и принадлежат доктору Трушкиной И.В.</div>
+      <div class="copyright">Копирование материалов сайта без письменного разрешения запрещено</div>
+    </div>
+        
+        
+        
+    
+
+    <!-- 
     <div class="footer-logo">
       <img src="/wp-content/themes/store-child/includes/images/logo_footer.png" alt="logo">
     </div>
@@ -135,6 +325,7 @@
         </div>
       </div>
     </div>
+     -->
   </div>
 
 </footer>
