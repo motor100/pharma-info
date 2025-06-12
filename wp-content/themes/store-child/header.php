@@ -86,7 +86,7 @@
         </div>
         <div class="header-nav">
           <div class="container">
-            <div class="menu-header_menu-container">
+            <div class="menu-container">
               <ul id="header_menu" class="menu">
                 <li class="menu-item menu-item-has-children">
                   <span>О нас</span>

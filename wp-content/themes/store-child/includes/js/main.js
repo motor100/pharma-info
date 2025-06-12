@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  // Sticky desktop menu
+  window.onscroll = function() {
+    const scrStickyDesktopMenu = window.pageYOffset || document.documentElement.scrollTop;
+    const stickyDesktopMenu = document.querySelector('.sticky-desktop-menu');
+    if (scrStickyDesktopMenu > 400) {
+      stickyDesktopMenu.classList.add('active');
+    }
+    if (scrStickyDesktopMenu < 400) {
+      stickyDesktopMenu.classList.remove('active');
+    }
+  }
+
   // To top кнопка вверх
   const toTop = document.getElementById("to-top");
 

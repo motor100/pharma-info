@@ -198,134 +198,7 @@
       <div class="copyright">© <?php echo date("Y"); ?> Все права защищены и принадлежат доктору Трушкиной И.В.</div>
       <div class="copyright">Копирование материалов сайта без письменного разрешения запрещено</div>
     </div>
-        
-        
-        
-    
 
-    <!-- 
-    <div class="footer-logo">
-      <img src="/wp-content/themes/store-child/includes/images/logo_footer.png" alt="logo">
-    </div>
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="company-info">© ИП Трушкина И.В.</div>
-        <div class="company-info">ИНН 701703092246</div>
-        <div class="company-info company-info-last">ОГРН 318502700032975</div>
-        <div class="footer-bottom-mobile-menu">
-          <div class="menu-header_menu-container">
-            <ul class="menu">
-              <li class="menu-item">
-                <a href="/about-salts">О солях</a>
-              </li>
-              <li class="menu-item">
-                <a href="/servis-podbora">Сервис подбора</a>
-              </li>
-              <li class="menu-item">
-                <a href="https://funmed.ru/soli_doktora_shyusslera" target="_blank">Обучение</a>
-              </li>
-              <li class="menu-item">
-                <a href="/specialisty">Специалисты</a>
-              </li>
-              <li class="menu-item">
-                <a href="/bolezni-ot-a-do-ya">Болезни от А до Я</a>
-              </li>
-              <li class="menu-item">
-                <a href="/wherebuy">Где купить</a>
-              </li>
-              <li class="menu-item">
-                <a href="/service">Сервис</a>
-              </li>
-              <li class="menu-item">
-                <a href="/documents/">Документы</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-phone footer-pe">
-          <img src="/wp-content/themes/store-child/includes/images/svg/circle-call.svg" class="footer-phone-image footer-pe-image" alt="phone call">
-          <a class="footer-phone-link footer-pe-link" href="tel:+74959274928">+7 (495) 927-4-928</a>
-        </div>
-        <div class="working-time">Пн, Вт, Ср, Чт, Пт: С 10:00 до 20:00<br>Сб, Вс: выходной</div>
-        <div class="footer-email footer-pe">
-          <img src="/wp-content/themes/store-child/includes/images/svg/circle-email.svg" class="footer-phone-image footer-pe-image" alt="phone call">
-          <a class="footer-email-link footer-pe-link" href="mailto:info@naturapharma.ru">info@naturapharma.ru</a>
-        </div>
-        <div class="footer-address">Московская область, совхоз им. Ленина, Техцентр</div>
-        <a href="/polzovatelskoe-soglashenie" class="polzovatelskoe-soglashenie footer-pa">Пользовательское соглашение</a>
-        <a href="/politika-v-otnoshenii-obrabotki-personalnyh-dannyh" class="privacy-policy footer-pa">Политика конфиденциальности</a>
-        <a href="/soglasie-posetitelya-sajta-na-obrabotku-personalnyh-dannyh" class="agreement footer-pa">Согласие на обработку персональных данных</a>
-        <div class="copyright">© <?php echo date("Y"); ?> Все права защищены и принадлежат доктору Трушкиной И.В.</div>
-        <div class="copyright">Копирование материалов сайта без письменного разрешения запрещено</div>
-
-        <div class="developer">
-          <div class="author">
-            <a href="https://nhfuture.ru/" target="_blank">Дизайн Andrewwebnh</a>
-          </div>
-          <div class="author">
-            <a href="https://mybutton.ru/" target="_blank">Поддержка Button</a>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-lg-2 d-lg-block d-none">
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="/about-salts">О солях</a>
-          </li>
-          <li class="menu-item">
-            <a href="/catalog/product-category/soli-schuesslera/">Каталог</a>
-          </li>
-          <li class="menu-item">
-            <a href="/servis-podbora">Сервис подбора</a>
-          </li>
-          <li class="menu-item">
-            <a href="https://funmed.ru/soli_doktora_shyusslera" target="_blank">Обучение</a>
-          </li>
-          <li class="menu-item">
-            <a href="/documents/">Документы</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-3 d-lg-block d-none">
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="/specialisty">Специалисты</a>
-          </li>
-          <li class="menu-item">
-            <a href="/bolezni-ot-a-do-ya">Болезни от А до Я</a>
-          </li>
-          <li class="menu-item">
-            <a href="/wherebuy">Где купить</a>
-          </li>
-          <li class="menu-item">
-            <a href="/service" target="_blank">Сервис</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <div class="flex-container">
-          <div class="footer-buttons">
-            <div class="callback-form-btn">
-              <img src="/wp-content/themes/store-child/includes/images/svg/circle-call-white.svg" class="callback-form-btn__image" alt="">
-              <span class="callback-form-btn__text">Заказать звонок</span>
-            </div>
-            <div class="search-btn" onclick="window.scrollTo(0,0)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="search-btn__image" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg>
-              <span class="search-btn__text">Поиск</span>
-            </div>
-          </div>
-          <div class="payment-system">
-            <img src="/wp-content/themes/store-child/includes/images/visa.png" class="payment-system__icon icon-visa" alt="visa">
-            <img src="/wp-content/themes/store-child/includes/images/mastercard.png" class="payment-system__icon icon-mastercard" alt="mastercard">
-            <img src="/wp-content/themes/store-child/includes/images/mir.png" class="payment-system__icon icon-mir" alt="mir">
-          </div>
-        </div>
-      </div>
-    </div>
-     -->
   </div>
 
 </footer>
@@ -378,15 +251,6 @@
     </a>
     <a href="tel:+74959274928" class="phone-text">+7 (495) 927-4-928</a>
   </div>
-  <!-- <div class="feedback-text">Напишите нам</div>
-  <div class="socials-icons">
-    <a href="https://t.me/naturaproff" class="social-icons__link" rel="nofollow noopener" target="_blank">
-      <img src="/wp-content/themes/store-child/includes/images/svg/circle-tg.svg" class="social-icons__image social-icons__tg" alt="телеграм">
-    </a>
-    <a href="https://vk.com/natura.pharma" class="social-icons__link" rel="nofollow noopener" target="_blank">
-      <img src="/wp-content/themes/store-child/includes/images/svg/circle-vk.svg" class="social-icons__image social-icons__vk" alt="вконтакте">
-    </a>
-  </div> -->
 </div>
 
 <div class="fixed-bottom-menu hidden-desktop">
@@ -438,6 +302,58 @@
   <div class="we-use-cookie-wrapper">
     <div class="we-use-cookie-text">Этот сайт использует cookie-файлы и другие технологии для улучшения его работы. Продолжая работу с сайтом, вы разрешаете использование cookie-файлов. Вы всегда можете отключить файлы cookie в настройках Вашего браузера.</div>
     <button id="cookie_accept" class="we-use-cookie-close">ОК</button>
+  </div>
+</div>
+
+<div class="sticky-desktop-menu hidden-mobile">
+  <div class="header-nav">
+    <div class="container">
+      <div class="menu-container">
+        <ul id="header_menu" class="menu">
+          <li class="menu-item menu-item-has-children">
+            <span>О нас</span>
+            <ul class="sub-menu">
+              <li class="sub-menu-item">
+                <a href="#">Миссия</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="#">Для кого</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="#">Как это работает</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="#">Как сделать заказ</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="#">Вопрос-ответ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Лекарства</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Добавки</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Натуропатия</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Наружные средства</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Для животных</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#">NaturaProf</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Ресурсы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
