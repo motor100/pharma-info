@@ -33,24 +33,6 @@
 
     <header class="header">
       <div class="header-desktop hidden-mobile">
-        <div class="header-top">
-          <div class="container">
-            <div class="flex-container">
-              <div class="phone-wrapper">
-                <a href="https://t.me/biosalts" class="social-icons__link" rel="nofollow noopener" target="_blank">
-                  <img src="/wp-content/themes/store-child/includes/images/svg/circle-tg.svg" class="social-icons__image social-icons__tg" alt="телеграм">
-                </a>
-                <a href="https://wa.me/79629880861" class="social-icons__link" rel="nofollow noopener" target="_blank">
-                  <img src="/wp-content/themes/store-child/includes/images/svg/circle-wa.svg" class="social-icons__image social-icons__wa" alt="ватсап">
-                </a>
-                <a href="tel:+74959274928" class="social-icons__link" rel="nofollow noopener" target="_blank">
-                  <img src="/wp-content/themes/store-child/includes/images/svg/circle-call.svg" class="social-icons__image social-icons__call" alt="звонок">
-                </a>
-                <a href="tel:+74959274928" class="phone-text">+7 (495) 927-4-928</a>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="header-content">
           <div class="container">
             <div class="flex-container">
@@ -89,22 +71,22 @@
             <div class="menu-container">
               <ul id="header_menu" class="menu">
                 <li class="menu-item menu-item-has-children">
-                  <span>О нас</span>
+                  <a href="/about">О нас</a>
                   <ul class="sub-menu">
                     <li class="sub-menu-item">
-                      <a href="#">Миссия</a>
+                      <a href="/about#mission">Миссия</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="#">Для кого</a>
+                      <a href="/about#for-whom">Для кого</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="#">Как это работает</a>
+                      <a href="/about#how-it-works">Как это работает</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="#">Как сделать заказ</a>
+                      <a href="/about#how-to-place-order">Как сделать заказ</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="#">Вопрос-ответ</a>
+                      <a href="/about#faq">Вопрос-ответ</a>
                     </li>
                   </ul>
                 </li>

@@ -40,6 +40,9 @@ Text Domain:  storefront
   font-weight: 400;
   src: url(../fonts/Roboto-SemiBold.woff2) format("woff2");
 }
+
+
+
 @font-face {
   font-display: swap;
   font-family: 'Roboto-Condensed';
@@ -76,6 +79,8 @@ Text Domain:  storefront
   --purple-color: #F40C63;
   --dark-color: #05041B;
   --olive-color: #527B69;
+  --oslo-gray: #7C8B8D;
+  --terracota-color: #E06752;
 
   --burgundy-color: #8C3C63;
   --pink-color: #E7E6E2;
@@ -83,7 +88,6 @@ Text Domain:  storefront
   --white-rock-color: #EDE8D9;
   --mine-shaft-color: #222222;
   --shark-color: #212529;
-  --terracota-color: #E06752;
   --voodoo-color: #43314B;
 }
 
@@ -244,6 +248,7 @@ iframe {
 }
 
 /* header desktop */
+/*
 .header-desktop .header-top {
   padding: 11px 0;
   background-color: var(--darkblue-color);
@@ -296,6 +301,7 @@ iframe {
   color: var(--nero-color);
   text-decoration: underline;
 }
+*/
 .header-desktop .header-content {
   padding: 17px 0;
 }
@@ -717,29 +723,18 @@ iframe {
   display: flex;
   gap: 20px;
 }
-.personal-select-section .example-btn,
-.personal-select-section .view-more-btn {
+.personal-select-section .example-btn {
   display: flex;
+  width: 296px;
   height: 68px;
   border-radius: 34px;
   color: var(--nero-color);
-  align-items: center;
-  justify-content: center;
-}
-.personal-select-section .example-btn {
-  width: 296px;
   background-color: var(--olive-color);
   font-family: 'Roboto-SemiBold';
   font-size: 24px;
+  align-items: center;
+  justify-content: center;
 }
-.personal-select-section .view-more-btn {
-  width: 182px;
-  background-color: var(--purple-color);
-  font-family: 'Roboto-Medium';
-  font-size: 24px;
-}
-
-
 
 /* video section */
 .video-section {
@@ -816,18 +811,6 @@ iframe {
   font-size: 20px;
   line-height: 1.1;
 }
-.manufacture-section .manufacture-description .view-more-btn {
-  display: flex;
-  width: 182px;
-  height: 68px;
-  border-radius: 34px;
-  background-color: var(--purple-color);
-  font-family: 'Roboto-Medium';
-  font-size: 24px;
-  color: var(--nero-color);
-  align-items: center;
-  justify-content: center;
-}
 .manufacture-section .manufacture-description .manufacture-image {
   width: 650px;
   height: 322px;
@@ -867,23 +850,19 @@ iframe {
 
 
 /* view more btn */
-/*
 .view-more-btn {
   display: flex;
-  width: 160px;
-  height: 55px;
-  padding: 0;
-  border: none;
-  border-radius: 12px;
-  background-color: var(--burgundy-color);
-  font-family: 'Roboto-Light';
-  font-size: 18px;
+  width: 182px;
+  height: 68px;
+  border-radius: 34px;
+  background-color: var(--purple-color);
+  font-family: 'Roboto-Medium';
+  font-size: 24px;
   color: var(--nero-color);
-  cursor: pointer;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-*/
+
 
 /* Advantages section */
 .advantages-section {
@@ -1000,6 +979,127 @@ iframe {
   text-decoration: underline;
 }
 
+/* About page */
+.about-page .about-section .flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.about-page .about-section .flex-container-first {
+  margin: 0 0 40px 0;
+}
+.about-page .about-section .about-section-description__big-text {
+  font-size: 32px;
+  color: #607797;
+  line-height: 1.1;
+}
+.about-page .about-section .about-image-vertikal {
+  width: 277px;
+  height: 353px;
+  flex-shrink: 0;
+}
+.about-page .about-section .about-image-vertikal img {
+  width: 100%;
+}
+.about-page .about-section .about-section-description__small-text {
+  font-size: 20px;
+  color: #607797;
+  line-height: 1.3;
+}
+.about-page .naturapharma-section .left-40 {
+  /*width: 40%;*/
+  height: 100%;
+}
+.about-page .naturapharma-section .right-60 {
+  /*width: 60%;*/
+  height: 100%;
+}
+.about-page .grid-container4060 {
+  /*display: flex;*/
+  display: grid;
+  height: 100%;
+  gap: 20px;
+  /*justify-content: space-between;*/
+  grid-template-columns: 40% 60%;
+}
+.about-page .grid-container6040 {
+  /*display: flex;*/
+  display: grid;
+  height: 100%;
+  gap: 20px;
+  /*justify-content: space-between;*/
+  grid-template-columns: 60% 40%;
+}
+.about-page .frame {
+  padding: 40px;
+  border: 1px solid var(--darkblue-color);
+  border-radius: 30px;
+}
+.about-page .section-title {
+  margin: 0 0 30px 0;
+  font-family: "Roboto-Medium";
+  font-size: 42px;
+  line-height: 1.1;
+  color: var(--darkblue-color);
+}
+.about-page .text20 {
+  font-size: 20px;
+  line-height: 1.1;
+}
+.about-page .list-item {
+  display: flex;
+  margin: 0 0 16px 0;
+  gap: 10px;
+}
+.about-page .list-item:last-child {
+  margin-bottom: 0;
+}
+.about-page .list-item .list-item__text {
+  font-size: 18px;
+  line-height: 1.3;
+}
+.about-page .flex-container-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+.about-page .about-image {
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.about-page .about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-page .h100 {
+  height: 100%;
+}
+.about-page .mb20 {
+  margin-bottom: 20px;
+}
+.about-page .subtitle {
+  margin: 0 0 40px 0;
+  font-family: 'Roboto-SemiBold';
+  font-size: 32px;
+  line-height: 1.1;
+}
+.about-page .tasks-section .tasks {
+  padding: 40px;
+  border-radius: 30px;
+  background: url(../images/tasks.png) center no-repeat;
+  overflow: hidden;
+}
+.about-page .tasks-section .grid-container {
+  display: grid;
+  gap: 120px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
 
 /* sticky desktop menu */
 .sticky-desktop-menu {
@@ -1028,7 +1128,7 @@ iframe {
 
 
 /* breadcrumb */
-.storefront-breadcrumb {
+.breadcrumbs-wrapper {
   margin-bottom: 40px;
   padding-top: 25px;
 }
@@ -1038,11 +1138,11 @@ iframe {
 }
 .storefront-breadcrumb .woocommerce-breadcrumb {
   padding: 0 0 16px 0;
-  border-bottom: 1px solid #f0f0f0;;
+  font-family: 'Roboto-light';
 }
 .storefront-breadcrumb .woocommerce-breadcrumb a {
   font-family: 'Roboto-light';
-  color: var(--darkblue-color);
+  color: var(--oslo-gray);
   text-decoration: underline;
   transition: color .3s;
 }
@@ -1085,6 +1185,7 @@ iframe {
 }
 
 /* catalog section title */
+/*
 .catalog-section-title {
   margin: 0 0 30px 0;
   font-family: "Roboto-CondensedSemiBold";
@@ -1096,8 +1197,10 @@ iframe {
   color: var(--nero-color);
   line-height: 1;
 }
+*/
 
 /* subcategories */
+/*
 .subcategories {
   display: flex;
   flex-wrap: wrap;
@@ -1134,6 +1237,7 @@ iframe {
 .subcategories .subcategories-item.active .subcategories-item__title {
   color: var(--nero-color);
 }
+*/
 
 /* products card ul.products */
 ul.products {
@@ -1216,6 +1320,7 @@ ul.products li.product .added_to_cart:hover {
 }
 
 /* single product page */
+/*
 .single-product .woocommerce-notices-wrapper {
   margin: 0 0 10px 0;
 }
@@ -1474,6 +1579,7 @@ ul.products li.product .added_to_cart:hover {
   color: var(--text-color);
   line-height: 1.3;
 }
+*/
 
 /* quantity */
 .quantity .qty {
@@ -3063,11 +3169,10 @@ a.reset_variations::before {
 /* custom page */
 .custom-page .page-title {
   margin: 0 0 40px 0;
-  font-family: "Roboto-CondensedSemiBold";
-  font-size: 56px;
+  font-family: "Roboto-Medium";
+  font-size: 42px;
+  line-height: 1.1;
   color: var(--darkblue-color);
-  line-height: 1.2;
-  text-transform: uppercase;
 }
 
 
@@ -4238,6 +4343,47 @@ a.reset_variations::before {
   content: '';
 }
 
+/* Container */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(12px);
+  padding-left: calc(12px);
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+
+
 @media only screen and (max-width : 1550px) {
   /* to top */
   .to-top .circle {
@@ -4550,10 +4696,6 @@ a.reset_variations::before {
   }
 
   /* header */
-  .header-desktop .header-top .header-top__address {
-    width: 61%;
-    font-size: 14px;
-  }
   .header-desktop .header-content .catalog-btn {
     width: 145px;
   }
@@ -5084,9 +5226,6 @@ a.reset_variations::before {
   }
 
   /* header */
-  .header-desktop .header-top .header-top__address {
-    width: 49%;
-  }
   .header-desktop .header-content .header-logo {
     margin: 0 10px 0 0;
   }

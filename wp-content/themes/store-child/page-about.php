@@ -1,0 +1,243 @@
+<?php
+/**
+ * About salts page
+ *
+ * @package WordPress
+ * @subpackage Store-Child Theme
+ * @since Store-Child Theme
+ */
+?>
+
+<?php get_header(); ?>
+  
+<div class="about-page custom-page">
+
+  <div class="about-section section">
+    <div class="container">
+      <div class="flex-container flex-container-first">
+        <div class="about-section-description">
+          <div class="page-title">О нас</div>
+          <div class="about-section-description__big-text">Информационный  портал, объединяющий специалистов, производителей натуропатических средств, производственные аптеки по изготовлению персональных лекарств и парафармацевтики.</div>
+        </div>
+        <div class="about-section-image about-image-vertikal">
+          <img src="/wp-content/themes/store-child/includes/images/about-image-vertikal.png" alt="">
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="about-section-image">
+          <img src="/wp-content/themes/store-child/includes/images/about-image-horizontal.png" alt="">
+        </div>
+        <div class="about-section-description">
+          <div class="about-section-description__small-text">
+            <p>Для нас важно качество наших продуктов, высокий уровень профессионализма наших партнеров и сотрудников и человеческие отношения.</p>
+            <p>Мы объединяем знания академической медицины с многовековым опытом натуропрактики, современные достижения технологии фармацевтического производства и глубокие смыслы алхимических процессов.</p>
+            <p>Наша задача предложить клиентский сервис персонифицированной медицины высокого уровня  для качественной, свободной и осознанной жизни наших пациентов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="naturapharma-section section">
+    <div class="container">
+      <div class="grid-container4060">
+        <div class="left-40">
+          <div class="flex-container-column">
+            <div class="frame">
+              <div class="section-title">NaturaPharma</div>
+              <div class="text20">помогает врачам поддерживать своих пациентов, предоставляя высококачественные лекарства, добавки и натуропатические средства, изготовленные по индивидуальному заказу и фармакопейным прописям.</div>
+            </div>
+            <div class="about-image">
+              <img src="/wp-content/themes/store-child/includes/images/about-image1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="right-60">
+          <div class="frame h100">
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text">Наши Аптеки построены в соответствии с Надлежащей аптечной практикой производственных аптек (GPP).</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text">Наши Производственные площадки добавок и натуропатии имеют сертификаты ХААСП и ISO.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text">Единственный в России R&D центр по разработке и валидации экстемпоральных лекарственных средств на базе независимой экспертной аналитической лаборатории.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text">Мы используем технологии и рецептуры, валидированные международным сообществом.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text">Все процессы от выписывания рецепта до отпуска лекарства пациенту у нас автоматизированы  и интегрированы в систему учета, что позволяет изготавливать препараты максимально быстро и точно.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text">Наши сотрудники проходят обучение, медицинские осмотры и соблюдают все требования для обеспечения санитарно-эпидемиологического режима.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text">Все сырье поступает из сертифицированной и аккредитованной цепочки поставок, хранится в соответствии со строгими протоколами и проходит тестирование для обеспечения качества.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text">Растительное сырье заготавливается с учетом биоценозов местности, с тщательным выбором времени и места сбора.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="our-structure-section section">
+    <div class="container">
+      <div class="section-title">Наша структура</div>
+      <div class="grid-container4060 mb20">
+        <div class="frame">
+          <div class="subtitle">Производственные Аптеки</div>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+        </div>
+        <div class="frame">
+          <div class="subtitle">Производственные площадки натуропатии</div>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+        </div>
+      </div>
+      <div class="grid-container6040 mb20">
+        <div class="frame">
+          <div class="subtitle">Аптекарский городок</div>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+        </div>
+        <div class="frame">
+          <div class="subtitle">R&D лаборатория</div>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+        </div>
+      </div>
+      <div class="grid-container4060 mb20">
+        <div class="frame">
+          <div class="subtitle">Школа специалистов</div>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+          <p>Алма-Атинская улица, дом 9, корпус 2</p>
+        </div>
+        <div class="about-image">
+          <img src="/wp-content/themes/store-child/includes/images/about-image2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tasks-section section">
+    <div class="container">
+      <div class="tasks">
+        <div class="section-title">Задачи</div>
+        <div class="grid-container">
+          <div class="tasks-list">
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Позволяем реализовать персонализированный подход в медицине.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Готовим нужные лекарства в нужной форме с минимальным количеством вспомогательных веществ.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Адаптируем лекарства к потребностям каждого человека.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Изготавливаем препараты, не имеющих промышленных аналогов или недоступные в России, в том числе в нужной форме или дозе.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Лекарства для клинических исследований: плацебо до титрования доз и разработки удобной формы выпуска.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Изготавливаем лекарства, биологические добавки, специализированное питание по авторским рецептам и серии под вашим брендом.</div>
+            </div>
+          </div>
+          <div class="tasks-list">
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Автоматизируем рецептурное назначения, возвращая творчество в практику врача.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Обеспечиваем сервис составления рецептур, компаундинга и доставки препаратов до двери пациента.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Легализуем альтернативные и ранее не доступные методы.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Способствуем выполнению указа Президента по развитию профилактической и персонализированной медицины.</div>
+            </div>
+            <div class="list-item">
+              <div class="list-item__image">
+                <img src="/wp-content/themes/store-child/includes/images/about-list-check.png" alt="">
+              </div>
+              <div class="list-item__text">Способствуем выполнению указа Президента по развитию профилактической и персонализированной медицины.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<?php get_footer(); ?>
