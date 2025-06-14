@@ -1060,6 +1060,7 @@ iframe {
 }
 .about-page .flex-container-column {
   display: flex;
+  height: 100%;
   flex-direction: column;
   gap: 20px;
   justify-content: space-between;
@@ -1097,6 +1098,18 @@ iframe {
   gap: 120px;
   grid-template-columns: repeat(2, 1fr);
 }
+.about-page .for-whom-section .for-whom-item {
+  margin: 0 0 20px 0;
+  padding: 15px 35px;
+  border-radius: 15px;
+  background-color: #EFF6FF;
+  font-size: 18px;
+}
+.about-page .for-whom-section .for-whom-item:last-child {
+  margin-bottom: 0;
+}
+
+
 
 
 

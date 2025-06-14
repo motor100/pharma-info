@@ -238,6 +238,162 @@
     </div>
   </div>
 
+  <div class="for-whom-section section">
+    <div class="container">
+      <div class="grid-container4060">
+        <div class="left-40">
+          <div class="flex-container-column">
+            <div class="frame">
+              <div class="section-title">Для кого</div>
+              <div class="text20">Мы работаем для пациентов самых разных категорий. От дозирования лекарств новорожденным детям до изготовления препаратов для биохакинга.</div>
+            </div>
+            <div class="about-image">
+              <img src="/wp-content/themes/store-child/includes/images/about-image3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="right-60">
+          <div class="for-whom-item">У вас возникают трудности с глотанием аптечных промышленных препаратов (размеры капсул или таблеток, вкус препарата и др).</div>
+          <div class="for-whom-item">Вам требуется персональная дозировка или ограниченное количество препарата.</div>
+          <div class="for-whom-item">Непереносимость консервантов, красителей, наполнителей.</div>
+          <div class="for-whom-item">В Россию не поставляют или не производят необходимые Вам лекарства, но есть зарегистрированные фармацевтические субстанции.</div>
+          <div class="for-whom-item">Вам требуется лекарство из фармацевтических субстанций высшего качества.</div>
+          <div class="for-whom-item">Необходимо объединить несколько лекарств в одну форму, что бы уменьшить побочные эффекты и снизить дозы прима.</div>
+          <div class="for-whom-item">Вы не можете использовать промышленные препараты по религиозным соображениям.</div>
+          <div class="for-whom-item">Вы придерживаетесь определенных диет или используете только органические, натуропатические средства.</div>
+          <div class="for-whom-item">Принимаете низкие и сверхнизкие дозы, в том числе гомеопатические.</div>
+          <div class="for-whom-item">Вам близка тема персонального подхода к Вашему здоровью. Вы используете лекарства, разработанные специально для Вас, чтобы Вы могли получить наилучшие результаты.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="advantages-section section">
+    <div class="container">
+      <div class="section-title">Преимущества</div>
+      <div class="grid-container4060 mb20">
+        <div class="about-image">
+          <img src="/wp-content/themes/store-child/includes/images/about-image4.jpg" alt="">
+        </div>
+        <div class="frame">
+          <div class="subtitle">Для пациента</div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Качественный лекарственный препарат, БАД, питание в нужной форме и дозе.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Отсутствие нежелательных красителей, консервантов, наполнителей, вспомогательных веществ.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Сервис изготовления и доставки.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Возможность выбора формы препарата, состава, в том числе и для приверженцев натуропатических подходов.</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container6040 mb20">
+        <div class="frame">
+          <div class="subtitle">Для врача</div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Уверенность в качестве лекарственного средства.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Продвижение личного бренда.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Назначение препаратов, которых нет в реестре.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Дополнительный доход за участие в программе мониторинга персональных рецептур.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Возможность работы в рамках персонифицированной медицины.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Законное использование альтернативных лекарств.</div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="/wp-content/themes/store-child/includes/images/about-image4.jpg" alt="">
+        </div>
+      </div>
+      <div class="grid-container4060 mb20">
+        <div class="about-image">
+          <img src="/wp-content/themes/store-child/includes/images/about-image4.jpg" alt="">
+        </div>
+        <div class="frame">
+          <div class="subtitle">Для клиники</div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Возможность внедрения направления персонифицированной медицины.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Сервис лекарственного обеспечения для нужд клиники и пациентов.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Препараты, БАД, специализированное питание под брендом клиники.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Дополнительный доход.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Повышение статуса и привлечение высококвалифицированных кадров.</div>
+          </div>
+          <div class="list-item">
+            <div class="list-item__image">
+              <img src="/wp-content/themes/store-child/includes/images/about-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Автоматизация выписки рецептов.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <?php get_footer(); ?>
