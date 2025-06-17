@@ -3,7 +3,7 @@
     <div class="main-section-frame">
       <div class="main-title">Портал персонализированной медицины</div>
       <div class="main-buttons">
-        <div class="order-online-btn">
+        <div class="order-online-btn primary-btn">
           <img src="/wp-content/themes/store-child/includes/images/svg/notepad-light.svg" class="order-online-btn__image" alt="">
           <span class="order-online-btn__text">Закажи рецепт онлайн</span>
         </div>

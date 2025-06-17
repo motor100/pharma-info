@@ -71,45 +71,45 @@
             <div class="menu-container">
               <ul id="header_menu" class="menu">
                 <li class="menu-item menu-item-has-children">
-                  <a href="/about">О нас</a>
+                  <a href="/o-nas">О нас</a>
                   <ul class="sub-menu">
                     <li class="sub-menu-item">
-                      <a href="/about#mission">Миссия</a>
+                      <a href="/o-nas#mission">Миссия</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="/about#for-whom">Для кого</a>
+                      <a href="/o-nas#for-whom">Для кого</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="/about#how-it-works">Как это работает</a>
+                      <a href="/o-nas#how-it-works">Как это работает</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="/about#how-to-place-order">Как сделать заказ</a>
+                      <a href="/o-nas#how-to-place-order">Как сделать заказ</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="/about#faq">Вопрос-ответ</a>
+                      <a href="/o-nas#faq">Вопрос-ответ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="#">Лекарства</a>
+                  <a href="/lekarstva">Лекарства</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="#">Добавки</a>
+                  <a href="/lekarstva#">Добавки</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="#">Натуропатия</a>
+                  <a href="/lekarstva#">Натуропатия</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="#">Наружные средства</a>
+                  <a href="/lekarstva#">Наружные средства</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="#">Для животных</a>
+                  <a href="/lekarstva#">Для животных</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="#">NaturaProf</a>
+                  <a href="/lekarstva#">NaturaProf</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="#">Ресурсы</a>
+                  <a href="/lekarstva#">Ресурсы</a>
                 </li>
               </ul>
             </div>
