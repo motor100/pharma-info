@@ -394,6 +394,110 @@
     </div>
   </div>
 
+  <div class="how-to-order-section section">
+    <div class="container">
+      <div class="section-title">Как сделать заказ</div>
+      <div class="how-to-order-section-subtitle">Сделать заказ персонального лекарства можно быстро и легко:</div>
+      <div class="grid-container4060">
+        <div class="left-40">
+          <div class="flex-container-column">
+            <div class="frame">
+              <div class="frame-title">Самостоятельно</div>
+              <div class="text20">через форму он-лаин заказа ссылка– написать состав или сделать фото рецепта от врача.</div>
+            </div>
+            <div class="frame">
+              <div class="frame-title">Обратиться в партнерскую аптеку</div>
+              <div class="text20">Обратиться в любую партнерскую аптеку ссылка с рецептом на изготовление.</div>
+            </div>
+            <div class="frame">
+              <div class="frame-title">Через вашего врача</div>
+              <div class="text20">Ваш врач может выписать рецепт в программе propisi.info</div>
+            </div>
+          </div>
+        </div>
+        <div class="right-60">
+          <div class="frame h100">
+            <div class="text-wrapper">
+              <div class="frame-title">Внутриаптечные препараты, не рецептурные</div>
+              <div class="text20">готовые натуропатические препараты и добавки можно заказать на сайте</div>
+            </div>
+            <div class="flex-container">
+              <div class="image">
+                <img src="/wp-content/themes/store-child/includes/images/about-image4.jpg" alt="">
+              </div>
+              <a href="#" class="catalog-btn primary-btn">Перейти в каталог</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="production-section section">
+    <div class="container">
+      <div class="frame">
+        <div class="section-title">Изготовление</div>
+        <div class="text20 text-light">Большинство препаратов по индивидуальным рецептам мы готовим в течение суток. Некоторые препараты требуют более длительного срока изготовления.  Все рецепты проверяет Провизор и Клинический фармацевт, они могут позвонить Вам или Вашему врачу для некоторых уточнений и внесения изменений если это потребуется. Готовый препарат будет проверен Химиком-аналитиком. Каждый флакон маркируется индивидуальным номером и голограммой.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment-section section">
+    <div class="container">
+      <div class="flex-container">
+        <div class="description">
+          <div class="section-title">Оплата</div>
+          <div class="text20">Пожалуйста, оставьте контакты, и мы обсудим с вами условия сотрудничества</div>
+        </div>
+        <div class="payment-btn primary-btn">Перейти к оплате</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="delivery-section section">
+    <div class="container">
+      <div class="grid-container6040">
+        <div class="left-60">
+          <div class="flex-container-column">
+            <div class="frame">
+              <div class="section-title">Доставка</div>
+              <div class="text20 text-light">Мы имеем разрешение на дистанционную доставку, пожалуйста ознакомитесь с правилами доставки.</div>
+            </div>
+            <div class="frame">
+              <div class="frame-title">Способы доставки:</div>
+              <div class="delivery-list">
+                <div class="list-item">
+                  <div class="list-item__image">
+                    <img src="/wp-content/themes/store-child/includes/images/truck.png" alt="">
+                  </div>
+                  <div class="text20 text-light">Наши Аптеки построены в соответствии с Надлежащей аптечной практикой производственных аптек (GPP).</div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item__image">
+                    <img src="/wp-content/themes/store-child/includes/images/truck.png" alt="">
+                  </div>
+                  <div class="text20 text-light">Забрать препараты можно по адресу: ….</div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item__image">
+                    <img src="/wp-content/themes/store-child/includes/images/truck.png" alt="">
+                  </div>
+                  <div class="text20 text-light">Заказать доставку в удобный аптечный пункт – список ссылка</div>
+                </div>
+              </div>
+              <div class="order-union">Все Ваши заказы могут быть объединены в единую доставку.</div>
+            </div>
+          </div>
+        </div>
+        <div class="right-40">
+          <div class="about-image">
+            <img src="/wp-content/themes/store-child/includes/images/about-image5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <?php get_footer(); ?>
