@@ -172,6 +172,7 @@ iframe {
   width: max-content;
   height: 68px;
   padding: 0 30px;
+  border: none;
   border-radius: 34px;
   background-color: var(--purple-color);
   font-family: 'Roboto-Medium';
@@ -1191,7 +1192,111 @@ iframe {
   margin: 0 0 20px 0;
   gap: 15px;
 }
-
+.lekarstva-page .desc-section .read-more-btn {
+  display: flex;
+  width: 266px;
+  height: 60px;
+  border: 1px solid #527B69;
+  border-radius: 30px;
+  font-size: 24px;
+  color: #527B69;
+  align-items: center;
+  justify-content: center;
+}
+.lekarstva-page .personal-order-section .form-wrapper {
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #FFF8EB;
+}
+.lekarstva-page .personal-order-section .form-title {
+  margin: 0 0 5px 0;
+  font-family: 'Roboto-Medium';
+  font-size: 42px;
+}
+.lekarstva-page .personal-order-section .form-description {
+  margin: 0 0 40px 0;
+  font-size: 18px;
+}
+.lekarstva-page .personal-order-section .form {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.lekarstva-page .personal-order-section .input-field {
+  display: block;
+  width: 100%;
+  height: 68px;
+  padding: 22px 40px;
+  border: 1px solid #D9D9D9;
+  border-radius: 33px;
+  background-color: #FFF8EB;
+  font-family: inherit;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.lekarstva-page .personal-order-section .input-field:placeholder {
+  color: #939393;
+}
+.lekarstva-page .personal-order-section .submit-btn {
+  width: 100%;
+}
+.lekarstva-page .personal-order-section .form-group {
+  width: 100%;
+}
+.lekarstva-page .personal-order-section .inputfile {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.lekarstva-page .personal-order-section .custom-inputfile-label {
+  display: flex;
+  width: 100%;
+  height: 68px;
+  padding: 22px 30px;
+  border: 1px solid #D9D9D9;
+  border-radius: 33px;
+  background-color: #FFF8EB;
+  gap: 10px;
+  font-size: 20px;
+  color: var(--text-color);
+  align-items: center;
+  justify-content: center;
+}
+.lekarstva-page .personal-order-section .custom-inputfile-label-text {
+  width: 165px;
+  overflow: hidden;
+}
+.lekarstva-page .personal-order-section .paperclip {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.lekarstva-page .vnutriaptechnye-propisi-section .flex-container {
+  display: flex;
+  padding: 40px;
+  border: 1px solid var(--darkblue-color);
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.lekarstva-page .vnutriaptechnye-propisi-section .vnutriaptechnye-propisi-title {
+  font-family: 'Roboto-Medium';
+  font-size: 42px;
+}
+.lekarstva-page .vnutriaptechnye-propisi-section .catalog-btn {
+  display: flex;
+  width: 290px;
+  height: 68px;
+  border-radius: 34px;
+  background-color: var(--darkblue-color);
+  font-family: 'Roboto-SemiBold';
+  font-size: 24px;
+  color: var(--nero-color);
+  align-items: center;
+  justify-content: center;
+}
 
 
 /* sticky desktop menu */
