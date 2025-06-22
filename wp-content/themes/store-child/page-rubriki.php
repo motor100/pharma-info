@@ -10,12 +10,11 @@
 
 <?php get_header(); ?>
   
-<div class="rubriki-page custom-page">
+<div class="rubriki-page custom-page has-filter">
   <div class="container">
     <div class="page-title">Внутриаптечные прописи (рубрики)</div>
     <div class="grid-container">
       <div class="filter">
-        
         <form class="filter" action="" method="get">
           <div class="checkbox-group">
             <div class="checkbox-group__title">Рубрика</div>
@@ -55,7 +54,6 @@
               <span class="custom-checkbox"></span>
             </label>
           </div>
-
           <div class="checkbox-group">
             <div class="checkbox-group__title">Проблемы</div>
             <label class="checkbox-label">
@@ -69,13 +67,9 @@
               <span class="custom-checkbox"></span>
             </label>
           </div>
-
-            <button type="submit" class="submit-btn primary-btn">Применить</button>
-            <a href="#" class="secondary-btn clear-btn">Очистить</a>
-          </form>
-
-
-
+          <button type="submit" class="submit-btn primary-btn">Применить</button>
+          <a href="#" class="secondary-btn clear-btn">Очистить</a>
+        </form>
       </div>
       <div class="content">
         <div class="products">

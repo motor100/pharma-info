@@ -33,7 +33,7 @@ if (is_shop()) {
   get_template_part( 'templates/content', 'shop' );
 } else { ?>
 
-  <div class="archive-product single__prod">
+  <div class="archive-product single__prod has-filter">
     <div class="container">
       <div class="catalog-inside">
         <div class="catalog-section-title"><?php echo woocommerce_page_title(); ?></div>
@@ -75,51 +75,113 @@ if (is_shop()) {
          -->
 
       <?php //} ?>
+
+      <div class="grid-container">
+        <div class="filter">
+          <form class="filter" action="" method="get">
+            <div class="checkbox-group">
+              <div class="checkbox-group__title">Рубрика</div>
+              <label class="checkbox-label">
+                <span class="custom-checkbox-text">Все рубрики</span>
+                <input type="checkbox" name="name" class="checkbox" value="">
+                <span class="custom-checkbox"></span>
+              </label>
+              <label class="checkbox-label">
+                <span class="custom-checkbox-text">Детокс и дренаж</span>
+                <input type="checkbox" name="name" class="checkbox" value="">
+                <span class="custom-checkbox"></span>
+              </label>
+              <label class="checkbox-label">
+                <span class="custom-checkbox-text">Беременность</span>
+                <input type="checkbox" name="name" class="checkbox" value="">
+                <span class="custom-checkbox"></span>
+              </label>
+              <label class="checkbox-label">
+                <span class="custom-checkbox-text">Воспаление</span>
+                <input type="checkbox" name="name" class="checkbox" value="">
+                <span class="custom-checkbox"></span>
+              </label>
+              <label class="checkbox-label">
+                <span class="custom-checkbox-text">Детский возраст</span>
+                <input type="checkbox" name="name" class="checkbox" value="">
+                <span class="custom-checkbox"></span>
+              </label>
+              <label class="checkbox-label">
+                <span class="custom-checkbox-text">Детский возраст</span>
+                <input type="checkbox" name="name" class="checkbox" value="">
+                <span class="custom-checkbox"></span>
+              </label>
+              <label class="checkbox-label">
+                <span class="custom-checkbox-text">Диета и здоровый образ жизни</span>
+                <input type="checkbox" name="name" class="checkbox" value="">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <div class="checkbox-group">
+              <div class="checkbox-group__title">Проблемы</div>
+              <label class="checkbox-label">
+                <span class="custom-checkbox-text">Проблема 1</span>
+                <input type="checkbox" name="name" class="checkbox" value="">
+                <span class="custom-checkbox"></span>
+              </label>
+              <label class="checkbox-label">
+                <span class="custom-checkbox-text">Проблема 2</span>
+                <input type="checkbox" name="name" class="checkbox" value="">
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+            <button type="submit" class="submit-btn primary-btn">Применить</button>
+            <a href="#" class="secondary-btn clear-btn">Очистить</a>
+          </form>
+        </div>
+        <div class="content">
         
-      <?php
-      if ( woocommerce_product_loop() ) {
-
-        /**
-         * Hook: woocommerce_before_shop_loop.
-         *
-         * @hooked woocommerce_output_all_notices - 10
-         * @hooked woocommerce_result_count - 20
-         * @hooked woocommerce_catalog_ordering - 30
-         */
-        do_action( 'woocommerce_before_shop_loop' );
-
-        woocommerce_product_loop_start();
-
-        if ( wc_get_loop_prop( 'total' ) ) {
-          while ( have_posts() ) {
-            the_post();
+          <?php
+          if ( woocommerce_product_loop() ) {
 
             /**
-             * Hook: woocommerce_shop_loop.
+             * Hook: woocommerce_before_shop_loop.
+             *
+             * @hooked woocommerce_output_all_notices - 10
+             * @hooked woocommerce_result_count - 20
+             * @hooked woocommerce_catalog_ordering - 30
              */
-            do_action( 'woocommerce_shop_loop' );
+            do_action( 'woocommerce_before_shop_loop' );
 
-            wc_get_template_part( 'content', 'product' );
-          }
-        }
+            woocommerce_product_loop_start();
 
-        woocommerce_product_loop_end();
+            if ( wc_get_loop_prop( 'total' ) ) {
+              while ( have_posts() ) {
+                the_post();
 
-        /**
-         * Hook: woocommerce_after_shop_loop.
-         *
-         * @hooked woocommerce_pagination - 10
-         */
-        do_action( 'woocommerce_after_shop_loop' );
-      } else {
-        /**
-         * Hook: woocommerce_no_products_found.
-         *
-         * @hooked wc_no_products_found - 10
-         */
-        do_action( 'woocommerce_no_products_found' );
-      } ?>
-    
+                /**
+                 * Hook: woocommerce_shop_loop.
+                 */
+                do_action( 'woocommerce_shop_loop' );
+
+                wc_get_template_part( 'content', 'product' );
+              }
+            }
+
+            woocommerce_product_loop_end();
+
+            /**
+             * Hook: woocommerce_after_shop_loop.
+             *
+             * @hooked woocommerce_pagination - 10
+             */
+            do_action( 'woocommerce_after_shop_loop' );
+          } else {
+            /**
+             * Hook: woocommerce_no_products_found.
+             *
+             * @hooked wc_no_products_found - 10
+             */
+            do_action( 'woocommerce_no_products_found' );
+          } ?>
+
+        </div>
+      </div>
     </div>
 
     <!-- 

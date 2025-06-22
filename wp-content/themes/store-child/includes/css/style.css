@@ -1298,12 +1298,14 @@ iframe {
   justify-content: center;
 }
 
-/* Рубрики */
-.rubriki-page .grid-container {
+/* Страница с фильтром has filter */
+.has-filter .grid-container {
   display: grid;
   grid-template-columns: 306px 1fr;
   gap: 24px;
 }
+
+/* Рубрики */
 .rubriki-page .products {
   display: grid;
   gap: 20px;
@@ -1362,6 +1364,29 @@ iframe {
   font-family: 'Roboto-light';  
   font-size: 20px;
   color: var(--text-color);
+}
+.rubriki-page .products .products-item__second-title {
+  margin: 0 0 75px 0;
+  font-family: 'Roboto-light';  
+  font-size: 20px;
+  line-height: 1.1;
+}
+.rubriki-page .products .price {
+  margin: 0 0 20px 0;
+  font-family: 'Roboto-SemiBold';
+  font-size: 24px;
+}
+.rubriki-page .products .button {
+  display: flex;
+  width: 100%;
+  height: 68px;
+  border: 1px solid var(--darkblue-color);
+  border-radius: 34px;
+  font-family: inherit;
+  font-size: 20px;
+  color: var(--text-color);
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -1469,6 +1494,78 @@ iframe {
 }
 .filter .clear-btn:hover .clear-btn__svg path {
   stroke: var(--darkblue-color);
+}
+
+/* Субстанции substanczii */
+.substanczii-page .substanczii-btn {
+  display: flex;
+  width: 307px;
+  height: 68px;
+  border: none;
+  border-radius: 34px;
+  background-color: var(--darkblue-color);
+  font-size: 24px;
+  color: var(--nero-color);
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Filter buttons alphabet */
+.filter-buttons-alphabet {
+  margin: 0 0 80px 0;
+}
+.filter-buttons-alphabet .filter-but {
+  margin: 50px 0;
+  padding: 20px;
+  border: 2px solid var(--voodoo-color);
+  border-radius: 12px;
+}
+/*
+.filter-buttons-alphabet .eng-letters {
+  display: grid;
+  grid-template-columns: repeat(27, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.filter-buttons-alphabet .ru-letters {
+  display: grid;
+  grid-template-columns: repeat(28, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 10px;
+}
+*/
+.filter-buttons-alphabet .eng-letters,
+.filter-buttons-alphabet .ru-letters {
+  display: flex;
+  gap: 0 5px;
+  justify-content: space-between;
+}
+.filter-buttons-alphabet .eng-letters {
+  margin-bottom: 20px;
+}
+.filter-buttons-alphabet .filtered-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #C2C8D0;
+  border-radius: 25px;
+  background-color: var(--nero-color);
+  font-family: 'Roboto-light';
+  font-size: 16px;
+  color: #7C8B8D;
+  transition: border .2s, color .2s;
+}
+.filter-buttons-alphabet .filtered-button-all {
+  width: auto;
+  padding: 0 14px;
+}
+.filter-buttons-alphabet .filtered-button:hover,
+.filter-buttons-alphabet .filtered-button.active {
+  border: 1px solid var(--darkblue-color);
+  color: var(--darkblue-color);
 }
 
 
@@ -1607,11 +1704,11 @@ iframe {
 /* products card ul.products */
 ul.products {
   display: grid;
-  margin: 20px 0;
+  margin: 0;
   padding: 0;
   list-style: none;
   gap: 40px 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 ul.products li.product {
   position: relative;

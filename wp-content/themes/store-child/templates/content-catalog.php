@@ -22,7 +22,9 @@
 
   <div class="catalog-page">
     <div class="catalog-section">
-      <div class="catalog-section-title">Каталог</div>
+      <div class="container">
+        <div class="catalog-section-title">Каталог</div>
+      </div>
       <div class="catalog-tabs">
         <div class="catalog-tabs-contents">
           <div class="container">
