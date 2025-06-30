@@ -782,6 +782,7 @@ function rk_remove_product_tabs( $tabs ) {
 	return $tabs;
 }
 
+/*
 add_filter( 'woocommerce_product_tabs', 'ql_reorder_product_tabs', 98 );
 
 function ql_reorder_product_tabs( $tabs ) {
@@ -873,6 +874,7 @@ function rk_new_product_tab_6( $tabs ) {
 function rk_new_tab_content_6($tab_name, $tab) {
     echo $tab['content'];
 }
+*/
 
 add_action( 'woocommerce_before_quantity_input_field', 'truemisha_quantity_plus', 25 );
 add_action( 'woocommerce_after_quantity_input_field', 'truemisha_quantity_minus', 25 );
@@ -1002,16 +1004,28 @@ function wc_products_from_cat_dropdown( $atts ) {
     return ob_get_clean();
 }
 
+
+// Изменение текста related products
 function change_relatedproducts_text($new_text, $related_text, $source) {
     if ($related_text === 'Related products' && $source === 'woocommerce') {
-        $new_text = esc_html__('Дополнительные препараты', $source);
+        $new_text = esc_html__('Также рекомендуем', $source);
     }
     return $new_text;
 }
 add_filter('gettext', 'change_relatedproducts_text', 10, 3);
 
 
+// Вывод товаров в карточке товара Также рекомендуем related products limit
+function jk_related_products_args( $args ) {
+    $args['posts_per_page'] = 4; // 4 related products
+    $args['columns'] = 1; // arranged in 1 columns
+    return $args;
+}
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
+
+
 // AJAX получить специалистов по городу на странице Специалисты
+/*
 add_action( 'wp_ajax_get_specialists', 'get_specialists_from_city' ); // хук wp_ajax
 add_action( 'wp_ajax_nopriv_get_specialists', 'get_specialists_from_city' ); // хук wp_ajax для незалогиненных пользователей
 
@@ -1052,7 +1066,7 @@ function get_specialists_from_city() {
     
     wp_die(); // выход нужен для того, чтобы в ответе не было ничего лишнего (0), только то что возвращает функция
 }
-
+*/
 
 add_action('wp_ajax_start_payment', 'start_payment');
 add_action('wp_ajax_nopriv_start_payment', 'start_payment');
@@ -2089,16 +2103,16 @@ add_action( 'woocommerce_after_single_product_summary', 'product_summary', 5);
 add_filter( 'woocommerce_terms_is_checked_default', '__return_true' );
 
 
-// Изменение порядка
+// Изменение порядка в карточке товара
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
-remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 ); // Удаление
 
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10 );
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 20 );
-add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 40 );
-add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 30 );
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+// add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 30 );
 
 
 // Добавление ссылки в письмо при оформлении заказа 
@@ -2277,3 +2291,13 @@ function calc_discount_total(WC_Cart $cart) {
 
 add_action('woocommerce_cart_calculate_fees' , 'calc_discount_total');
 
+// change woocommerce thumbnail image size
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'override_woocommerce_image_size_gallery_thumbnail' );
+function override_woocommerce_image_size_gallery_thumbnail( $size ) {
+    // Gallery thumbnails: proportional, max width 200px
+    return array(
+        'width'  => 300,
+        'height' => 300,
+        'crop'   => 0,
+    );
+}

@@ -32,7 +32,6 @@ get_header( 'shop' ); ?>
   ?>
 
 <div class="single-product">
-  <div class="catalog-section-title">Каталог</div>
 
   <div class="single-product-content">
     <div class="container">
