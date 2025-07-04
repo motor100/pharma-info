@@ -46,7 +46,7 @@
                 <img src="/wp-content/themes/store-child/includes/images/svg/catalog-rectangle.svg" class="catalog-btn__image" alt="">
                 <span class="catalog-btn__text">Каталог</span>
               </a>
-              <a href="/expert-system" class="select-salt-btn header-content-btn">
+              <a href="/lekarstva#personal-order-section" class="select-salt-btn header-content-btn">
                 <img src="/wp-content/themes/store-child/includes/images/svg/notepad.svg" class="catalog-btn__image" alt="">
                 <span class="catalog-btn__text">Рецепт онлaйн</span>
               </a>
@@ -94,22 +94,22 @@
                   <a href="/lekarstva">Лекарства</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="/lekarstva#">Добавки</a>
+                  <a href="#">Добавки</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="/lekarstva#">Натуропатия</a>
+                  <a href="#">Натуропатия</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="/lekarstva#">Наружные средства</a>
+                  <a href="#">Наружные средства</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="/lekarstva#">Для животных</a>
+                  <a href="#">Для животных</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="/lekarstva#">NaturaProf</a>
+                  <a href="#">NaturaProf</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="/lekarstva#">Ресурсы</a>
+                  <a href="#">Ресурсы</a>
                 </li>
               </ul>
             </div>

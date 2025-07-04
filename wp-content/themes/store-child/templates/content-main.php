@@ -3,14 +3,14 @@
     <div class="main-section-frame">
       <div class="main-title">Портал персонализированной медицины</div>
       <div class="main-buttons">
-        <div class="order-online-btn primary-btn">
+        <a href="/lekarstva#personal-order-section" class="order-online-btn primary-btn">
           <img src="/wp-content/themes/store-child/includes/images/svg/notepad-light.svg" class="order-online-btn__image" alt="">
           <span class="order-online-btn__text">Закажи рецепт онлайн</span>
-        </div>
-        <div class="video-about-us-btn">
+        </a>
+        <a href="#video-section" class="video-about-us-btn">
           <img src="/wp-content/themes/store-child/includes/images/svg/play-circle.svg" class="video-about-us-btn__image" alt="">
           <span class="video-about-us-btn__text">Видео о нас</span>
-        </div>
+        </a>
       </div>
       <div class="main-advantages">
         <div class="main-advantages-item">
@@ -33,7 +33,7 @@
   </div>
 </div>
 
-<div class="category-section">
+<div class="category-section section">
   <div class="container">
     <div class="flex-container">
       <div class="category-item">
@@ -41,24 +41,84 @@
         <div class="category-item__image">
           <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
         </div>
+        <a href="#" class="full-link"></a>
       </div>
       <div class="category-item">
         <div class="category-item__title">Соли Шюсслера<br>13-27</div>
         <div class="category-item__image">
           <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
         </div>
+        <a href="#" class="full-link"></a>
       </div>
       <div class="category-item">
         <div class="category-item__title">Соли Шюсслера<br>13-27</div>
         <div class="category-item__image">
           <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
         </div>
+        <a href="#" class="full-link"></a>
       </div>
       <div class="category-item">
         <div class="category-item__title">Соли Шюсслера<br>13-27</div>
         <div class="category-item__image">
           <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
         </div>
+        <a href="#" class="full-link"></a>
+      </div>
+      <div class="category-item">
+        <div class="category-item__title">Соли Шюсслера<br>13-27</div>
+        <div class="category-item__image">
+          <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
+        </div>
+        <a href="#" class="full-link"></a>
+      </div>
+      <div class="category-item">
+        <div class="category-item__title">Соли Шюсслера<br>13-27</div>
+        <div class="category-item__image">
+          <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
+        </div>
+        <a href="#" class="full-link"></a>
+      </div>
+      <div class="category-item">
+        <div class="category-item__title">Соли Шюсслера<br>13-27</div>
+        <div class="category-item__image">
+          <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
+        </div>
+        <a href="#" class="full-link"></a>
+      </div>
+      <div class="category-item">
+        <div class="category-item__title">Соли Шюсслера<br>13-27</div>
+        <div class="category-item__image">
+          <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
+        </div>
+        <a href="#" class="full-link"></a>
+      </div>
+      <div class="category-item">
+        <div class="category-item__title">Соли Шюсслера<br>13-27</div>
+        <div class="category-item__image">
+          <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
+        </div>
+        <a href="#" class="full-link"></a>
+      </div>
+      <div class="category-item">
+        <div class="category-item__title">Соли Шюсслера<br>13-27</div>
+        <div class="category-item__image">
+          <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
+        </div>
+        <a href="#" class="full-link"></a>
+      </div>
+      <div class="category-item">
+        <div class="category-item__title">Соли Шюсслера<br>13-27</div>
+        <div class="category-item__image">
+          <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
+        </div>
+        <a href="#" class="full-link"></a>
+      </div>
+      <div class="category-item">
+        <div class="category-item__title">Соли Шюсслера<br>13-27</div>
+        <div class="category-item__image">
+          <img src="/wp-content/themes/store-child/includes/images/temp-salts.png" alt="">
+        </div>
+        <a href="#" class="full-link"></a>
       </div>
     </div>
   </div>
@@ -82,7 +142,7 @@
   </div>
 </div>
 
-<div class="video-section section">
+<div id="video-section" class="video-section section">
   <div class="container">
     <div class="video">
       <video controls poster="/wp-content/themes/store-child/includes/video/video2465178870-cover.jpg">

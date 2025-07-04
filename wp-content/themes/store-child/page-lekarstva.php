@@ -21,10 +21,10 @@
         </div>
         <div class="description">
           <div class="description-title">Закажите Свой рецепт Онлайн</div>
-          <div class="order-online-btn primary-btn">
+          <a href="#personal-order-section" class="order-online-btn primary-btn">
             <img src="/wp-content/themes/store-child/includes/images/svg/notepad-light.svg" class="order-online-btn__image" alt="">
             <span class="order-online-btn__text">Закажи рецепт онлайн</span>
-          </div>
+          </a>
           <div class="main-advantages">
             <div class="main-advantages-item">
               <img src="/wp-content/themes/store-child/includes/images/svg/advantages-check.svg" class="main-advantages-item__image" alt="">
@@ -55,7 +55,7 @@
     </div>
   </div>
 
-  <div class="personal-order-section section">
+  <div id="personal-order-section" class="personal-order-section section">
     <div class="container">
       <div class="form-wrapper">
         <div class="form-title">Заказ по вашему персональному рецепту</div>
@@ -81,7 +81,7 @@
     <div class="container">
       <div class="flex-container">
         <div class="vnutriaptechnye-propisi-title">Внутриаптечные прописи</div>
-        <div class="catalog-btn">Перейти в каталог</div>
+        <a href="/catalog" class="catalog-btn">Перейти в каталог</a>
       </div>
     </div>
   </div>

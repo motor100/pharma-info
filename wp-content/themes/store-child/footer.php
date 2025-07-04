@@ -194,11 +194,20 @@
         <a href="/soglasie-posetitelya-sajta-na-obrabotku-personalnyh-dannyh" class="agreement footer-pa">Согласие на обработку персональных данных</a>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="copyright">© <?php echo date("Y"); ?> Все права защищены и принадлежат доктору Трушкиной И.В.</div>
-      <div class="copyright">Копирование материалов сайта без письменного разрешения запрещено</div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <div class="copyright">© <?php echo date("Y"); ?> Все права защищены и принадлежат доктору Трушкиной И.В.</div>
+        <div class="copyright">Копирование материалов сайта без письменного разрешения запрещено</div>
+      </div>
+      <div class="footer-developers">
+        <div class="author">
+          <a href="https://nhfuture.ru/" target="_blank">Дизайн Andrewwebnh</a>
+        </div>
+        <div class="author">
+          <a href="https://mybutton.ru/" target="_blank">Поддержка Button</a>
+        </div>
+      </div>
     </div>
-
   </div>
 
 </footer>

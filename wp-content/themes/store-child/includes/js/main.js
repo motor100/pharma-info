@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
   checkCookies();
 
 
-  // AJAX фильтр товаров из подкатегорий на странице категории. На всех категориях кроме term-id=18 (Гомеопатические монопрепараты)
+  // AJAX фильтр товаров из подкатегорий на странице категории. На всех категориях кроме Гомеопатия term-id=438
   const filterBtns = document.querySelectorAll('.filter-btn');
 
   filterBtns.forEach((item) => {
@@ -244,6 +244,49 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(error);
       })
     }
+  });
+
+  // AJAX фильтр товаров в категории Гомеопатия term-id=438
+  const filteredButtons = document.querySelectorAll('.js-filtered-button');
+
+  filteredButtons.forEach((item) => {
+    item.onclick = function() {
+
+      // удаление active у всех кнопок
+      for (var i = 0; i < filteredButtons.length; i++) {
+        filteredButtons[i].classList.remove('active');
+      }
+
+      // добавление active у текущей кнопки
+      item.classList.add('active');
+
+      // Отключение плагина Load more products
+      // Со включенным плагином подгружаются другие товары кроме отфильтрованных
+      the_lmp_js_data = '';
+
+      const products = document.querySelector('ul.products');
+      
+      // лоадер. селекторы от плагина load more products
+      products.innerHTML = '<span class="lmp_products_loading"><i class="fa fa-spinner lmp_rotate"></i></span>';
+
+      fetch(Myscrt.ajaxurl, {
+        method: 'POST',
+        headers: {'Content-Type':'application/x-www-form-urlencoded'},
+        cache: 'no-cache',
+        body: 'action=get_products_term_gomeopatiya&letter=' + item.value,
+      })
+      // вставка в ul.products
+      .then((response) => response.text())
+      .then((html) => {
+        // если пришел html, то вставляю, иначе "Товаров не найдено"
+        products.innerHTML = (html ? html : '<div class="no-found-product-text">Товаров не найдено</div>');
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+
+    }
+
   });
 
 
@@ -326,6 +369,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+
+
 
 
   // AJAX обновление количество товара у значка корзины в хэдере и нижнем мобильном меню add to cart
