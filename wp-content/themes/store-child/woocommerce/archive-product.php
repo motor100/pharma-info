@@ -33,7 +33,13 @@ if (is_shop()) {
   get_template_part( 'templates/content', 'shop' );
 } else { ?>
 
-  <div class="archive-product single__prod has-filter">
+  <?php $cat = get_queried_object(); ?>
+  <?php if ($cat->term_id == 437): // внутриаптечные прописи ?>
+    <div class="rubriki-page custom-page has-filter">
+  <?php else : ?>
+    <div class="archive-product single__prod has-filter">
+  <?php endif; ?>
+  
     <div class="container">
       <div class="catalog-inside">
         <div class="catalog-section-title"><?php echo woocommerce_page_title(); ?></div>
@@ -76,7 +82,6 @@ if (is_shop()) {
 
       <?php //} ?>
 
-      <?php $cat = get_queried_object(); ?>
       <?php if ($cat->term_id == 438): // Гомеопатия ?>
 
         <div class="filter-buttons-alphabet">
@@ -205,6 +210,133 @@ if (is_shop()) {
         </div>
         <div class="content">
 
+          <?php if ($cat->term_id == 437): // Внутриаптечные прописи ?>
+
+            <div class="products">
+              <div class="products-item">
+                <div class="image-wrapper">
+                  <div class="products-item__image">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
+                  </div>
+                  <div class="products-item__icon">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="products-item__title">Заголовок рубрики</div>
+                <ul class="list">
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                </ul>
+                <div class="see-more-btn-wrapper">
+                  <a href="#" class="see-more-btn">Подробнее</a>
+                </div>
+              </div>
+              <div class="products-item">
+                <div class="image-wrapper">
+                  <div class="products-item__image">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
+                  </div>
+                  <div class="products-item__icon">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="products-item__title">Заголовок рубрики</div>
+                <ul class="list">
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                </ul>
+                <div class="see-more-btn-wrapper">
+                  <a href="#" class="see-more-btn">Подробнее</a>
+                </div>
+              </div>
+              <div class="products-item">
+                <div class="image-wrapper">
+                  <div class="products-item__image">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
+                  </div>
+                  <div class="products-item__icon">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="products-item__title">Заголовок рубрики</div>
+                <ul class="list">
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                </ul>
+                <div class="see-more-btn-wrapper">
+                  <a href="#" class="see-more-btn">Подробнее</a>
+                </div>
+              </div>
+              <div class="products-item">
+                <div class="image-wrapper">
+                  <div class="products-item__image">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
+                  </div>
+                  <div class="products-item__icon">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="products-item__title">Заголовок рубрики</div>
+                <ul class="list">
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                </ul>
+                <div class="see-more-btn-wrapper">
+                  <a href="#" class="see-more-btn">Подробнее</a>
+                </div>
+              </div>
+              <div class="products-item">
+                <div class="image-wrapper">
+                  <div class="products-item__image">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
+                  </div>
+                  <div class="products-item__icon">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="products-item__title">Заголовок рубрики</div>
+                <ul class="list">
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                </ul>
+                <div class="see-more-btn-wrapper">
+                  <a href="#" class="see-more-btn">Подробнее</a>
+                </div>
+              </div>
+              <div class="products-item">
+                <div class="image-wrapper">
+                  <div class="products-item__image">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
+                  </div>
+                  <div class="products-item__icon">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="products-item__title">Заголовок рубрики</div>
+                <ul class="list">
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                </ul>
+                <div class="see-more-btn-wrapper">
+                  <a href="#" class="see-more-btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+          <?php else : ?>
+
           <?php
           if ( woocommerce_product_loop() ) {
 
@@ -249,21 +381,11 @@ if (is_shop()) {
             do_action( 'woocommerce_no_products_found' );
           } ?>
 
-        </div>
-      </div>
-    </div>
+        <?php endif; ?>
 
-    <!-- 
-    <div id="to-top" class="to-top hidden-mobile">
-      <div class="container">
-        <div class="circle">
-          <div class="image">
-            <img src="<?php //echo get_stylesheet_directory_uri(); ?>/includes/images/svg/arrow-top.svg" class="arrow-top" alt="">
-          </div>
         </div>
       </div>
     </div>
-     -->
 
   </div>
 <?php } ?>
