@@ -109,7 +109,24 @@
                   <a href="#">NaturaProf</a>
                 </li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="#">Ресурсы</a>
+                  <a href="/resursy">Ресурсы</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item">
+                      <a href="/o-nas#mission">Миссия</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="/o-nas#for-whom">Для кого</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="/o-nas#how-it-works">Как это работает</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="/o-nas#how-to-place-order">Как сделать заказ</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="/o-nas#faq">Вопрос-ответ</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>

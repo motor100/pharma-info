@@ -1,6 +1,7 @@
 <div class="checkout-page custom-page custom-radio-page">
-
-  <div class="catalog-section-title">Оформление заказа</div>
+  <div class="container">
+    <div class="catalog-section-title">Оформление заказа</div>
+  </div>
 
   <div class="checkout-content">
     <div class="container">
