@@ -45,43 +45,6 @@ if (is_shop()) {
         <div class="catalog-section-title"><?php echo woocommerce_page_title(); ?></div>
       </div>
 
-      <?php
-      /*
-      $parentid = get_queried_object_id(); // id родительской категории
-      $term_childs = get_term_children( $parentid, 'product_cat' ); // получить массив с id вложенных подкатегорий
-      */
-      ?>
-
-      <?php //if ($term_childs) {  ?>
-
-        <?php
-        // Вывод подкатегорий
-        /*
-        $args = array(
-          'parent' => $parentid, // id родительской категории
-          'hide_empty' => true, // скрывать категории без товаров
-          'order' => 'ASC'
-        );
-        */
-        ?>
-
-        <?php //$subcats = get_terms( 'product_cat', $args ); ?>
-
-        <!-- 
-        <div class="subcategories">
-          <div class="subcategories-item" onclick="location.reload()">
-            <div class="subcategories-item__title">Все</div>
-          </div>
-          <?php //foreach($subcats as $subcat) { ?>
-            <div class="subcategories-item filter-btn" data-term-id="<?php //echo $subcat->term_id; ?>">
-              <div class="subcategories-item__title"><?php //echo $subcat->name; ?></div>
-            </div>
-          <?php //} ?>
-        </div>
-         -->
-
-      <?php //} ?>
-
       <?php if ($cat->term_id == 438): // Гомеопатия ?>
 
         <div class="filter-buttons-alphabet">
@@ -150,7 +113,9 @@ if (is_shop()) {
 
       <?php endif; ?>
 
+      <?php if($cat->term_id != 444) : // Обучение ?>
       <div class="grid-container">
+
         <div class="filter">
           <form class="filter" action="" method="get">
             <div class="checkbox-group">
@@ -208,9 +173,11 @@ if (is_shop()) {
             <a href="#" class="secondary-btn clear-btn">Очистить</a>
           </form>
         </div>
+      <?php endif; ?>
+
         <div class="content">
 
-          <?php if ($cat->term_id == 437): // Внутриаптечные прописи ?>
+          <?php if ($cat->term_id == 437): // Внутриаптечные прописи ?> 
 
             <div class="products">
               <div class="products-item">
@@ -384,7 +351,9 @@ if (is_shop()) {
         <?php endif; ?>
 
         </div>
-      </div>
+      <?php if($cat->term_id != 444) : // Обучение ?>
+        </div>
+      <?php endif; ?>
     </div>
 
   </div>
