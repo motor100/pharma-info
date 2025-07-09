@@ -1905,52 +1905,44 @@ function questionnaire_rezult( WP_REST_Request $request ) {
 
 
 // Добавление нового элемента меню для вывода результатов анкеты
-function view_questionnaire_rezults() {
+/*
+function view_personal_orders() {
 
     add_menu_page(
-        'Результаты анкеты', // тайтл страницы
-        'Анкета', // текст ссылки в меню
+        'Персональный рецепт', // тайтл страницы
+        'Рецепт', // текст ссылки в меню
         'manage_options', // права пользователя, необходимые для доступа к странице
-        'questionnaire-rezults', // ярлык страницы
-        'view_questionnaire_rezults_callback', // функция, которая выводит содержимое страницы
+        'personal-orders', // ярлык страницы
+        'personal_orders_callback', // функция, которая выводит содержимое страницы
         'dashicons-images-alt2', // иконка, в данном случае из Dashicons
         98 // позиция в меню
     );
 }
 
-add_action( 'admin_menu', 'view_questionnaire_rezults', 25 );
+add_action( 'admin_menu', 'view_personal_orders', 25 );
+*/
 
-
-// Вывод html в админке 
-function view_questionnaire_rezults_callback() {
-    // Если есть параметр id, то показываю страницу анкеты по id
-    if (!empty($_REQUEST['id']) && $_REQUEST['id']!='-1') {
-        single_questionnaire_rezults_html($_REQUEST['id']);
-    } else { // Иначе показываю список последних 50 анкет
-        all_questionnaire_rezults_html();
-    }
-}
-
-
-// Функция для вывода html и показа последних 50 анкет в админке 
-function all_questionnaire_rezults_html() {
+// Функция для вывода html и показа последних 50 рецептов в админке
+/*
+function personal_orders_callback() {
     global $wpdb;
 
-    $table_name = $wpdb->prefix . 'questionnaire_rezults';
+    $table_name = $wpdb->prefix . 'personal_orders';
 
     // Выполняем запрос для получения данных
     $results = $wpdb->get_results("SELECT * FROM $table_name ORDER BY id DESC LIMIT 50", ARRAY_A);
 
     echo '<div class="wrap"><h2>' . get_admin_page_title() . '</h2>';
     echo '<table class="wp-list-table widefat fixed striped table-view-list">';
-    echo '<thead><tr><td width="80px">№</td><td>Заголовок</td><td>Дата</td></tr></thead>';
+    echo '<thead><tr><td width="80px">№</td><td>Имя</td><td>Файл</td></tr></thead>';
     echo '<tbody>';
 
     foreach($results as $value) {
         echo '<tr>';
         echo '<td>' . $value['order_id'] . '</td>';
         echo '<td class="title column-title has-row-actions column-primary page-title">' ;
-        echo '<strong><a href="' . get_admin_url(null, 'admin.php?page=questionnaire-rezults') . '&id=' . $value['id'] . '" class="row-title">' . $value['firstname'] . ' ' . $value['lastname'] . '</a></strong>';
+        // echo '<strong><a href="#" class="row-title">' . $value['firstname'] . ' ' . $value['lastname'] . '</a></strong>';
+        echo '<strong><a href="#" class="row-title">Имя111</a></strong>';
         echo '</td>';
         $created_at = strtotime($value['created_at']);
         echo '<td>' . date("d-m-Y", $created_at) . '</td>';
@@ -1961,69 +1953,7 @@ function all_questionnaire_rezults_html() {
     echo '</table>';
     echo '</div>';
 }
-
-// Функция для вывода html и показа одной анкеты по id
-function single_questionnaire_rezults_html($id) {
-    global $wpdb;
-
-    $table_name = $wpdb->prefix . 'questionnaire_rezults';
-
-    // Выполняем запрос для получения данных
-    $results = $wpdb->get_row($wpdb->prepare("SELECT * FROM $table_name WHERE id = %s", $id), ARRAY_A);
-
-    // Преобразование массива с результатами
-    $results_array = json_decode($results['rezults']);
-    $results_html = '';
-    $results_html .= '<p><b>Ваш результат</b></p>';
-    foreach($results_array as $value) {
-        $tmp = '<p>';
-        $tmp .= 'Соль: ' . $value->salt . '<br>';
-        $tmp .= $value->description;
-        $tmp .= '</p>';
-        $results_html .= $tmp;
-    }
-
-    $results_html .= '<p><b>Как принимать</b></p>';
-    foreach($results_array as $value) {
-        $tmp = '<p>';
-        $tmp .= $value->prescription_14;
-        $tmp .= '</p>';
-        $results_html .= $tmp;
-    }
-
-    // Преобразование массива с отмеченными чекбоксами
-    $checkboxes_array = json_decode($results['checkboxes']);
-    $checkboxes_html = '';
-    foreach($checkboxes_array as $value) {
-        $tmp = '<h4>' . $value->title . '</h4>';
-        foreach($value->sections as $section) {
-            $tmp .= '<p>' . $section->title . '</p>';
-            $tmp .= '<ol>';
-            foreach($section->checked as $checbox) {
-                $tmp .= '<li>' . $checbox . '</li>';
-            }
-            $tmp .= '</ol>';
-        }
-        $checkboxes_html .= $tmp;
-    }
-
-    $order = wc_get_order( $results['order_id'] );
-
-    echo '<div class="wrap"><h2>Анкета</h2>';
-    echo '<p>Номер заказа ' . $results['order_id'] . '</p>';
-    // Добавление нового номера заказа
-    // Если нового номера заказа нет, то метод $order->get_order_number() вернет id заказа по умолчанию
-    echo '<p>Новый номер заказа ' . $order->get_order_number() . '</p>';
-    echo '<p>Имя ' . $results['firstname'] . '</p>';
-    echo '<p>Отчество ' . $results['secondname'] . '</p>';
-    echo '<p>Фамилия ' . $results['lastname'] . '</p>';
-    echo '<p>Email ' . $results['email'] . '</p>';
-    echo '<p>Телефон ' . $results['phone'] . '</p>';
-    $created_at = strtotime($results['created_at']);
-    echo '<p>Дата ' . date("d-m-Y", $created_at) . '</p>';
-    echo $results_html;
-    echo $checkboxes_html;    
-}
+*/
 
 
 // Изменение заголовка на странице оформления заказа

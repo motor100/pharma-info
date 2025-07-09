@@ -60,18 +60,31 @@
       <div class="form-wrapper">
         <div class="form-title">Заказ по вашему персональному рецепту</div>
         <div class="form-description">Вы можете прикрепить фото вашего рецепта</div>
-        <form class="form" action="">
-          <input type="text" class="input-field js-required-phone" name="name" min="3" max="100" required placeholder="Ваше имя">
-          <input type="text" class="input-field js-required-phone js-input-phone-mask" name="phone" required placeholder="+7 (000) 000 00 00">
-          <div class="form-group">
-            <input type="file" name="input-photo-file" id="input-photo-file" class="inputfile" accept="image/jpeg,image/png" multiple>
-            <label for="input-photo-file" class="custom-inputfile-label">
-              <span class="custom-inputfile-label-text">Прикрепить фото</span>
-              <img src="/wp-content/themes/store-child/includes/images/paperclip.png" class="paperclip" alt="">
-            </label>
-            <!-- <span class="namefile photo-file-text">Файлы не выбраны</span> -->
+        <form id="personal-order-form" class="form" method="post" enctype="multipart/form-data">
+          <div class="grid-container">
+            <input type="text" class="input-field js-required-name" name="name" min="3" max="50" required placeholder="Ваше имя">
+            <input type="text" class="input-field js-required-phone js-input-phone-mask" name="phone" required placeholder="+7 (000) 000 00 00">
+            <div class="form-group">
+              <input type="file" name="file" id="input-file" class="inputfile js-required-file" accept="image/jpeg,image/png,application/pdf">
+              <label for="input-file" class="custom-inputfile-label">
+                <span id="custom-inputfile-label-text" class="custom-inputfile-label-text">Прикрепить фото</span>
+                <img src="/wp-content/themes/store-child/includes/images/paperclip.png" class="paperclip" alt="">
+              </label>
+            </div>
+            <button type="button" id="personal-order-submit-btn" class="submit-btn primary-btn">Отправить</button>
           </div>
-          <button type="button" class="submit-btn primary-btn">Отправить</button>
+
+          <div class="agreement-text">
+            <input type="checkbox" name="checkbox-read" class="custom-checkbox js-required-checkbox" id="checkbox-read-callback1" checked required onchange="document.getElementById('callback-top-submit-btn').disabled = !this.checked;">
+            <label for="checkbox-read-callback1" class="custom-checkbox-label"></label>
+            <span class="checkbox-text">Я согласен (-на) с <a href="/politika-v-otnoshenii-obrabotki-personalnyh-dannyh/" class="privacy-policy-link" target="_blank">политикой конфиденциальности</a></span>
+          </div>
+          <div class="agreement-text">
+            <input type="checkbox" name="checkbox-agree" class="custom-checkbox js-required-checkbox" id="checkbox-agree-callback1" checked required onchange="document.getElementById('callback-top-submit-btn').disabled = !this.checked;">
+            <label for="checkbox-agree-callback1" class="custom-checkbox-label"></label>
+            <span class="checkbox-text">Я согласен (-на) с <a href="/soglasie-posetitelya-sajta-na-obrabotku-personalnyh-dannyh/" class="agreement-link" target="_blank">обработку персональных данных</a></span>
+          </div>
+
         </form>
       </div>
     </div>

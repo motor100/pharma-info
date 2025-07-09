@@ -371,6 +371,92 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+  // AJAX Отправка формы Персональный рецепт на странице Лекарства
+  const lekarstvaPage = document.querySelector('.lekarstva-page');
+
+  if (lekarstvaPage) {
+
+    const personalOrderForm = document.querySelector('#personal-order-form');
+    const personalOrderSubmitBtn = document.querySelector('#personal-order-submit-btn');
+    const inputFile = document.querySelector('#input-file');
+
+    function ajaxCallback(form) {
+
+      const inputs = form.querySelectorAll('.input-field');
+      let arr = [];
+
+      const inputName = form.querySelector('.js-required-name');
+      if (inputName.value.length < 3 || inputName.value.length > 50) {
+        inputName.classList.add('required');
+        arr.push(false);
+      } else {
+        inputName.classList.remove('required');
+      }
+
+      const inputPhone = form.querySelector('.js-required-phone');
+      if (inputPhone.value.length != 18) {
+        inputPhone.classList.add('required');
+        arr.push(false);
+      } else {
+        inputPhone.classList.remove('required');
+      }
+
+      const inputFile = form.querySelector('.js-required-file');
+      if (inputFile.value == '') {
+        inputFile.classList.add('required');
+        arr.push(false);
+      }
+
+      const inputCheckboxes = form.querySelectorAll('.js-required-checkbox');
+      inputCheckboxes.forEach((item) => {
+        if (!item.checked) {
+          arr.push(false);
+        }
+      });
+
+      if (arr.length == 0) {
+        for (let i = 0; i < inputs.length; i++) {
+          inputs[i].classList.remove('required');
+        }
+        console.log(new FormData(form));
+        fetch('/wp-content/themes/store-child/phpmailer/sendform.php', {
+          method: 'POST',
+          cache: 'no-cache',
+          body: new FormData(form)
+        })
+        .then((response) => response.text())
+        .then((text) => {
+          if(text) {
+            console.log(text);
+          } else {
+            alert("Спасибо. Мы свяжемся с вами.");
+            form.reset();
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        
+      }
+
+      return false;
+    }
+
+    inputFile.onchange = function() {
+      if(this.files[0].size > 2097152) {
+        alert("Ошибка. Загрузите файл не более 2МБ.");
+        this.value = "";
+      } else {
+        const customInputfileLabelText = document.querySelector('#custom-inputfile-label-text');
+        customInputfileLabelText.innerHTML = this.files[0].name;
+      }
+    };
+
+    personalOrderSubmitBtn.onclick = function() {
+      ajaxCallback(personalOrderForm);
+    }
+
+  }
 
 
 
