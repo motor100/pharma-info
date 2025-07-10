@@ -108,8 +108,10 @@
                 <li class="menu-item menu-item-has-children">
                   <a href="/naturaprof/">NaturaProf</a>
                 </li>
-                <li class="menu-item menu-item-has-children">
+                <!-- <li class="menu-item menu-item-has-children"> -->
+                <li class="menu-item">
                   <a href="/resursy">Ресурсы</a>
+                  <!-- 
                   <ul class="sub-menu">
                     <li class="sub-menu-item">
                       <a href="/o-nas#mission">Миссия</a>
@@ -127,6 +129,7 @@
                       <a href="/o-nas#faq">Вопрос-ответ</a>
                     </li>
                   </ul>
+                   -->
                 </li>
               </ul>
             </div>

@@ -272,7 +272,7 @@ add_action( 'save_post', 'home_page_slider_save_metabox', 10, 2 );
 
 
 /**
- * Вывод записей по буквам на странице Болезни от А до Я
+ * Вывод записей по буквам на странице Состояния от А до Я
  *
  * @param
  * @return string
@@ -282,7 +282,7 @@ function get_posts_per_letter() {
     $html = "";
 
     $query = new WP_Query(array(
-        'cat' => 425, // ID категории Болезни от А до Я
+        'cat' => 425, // ID категории Состояния от А до Я
         'orderby' => 'title', // Сортировка по названию 
         'order' => 'ASC', // Сортировка в алфавитном порядке
         'posts_per_page' => -1, // Вывод всех постов
@@ -324,7 +324,7 @@ function get_posts_per_letter() {
         $content = "Записей нет.";
     }
 
-  return $html;
+    return $html;
 }
 
 

@@ -16,12 +16,8 @@
       <div class="page-title"><?php the_title(); ?></div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-5 mx-auto">
-          <div class="single-image">
-            <?php the_post_thumbnail(''); ?>
-          </div>
-        </div>
+      <div class="single-image">
+        <?php the_post_thumbnail(''); ?>
       </div>
       <div class="single-content">
         <?php the_content(); ?>
