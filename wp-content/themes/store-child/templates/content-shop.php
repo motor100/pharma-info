@@ -1,6 +1,6 @@
 <div class="archive-product single__prod">
     <div class="catalog-inside">
-      <div class="catalog-section-title">Магазин</div>
+      <div class="section-title">Магазин</div>
     </div>
     
     <div class="container">

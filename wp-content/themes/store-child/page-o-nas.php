@@ -160,7 +160,7 @@
 
   <div class="tasks-section section">
     <div class="container">
-      <div class="tasks">
+      <div class="tasks pink-blur">
         <div class="section-title">Задачи</div>
         <div class="grid-container">
           <div class="tasks-list">

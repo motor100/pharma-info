@@ -105,7 +105,8 @@
                 <li class="menu-item menu-item-has-children">
                   <a href="#">Для животных</a>
                 </li>
-                <li class="menu-item menu-item-has-children">
+                <!-- <li class="menu-item menu-item-has-children"> -->
+                <li class="menu-item">
                   <a href="/naturaprof/">NaturaProf</a>
                 </li>
                 <!-- <li class="menu-item menu-item-has-children"> -->

@@ -42,7 +42,7 @@ if (is_shop()) {
   
     <div class="container">
       <div class="catalog-inside">
-        <div class="catalog-section-title"><?php echo woocommerce_page_title(); ?></div>
+        <div class="section-title"><?php echo woocommerce_page_title(); ?></div>
       </div>
 
       <?php if ($cat->term_id == 438): // Гомеопатия ?>

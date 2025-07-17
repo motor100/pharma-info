@@ -21,7 +21,7 @@
   <div class="catalog-page">
     <div class="catalog-section">
       <div class="container">
-        <div class="catalog-section-title">Каталог</div>
+        <div class="section-title">Каталог</div>
         <div class="cat-wrapper">
           <?php
           $args = array(
