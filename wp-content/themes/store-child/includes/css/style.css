@@ -1675,8 +1675,129 @@ iframe {
   height: 100%;
   object-fit: cover;
 }
-
-
+.naturaprof-page .professional-platform-section .platform-top {
+  margin: 0 0 20px 0;
+}
+.naturaprof-page .professional-platform-section .platform-top .flex-container,
+.naturaprof-page .professional-platform-section .platform-top .left {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.naturaprof-page .professional-platform-section .platform-top .left {
+  flex-direction: column;
+}
+.naturaprof-page .professional-platform-section .platform-top .left,
+.naturaprof-page .professional-platform-section .platform-top .right {
+  width: 100%;
+}
+.naturaprof-page .professional-platform-section .platform-top-item {
+  height: 100%;
+  padding: 40px;
+  border: 1px solid var(--text-color);
+  border-radius: 15px;
+}
+.naturaprof-page .professional-platform-section .platform-top .left-item__title {
+  margin: 0 0 16px 0;
+  font-family: 'Roboto-Medium';
+  font-size: 24px;
+  line-height: 1.1;
+}
+.naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item__title {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+  line-height: 1.1;
+}
+.naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item {
+  margin: 0 0 20px 0;
+  padding: 20px 40px;
+  border-radius: 15px;
+  background-color: #EFF6FF;
+}
+.naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item:last-child {
+  margin-bottom: 0;
+}
+.naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item__text {
+  font-size: 18px;
+  line-height: 1.2;
+}
+.naturaprof-page .digital-platform-section .for-whom-item {
+  font-size: 24px;
+  line-height: 1.2;
+}
+.naturaprof-page .digital-platform-section .o-nas-image {
+  height: 310px;
+}
+.naturaprof-page .naturaprof-items-section .naturaprof-item {
+  display: flex;
+  margin: 0 0 20px 0;
+  padding: 40px;
+  border: 1px solid var(--text-color);
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.naturaprof-page .naturaprof-items-section .naturaprof-item:last-child {
+  margin-bottom: 0;
+}
+.naturaprof-page .naturaprof-items-section .naturaprof-item__title {
+  margin-bottom: 0;
+}
+.naturaprof-page .naturaprof-items-section .naturaprof-item__btn {
+  display: flex;
+  width: 286px;
+  height: 66px;
+  border-radius: 33px;
+  background-color: var(--text-color);
+  font-family: 'Roboto-SemiBold';
+  font-size: 24px;
+  color: var(--nero-color);
+  align-items: center;
+  justify-content: center;
+}
+.naturaprof-page .white-label-section .white-label-frame {
+  padding: 40px;
+  border: 2px solid #1B4B23;
+  border-radius: 30px;
+}
+.naturaprof-page .white-label-section .flex-container {
+  display: flex;
+  gap: 90px;
+  justify-content: space-between;
+}
+.naturaprof-page .white-label-section .white-label-text {
+  width: 100%;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.naturaprof-page .white-label-section .white-label-image {
+  width: 100%;
+  height: 450px;
+}
+.naturaprof-page .white-label-section .white-label-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.naturaprof-page .white-label-section .form {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+.naturaprof-page .white-label-section .form .input-field {
+  display: block;
+  width: 100%;
+  height: 66px;
+  padding: 22px 30px;
+  border: 1px solid #D9D9D9;
+  border-radius: 33px;
+  font-family: inherit;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.naturaprof-page .white-label-section .submit-btn {
+  width: 100%;
+}
 
 
 /* Filter buttons alphabet */

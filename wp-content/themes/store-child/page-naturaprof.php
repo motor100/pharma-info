@@ -150,7 +150,108 @@
 
   <div class="professional-platform-section section">
     <div class="container">
-      
+      <div class="platform-top">
+        <div class="flex-container">
+          <div class="left">
+            <div class="left-item platform-top-item">
+              <div class="left-item__title">NaturaProf</div>
+              <div class="left-item__text">– проводник в мир персонализированной медицины</div>
+            </div>
+            <div class="left-item platform-top-item">
+              <div class="left-item__title">NaturaProf</div>
+              <div class="left-item__text">позволяет легко создать индивидуальные протоколы лечения и поддержания здоровья.</div>
+            </div>
+          </div>
+          <div class="right platform-top-item">
+            <p>NaturaProf — это платформа, позволяющая специалистам составлять персонализированные схемы длительного приема препаратов, натуропатии, нутрицевтиков, адаптированные к уникальным потребностям здоровья каждого пациента.</p>
+            <p>Благодаря сервису NaturaProf  практикующие врачи и специалисты помогающих профессий получают возможность использовать………, которые улучшают результаты лечения и поддержания здоровья и позволяют строить долгосрочные отношения пациент- специалист.</p>
+            <div class="start-btn primary-btn">Начать работу</div>
+          </div>
+        </div>
+      </div>
+      <div class="platform-bottom">
+        <div class="platform-bottom-item">
+          <div class="platform-bottom-item__title">1. Вводное тестирование</div>
+          <div class="platform-bottom-item__text">Пациенты проходят дистанционное тестирование для подбора индивидуальной программы на основе их профиля здоровья. Эти рекомендации отправляются специалисту для проверки и внесения корректировок.</div>
+        </div>
+        <div class="platform-bottom-item">
+          <div class="platform-bottom-item__title">2. Составление персональной схемы</div>
+          <div class="platform-bottom-item__text">Если Вы опытный специалист, Вы можете пропустить дистанционное тестирование и сразу выписать персональные рецепты на изготовление препаратов через наш сервис Прописи.</div>
+        </div>
+        <div class="platform-bottom-item">
+          <div class="platform-bottom-item__title">3. Здоровье по подписке</div>
+          <div class="platform-bottom-item__text">Пациент может оформить подписку для регулярного получения персональных препаратов по Вашим назначениям. Это позволяет достичь более стойких результатов и придерживаться назначений. В любое время Вы можете внести коррекции в персональный план.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="digital-platform-section for-whom-section section">
+    <div class="container">
+      <div class="grid-container4060">
+        <div class="left-40">
+          <div class="flex-container-column">
+            <div class="frame">
+              <div class="section-title">Благодаря цифровой платформе</div>
+              <div class="text20">нет необходимости личного визита в Аптеку с рецептом.</div>
+            </div>
+            <div class="o-nas-image">
+              <img src="/wp-content/themes/store-child/includes/images/o-nas-image3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="right-60">
+          <div class="for-whom-item">Все назначения в режиме реального времени отображается у провизора.</div>
+          <div class="for-whom-item">Опытные провизоры и клинические фармакологи проверяют каждый рецепт  на предмет дозировки, совместимости компонентов и лекарственного взаимодействия. Это позволяет избежать ошибок и повысить эффективность терапии.</div>
+          <div class="for-whom-item">Специалист может участвовать в оценке эффективности экстемпоральных препаратов, в том числе изготовленных по его авторским прописям.</div>
+          <div class="for-whom-item">Назначение  персональных препаратов, нутрицевтиков и добавок позволяют поднять профессиональный уровень специалиста  и сделать клинику лидером в области персонифицированного подхода.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="naturaprof-items-section section">
+    <div class="container">
+      <div class="naturaprof-item">
+        <div class="naturaprof-item__title section-title">Прописи</div>
+        <div class="naturaprof-item__btn">Узнать подробнее</div>
+      </div>
+      <div class="naturaprof-item">
+        <div class="naturaprof-item__title section-title">Обучающие материалы</div>
+        <div class="naturaprof-item__btn">Узнать подробнее</div>
+      </div>
+      <div class="naturaprof-item">
+        <div class="naturaprof-item__title section-title">Консультации</div>
+        <div class="naturaprof-item__btn">Узнать подробнее</div>
+      </div>
+      <div class="naturaprof-item">
+        <div class="naturaprof-item__title section-title">White lable</div>
+        <div class="naturaprof-item__btn">Узнать подробнее</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-label-section section">
+    <div class="container">
+      <div class="white-label-frame">
+        <div class="section-title">NaturaPharma как White Label</div>
+        <div class="flex-container">
+          <div class="white-label-text">
+            <p>Наш R&D центр по разработке экстемпоральных рецептур лекарств, добавок, натуропатии позволяет провести все необходимые процедуры для вывода на рынок Вашего персонального продукта: от помощи в разработке рецептуры и пробных партий, до регистрации товарного бренда.</p>
+            <p>Специалисты и компании могут выпускать свои добавки  и средства на нашей производственной площадке под собственным брендом. Мы расширяем портфели и увеличиваем доходы, удовлетворяя растущий спрос на персонализированные решения для здоровья.</p>
+            <p>Заполните форму и мы свяжимся с вами</p>
+          </div>
+          <div class="white-label-image">
+            <img src="/wp-content/themes/store-child/includes/images/who-works-with-us-doctor1.png" alt="">
+          </div>
+        </div>
+        <form class="form">
+          <input type="text" name="name" class="input-field" required placeholder="Ваше имя">
+          <input type="text" name="phone" class="input-field js-input-phone-mask" required placeholder="+7 (000) 000 00 00">
+          <input type="email" name="email" class="input-field" required placeholder="Ваше email">
+          <button type="button" class="submit-btn primary-btn">Отправить</button>
+        </form>
+      </div>
     </div>
   </div>
 
