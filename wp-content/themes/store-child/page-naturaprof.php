@@ -222,7 +222,7 @@
       </div>
       <div class="naturaprof-item">
         <div class="naturaprof-item__title section-title">Консультации</div>
-        <div class="naturaprof-item__btn">Узнать подробнее</div>
+        <a href="/konsultacii/" class="naturaprof-item__btn">Узнать подробнее</a>
       </div>
       <div class="naturaprof-item">
         <div class="naturaprof-item__title section-title">White lable</div>

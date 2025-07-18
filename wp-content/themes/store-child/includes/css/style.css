@@ -2492,9 +2492,6 @@ ul.products li.product .added_to_cart:hover {
 }
 
 /* sw page города страницы специалисты и где купить */
-.sw-page .cities {
-  margin: 0 0 40px 0;
-}
 .sw-page .cities .flex-container {
   display: flex;
   align-items: center;
@@ -2504,40 +2501,38 @@ ul.products li.product .added_to_cart:hover {
   display: block;
   width: max-content;
   margin: 5px;
-  padding: 10px 40px;
-  border: 1px solid var(--darkblue-color);
+  padding: 8px 20px;
+  border: 1px solid #EDF3FD;
   border-radius: 32px;
   background-color: var(--nero-color);
-  font-family: 'Roboto-light';
-  font-size: 20px;
-  color: var(--text-color);
+  font-size: 30px;
+  color: #607797;
   cursor: pointer;
-  transition: border .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
 }
 .sw-page .cities .cities-item.active,
 .sw-page .cities .cities-item:hover {
-  border: 1px solid var(--purple-color);
-  background-color: var(--purple-color);
-  color: var(--nero-color);
+  background-color: #EDF3FD;
+  color: var(--text-color);
 }
 
 /* specialisty page страница Специалисты */
 .specialisty-page .filter-by-doctors {
   margin: 0 0 30px 0;
 }
-.specialisty-page .specialists-item {
-  margin: 0 0 30px 0;
-  border: 1px solid var(--white-rock-color);
-  border-radius: 30px;
-  overflow: hidden;
+.specialisty-page .grid-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .specialisty-page .specialists-item .item-link {
   display: block;
 }
 .specialisty-page .specialists-item .specialists-item__image {
   position: relative;
-  margin: 0 0 10px 0;
   padding: 0 0 90% 0;
+  border-radius: 30px 30px 0 0;
+  overflow: hidden;
 }
 .specialisty-page .specialists-item .specialists-item__image img {
   position: absolute;
@@ -2548,7 +2543,12 @@ ul.products li.product .added_to_cart:hover {
   object-fit: cover;
 }
 .specialisty-page .specialists-item .specialists-item__content {
-  padding: 20px 20px 30px 20px;
+  padding: 30px;
+  border-right: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  border-left: 1px solid var(--text-color);
+  border-radius: 0 0 30px 30px;
+  overflow: hidden;
 }
 .specialisty-page .specialists-item .specialists-item__title {
   height: 48px;
@@ -2568,7 +2568,7 @@ ul.products li.product .added_to_cart:hover {
   padding: 10px 0;
   border: 1px solid var(--purple-color);
   border-radius: 24px;
-  color: var(--mine-shaft-color);
+  color: var(--purple-color);
   justify-content: center;
   align-items: center;
 }
