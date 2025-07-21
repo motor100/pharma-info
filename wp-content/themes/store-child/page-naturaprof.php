@@ -226,7 +226,7 @@
       </div>
       <div class="naturaprof-item">
         <div class="naturaprof-item__title section-title">White lable</div>
-        <div class="naturaprof-item__btn">Узнать подробнее</div>
+        <a href="/whitelabel/" class="naturaprof-item__btn">Узнать подробнее</a>
       </div>
     </div>
   </div>
