@@ -74,9 +74,8 @@ Text Domain:  storefront
 */
 
 :root {
-  --darkblue-color: #294060;
-  --nero-color: #fff;
   --text-color: #294060;
+  --nero-color: #fff;
   --purple-color: #F40C63;
   --dark-color: #05041B;
   --olive-color: #527B69;
@@ -193,7 +192,7 @@ iframe {
   font-family: "Roboto-Medium";
   font-size: 42px;
   line-height: 1.1;
-  color: var(--darkblue-color);
+  color: var(--text-color);
 }
 
 
@@ -279,7 +278,7 @@ iframe {
 /*
 .header-desktop .header-top {
   padding: 11px 0;
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   color: var(--nero-color);
 }
 .header-desktop .header-top .flex-container {
@@ -352,7 +351,7 @@ iframe {
   height: 48px;
   margin: 0 10px 0 0;
   border-radius: 24px;
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   color: var(--nero-color);
   gap: 10px;
   align-items: center;
@@ -449,14 +448,14 @@ iframe {
 }
 /*
 .header-nav .menu .menu-item:hover {
-  border-bottom-color: var(--darkblue-color);
+  border-bottom-color: var(--text-color);
 }
 */
 .header-nav .menu .menu-item > a,
 .header-nav .menu .menu-item > span {
   display: block;
   font-size: 18px;
-  color: var(--darkblue-color);
+  color: var(--text-color);
 }
 .header-nav .menu-item-has-children {
   position: relative;
@@ -503,10 +502,10 @@ iframe {
   transition: border-bottom-color .3s;
   font-size: 16px;
   line-height: 30px;
-  color: var(--darkblue-color);
+  color: var(--text-color);
 }
 .header-nav .sub-menu .sub-menu-item:hover a {
-  border-bottom-color: var(--darkblue-color);
+  border-bottom-color: var(--text-color);
 }
 
 
@@ -518,7 +517,7 @@ iframe {
 }
 .header-mobile .header-top {
   padding: 14px 0;
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   font-size: 14px;
   color: var(--nero-color);
   text-align: center;
@@ -537,7 +536,7 @@ iframe {
   max-width: 100% !important;
 }
 .dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp input[type="search"].dgwt-wcas-search-input {
-  border-color: var(--darkblue-color);
+  border-color: var(--text-color);
 }
 .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp input[type="search"].dgwt-wcas-search-input {
   height: 50px;
@@ -567,7 +566,7 @@ iframe {
   position: relative;
   height: 416px;
   padding: 70px 80px 40px 80px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 30px;
 }
 .main-section .main-title {
@@ -640,7 +639,7 @@ iframe {
 .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   opacity: 1;
 }
 .swiper-pagination-bullet-active {
@@ -686,7 +685,7 @@ iframe {
   width: 100%;
   height: 185px;
   padding: 20px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 25px;
   overflow: hidden;
 }
@@ -726,7 +725,7 @@ iframe {
 .personal-select-section .personal-select-content {
   width: 100%;
   padding: 40px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 30px;
 }
 .personal-select-section .personal-select-content__title {
@@ -782,7 +781,7 @@ iframe {
 .description-section .description-content {
   width: 100%;
   padding: 50px 40px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 30px;
 }
 .description-section .description-content__title {
@@ -888,7 +887,7 @@ iframe {
   margin: 0 0 25px 0;
   padding: 40px 30px;
   gap: 16px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 15px;
   align-items: center;
 }
@@ -915,7 +914,7 @@ iframe {
 .footer {
   margin: 80px 0 0 0;
   padding: 60px 0 80px 0;
-  border-top: 1px solid var(--darkblue-color);
+  border-top: 1px solid var(--text-color);
 }
 .footer .footer-menu {
   display: flex;
@@ -936,7 +935,7 @@ iframe {
   margin: 0 0 6px 0;
 }
 .footer .footer-menu .menu-item a {
-  color: var(--darkblue-color);
+  color: var(--text-color);
 }
 .footer .contacts {
   margin: 0 0 20px 0;
@@ -973,7 +972,7 @@ iframe {
 }
 .footer .required-links .footer-pa {
   font-size: 18px;
-  color: var(--darkblue-color);
+  color: var(--text-color);
   text-decoration: underline;
 }
 .footer .footer-bottom {
@@ -1032,7 +1031,7 @@ iframe {
 }
 .o-nas-page .frame {
   padding: 40px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 30px;
 }
 .o-nas-page .text20 {
@@ -1180,7 +1179,7 @@ iframe {
 }
 .lekarstva-page .order-online-section .description {
   padding: 40px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 30px;
   flex-shrink: 0;
 }
@@ -1285,7 +1284,7 @@ iframe {
 .lekarstva-page .vnutriaptechnye-propisi-section .flex-container {
   display: flex;
   padding: 40px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 30px;
   align-items: center;
   justify-content: space-between;
@@ -1299,7 +1298,7 @@ iframe {
   width: 290px;
   height: 68px;
   border-radius: 34px;
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   font-family: 'Roboto-SemiBold';
   font-size: 24px;
   color: var(--nero-color);
@@ -1389,7 +1388,7 @@ iframe {
   display: flex;
   width: 100%;
   height: 68px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 34px;
   font-family: inherit;
   font-size: 20px;
@@ -1426,7 +1425,7 @@ iframe {
   border-color: var(--text-color);
 }
 .filter .checkbox-label:hover .custom-checkbox-text {
-  color: var(--darkblue-color);
+  color: var(--text-color);
 }
 .filter .checkbox {
   position: absolute;
@@ -1452,11 +1451,11 @@ iframe {
   transition: border-color .3s cubic-bezier(.4,0,.23,1);
 }
 .filter .checkbox:checked+.custom-checkbox {
-  background-color: var(--darkblue-color);
-  border: 1px solid var(--darkblue-color);
+  background-color: var(--text-color);
+  border: 1px solid var(--text-color);
 }
 .filter .checkbox:checked+.custom-checkbox::after {
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   box-sizing: content-box;
   content: "";
   height: 7px;
@@ -1502,7 +1501,7 @@ iframe {
   transition: stroke .3s;
 }
 .filter .clear-btn:hover .clear-btn__svg path {
-  stroke: var(--darkblue-color);
+  stroke: var(--text-color);
 }
 
 /* Субстанции substanczii */
@@ -1512,7 +1511,7 @@ iframe {
   height: 68px;
   border: none;
   border-radius: 34px;
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   font-size: 24px;
   color: var(--nero-color);
   align-items: center;
@@ -1528,7 +1527,7 @@ iframe {
 .resursy-page .resursy-category-item {
   width: max-content;
   height: 108px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 40px;
   overflow: hidden;
 }
@@ -1545,7 +1544,7 @@ iframe {
   transition: background-color .2s, color .2s;
 }
 .resursy-page .resursy-category-item__link:hover {
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   color: var(--nero-color);
 }
 
@@ -1613,13 +1612,13 @@ iframe {
   text-align: center;
   font-family: 'Roboto-Medium';
   font-size: 20px;
-  color: var(--darkblue-color);
+  color: var(--text-color);
   line-height: 1.2;
 }
 .naturaprof-page .for-experts-section .description .description-text {
   margin: 0 0 40px 0;
   font-size: 24px;
-  color: var(--darkblue-color);
+  color: var(--text-color);
   line-height: 1.2;
 }
 .naturaprof-page .for-experts-section .section-title-mobile,
@@ -1630,7 +1629,7 @@ iframe {
   display: flex;
   height: 306px;
   padding: 40px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 30px;
   flex-direction: column;
   justify-content: space-between;
@@ -1647,7 +1646,7 @@ iframe {
   display: flex;
   width: 154px;
   height: 60px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 30px;
   font-size: 18px;
   color: var(--text-color);
@@ -1658,7 +1657,7 @@ iframe {
 .naturaprof-page .partner-section .partner-section-frame {
   display: flex;
   height: 372px;
-  border: 2px solid var(--darkblue-color);
+  border: 2px solid var(--text-color);
   border-radius: 30px;
   overflow: hidden;
   justify-content: space-between;
@@ -1853,8 +1852,8 @@ iframe {
 }
 .filter-buttons-alphabet .filtered-button:hover,
 .filter-buttons-alphabet .filtered-button.active {
-  border: 1px solid var(--darkblue-color);
-  color: var(--darkblue-color);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
 }
 
 
@@ -1937,7 +1936,7 @@ iframe {
   width: 14px;
   height: 14px;
   background: url(../images/breadcrumb-arrow-right.jpg) center no-repeat;
-  color: var(--darkblue-color);
+  color: var(--text-color);
   opacity: 1;
   transform: none;
 }
@@ -2026,7 +2025,7 @@ ul.products li.product .woocommerce-placeholder {
 /*
 ul.products li.product .attachment-woocommerce_thumbnail:hover,
 ul.products li.product .woocommerce-placeholder:hover {
-  border: 2px solid var(--darkblue-color);
+  border: 2px solid var(--text-color);
 }
 */
 ul.products li.product .woocommerce-loop-product__title {
@@ -2062,17 +2061,17 @@ ul.products li.product .button {
   height: 66px;
   margin: 0 auto;
   padding: 0 40px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 33px;
   background-color: var(--nero-color);
   font-size: 20px;
-  color: var(--darkblue-color);
+  color: var(--text-color);
   align-items: center;
   justify-content: center;
   transition: background-color .2s, color .2s;
 }
 ul.products li.product .button:hover {
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   color: var(--nero-color);
 }
 ul.products li.product .added_to_cart {
@@ -2121,7 +2120,7 @@ ul.products li.product .added_to_cart:hover {
 }
 .single-product .product .woocommerce-product-gallery > .woocommerce-product-gallery__wrapper { 
   height: 480px !important;
-  border: 2px solid var(--darkblue-color);
+  border: 2px solid var(--text-color);
   border-radius: 30px;
   overflow: hidden;
 }
@@ -2324,7 +2323,7 @@ ul.products li.product .added_to_cart:hover {
   padding: 0;
 }
 .single-product .resp-tabs-container .resp-accordion {
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   padding: 12px;
   border-bottom: 3px solid #44324c;
   margin-bottom: 5px;
@@ -2611,7 +2610,7 @@ ul.products li.product .added_to_cart:hover {
 .bn-page .bn-item__image {
   height: 180px;
   margin: 0 0 15px 0;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -2700,7 +2699,7 @@ ul.products li.product .added_to_cart:hover {
   padding: 0;
   border: none;  
   border-radius: 33px;
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   font-family: 'roboto-medium';
   font-size: 20px;
 }
@@ -2713,7 +2712,7 @@ ul.products li.product .added_to_cart:hover {
 .white-label-page .section-1 .frame {
   display: flex;
   padding: 60px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 20px;
   background-color: #eeeeee;
   justify-content: space-between;
@@ -2747,7 +2746,7 @@ ul.products li.product .added_to_cart:hover {
 }
 .white-label-page .section-2 .item {
   padding: 40px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 20px;
 }
 .white-label-page .section-2 .item__title {
@@ -2764,7 +2763,7 @@ ul.products li.product .added_to_cart:hover {
 }
 .white-label-page .section-3 .image {
   width: 40%;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -2816,7 +2815,7 @@ ul.products li.product .added_to_cart:hover {
 .white-label-page .section-5 .frame {
   display: flex;
   padding: 30px 60px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 20px;
   align-items: center;
   justify-content: space-around;
@@ -2839,7 +2838,7 @@ ul.products li.product .added_to_cart:hover {
 /*
 .white-label-page .section-4 .frame {
   padding: 40px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 30px;
 }
 .white-label-page .section-4 .text20 {
@@ -2963,7 +2962,7 @@ ul.products li.product .added_to_cart:hover {
   /*width: 100%;*/
   height: 266px;
   padding: 40px 45px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 20px;
 }
 .kontakty-page .contacts-item__image {
@@ -2989,7 +2988,7 @@ ul.products li.product .added_to_cart:hover {
 
 /* Страница Сообщество инфлюэнсеров */
 .soobshchestvo-inflyuehnserov-page .content-section .content-image {
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -3354,7 +3353,7 @@ ul.products li.product .added_to_cart:hover {
   display: block;
   margin: 0 10px 0 0;
   padding: 0;
-  border: 2px solid var(--darkblue-color);
+  border: 2px solid var(--text-color);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -3484,7 +3483,7 @@ ul.products li.product .added_to_cart:hover {
   width: 30px;
   height: 30px;
   padding: 0;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 15px;
   background-color: var(--nero-color);
   font-size: 17px;
@@ -3495,7 +3494,7 @@ ul.products li.product .added_to_cart:hover {
   height: 30px;
   padding: 0 10px;
   background-color: var(--nero-color);
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--text-color);
   border-radius: 30px;
   font-size: 17px;
   text-align: center;
@@ -3767,7 +3766,7 @@ a.reset_variations::before {
   margin: 30px 0;
   padding: 10px 0;
   border-radius: 11px;
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   font-family: Roboto-Medium;
   font-size: 20px;
   color: var(--nero-color);
@@ -3892,7 +3891,7 @@ a.reset_variations::before {
   font-family: "Roboto-Medium";
   font-size: 42px;
   line-height: 1.1;
-  color: var(--darkblue-color);
+  color: var(--text-color);
 }
 
 
@@ -4230,7 +4229,7 @@ a.reset_variations::before {
   width: 54px;
   height: 54px;
   border-radius: 27px;
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
 }
 .fixed-bottom-menu .cart-menu-item .menu-item__image img {
   position: absolute;
@@ -4316,10 +4315,10 @@ a.reset_variations::before {
   border-radius: 10px;
   font-family: 'Roboto-Regular';
   font-size: 16px;
-  color: var(--darkblue-color);
+  color: var(--text-color);
 }
 .post-9 .woocommerce-form .woocommerce-privacy-policy-link {
-  color: var(--darkblue-color);
+  color: var(--text-color);
   text-decoration: underline;
 }
 .post-9 .woocommerce-form .woocommerce-button {
@@ -4388,7 +4387,7 @@ a.reset_variations::before {
   list-style: none;
 }
 .post-9 .woocommerce-error a {
-  color: var(--darkblue-color);
+  color: var(--text-color);
   text-decoration: underline;
 }
 .post-9  .entry-content .woocommerce:after {
@@ -4406,7 +4405,7 @@ a.reset_variations::before {
   margin: 0;
   padding: 40px;
   border-radius: 30px;
-  background-color: var(--darkblue-color);
+  background-color: var(--text-color);
   list-style: none;
 }
 .post-9 .woocommerce .woocommerce-MyAccount-navigation-link {
@@ -4535,7 +4534,7 @@ a.reset_variations::before {
   background-color: transparent;
   font-family: 'Roboto-Regular';
   font-size: 16px;
-  color: var(--darkblue-color);
+  color: var(--text-color);
   font-weight: 400;
   text-decoration: underline;
 }
@@ -4548,7 +4547,7 @@ a.reset_variations::before {
   font-weight: 700;
 }
 .post-9 .woocommerce .woocommerce-Address .edit {
-  color: var(--darkblue-color);
+  color: var(--text-color);
   font-weight: 400;
   text-decoration: underline;
 }
@@ -4636,7 +4635,7 @@ a.reset_variations::before {
 }
 .post-9 .woocommerce .woocommerce-MyAccount-content p a:not(.button) {
   font-size: 17px;
-  color: var(--darkblue-color);
+  color: var(--text-color);
   text-decoration: underline;
 }
 .post-9 .woocommerce .button::after {
@@ -6600,7 +6599,7 @@ a.reset_variations::before {
   .single-product .product .woocommerce-tabs .tabs li {
     border: none;
     border-radius: 0;
-    background-color: var(--darkblue-color);
+    background-color: var(--text-color);
     margin: 0 0 2px 0;
   }
   .single-product .product .woocommerce-tabs .tabs li a {
