@@ -214,11 +214,11 @@
     <div class="container">
       <div class="naturaprof-item">
         <div class="naturaprof-item__title section-title">Прописи</div>
-        <div class="naturaprof-item__btn">Узнать подробнее</div>
+        <a href="#" class="naturaprof-item__btn">Узнать подробнее</a>
       </div>
       <div class="naturaprof-item">
         <div class="naturaprof-item__title section-title">Обучающие материалы</div>
-        <div class="naturaprof-item__btn">Узнать подробнее</div>
+        <a href="#" class="naturaprof-item__btn">Узнать подробнее</a>
       </div>
       <div class="naturaprof-item">
         <div class="naturaprof-item__title section-title">Консультации</div>

@@ -83,7 +83,7 @@
                       <a href="/o-nas#how-it-works">Как это работает</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="/o-nas#how-to-place-order">Как сделать заказ</a>
+                      <a href="/o-nas#how-to-order">Как сделать заказ</a>
                     </li>
                     <li class="sub-menu-item">
                       <a href="/o-nas#faq">Вопрос-ответ</a>

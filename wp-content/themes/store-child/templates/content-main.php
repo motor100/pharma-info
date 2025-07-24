@@ -106,7 +106,7 @@
         <div class="personal-select-content__title">Персональный подбор</div>
         <div class="personal-select-content__description">Экспертная система подбора солей Шюсслера для тканевой биохимической терапии. Медицинский ассистент для диагностики дефицитов минералов в организме человека, подбора персонифицированной комбинации с проверкой совместимости.</div>
         <div class="content-flex-container">
-          <div class="example-btn">пример заключения</div>
+          <a href="/wp-content/themes/store-child/includes/pdf/maket-zaklyucheniya.pdf" class="example-report-btn" target="_blank">пример заключения</a>
           <div class="view-more-btn primary-btn">подробнее</div>
         </div>
       </div>

@@ -170,6 +170,15 @@ document.addEventListener("DOMContentLoaded", () => {
   inputPhoneMask();
 
 
+  // Slim Select
+  new SlimSelect({
+    select: '#pa_tabletki-po',
+    showSearch: false,
+    searchFocus: false,
+  });
+  
+
+
   // Set cookie
   function setCookie(name, value, days) {
     let expires = "";

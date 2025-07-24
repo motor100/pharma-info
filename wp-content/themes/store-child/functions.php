@@ -36,7 +36,7 @@ function my_dequeue_style(){
 * $temp_debug = false добавляется версия wp
 */
 
-$temp_debug = false;
+$temp_debug = true;
 $ver = '';
 if ($temp_debug) {
   $ver = date('dis');
@@ -58,6 +58,11 @@ function add_scripts() {
     }
 
     wp_enqueue_script( 'imask', get_stylesheet_directory_uri() . '/includes/js/imask.min.js' );
+
+    if ( is_product() ) {
+        wp_enqueue_script( 'slim-select', get_stylesheet_directory_uri() . '/includes/js/slimselect.min.js' );
+    }
+
     wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/includes/js/main.js','',$ver);
 
     // включение файла admin-ajax.php для front
@@ -88,6 +93,11 @@ function add_styles() {
     if ( is_front_page() ) {
         wp_enqueue_style( 'swiper', get_stylesheet_directory_uri() . '/includes/css/swiper-bundle.min.css' );
     }
+
+    if ( is_product() ) {
+        wp_enqueue_style( 'slim-select', get_stylesheet_directory_uri() . '/includes/css/slimselect.min.css' );
+    }
+
     wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/includes/css/style.css','',$ver );
 }
 

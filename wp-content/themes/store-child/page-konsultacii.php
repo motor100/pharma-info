@@ -19,7 +19,9 @@
   <?php
   $specialisty_cat_id = 445; // ID категории Специалисты local = 408 prod = 408
   $doctors_cat_id = 449; // ID дочерней категории Врачи local = 449
-  $private_experts_cat_id = 460; // ID дочерней категории Частнопрактикующие специалисты local = 460
+  $psychologists_cat_id = 460; // ID дочерней категории Психологи local = 460
+  $naturopaths_cat_id = 463; // ID дочерней категории Натуропаты local = 463
+  $practices_cat_id = 464; // ID дочерней категории Практики local = 464
   ?>
 
   <?php
@@ -28,7 +30,7 @@
     'cat' => [
       $specialisty_cat_id,
       -$doctors_cat_id, // исключить дочернюю категорию
-      -$private_experts_cat_id // исключить дочернюю категорию
+      -$Psychologists_cat_id // исключить дочернюю категорию
     ],
     'posts_per_page' => -1,
   );
@@ -42,12 +44,15 @@
     <div class="container">
 
       <div class="flex-container filter-by-doctors">
+        <a href="/konsultacii" class="cities-item active">Все</a>
         <div class="cities-item js-city-btn" data-term-id="<?php echo $doctors_cat_id; ?>">Врачи</div>
-        <div class="cities-item js-city-btn" data-term-id="<?php echo $private_experts_cat_id; ?>">Частнопрактикующие специалисты</div>
+        <div class="cities-item js-city-btn" data-term-id="<?php echo $psychologists_cat_id; ?>">Психологи</div>
+        <div class="cities-item js-city-btn" data-term-id="<?php echo $naturopaths_cat_id; ?>">Натуропаты</div>
+        <div class="cities-item js-city-btn" data-term-id="<?php echo $practices_cat_id; ?>">Практики</div>
       </div>
 
       <div class="flex-container filter-by-cities">
-        <a href="/specialisty" class="cities-item active">Все города</a>
+        <a href="/konsultacii" class="cities-item active">Все города</a>
 
         <?php
         /**

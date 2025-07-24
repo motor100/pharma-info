@@ -38,7 +38,7 @@
     </div>
   </div>
 
-  <div class="naturapharma-section section">
+  <div id="mission" class="naturapharma-section section">
     <div class="container">
       <div class="grid-container4060">
         <div class="left-40">
@@ -238,7 +238,7 @@
     </div>
   </div>
 
-  <div class="for-whom-section section">
+  <div id="for-whom" class="for-whom-section section">
     <div class="container">
       <div class="grid-container4060">
         <div class="left-40">
@@ -268,7 +268,7 @@
     </div>
   </div>
 
-  <div class="advantages-section section">
+  <div class="o-nas-advantages-section section">
     <div class="container">
       <div class="section-title">Преимущества</div>
       <div class="grid-container4060 mb20">
@@ -394,7 +394,7 @@
     </div>
   </div>
 
-  <div class="how-to-order-section section">
+  <div id="how-to-order" class="how-to-order-section section">
     <div class="container">
       <div class="section-title">Как сделать заказ</div>
       <div class="how-to-order-section-subtitle">Сделать заказ персонального лекарства можно быстро и легко:</div>

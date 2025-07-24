@@ -744,7 +744,7 @@ iframe {
   display: flex;
   gap: 20px;
 }
-.personal-select-section .example-btn {
+.personal-select-section .example-report-btn {
   display: flex;
   width: 296px;
   height: 68px;
@@ -759,7 +759,8 @@ iframe {
 
 /* video section */
 .video-section {
-  padding: 40px 0;
+  margin-top: -40px;
+  padding: 80px 0 40px 0;
 }
 .video-section .video {
   border-radius: 15px;
@@ -985,6 +986,10 @@ iframe {
 }
 
 /* O nas page */
+.o-nas-page .section {
+  margin-top: -80px;
+  padding-top: 80px;
+}
 .o-nas-page .o-nas-section .flex-container {
   display: flex;
   gap: 20px;
@@ -1127,6 +1132,9 @@ iframe {
   background-color: #FFF8EB;
   align-items: flex-end;
   justify-content: space-between;
+}
+.o-nas-page .payment-section .payment-btn {
+  cursor: pointer;
 }
 .o-nas-page .delivery-section .delivery-list {
   margin: 0 0 40px 0;
@@ -2227,6 +2235,7 @@ ul.products li.product .added_to_cart:hover {
   margin: 0 0 10px 0;
   line-height: 1.0;
 }
+.single-product .product form.cart:not(.variations_form),
 .single-product .product .woocommerce-variation-add-to-cart {
   display: flex;
   gap: 30px;
@@ -2388,6 +2397,15 @@ ul.products li.product .added_to_cart:hover {
 .storefront-product-pagination a {
   color: #6d6d6d;
   background-color: #fff;
+}
+
+/* Slim select в карточке товара */
+.ss-main .ss-single-selected {
+  height: 44px;
+  padding-right: 10px;
+  padding-left: 15px;
+  border-color: #C2C8D0;
+  border-radius: 22px;
 }
 
 @media only screen and (min-width : 768px) {
@@ -5879,7 +5897,7 @@ a.reset_variations::before {
     height: 50px;
     font-size: 15px;
   }
-  .personal-select-section .select-item-burgundy .example-btn {
+  .personal-select-section .select-item-burgundy .example-report-btn {
     width: 250px;
   }
 
