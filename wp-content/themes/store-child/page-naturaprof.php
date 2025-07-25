@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="for-experts-section section">
+  <div id="for-experts-section" class="for-experts-section section">
     <div class="container">
       <div class="section-title">Для специалистов</div>
 
@@ -134,7 +134,7 @@
     </div>
   </div>
 
-  <div class="partner-section section">
+  <div id="partner-section" class="partner-section section">
     <div class="container">
       <div class="partner-section-frame">
         <div class="frame-content">
@@ -231,7 +231,7 @@
     </div>
   </div>
 
-  <div class="white-label-section section">
+  <div id="white-label-section" class="white-label-section section">
     <div class="container">
       <div class="white-label-frame">
         <div class="section-title">NaturaPharma как White Label</div>

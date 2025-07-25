@@ -2053,7 +2053,7 @@ function woo_order_review_heading() {
 }
 
 
-add_action('woocommerce_checkout_terms_and_conditions', 'disable_woocommerce_checkout_options', 10 );
+// add_action('woocommerce_checkout_terms_and_conditions', 'disable_woocommerce_checkout_options', 10 );
 function disable_woocommerce_checkout_options(){
     if ( empty( $available_gateways ) ) {
             remove_action( 'woocommerce_checkout_terms_and_conditions', 'wc_checkout_privacy_policy_text', 20 );

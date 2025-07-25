@@ -19,31 +19,31 @@
         <div class="footer-menu-item">
           <div class="footer-menu-item__title">О нас</div>
           <div class="menu-item">
-            <a href="#">Миссия</a>
+            <a href="/o-nas#mission">Миссия</a>
           </div>
           <div class="menu-item">
-            <a href="#">Для кого</a>
+            <a href="/o-nas#for-whom">Для кого</a>
           </div>
           <div class="menu-item">
-            <a href="#">Как это работает</a>
+            <a href="/o-nas#how-it-works">Как это работает</a>
           </div>
           <div class="menu-item">
-            <a href="#">Как сделать заказ</a>
+            <a href="/o-nas#how-to-order">Как сделать заказ</a>
           </div>
           <div class="menu-item">
-            <a href="#">Вопрос-ответ</a>
+            <a href="/o-nas#faq">Вопрос-ответ</a>
           </div>
         </div>
         <div class="footer-menu-item">
           <div class="footer-menu-item__title">Лекарства</div>
           <div class="menu-item">
-            <a href="#">Персональный рецепт</a>
+            <a href="/lekarstva/#personal-order-section">Персональный рецепт</a>
           </div>
           <div class="menu-item">
-            <a href="#">Внутриаптечные прописи</a>
+            <a href="/catalog/product-category/vnutriaptechnye-propisi/">Внутриаптечные прописи</a>
           </div>
           <div class="menu-item">
-            <a href="#">Субстанции</a>
+            <a href="/substanczii/">Субстанции</a>
           </div>
         </div>
       </div>
@@ -103,34 +103,22 @@
         <div class="footer-menu-item">
           <div class="footer-menu-item__title">NaturaProf</div>
           <div class="menu-item">
-            <a href="#">Консультации</a>
+            <a href="/konsultacii/">Консультации</a>
           </div>
           <div class="menu-item">
-            <a href="#">Врачи</a>
-          </div>
-          <div class="menu-item">
-            <a href="#">Натуропаты</a>
-          </div>
-          <div class="menu-item">
-            <a href="#">Психологи</a>
-          </div>
-          <div class="menu-item">
-            <a href="#">Практики</a>
-          </div>
-          <div class="menu-item">
-            <a href="#">Партнерская программа</a>
+            <a href="/naturaprof#partner-section">Партнерская программа</a>
           </div>
           <div class="menu-item">
             <a href="#">Обучающие материалы</a>
           </div>
           <div class="menu-item">
-            <a href="#">Сотрудничество</a>
+            <a href="/naturaprof#white-label-section">Сотрудничество</a>
           </div>
           <div class="menu-item">
-            <a href="#">Партнеры</a>
+            <a href="/naturaprof#for-experts-section">Партнеры</a>
           </div>
           <div class="menu-item">
-            <a href="#">White lable</a>
+            <a href="/naturaprof#white-label-section">White lable</a>
           </div>
         </div>
       </div>
@@ -138,25 +126,22 @@
         <div class="footer-menu-item">
           <div class="footer-menu-item__title">Ресурсы</div>
           <div class="menu-item">
-            <a href="#">Состояния от А до Я</a>
+            <a href="/sostoyaniya-ot-a-do-ya/">Состояния от А до Я</a>
           </div>
           <div class="menu-item">
-            <a href="#">Обучение</a>
+            <a href="/catalog/product-category/obuchenie/">Обучение</a>
           </div>
           <div class="menu-item">
-            <a href="#">Новости</a>
+            <a href="/blog/">Блог Статьи</a>
           </div>
           <div class="menu-item">
-            <a href="#">Блог Статьи</a>
+            <a href="/novosti/">Новости</a>
           </div>
           <div class="menu-item">
-            <a href="#">Где купить</a>
+            <a href="/kontakty/">Контакты</a>
           </div>
           <div class="menu-item">
-            <a href="#">Контакты</a>
-          </div>
-          <div class="menu-item">
-            <a href="#">Сообщество инфлюэнсеров</a>
+            <a href="/soobshchestvo-inflyuehnserov/">Сообщество инфлюэнсеров</a>
           </div>
         </div>
       </div>

@@ -1,85 +1,73 @@
-<div class="archive-product single__prod">
-    <div class="catalog-inside">
+<div class="archive-product catalog-page single__prod">
+  <div class="catalog-inside">
+    <div class="container">
       <div class="section-title">Магазин</div>
     </div>
-    
-    <div class="container">
+  </div>
+  
+  <div class="container">
 
-      <?php
-      $parentid = 25; // id родительской категории
-      $term_childs = get_term_children( $parentid, 'product_cat' ); // получить массив с id вложенных подкатегорий
-      ?>
-
-      <?php if ($term_childs) {  ?>
-
+    <div class="cat-wrapper">
         <?php
-        // Вывод подкатегорий
         $args = array(
-          'parent' => $parentid, // id родительской категории
-          'hide_empty' => true, // скрывать категории без товаров
-          'order' => 'ASC'
+          'taxonomy'     => 'product_cat',
+          'orderby'      => 'ID',
+          'show_count'   => 0,
+          // 'parent'       => 25,
+          'pad_counts'   => 0,
+          'hierarchical' => 1,
+          'title_li'     => '',
+          'exclude'      => '15',
+          'hide_empty'   => 0
         );
+
+        $categories = get_categories( $args );
+
+        foreach ($categories as $cat) {
+          $thumbnail_id = get_term_meta( $cat->term_id, 'thumbnail_id', true );
+          $image = wp_get_attachment_url( $thumbnail_id );
+          //$img = $image ? $image : '/wp-content/uploads/woocommerce-placeholder.png';
+          $img = $image ? $image : '/wp-content/themes/store-child/includes/images/temp-placeholder.png';
+          ?>
+
+          <div class="cat-item">
+            <div class="flex-container">
+              <div class="cat-image">
+                <img src="<?php echo $img; ?>" alt="">
+              </div>
+              <div class="cat-icon">
+                <?php $cat_id = $cat->term_id;
+                switch ($cat_id) {
+                  case 25: // Соли Шюсслера ?>
+                      <img src="/wp-content/themes/store-child/includes/images/catalog-icon1.png" alt="">
+                      <?php
+                      break;
+                  case 437: // Внутриаптечные прописи ?>
+                    <img src="/wp-content/themes/store-child/includes/images/catalog-icon2.svg" alt="">
+                    <?php
+                    break;
+                  case 438: // Гомеопатия ?>
+                    <img src="/wp-content/themes/store-child/includes/images/catalog-icon3.svg" alt="">
+                    <?php
+                    break;
+                  default: ?>
+                    <img src="/wp-content/themes/store-child/includes/images/catalog-icon1.png" alt="">
+                    <?php
+                    break;
+                }
+                ?>
+              </div>
+            </div>
+            <div class="cat-title" href="<?php echo get_term_link($cat->term_id); ?>"><?php echo $cat->name; ?></div>
+            <div class="cat-view-more">Подробнее</div>
+            <a href="<?php echo get_term_link($cat->term_id); ?>" class="full-link"></a>
+          </div>
+        <?php
+        }
         ?>
 
-        <?php $subcats = get_terms( 'product_cat', $args ); ?>
-
-        <div class="subcategories">
-          <div class="subcategories-item" onclick="location.reload()">
-            <div class="subcategories-item__title">Все</div>
-          </div>
-          <?php foreach($subcats as $subcat) { ?>
-            <div class="subcategories-item filter-btn" data-term-id="<?php echo $subcat->term_id; ?>">
-              <div class="subcategories-item__title"><?php echo $subcat->name; ?></div>
-            </div>
-          <?php } ?>
-        </div>
-
-      <?php } ?>
-        
-      <?php
-      // Запрос
-      $query = new WP_Query( array (
-        'post_type'      => 'product',
-        'post_status'    => 'publish',
-        'posts_per_page' => '-1',
-        'tax_query' => array( array (
-                'taxonomy' => 'product_cat',
-                'field'    => 'term_id',
-                'terms'    => $parentid,
-        ) ),
-      ) );
-
-      // Вывод записей
-      if ( $query->have_posts() ) {
-
-        // Подключение шаблона product loop start
-        require ( WP_PLUGIN_DIR . '/woocommerce/templates/loop/loop-start.php' );
-
-        while ( $query->have_posts() ) {
-          $query->the_post();
-
-          // Подключение шаблона product loop
-          require ( WP_PLUGIN_DIR . '/woocommerce/templates/content-product.php' );
-        }
-
-        // Подключение шаблона product loop end
-        require ( WP_PLUGIN_DIR . '/woocommerce/templates/loop/loop-end.php' );
-
-        wp_reset_postdata();
-
-      }
-      ?>
-    
-    </div>
-
-    <div id="to-top" class="to-top hidden-mobile">
-      <div class="container">
-        <div class="circle">
-          <div class="image">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/includes/images/svg/arrow-top.svg" class="arrow-top" alt="">
-          </div>
-        </div>
       </div>
-    </div>
-
+  
   </div>
+
+</div>

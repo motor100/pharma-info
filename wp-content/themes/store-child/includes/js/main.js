@@ -170,13 +170,16 @@ document.addEventListener("DOMContentLoaded", () => {
   inputPhoneMask();
 
 
-  // Slim Select
-  new SlimSelect({
-    select: '#pa_tabletki-po',
-    showSearch: false,
-    searchFocus: false,
-  });
-  
+  // Slim Select в карточке товара
+  const singleProduct = document.querySelector('.single-product');
+
+  if (singleProduct) {
+    new SlimSelect({
+      select: '#pa_tabletki-po',
+      showSearch: false,
+      searchFocus: false,
+    });
+  }
 
 
   // Set cookie

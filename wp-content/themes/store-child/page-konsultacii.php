@@ -17,7 +17,7 @@
   </div>
 
   <?php
-  $specialisty_cat_id = 445; // ID категории Специалисты local = 408 prod = 408
+  $specialisty_cat_id = 445; // ID категории Специалисты local = 445 prod = 445
   $doctors_cat_id = 449; // ID дочерней категории Врачи local = 449
   $psychologists_cat_id = 460; // ID дочерней категории Психологи local = 460
   $naturopaths_cat_id = 463; // ID дочерней категории Натуропаты local = 463
@@ -104,7 +104,35 @@
                 <a href="<?php the_permalink(); ?>" class="item-link">
                   <?php the_post_thumbnail(); ?>
                 </a>
+                <div class="specialists-item__icon">
+
+                  <?php
+                  // Вывод разных иконок в завимости от категории
+
+                  $cats = get_the_category($post->ID);
+
+                  foreach($cats as $cat) {
+
+                    switch ($cat->term_id) {
+                      case $doctors_cat_id:
+                        echo '<img src="/wp-content/themes/store-child/includes/images/specialists-stethoscope.png" alt="">';
+                        break;
+                      case $psychologists_cat_id:
+                        echo '<img src="/wp-content/themes/store-child/includes/images/specialists-brain.png" alt="">';
+                        break;
+                      case $naturopaths_cat_id:
+                        echo '<img src="/wp-content/themes/store-child/includes/images/specialists-first-aid.png" alt="">';
+                        break;
+                      case $practices_cat_id:
+                        echo '<img src="/wp-content/themes/store-child/includes/images/specialists-flower-lotus.pngg" alt="">';
+                        break;
+                    }
+                  }
+                  ?>
+                  
+                </div>
               </div>
+
               <div class="specialists-item__content">
                 <div class="specialists-item__title"><?php the_title(); ?></div>
                 <div class="specialists-item__excerpt"><?php echo the_text_max_charlength(get_the_excerpt(), 100); ?></div>

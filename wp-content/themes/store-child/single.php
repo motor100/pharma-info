@@ -15,14 +15,27 @@
     <div class="container">
       <div class="page-title"><?php the_title(); ?></div>
     </div>
-    <div class="container">
-      <div class="single-image">
-        <?php the_post_thumbnail(''); ?>
+
+    <?php
+
+    $specialisty_cat_id = 445; // ID категории Специалисты local = 445 prod = 445
+
+    $cat = get_the_category();
+
+    if ($cat[0]->parent == $specialisty_cat_id) : ?>
+      <p>Это карточка специалиста</p>
+    <?php else : ?>
+
+      <div class="container">
+        <div class="single-image">
+          <?php the_post_thumbnail(''); ?>
+        </div>
+        <div class="single-content">
+          <?php the_content(); ?>
+        </div>
       </div>
-      <div class="single-content">
-        <?php the_content(); ?>
-      </div>
-    </div>
+
+    <?php endif ?>
   </div>
 
 </div>

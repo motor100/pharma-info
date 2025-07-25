@@ -39,7 +39,6 @@
               <div class="header-logo">
                 <a href="/" class="header-logo__link">
                   <img src="/wp-content/themes/store-child/includes/images/logo_header.png" alt="лого">
-                  <!-- <div class="underlogo-text">since 1873</div> -->
                 </a>
               </div>
               <a href="/catalog/" class="catalog-btn header-content-btn">
@@ -90,47 +89,46 @@
                     </li>
                   </ul>
                 </li>
-                <li class="menu-item menu-item-has-children">
+                <li class="menu-item">
                   <a href="/lekarstva">Лекарства</a>
                 </li>
-                <li class="menu-item menu-item-has-children">
-                  <a href="#">Добавки</a>
+                <li class="menu-item">
+                  <a href="/catalog/product-category/dobavki/">Добавки</a>
                 </li>
-                <li class="menu-item menu-item-has-children">
-                  <a href="#">Натуропатия</a>
+                <li class="menu-item">
+                  <a href="/catalog/product-category/naturopatiya/">Натуропатия</a>
                 </li>
-                <li class="menu-item menu-item-has-children">
-                  <a href="#">Наружные средства</a>
+                <li class="menu-item">
+                  <a href="/catalog/product-category/naruzhnye-sredstva/">Наружные средства</a>
                 </li>
-                <li class="menu-item menu-item-has-children">
-                  <a href="#">Для животных</a>
+                <li class="menu-item">
+                  <a href="/catalog/product-category/dlya-zhivotnyh/">Для животных</a>
                 </li>
-                <!-- <li class="menu-item menu-item-has-children"> -->
                 <li class="menu-item">
                   <a href="/naturaprof/">NaturaProf</a>
                 </li>
-                <!-- <li class="menu-item menu-item-has-children"> -->
-                <li class="menu-item">
-                  <a href="/resursy">Ресурсы</a>
-                  <!-- 
+                <li class="menu-item menu-item-has-children">
+                  <a href="/resursy/">Ресурсы</a>
                   <ul class="sub-menu">
                     <li class="sub-menu-item">
-                      <a href="/o-nas#mission">Миссия</a>
+                      <a href="/sostoyaniya-ot-a-do-ya/">Состояния от А до Я</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="/o-nas#for-whom">Для кого</a>
+                      <a href="/catalog/product-category/obuchenie/">Обучение</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="/o-nas#how-it-works">Как это работает</a>
+                      <a href="/blog/">Блог Статьи</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="/o-nas#how-to-place-order">Как сделать заказ</a>
+                      <a href="/novosti/">Новости</a>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="/o-nas#faq">Вопрос-ответ</a>
+                      <a href="/kontakty/">Контакты</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="/soobshchestvo-inflyuehnserov/">Сообщество инфлюэнсеров</a>
                     </li>
                   </ul>
-                   -->
                 </li>
               </ul>
             </div>
