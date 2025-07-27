@@ -41,7 +41,7 @@
   <div class="partner-section section">
     <div class="container">
       <div class="section-title">Подайте заявку, чтобы стать партнером</div>
-      <form action="" class="form">
+      <form class="form">
         <div class="flex-container">
           <div class="inputs">
             <div class="inputs-row">
@@ -92,8 +92,7 @@
           <span class="checkbox-text">Я согласен (-на) с <a href="/soglasie-posetitelya-sajta-na-obrabotku-personalnyh-dannyh/" class="agreement-link" target="_blank">обработку персональных данных</a></span>
         </div>
 
-        <button type="button" class="submit-btn primary-btn">Отправить форму</button>
-
+        <button type="button" id="callback-top-submit-btn" class="submit-btn primary-btn">Отправить форму</button>
       </form>
     </div>
   </div>

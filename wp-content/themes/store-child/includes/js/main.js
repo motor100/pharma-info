@@ -174,11 +174,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const singleProduct = document.querySelector('.single-product');
 
   if (singleProduct) {
-    new SlimSelect({
-      select: '#pa_tabletki-po',
-      showSearch: false,
-      searchFocus: false,
-    });
+    const tabletkPo = document.getElementById('pa_tabletki-po');
+
+    if (tabletkPo) {
+      new SlimSelect({
+        select: '#pa_tabletki-po',
+        showSearch: false,
+        searchFocus: false,
+      });
+    }
   }
 
 
