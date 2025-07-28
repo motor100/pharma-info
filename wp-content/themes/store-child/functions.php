@@ -2101,10 +2101,79 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 ); // Удаление
 
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10 );
-add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 20 );
-add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
-// add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 30 );
+// add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 20 );
+// add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
 
+// Добавление Прайс и Добавить в корзину для товаров из всех категорий, кроме Обучение
+function woocommerce_summary_after_title() {
+
+    $obuchenie_cat_id = 444; // ID категории Обучение
+
+    $product_id = get_the_ID(); // Получаем ID текущего товара
+    $categories = get_the_terms( $product_id, 'product_cat' ); // Получаем категории товара
+
+    foreach ($categories as $cat) {
+        if ($cat->term_id != $obuchenie_cat_id) {
+            woocommerce_template_single_price();
+            woocommerce_template_single_add_to_cart();
+        }
+    }
+}
+
+add_action( 'woocommerce_single_product_summary', 'woocommerce_summary_after_title', 20 );
+
+
+// Добавление дополнительнго текстового поля в карточку товара
+function art_woo_add_custom_fields() {
+    global $product, $post;
+    echo '<div class="options_group">';// Группировка полей 
+    
+    woocommerce_wp_text_input( array(
+       'id'                => '_text_field',
+       'label'             => __( 'Ссылка', 'woocommerce' ),
+       'placeholder'       => 'Ссылка',
+       //'custom_attributes' => array( 'required' => 'required' ),
+       'description'       => __( 'Введите ссылку', 'woocommerce' ),
+    ) );
+
+    echo '</div>';
+}
+
+add_action( 'woocommerce_product_options_general_product_data', 'art_woo_add_custom_fields' );
+
+
+/**
+ * Сохранение данных произвольльных полей методами ядра
+ *
+ * @source https://wpruse.ru/woocommerce/custom-fields-in-products/
+ */
+function art_woo_custom_fields_save( $post_id ) {
+
+    // Сохранение текстового поля.
+    $woocommerce_text_field = $_POST['_text_field'];
+    if ( ! empty( $woocommerce_text_field ) ) {
+        update_post_meta( $post_id, '_text_field', esc_attr( $woocommerce_text_field ) );
+    } else {
+        // Иначе удаляем созданное поле из бд
+        delete_post_meta( $post_id, '_text_field' );
+    }
+}
+
+add_action( 'woocommerce_process_product_meta', 'art_woo_custom_fields_save', 10 );
+
+// Вывод текстового поля после названия товара
+function art_get_text_field_before_add_card() {
+
+    $product = wc_get_product();
+    $text_field = $product->get_meta( '_text_field', true );
+
+    if ($text_field) {
+        echo "<a href='" . $text_field . "' id='to-page-btn' class='to-page-btn primary-btn' target='_blank'>Перейти на страницу</a>";
+    }
+
+}
+
+add_action( 'woocommerce_share', 'art_get_text_field_before_add_card' );
 
 // Добавление ссылки в письмо при оформлении заказа 
 function add_content_after_order_table( $order, $sent_to_admin, $plain_text, $email ) {

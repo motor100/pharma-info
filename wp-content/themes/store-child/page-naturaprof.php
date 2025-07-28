@@ -53,7 +53,7 @@
         <div class="description-nn-slim w32">
           <div class="description-nn-item">
             <div class="description-nn-item__text">Лекарственные средства для индивидуального изготовления или классические аптечные прописи могут быть выписаны на бумажном рецепте в форме 107/у или через программное обеспечение</div>
-            <div class="description-nn-item__btn">Подробнее</div>
+            <a href="/catalog/product-category/vnutriaptechnye-propisi/" class="description-nn-view-more-btn">Подробнее</a>
           </div>
         </div>
         <div class="description-nn-wide w66">
@@ -63,7 +63,7 @@
               <p class="grey-text">(например, персональный комплекс цветочных эссенций Баха, персональная доза витамина С в форме порошка и пр).</p>
               <p>Средства могут быть выписаны в виде рекомендаций, или в программе propisi.info или через Профессиональную платформу  </p>
             </div>
-            <div class="description-nn-item__btn">Подробнее</div>
+            <a href="/catalog/product-category/vnutriaptechnye-propisi/" class="description-nn-view-more-btn">Подробнее</a>
           </div>
         </div>
       </div>
