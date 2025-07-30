@@ -104,9 +104,6 @@
                 <li class="menu-item">
                   <a href="/catalog/product-category/dlya-zhivotnyh/">Для животных</a>
                 </li>
-                <li class="menu-item">
-                  <a href="/naturaprof/">NaturaProf</a>
-                </li>
                 <li class="menu-item menu-item-has-children">
                   <a href="/resursy/">Ресурсы</a>
                   <ul class="sub-menu">
@@ -130,6 +127,9 @@
                     </li>
                   </ul>
                 </li>
+                <li class="menu-item">
+                  <a href="/naturaprof/">NaturaProf</a>
+                </li>                
               </ul>
             </div>
           </div>

@@ -55,7 +55,7 @@
     </div>
   </div>
 
-  <div id="personal-order-section" class="personal-order-section section">
+  <div id="personal-order-section" class="personal-order-section section section-with-anchor">
     <div class="container">
       <div class="form-wrapper">
         <div class="form-title">Заказ по вашему персональному рецепту</div>

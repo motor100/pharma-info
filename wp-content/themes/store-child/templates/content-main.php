@@ -96,7 +96,7 @@
   </div>
 </div>
 
-<div class="personal-select-section">
+<div class="personal-select-section section">
   <div class="container">
     <div class="flex-container">
       <div class="personal-select-image">
@@ -114,7 +114,7 @@
   </div>
 </div>
 
-<div id="video-section" class="video-section section">
+<div id="video-section" class="video-section section section-with-anchor">
   <div class="container">
     <div class="video">
       <video controls poster="/wp-content/themes/store-child/includes/video/video2465178870-cover.jpg">
@@ -143,7 +143,7 @@
   </div>
 </div>
 
-<div class="manufacture-section">
+<div class="manufacture-section section">
   <div class="manufacture-description">
     <div class="container">
       <div class="flex-container">
