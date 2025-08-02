@@ -891,7 +891,7 @@ iframe {
   color: var(--text-color);
 }
 
-/* O nas page */
+/* o nas page */
 .o-nas-page .o-nas-section .flex-container {
   display: flex;
   gap: 20px;
@@ -918,6 +918,14 @@ iframe {
   color: #607797;
   line-height: 1.3;
 }
+.o-nas-page .o-nas-section .o-nas-image-horizontal {
+  width: 339px;
+  height: 266px;
+  flex-shrink: 0;
+}
+.o-nas-page .o-nas-section .o-nas-image-horizontal img {
+  width: 100%;
+}
 .o-nas-page .naturapharma-section .left-40 {
   height: 100%;
 }
@@ -928,13 +936,13 @@ iframe {
   display: grid;
   height: 100%;
   gap: 20px;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 40% auto;
 }
 .o-nas-page .grid-container6040 {
   display: grid;
   height: 100%;
   gap: 20px;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: auto 40%;
 }
 .o-nas-page .frame {
   padding: 40px;
@@ -957,6 +965,21 @@ iframe {
 .o-nas-page .list-item:last-child {
   margin-bottom: 0;
 }
+.o-nas-page .list-item .checkbox {
+  width: 42px;
+}
+.o-nas-page .list-item .ellipse {
+  width: 12px;
+}
+.o-nas-page .list-item .truck {
+  width: 48px;
+}
+.o-nas-page .list-item .list-item__image {
+  flex-shrink: 0;
+}
+.o-nas-page .list-item .list-item__image img {
+  width: 100%;
+}
 .o-nas-page .list-item .list-item__text {
   font-size: 18px;
   line-height: 1.3;
@@ -970,6 +993,7 @@ iframe {
 }
 .o-nas-page .o-nas-image {
   width: 100%;
+  height: 100%;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -1036,6 +1060,7 @@ iframe {
   justify-content: space-between;
 }
 .o-nas-page .payment-section .payment-btn {
+  flex-shrink: 0;
   cursor: pointer;
 }
 .o-nas-page .delivery-section .delivery-list {
@@ -1063,12 +1088,10 @@ iframe {
 .pink-blur {
   padding: 40px;
   border-radius: 30px;
-  background: url(../images/tasks.png) center no-repeat;
+  background: url(../images/tasks.jpg) center no-repeat;
+  background-size: cover;
   overflow: hidden;
 }
-
-
-
 
 /* Lekarstva page */
 .lekarstva-page .order-online-section .flex-container {
@@ -1793,8 +1816,6 @@ iframe {
 .sticky-desktop-menu .header-nav .menu-container {
   padding: 15px 0;
 }
-
-
 
 /* breadcrumb */
 .breadcrumbs-wrapper {
@@ -4021,7 +4042,6 @@ a.reset_variations::before {
   text-decoration: none;
 }
 
-
 /* burger menu */
 .burger-menu-wrapper {
   position: fixed;
@@ -4953,22 +4973,12 @@ a.reset_variations::before {
     padding: 15px;
   }
 
-
-
   /* main section */
   .main-section .main-image {
     right: 0;
     width: 343px;
     height: 343px;
   }
-  /*
-  .main-section .main-section-about {
-    height: 501px;
-  }
-  .main-section .main-section-slider .main-slider-item {
-    height: 439px;
-  }
-  */
 
   /* category section */
   .category-section .category-item__title .text {
@@ -4982,75 +4992,17 @@ a.reset_variations::before {
   }
 
   /* personal select section */
-  /*
-  .personal-select-section .select-item-darkblue .select-item__title {
-    font-size: 40px;
-  }
-  */
   .personal-select-section .example-report-btn {
     height: 62px;
     font-size: 22px;
   }
-
-  /* description section */
-  /*
-  .description-section .title-wrapper .number {
-    font-size: 90px;
-  }
-  .description-section .title-wrapper .text {
-    font-size: 28px;
-  }
-  */
 
   /* manufacture section */
   .manufacture-section .manufacture-description .manufacture-image {
     width: 525px;
     height: 260px;
   }
-  /*
-  .manufacture-section .manufacture-title .title {
-    font-size: 54px;
-  }
-  .manufacture-section .manufacture-title .subtitle {
-    font-size: 36px;
-  }
-  .manufacture-section .manufacture-content .video {
-    width: 420px;
-  }
-  .manufacture-section .manufacture-content .description .text {
-    font-size: 19px;
-  }
-  */
 
-  /* image section */
-  /*
-  .image-section .grid-container {
-    gap: 0 55px;
-  }
-  */
-
-  /* club section */
-  /*
-  .club-section .club-title .title {
-    font-size: 54px;
-  }
-  .club-section .club-title .name {
-    font-size: 40px;
-  }
-  .club-section .club-title .text {
-    font-size: 30px;
-  }
-  .club-section .club-content .club-item .title {
-    font-size: 22px;
-  }
-  .club-section .club-content .club-item .club-item__text {
-    font-size: 19px;
-  }
-  .club-section .club-content .ball {
-    top: -86px;
-    width: 70px;
-  }
-  */
   /* manufacture section */
   .manufacture-section .manufacture-description .manufacture-content__title {
     font-size: 36px;
@@ -5065,23 +5017,6 @@ a.reset_variations::before {
   .footer {
     margin: 70px 0 0 0;
   }
-  /*
-  .footer .menu .menu-item a {
-    font-size: 16px;
-  }
-  .footer .callback-form-btn .callback-form-btn__text {
-    font-size: 20px;
-  }
-  .footer .callback-form-btn {
-    gap: 8px;
-  }
-  .footer .search-btn {
-    gap: 8px;
-  }
-  .footer .search-btn .search-btn__text {
-    font-size: 20px;
-  }
-  */
 
   /* products card ul.products */
   ul.products li.product .button {
@@ -5092,26 +5027,6 @@ a.reset_variations::before {
   ul.products li.product .woocommerce-placeholder {
     height: 252px;
   }
-
-  /* about pharmacy */
-  /*
-  .archive-product .o-nas-pharmacy-section {
-    padding: 70px 0 0 0;
-  }
-  .archive-product .o-nas-pharmacy-section .o-nas-pharmacy-section-subtitle {
-    font-size: 52px;
-  }
-  */
-
-  /* text section */
-  /*
-  .text-section {
-    padding: 60px 0 0 0;
-  }
-  .text-section .text-section-title {
-    font-size: 52px;
-  }
-  */
 
   /* single product page */
   .single-product .product .product_title {
@@ -5253,6 +5168,11 @@ a.reset_variations::before {
     padding-top: 60px;
   }
 
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 38px;
+  }
+
   .primary-btn {
     height: 56px;
     font-size: 20px;
@@ -5347,7 +5267,6 @@ a.reset_variations::before {
   .category-section .flex-container {
     gap: 16px;
   }
-  
 
   /* personal select section */
   .personal-select-section .personal-select-content__title {
@@ -5363,11 +5282,6 @@ a.reset_variations::before {
   }
 
   /* description section */
-  /*
-  .description-section {
-    padding: 0;
-  }
-  */
   .description-section .description-content {
     padding: 30px 35px;
     border-radius: 25px;
@@ -5381,25 +5295,6 @@ a.reset_variations::before {
   .manufacture-section .manufacture-description .manufacture-content__title {
     font-size: 32px;
   }
-  /*
-  .manufacture-section {
-    padding: 30px 0;
-  }
-  .manufacture-section .manufacture-description .manufacture-content__title {
-    font-size: 32px;
-  }
-  .manufacture-section .manufacture-description .manufacture-image {
-    width: 480px;
-    height: 238px;
-    border-radius: 25px;
-  }
-  .manufacture-section .manufacture-image .grid-container {
-    gap: 15px;
-  }
-  .manufacture-section .manufacture-image .image {
-    border-radius: 25px;
-  }
-  */
 
   /* advantages section */
   .advantages-section .advantages-section-title {
@@ -5418,40 +5313,7 @@ a.reset_variations::before {
     font-size: 18px;
   }
 
-
   /* footer */
-  /*
-  .footer {
-    margin: 60px 0 0 0;
-  }
-  .footer .footer-pe .footer-pe-image {
-    width: 34px;
-  }
-  .footer .footer-pe .footer-pe-link {
-    font-size: 21px;
-  }
-  .footer .working-time {
-    font-size: 17px;
-  }
-  .footer .footer-address {
-    font-size: 17px;
-  }
-  .footer .callback-form-btn .callback-form-btn__text {
-    font-size: 16px;
-  }
-  .footer .search-btn .search-btn__text {
-    font-size: 16px;
-  }
-  .footer .menu li:not(:last-child) {
-    margin-bottom: 16px;
-  }
-  .footer .menu .menu-item a {
-    font-size: 14px;
-  }
-  .footer .footer-pa {
-    font-size: 17px;
-  }
-  */
   .footer {
     margin-top: 60px;
     padding: 50px 0 70px 0;
@@ -5505,15 +5367,42 @@ a.reset_variations::before {
     height: 47px;
   }
 
-  /* about pharmacy */
-  /*
-  .archive-product .o-nas-pharmacy-section .description-section {
-    padding: 60px 0 0 0;
+  /* o nas page */
+  .o-nas-page .o-nas-section .o-nas-section-description__big-text {
+    font-size: 28px;
   }
-  .archive-product .o-nas-pharmacy-section .description-section .o-nas-pharmacy-section-subtitle {
-    font-size: 48px;
+  .o-nas-page .o-nas-section .o-nas-section-description__small-text {
+    font-size: 18px;
   }
-  */
+  .o-nas-page .text20 {
+    font-size: 18px;
+  }
+  .o-nas-page .frame {
+    padding: 35px;
+  }
+  .o-nas-page .list-item .list-item__text {
+    font-size: 17px;
+  }
+  .o-nas-page .subtitle {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  .o-nas-page .how-to-order-section .flex-container {
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
+  .pink-blur {
+    padding: 35px;
+  }
+
+  /* О нас секция Для кого и NaturaProf секция Для кого */
+  .for-whom-section .for-whom-item {
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
 
   /* text section */
   /*
@@ -5662,140 +5551,8 @@ a.reset_variations::before {
     -webkit-box-orient: vertical;
   }
 
-  /* expert system page */
-  /*
-  .expert-system-page .pay-now-btn {
-    width: 257px;
-    height: 60px;
-    font-size: 24px;
-  }
-  .expert-system-page .o-nas-expert-system-section {
-    padding-bottom: 60px;
-  }
-  .expert-system-page .o-nas-expert-system-section .text {
-    font-size: 20px;
-  }
-  .expert-system-page .advantages-section .section-title {
-    font-size: 24px;
-  }
-  .expert-system-page .advantages-section .advantages-item {
-    height: 173px;
-    padding: 25px;
-  }
-  .expert-system-page .diagnostics-section .flex-container {
-    font-size: 17px;
-  }
-  .expert-system-page .diagnostics-section .left {
-    padding: 30px;
-  }
-  .expert-system-page .diagnostics-section .right {
-    padding: 30px;
-  }
-  .expert-system-page .diagnostics-section .right .frame {
-    padding: 30px;
-  }
-  .expert-system-page .doctor-section .text {
-    font-size: 20px;
-  }
-  .expert-system-page .buy-section .buy-btn {
-    padding: 15px 0;
-    font-size: 18px;
-  }
-  .expert-system-page .buy-section .underbtn-text .price {
-    font-size: 38px;
-  }
-  .expert-system-page .buy-section .underbtn-text .discount {
-    font-size: 20px;
-  }
-  */
-
-  /* about salts page */
-  /*
-  .o-nas-salts-page .section {
-    padding: 30px 0;
-  }
-  .o-nas-salts-page .section-title {
-    font-size: 30px;
-  }
-  .o-nas-salts-page .text {
-    font-size: 20px;
-  }
-  .o-nas-salts-page .frame {
-    padding: 20px;
-  }
-  .o-nas-salts-page .frame .list {
-    margin: 0;
-    padding: 0 0 0 30px;
-  }
-  .o-nas-salts-page .section-title {
-    font-size: 26px;
-  }
-  .o-nas-salts-page .photo-section .livetime {
-    font-size: 22px;
-  }
-  .o-nas-salts-page .salts-section .flex-row .number {
-    width: 65px;
-  }
-  .o-nas-salts-page .salts-section .flex-row .title {
-    width: 300px;
-  }
-  .o-nas-salts-page .salts-section .additional-text {
-    padding: 20px;
-  }
-  .o-nas-salts-page .rule-section .text-medium {
-    font-size: 30px;
-  }
-  */
-
-  /* service page */
-  /*
-  .service-page .partnership-section .partnership-text {
-    font-size: 33px;
-  }
-  .service-page .desc-section {
-    margin: 0 0 40px 0;
-  }
-  .service-page .desc-section .text-bold {
-    font-size: 20px;
-  }
-  .service-page .desc-section .sotrudnichestvo-subtitle {
-    font-size: 36px;
-  }
-  .service-page .desc-section .list-item {
-    font-size: 16px;
-  }
-  .service-page .pharmacy-section .pharmacy-description {
-    font-size: 20px;
-  }
-  .service-page .pharmacy-section .pharmacy-btn {
-    width: 300px;
-    padding: 12px 0;
-  }
-  .service-page .sp-section {
-    margin: 0 0 40px 0;
-  }
-  .service-page .pn-title {
-    font-size: 48px;
-  }
-  .service-page .partners-section .flex-container {
-    gap: 50px;
-  }
-  .service-page .news-section .news-item__title {
-    margin: 0 0 15px 0;
-    font-size: 20px;
-  }
-  .service-page .faq-section .faq-description {
-    font-size: 20px;
-  }
-  .service-page .testimonials-section .testimonials-item__title {
-    font-size: 20px;
-  }
-  .service-page .testimonials-section .testimonials-item__text {
-    font-size: 16px;
-  }
-  */
-
   /* faq page */
+  /*
   .faq-page .faq-description {
     font-size: 20px;
   }
@@ -5805,10 +5562,16 @@ a.reset_variations::before {
   .faq-page .accordeon-section .accordeon-item-title {
     font-size: 20px;
   }
+  */
 
   /* sostoyaniya ot a do ya page */
   .sostoyaniya-ot-a-do-ya-page .title {
     font-size: 22px;
+  }
+
+  /* breadcrumb */
+  .breadcrumbs-wrapper {
+    margin-bottom: 50px;
   }
 
   /* we use cookie */
@@ -5832,6 +5595,11 @@ a.reset_variations::before {
   .section-with-anchor {
     margin-top: -40px;
     padding-top: 40px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+    font-size: 34px;
   }
 
   .primary-btn {
@@ -5894,8 +5662,7 @@ a.reset_variations::before {
   }
   .header-nav .sub-menu {
     display: none;
-  }
-  
+  }  
 
   /* header search */
   .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp input[type="search"].dgwt-wcas-search-input {
@@ -5953,24 +5720,6 @@ a.reset_variations::before {
   }
 
   /* personal select section */
-  /*
-  .personal-select-section .personal-select-content {
-    padding: 25px 30px;
-    border-radius: 20px;
-  }
-  .personal-select-section .personal-select-content__title {
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
-  .personal-select-section .personal-select-content__description {
-    font-size: 18px;
-  }
-  .personal-select-section .example-report-btn {
-    height: 56px;
-    font-size: 20px;
-  }
-  */
-  /* personal section */
   .personal-select-section .personal-select-content__title {
     margin-bottom: 20px;
     font-size: 24px;
@@ -5985,11 +5734,6 @@ a.reset_variations::before {
   }
     
   /* description section */
-  /*
-  .description-section {
-    padding: 20px 0;
-  }
-  */
   .description-section .description-content {
     padding: 20px 25px;
     border-radius: 15px;
@@ -6003,11 +5747,6 @@ a.reset_variations::before {
   }
 
   /* manufacture section */
-  /*
-  .manufacture-section {
-    padding: 20px 0;
-  }
-  */
   .manufacture-section .manufacture-description .manufacture-content__title {
     margin-bottom: 20px;
     font-size: 30px;
@@ -6037,34 +5776,6 @@ a.reset_variations::before {
   }
 
   /* footer */
-  /*
-  .footer {
-    margin: 50px 0 0 0;
-  }
-  .footer .footer-menu .footer-menu-item__title {
-    font-size: 16px;
-  }
-  .footer .footer-menu .menu-item a {
-    font-size: 14px;
-  }
-  .footer .footer-menu {
-    gap: 16px;
-  }
-  .footer .required-links {
-    margin-bottom: 40px;
-  }
-  .footer .required-links .footer-pa {
-    font-size: 16px;
-  }
-  .footer .contacts .flex-container {
-    gap: 20px;
-    flex-direction: column;
-  }
-  .footer .footer-bottom {
-    gap: 20px;
-    flex-direction: column;
-  }
-  */
   .footer {
     margin-top: 50px;
     padding-top: 40px;
@@ -6119,28 +5830,84 @@ a.reset_variations::before {
     font-size: 14px;
   }
 
-  /* about pharmacy */
-  /*
-  .catalog-page .description-section {
-    padding: 50px 0 0 0;
+  /* o nas page */
+  .o-nas-page .o-nas-section .o-nas-section-description__big-text {
+    font-size: 24px;
   }
-  .catalog-page .description-section .o-nas-pharmacy-section-subtitle {
-    font-size: 44px;
+  .o-nas-page .o-nas-section .o-nas-image-vertikal {
+    width: 230px;
+    height: 293px;
   }
-  */
-
-  /* text section */
-  /*
-  .text-section {
-    padding: 40px 0 0 0;
+  .o-nas-page .o-nas-section .o-nas-image-horizontal {
+    width: 285px;
+    height: 224px;
   }
-  .text-section .text-section-title {
-    font-size: 44px;
+  .o-nas-page .grid-container4060 {
+    gap: 16px;
   }
-  .text-section .p {
+  .o-nas-page .flex-container-column {
+    gap: 16px;
+  }
+  .o-nas-page .frame {
+    padding: 30px 25px;
+    border-radius: 20px;
+  }
+  .o-nas-page .frame p {
+    margin-bottom: .5em;
+  }
+  .o-nas-page .text20 {
     font-size: 16px;
   }
-  */
+  .o-nas-page .list-item {
+    margin-bottom: 10px;
+  }
+  .o-nas-page .list-item .list-item__text {
+    font-size: 16px;
+  }
+  .o-nas-page .o-nas-image {
+    border-radius: 20px;
+  }
+  .o-nas-page .subtitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .o-nas-page .tasks-section .grid-container {
+    gap: 60px;
+  }
+  .o-nas-page .list-item .checkbox {
+    width: 36px;
+  }
+  .o-nas-page .list-item .truck {
+    width: 40px;
+  }
+  .o-nas-page .how-to-order-section .how-to-order-section-subtitle {
+    margin-bottom: 25px;
+    font-size: 22px;
+  }
+  .o-nas-page .how-to-order-section .left-40 .frame {
+    padding: 20px;
+  }
+  .o-nas-page .how-to-order-section .image {
+    width: 220px;
+    height: 249px;
+    border-radius: 20px;
+  }
+  .o-nas-page .payment-section .flex-container {
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  /* О нас секция Для кого и NaturaProf секция Для кого */
+  .for-whom-section .for-whom-item {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
+  .pink-blur {
+    padding: 30px;
+  }
 
   /* single product page */
   .single-product .product .woocommerce-product-gallery {
@@ -6313,166 +6080,10 @@ a.reset_variations::before {
     font-size: 16px;
   }
 
-  /* expert system page */
-  /*
-  .expert-system-page .pay-now-btn {
-    width: 247px;
-    height: 50px;
-    font-size: 20px;
+  /* breadcrumb */
+  .breadcrumbs-wrapper {
+    margin-bottom: 40px;
   }
-  .expert-system-page .o-nas-expert-system-section {
-    padding-bottom: 50px;
-  }
-  .expert-system-page .o-nas-expert-system-section .text {
-    font-size: 18px;
-  }
-  .expert-system-page .advantages-section .section-title {
-    font-size: 22px;
-  }
-  .expert-system-page .advantages-section .advantages-item {
-    height: 186px;
-    padding: 20px;
-  }
-  .expert-system-page .diagnostics-section .flex-container {
-    font-size: 16px;
-  }
-  .expert-system-page .diagnostics-section .left {
-    padding: 25px;
-  }
-  .expert-system-page .diagnostics-section .right {
-    padding: 25px;
-  }
-  .expert-system-page .diagnostics-section .right .frame {
-    padding: 25px;
-  }
-  .expert-system-page .doctor-section .text {
-    font-size: 18px;
-  }
-  .expert-system-page .copyright-section .copyright {
-    font-size: 22px;
-  }
-  */
-
-  /* about salts page */
-  /*
-  .o-nas-salts-page .image {
-    width: 300px;
-  }
-  .o-nas-salts-page .section {
-    padding: 20px 0;
-  }
-  .o-nas-salts-page .section-title {
-    margin: 0 0 15px 0;
-    font-size: 22px;
-  }
-  .o-nas-salts-page .text {
-    font-size: 18px;
-  }
-  .o-nas-salts-page .frame {
-    padding: 15px 20px;
-  }
-  .o-nas-salts-page .list-item {
-    margin: 0;
-  }
-  .o-nas-salts-page .photo-section .photo {
-    width: 200px;
-  }
-  .o-nas-salts-page .photo-section .livetime {
-    font-size: 18px;
-  }
-  .o-nas-salts-page .advantages-section .advantages-item {
-    margin: 0 0 20px 0;
-  }
-  .o-nas-salts-page .salts-section .flex-row .number {
-    width: 45px;
-  }
-  .o-nas-salts-page .use-section .white-frame-title {
-    font-size: 28px;
-  }
-  .o-nas-salts-page .use-section .list-first {
-    margin: 0 0 20px 0;
-  }
-  .o-nas-salts-page .rule-section .text-medium {
-    font-size: 28px;
-  }
-  .o-nas-salts-page .reaction-section .list-item {
-    font-size: 18px;
-  }
-  */
-
-  /* service page */
-  /*
-  .service-page .frames-section .frames-item {
-    height: 186px;
-    padding: 20px;
-  }
-  .service-page .frames-section .frames-item__title {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .service-page .partnership-section .partnership-text {
-    font-size: 24px;
-    line-height: 2.7;
-  }
-  .service-page .pharmacy-section .pharmacy-description {
-    font-size: 18px;
-  }
-  .service-page .partners-section .centr-natalii-radomskoj {
-    width: 300px;
-  }
-  .service-page .partners-section .vala-r {
-    width: 100px;
-  }
-  .service-page .sp-section {
-    margin: 0 0 30px 0;
-  }
-  .service-page .pn-title {
-    font-size: 42px;
-  }
-  .service-page .news-section .news-item__title {
-    font-size: 18px;
-    line-height: 1.2;
-  }
-  .service-page .faq-section .faq-description {
-    font-size: 18px;
-  }
-  .service-page .faq-section .faq-item__content {
-    padding: 30px;
-  }
-  .service-page .faq-section .arrow-right {
-    right: 30px;
-  }
-  .service-page .faq-section .faq-item__title {
-    font-size: 22px;
-  }
-  */
-
-  /* faq page */
-  /*
-  .faq-page .faq-description {
-    font-size: 18px;
-  }
-  .faq-page .accordeon-section .section-title {
-    font-size: 24px;
-  }
-  .faq-page .accordeon-section .accordeon-item-title {
-    font-size: 18px;
-  }
-  */
-
-  /* catalog section */
-  /*
-  .catalog-section .catalog-tabs-contents .children__title {
-    font-size: 20px;
-  }
-  */
-
-  /* to top */
-  /*
-  .to-top {
-    display: none;
-  }
-  */
 
   /* we use cookie */
   .we-use-cookie-wrapper {
@@ -6503,6 +6114,11 @@ a.reset_variations::before {
     padding-top: 30px;
   }
 
+  .section-title {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+
   .catalog-section-title {
     font-size: 40px;
   }
@@ -6516,48 +6132,13 @@ a.reset_variations::before {
     width: 100%;
   }
   
-
   /* custom page */
-  /*
   .custom-page .page-title {
     margin: 0 0 30px 0;
     font-size: 43px;
   }
-  */
 
   /* main section */
-  /*
-  .main-section {
-    height: auto;
-    padding: 0;
-    margin-bottom: 40px;
-    background-color: var(--nero-color);
-  }
-  .main-section .flex-container {
-    display: block;
-  }
-  .main-section .main-section-about {
-    width: 100%;
-    height: auto;
-    margin: 0 0 10px 0;
-    padding: 30px 0 20px 0;
-    border-radius: 15px;
-  }
-  .main-section .main-section-about .o-nas-bg {
-    display: none;
-  }
-  .main-section .main-section-slider {
-    width: 100%;
-  }
-  .main-section .main-slider {
-    border-radius: 15px;
-    overflow: hidden;
-  }
-  .main-section .main-section-slider .main-slider-item {
-    height: 337px;
-    border-radius: 0;
-  }
-  */
   .main-section {
     padding-top: 0;
   }
@@ -6607,11 +6188,6 @@ a.reset_variations::before {
   */
 
   /* category section */
-  /*
-  .category-section .flex-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  */
   .category-section .flex-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -6642,33 +6218,7 @@ a.reset_variations::before {
     font-size: 16px;
   }
 
-
   /* description section */
-  /*
-  .description-section .flex-container {
-    flex-direction: column;
-  }
-  .description-section .description-image {
-    width: 60%;
-    height: auto;
-    margin: 0 auto 20px auto;
-  }
-  .description-section .description-content {
-    padding: 20px 25px;
-    border-radius: 15px;
-  }
-  .description-section .description-content__title {
-    margin-bottom: 15px;
-    font-size: 32px;
-  }
-  .description-section .description-content__text {
-    font-size: 17px;
-  }
-  .description-section .title-wrapper {
-    width: max-content;
-    margin: 0 auto 30px auto;
-  }
-  */
   .description-section .flex-container {
     gap: 16px;
     flex-direction: column;
@@ -6683,26 +6233,8 @@ a.reset_variations::before {
   .description-section .description-content__text {
     font-size: 17px;
   }
-  
 
   /* manufacture section */
-  /*
-  .manufacture-section .manufacture-title {
-    padding: 25px 0;
-  }
-  .manufacture-section .manufacture-title .title {
-    font-size: 42px;
-  }
-  .manufacture-section .manufacture-title .subtitle {
-    font-size: 26px;
-  }
-  .manufacture-section .manufacture-content .flex-container {
-    display: block;
-  }
-  .manufacture-section .manufacture-content .video {
-    margin: 0 auto 20px auto;
-  }
-  */
   .manufacture-section .manufacture-description .manufacture-content__title {
     font-size: 26px;
   }
@@ -6722,61 +6254,6 @@ a.reset_variations::before {
   .manufacture-section .manufacture-image .image {
     border-radius: 20px;
   }
-
-  /* view more btn */
-  /*
-  .view-more-btn {
-    width: 150px;
-    height: 45px;
-  }
-  */
-  
-  /* image section */
-  /*
-  .image-section {
-    padding: 20px 0 40px 0;
-  }
-  */
-  /*
-  .image-section .grid-container {
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  */
-
-  /* club section */
-  /*
-  .club-section .club-title {
-    padding: 25px 0;
-  }
-  .club-section .club-title .title {
-    font-size: 42px;
-    line-height: 1.3;
-  }
-  .club-section .club-title .name {
-    font-size: 30px;
-  }
-  .club-section .club-content .flex-container {
-    height: 70px;
-    margin: 0 0 15px 0;
-  }
-  .club-section .club-content .club-item .title {
-    font-size: 19px;
-  }
-  .club-section .club-form .form-group {
-    width: 100%;
-  }
-  .club-section .club-content .ball {
-    width: 35px;
-  }
-  */
-
-  /* catalog section */
-  /*
-  .catalog-section .catalog-tabs-contents .cat-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  */
 
   /* advantages section */
   .advantages-section .advantages-section-title {
@@ -6800,15 +6277,7 @@ a.reset_variations::before {
     margin-left: 0;
   }
 
-  
-
   /* footer */
-
-  /*
-  .footer {
-    padding: 30px 0 180px 0;
-  }
-  */
   .footer {
     margin-top: 40px;
     padding-top: 30px;
@@ -6857,15 +6326,75 @@ a.reset_variations::before {
     height: 252px;
   }
 
-  /* about pharmacy */
-  /*
-  .archive-product .o-nas-pharmacy-section {
-    padding: 40px 0 0 0;
+  /* o nas page */
+  .o-nas-page .o-nas-section .flex-container {
+    flex-direction: column;
   }
-  .archive-product .o-nas-pharmacy-section .o-nas-pharmacy-section-subtitle {
-    font-size: 40px;
+  .o-nas-page .o-nas-section .o-nas-section-description__big-text {
+    font-size: 20px;
   }
-  */
+  .o-nas-page .o-nas-section .o-nas-image-vertikal {
+    width: 150px;
+    height: 191px;
+    order: 1;
+  }
+  .o-nas-page .o-nas-section .o-nas-section-description {
+    order: 2;
+  }
+  .o-nas-page .o-nas-section .o-nas-image-horizontal {
+    width: 150px;
+    height: 118px;
+  }
+  .o-nas-page .o-nas-section .o-nas-section-description__small-text {
+    font-size: 17px;
+  }
+  .o-nas-page .grid-container4060,
+  .o-nas-page .grid-container6040 {
+    gap: 10px;
+    grid-template-columns: auto;
+  }
+  .o-nas-page .frame {
+    padding: 25px 20px;
+    font-size: 15px;
+  }
+  .o-nas-page .list-item .ellipse {
+    width: 8px;
+  }
+  .o-nas-page .subtitle {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .o-nas-page .list-item .list-item__text {
+    font-size: 15px;
+  }
+  .o-nas-page .tasks-section .grid-container {
+    gap: 16px;
+  }
+  .o-nas-page .list-item .checkbox {
+    width: 30px;
+  }
+  .o-nas-page .how-to-order-section .how-to-order-section-subtitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .o-nas-page .how-to-order-section .text-wrapper {
+    margin-bottom: 20px;
+  }
+  .o-nas-page .payment-section .flex-container {
+    padding: 25px;
+  }
+  .o-nas-page .payment-section .flex-container {
+    padding: 25px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
+  .pink-blur {
+    padding: 25px;
+    border-radius: 20px;
+  }
 
   /* subcategories фильтр подкатегорий */
   .subcategories {
@@ -6881,7 +6410,6 @@ a.reset_variations::before {
     display: block;
   }
   .single-product .product .woocommerce-product-gallery {
-/*    width: 100%;*/
     margin: 0;
   }
   .single-product .product .summary .product_title {
@@ -7052,63 +6580,8 @@ a.reset_variations::before {
     display: block;
   }
 
-  /* expert system page */
-  /*
-  .expert-system-page .pay-now-btn {
-    width: 227px;
-    height: 45px;
-    font-size: 16px;
-  }
-  .expert-system-page .o-nas-expert-system-section {
-    padding-bottom: 30px;
-  }
-  .expert-system-page .o-nas-expert-system-section .text {
-    font-size: 16px;
-  }
-  .expert-system-page .advantages-section .section-title {
-    font-size: 20px;
-  }
-  .expert-system-page .advantages-section .advantages-item {
-    height: auto;
-    padding: 20px;
-  }
-  .expert-system-page .advantages-section .advantages-item__title {
-    margin: 0 0 15px 0;
-    font-size: 18px;
-  }
-  .expert-system-page .diagnostics-section .flex-container {
-    display: block;
-  }
-  .expert-system-page .diagnostics-section .left {
-    width: 100%;
-  }
-  .expert-system-page .diagnostics-section .right {
-    width: 100%;
-  }
-  .expert-system-page .doctor-section .text {
-    font-size: 17px;
-  }
-  .expert-system-page .copyright-section .copyright {
-    font-size: 20px;
-  }
-  .expert-system-page .buy-section .flex-container {
-    display: block;
-  }
-  .expert-system-page .buy-section .btn-wrapper {
-    margin: 0 0 30px 0;
-  }
-  .expert-system-page .buy-section .buy-btn {
-    margin: 0 auto 6px auto;
-  }
-  .expert-system-page .buy-section .underbtn-text .price {
-    font-size: 34px;
-  }
-  .expert-system-page .buy-section .underbtn-text .discount {
-    font-size: 16px;
-  }
-  */
-
   /* about salts page */
+  /*
   .o-nas-salts-page .text {
     font-size: 16px;
   }
@@ -7159,6 +6632,7 @@ a.reset_variations::before {
   .o-nas-salts-page .reaction-section .list-item {
     font-size: 16px;
   }
+  */
 
   /* sostoyaniya ot a do ya page */
   .sostoyaniya-ot-a-do-ya-page .title {
@@ -7182,80 +6656,10 @@ a.reset_variations::before {
     font-size: 16px;
   }
 
-  /* service page */
-  /*
-  .service-page .desc-section .text-bold {
-    font-size: 18px;
+  /* breadcrumb */
+  .breadcrumbs-wrapper {
+    margin-bottom: 30px;
   }
-  .service-page .desc-section .p-last {
-    margin: 0 0 40px 0;
-  }
-  .service-page .desc-section .sotrudnichestvo-subtitle {
-    font-size: 32px;
-  }
-  .service-page .desc-section .list-item {
-    margin: 0 0 8px 0;
-  }
-  .service-page .frames-section .frames-item {
-    height: auto;
-  }
-  .service-page .frames-section {
-    margin: 0 0 18px 0;
-  }
-  .service-page .partnership-section .partnership-btn {
-    font-size: 16px;
-  }
-  .service-page .partnership-section .partnership-text {
-    font-size: 19px;
-    line-height: 2.2;
-  }
-  .service-page .pharmacy-section .pharmacy-section-subtitle {
-    font-size: 38px;
-  }
-  .service-page .pharmacy-section .pharmacy-description {
-    font-size: 16px;
-  }
-  .service-page .pharmacy-section .pharmacy-btn {
-    font-size: 18px;
-  }
-  .service-page .partners-section .centr-natalii-radomskoj {
-    width: 200px;
-  }
-  .service-page .partners-section .vala-r {
-    width: 80px;
-  }
-  .service-page .sp-section {
-    margin: 0 0 20px 0;
-  }
-  .service-page .pn-title {
-    font-size: 38px;
-  }
-  .service-page .faq-section .faq-description {
-    font-size: 16px;
-  }
-  .service-page .faq-section .flex-container {
-    height: 140px;
-  }
-  .service-page .faq-section .faq-item__content {
-    padding: 20px;
-  }
-  .service-page .testimonials-section .testimonials-item {
-    width: 50%;
-  }
-  .service-page .faq-section .arrow-right {
-    right: 20px;
-    width: 25px;
-    height: 25px;
-  }
-  .service-page .testimonials-section .swiper-prev,
-  .service-page .testimonials-section .swiper-next {
-    width: 25px;
-    height: 25px;
-  }
-  .service-page .faq-section .faq-item__title {
-    font-size: 20px;
-  }
-  */
 
   /* we use cookie */
   .we-use-cookie {
@@ -7272,26 +6676,16 @@ a.reset_variations::before {
 
 @media only screen and (max-width : 576px) {
 
+  .section-title {
+    font-size: 26px;
+  }
+
   /* custom page */
   .custom-page .page-title {
     font-size: 40px;
   }
 
   /* main section */
-  /*
-  .main-section .main-section-slider .main-slider-item {
-    height: 0;
-    position: relative;
-    padding: 0 0 60.5% 0;
-  }
-  .main-section .main-section-slider .slider-item-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-  */
   .main-section .main-title {
     font-size: 28px;
   }
@@ -7305,11 +6699,6 @@ a.reset_variations::before {
   }
 
   /* category section */
-  /*
-  .category-section {
-    padding: 0 0 30px 0;
-  }
-  */
   .category-section .flex-container {
     gap: 10px;
   }
@@ -7326,43 +6715,10 @@ a.reset_variations::before {
   }
 
   /* manufacture section */
-  /*
-  .manufacture-section .manufacture-content {
-    padding: 30px 0;
-  }
-  */
   .manufacture-section .manufacture-description .manufacture-image {
     width: 457px;
     height: 257px;
   }
-
-  /* image section */
-  /*
-  .image-section .grid-container {
-    gap: 12px;
-  }
-  */
-
-  /* club section */
-  /*
-  .club-section .club-title .title {
-    margin: 0 0 10px 0;
-    font-size: 36px;
-    line-height: 1.1;
-  }
-  .club-section .club-content {
-    padding: 30px 0 30px 0;
-  }
-  .club-section .club-form .input-field {
-    height: 55px;
-  }
-  .club-section .club-form .club-submit-btn {
-    height: 55px;
-  }
-  .club-section .club-content .ball {
-    top: -40px;
-  }
-  */
 
   /* advantages section */
   .advantages-section .advantages-section-title {
@@ -7370,56 +6726,6 @@ a.reset_variations::before {
   }
 
   /* footer */
-  /*
-  .footer {
-    margin-top: 50px;
-  }
-  .footer .menu {
-    -webkit-columns: 1;
-    -moz-columns: 1;
-    column-count: 1;
-    -webkit-column-gap: 0;
-    -moz-column-gap: 0;
-    column-gap: 0;
-    margin-top: 0;
-  }
-  .footer .with-social {
-    width: 100%;
-  }
-  .footer .with-logo {
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    margin-top: 30px;
-    order: 3;
-    text-align: center;
-    width: 50%;
-    width: 100%;
-  }
-  .footer .logo-side img {
-    margin: 0 auto 20px;
-  }
-  .footer .col-lg-4.txt_r.flex.f-d-column.j-content-sb.a-items-fe {
-    text-align: center;
-  }
-  .footer .pay_box {
-    margin: 0 auto;
-  }
-  .footer .menu li {
-    margin-bottom: 0;
-  }
-  .footer .menu {
-    margin-top: 25px;
-  }
-  .footer .with-logo {
-    order: unset;
-  }
-  .footer .with-logo > div {
-    justify-content: center;
-  }
-  .footer .with-menu-footer {
-    order: unset;
-  }
-  */
   .footer .contacts .pe-text {
     font-size: 18px;
   }
@@ -7483,15 +6789,23 @@ a.reset_variations::before {
     font-size: 20px;
   }
 
-  /* about salts page */
-  .o-nas-salts-page .salts-section .flex-row {
-    font-size: 16px;
+  /* o nas page */
+  .o-nas-page .frame-title {
+    margin-bottom: 10px;
+    font-size: 20px;
   }
-  .o-nas-salts-page .section-title {
+  .o-nas-page .how-to-order-section .how-to-order-section-subtitle {
+    margin-bottom: 15px;
     font-size: 18px;
   }
-   .o-nas-salts-page .use-section .white-frame-title {
-    font-size: 24px;
+  .o-nas-page .how-to-order-section .image {
+    width: 150px;
+    height: 170px;
+  }
+
+  /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
+  .pink-blur {
+    padding: 25px 20px;
   }
 
   /* sostoyaniya ot a do ya page */
@@ -7499,23 +6813,7 @@ a.reset_variations::before {
     font-size: 18px;
   }
 
-  /* service page */
-  /*
-  .service-page .sp-section {
-    margin: 0;
-    padding: 20px 0;
-  }
-  .service-page .pharmacy-section .pharmacy-section-subtitle {
-    font-size: 34px;
-  }
-  .service-page .pn-title {
-    font-size: 34px;
-  }
-  .service-page .faq-section .faq-item__title {
-    font-size: 18px;
-  }
-  */
-
+  /* burger menu */
   .burger-menu-wrapper {
     right: 12px;
   }
@@ -7550,41 +6848,12 @@ a.reset_variations::before {
     font-size: 16px;
   }
 
-
   /* custom page */
-  /*
   .custom-page .page-title {
     font-size: 36px;
   }
-  */
-
-  /* category select section */
-  /*
-  .category-section .category-item .orange-text {
-    line-height: 1.2;
-  }
-  */
 
   /* personal select section */
-  /*
-  .personal-select-section .select-item-darkblue {
-    height: 240px;
-  }
-  .personal-select-section .select-item-darkblue .select-item__image {
-    width: 100px;
-  }
-  .personal-select-section .select-item-burgundy {
-    height: auto;
-    gap: 20px;
-  }
-  .personal-select-section .select-item-burgundy-btn {
-    height: 40px;
-  }
-  .personal-select-section .select-item-burgundy .flex-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  */
   .personal-select-section .content-flex-container {
     gap: 10px;
     flex-direction: column;
@@ -7600,14 +6869,6 @@ a.reset_variations::before {
   }
 
   /* description section */
-  /*
-  .description-section .title-wrapper .image {
-    display: none;
-  }
-  .description-section .title-wrapper .number {
-    margin: 0 20px 0 0;
-  }
-  */
   .description-section .description-content__title {
     font-size: 26px;
   }
@@ -7619,14 +6880,6 @@ a.reset_variations::before {
   }
 
   /* manufacture section */
-  /*
-  .manufacture-section .manufacture-title .title {
-    font-size: 38px;
-  }
-  .manufacture-section .manufacture-title .subtitle {
-    font-size: 22px;
-  }
-  */
   .manufacture-section .manufacture-description .manufacture-content__title {
     font-size: 24px;
   }
@@ -7659,7 +6912,6 @@ a.reset_variations::before {
   .advantages-section .advantages-item__text {
     font-size: 14px;
   }
-
 
   /* products card ul.products */
   ul.products {
@@ -7696,16 +6948,6 @@ a.reset_variations::before {
   .catalog-section .catalog-tabs-contents .cat-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  /* about pharmacy */
-  /*
-  .archive-product .o-nas-pharmacy-section {
-    padding: 30px 0 0 0;
-  }
-  .archive-product .o-nas-pharmacy-section .o-nas-pharmacy-section-subtitle {
-    font-size: 29px;
-  }
-  */
 
   /* single product page */
   .single-product .product .product_title {
@@ -7796,15 +7038,6 @@ a.reset_variations::before {
   .o-nas-salts-page .use-section .white-frame {
     font-size: 16px;
   }
-
-  /* expert system page */
-  /*
-  .expert-system-page .coupon .input-text,
-  .expert-system-page .coupon .button {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  */
 
   /* sostoyaniya ot a do ya page */
   .sostoyaniya-ot-a-do-ya-page .title {
