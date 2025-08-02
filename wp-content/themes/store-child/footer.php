@@ -302,52 +302,72 @@
   </div>
 </div>
 
-<div class="sticky-desktop-menu hidden-mobile">
+<div class="sticky-desktop-menu">
   <div class="header-nav">
     <div class="container">
       <div class="menu-container">
         <ul id="header_menu" class="menu">
           <li class="menu-item menu-item-has-children">
-            <span>О нас</span>
+            <a href="/o-nas">О нас</a>
             <ul class="sub-menu">
               <li class="sub-menu-item">
-                <a href="#">Миссия</a>
+                <a href="/o-nas#mission">Миссия</a>
               </li>
               <li class="sub-menu-item">
-                <a href="#">Для кого</a>
+                <a href="/o-nas#for-whom">Для кого</a>
               </li>
               <li class="sub-menu-item">
-                <a href="#">Как это работает</a>
+                <a href="/o-nas#how-it-works">Как это работает</a>
               </li>
               <li class="sub-menu-item">
-                <a href="#">Как сделать заказ</a>
+                <a href="/o-nas#how-to-order">Как сделать заказ</a>
               </li>
               <li class="sub-menu-item">
-                <a href="#">Вопрос-ответ</a>
+                <a href="/o-nas#faq">Вопрос-ответ</a>
               </li>
             </ul>
           </li>
-          <li class="menu-item menu-item-has-children">
-            <a href="#">Лекарства</a>
+          <li class="menu-item">
+            <a href="/lekarstva">Лекарства</a>
+          </li>
+          <li class="menu-item">
+            <a href="/catalog/product-category/dobavki/">Добавки</a>
+          </li>
+          <li class="menu-item">
+            <a href="/catalog/product-category/naturopatiya/">Натуропатия</a>
+          </li>
+          <li class="menu-item">
+            <a href="/catalog/product-category/naruzhnye-sredstva/">Наружные средства</a>
+          </li>
+          <li class="menu-item">
+            <a href="/catalog/product-category/dlya-zhivotnyh/">Для животных</a>
           </li>
           <li class="menu-item menu-item-has-children">
-            <a href="#">Добавки</a>
+            <a href="/resursy/">Ресурсы</a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item">
+                <a href="/sostoyaniya-ot-a-do-ya/">Состояния от А до Я</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="/catalog/product-category/obuchenie/">Обучение</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="/blog/">Блог Статьи</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="/novosti/">Новости</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="/kontakty/">Контакты</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="/soobshchestvo-inflyuehnserov/">Сообщество инфлюэнсеров</a>
+              </li>
+            </ul>
           </li>
-          <li class="menu-item menu-item-has-children">
-            <a href="#">Натуропатия</a>
-          </li>
-          <li class="menu-item menu-item-has-children">
-            <a href="#">Наружные средства</a>
-          </li>
-          <li class="menu-item menu-item-has-children">
-            <a href="#">Для животных</a>
-          </li>
-          <li class="menu-item menu-item-has-children">
-            <a href="#">NaturaProf</a>
-          </li>
-          <li class="menu-item menu-item-has-children">
-            <a href="#">Ресурсы</a>
-          </li>
+          <li class="menu-item">
+            <a href="/naturaprof/">NaturaProf</a>
+          </li>                
         </ul>
       </div>
     </div>

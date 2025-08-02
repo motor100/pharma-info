@@ -4943,13 +4943,17 @@ a.reset_variations::before {
   .header .header-content .select-salt-btn {
     width: 209px;
   }
-  .header .header-nav .menu .menu-item {
+
+  /* header nav */
+  .header-nav .menu .menu-item {
     padding-right: 24px;
   }
-  .header .header-nav .sub-menu {
+  .header-nav .sub-menu {
     width: 244px;
     padding: 15px;
   }
+
+
 
   /* main section */
   .main-section .main-image {
@@ -5273,27 +5277,29 @@ a.reset_variations::before {
   .header .header-content .header-content-btn {
     margin-right: 5px;
   }
-  .header .header-nav .menu .menu-item > a,
-  .header .header-nav .menu .menu-item > span {
+
+  /* header nav */
+  .header-nav .menu .menu-item > a,
+  .header-nav .menu .menu-item > span {
     font-size: 16px;
   }
-  .header .header-nav .menu-item-has-children::after {
+  .header-nav .menu-item-has-children::after {
     top: 4px;
     right: 3px;
     width: 17px;
   }
-  .header .header-nav .sub-menu {
+  .header-nav .sub-menu {
     width: 187px;
     padding: 12px;
   }
-  .header .header-nav .sub-menu .sub-menu-item {
+  .header-nav .sub-menu .sub-menu-item {
     margin-bottom: 10px;
   }
-  .header .header-nav .sub-menu .sub-menu-item a {
+  .header-nav .sub-menu .sub-menu-item a {
     display: block;
     line-height: 1.2;
   }
-  .header .header-nav .sub-menu .sub-menu-item:hover a {
+  .header-nav .sub-menu .sub-menu-item:hover a {
     border-bottom-color: var(--nero-color);
   }
 
@@ -5872,21 +5878,24 @@ a.reset_variations::before {
   .header .header-content .header-cart__text {
     display: none;
   }
-  .header .header-nav .menu-item-has-children::after {
+  .header-login {
     display: none;
   }
-  .header .header-nav .menu .menu-item {
+
+  /* header nav */
+  .header-nav .menu-item-has-children::after {
+    display: none;
+  }
+  .header-nav .menu .menu-item {
     padding: 0;
   }
-  .header .header-nav .menu .menu-item a {
+  .header-nav .menu .menu-item a {
     font-size: 14px;
   }
-  .header .header-nav .sub-menu {
+  .header-nav .sub-menu {
     display: none;
   }
-  .header .header-login {
-    display: none;
-  }
+  
 
   /* header search */
   .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp input[type="search"].dgwt-wcas-search-input {

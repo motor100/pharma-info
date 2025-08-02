@@ -2361,3 +2361,43 @@ function override_woocommerce_image_size_gallery_thumbnail( $size ) {
         'crop'   => 0,
     );
 }
+
+
+# Закрывает все маршруты REST API от публичного доступа
+add_filter( 'rest_authentication_errors', function( $result ){
+
+    if( is_null( $result ) && ! current_user_can('edit_others_posts') ){
+        return new WP_Error( 'rest_forbidden', 'You are not currently logged in.', [ 'status'=>401 ] );
+    }
+
+    return $result;
+} );
+
+// Disable authors archive
+// Return a 404 page for author pages if accessed directly.
+add_action( 'template_redirect', function () {
+    if ( is_author() ) {
+        global $wp_query;
+        $wp_query->set_404();
+        status_header( 404 );
+        nocache_headers();
+    }
+} );
+
+// Remove the author links.
+add_filter( 'author_link', '__return_empty_string', 1000 );
+add_filter( 'the_author_posts_link', 'get_the_author', 1000, 0 );
+// Remove the author pages from the WP 5.5+ sitemap.
+add_filter( 'wp_sitemaps_add_provider', function ( $provider, $name ) {
+    if ( 'users' === $name ) {
+        return false;
+    }
+    return $provider;
+}, 10, 2 );
+
+// Remove admin links in the list of users.
+add_filter( 'user_row_actions', function ( $actions, $user ) {
+    unset( $actions['view'] );
+    unset( $actions['posts'] );
+    return $actions;
+}, 10, 2 );
