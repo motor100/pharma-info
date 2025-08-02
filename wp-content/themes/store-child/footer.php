@@ -211,25 +211,28 @@
   <div class="menu-header_menu-container">
     <ul id="header_menu" class="menu">
       <li class="menu-item">
-        <a href="/about-salts">О солях</a>
+        <a href="/o-nas">О нас</a>
       </li>
       <li class="menu-item">
-        <a href="/servis-podbora">Сервис подбора</a>
+        <a href="/lekarstva">Лекарства</a>
       </li>
       <li class="menu-item">
-        <a href="https://funmed.ru/soli_doktora_shyusslera" target="_blank">Обучение</a>
+        <a href="/catalog/product-category/dobavki/">Добавки</a>
       </li>
       <li class="menu-item">
-        <a href="/specialisty">Специалисты</a>
+        <a href="/catalog/product-category/naturopatiya/">Натуропатия</a>
       </li>
       <li class="menu-item">
-        <a href="/bolezni-ot-a-do-ya">Болезни от А до Я</a>
+        <a href="/catalog/product-category/naruzhnye-sredstva/">Наружные средства</a>
       </li>
       <li class="menu-item">
-        <a href="/wherebuy">Где купить</a>
+        <a href="/catalog/product-category/dlya-zhivotnyh/">Для животных</a>
       </li>
       <li class="menu-item">
-        <a href="/service">Сервис</a>
+        <a href="/resursy/">Ресурсы</a>
+      </li>
+      <li class="menu-item">
+        <a href="/naturaprof/">NaturaProf</a>
       </li>
     </ul>
   </div>
@@ -243,8 +246,8 @@
     <a href="tel:+74959274928" class="social-icons__link" rel="nofollow noopener" target="_blank">
       <img src="/wp-content/themes/store-child/includes/images/svg/circle-call.svg" class="social-icons__image social-icons__call" alt="звонок">
     </a>
-    <a href="tel:+74959274928" class="phone-text">+7 (495) 927-4-928</a>
   </div>
+  <a href="tel:+74959274928" class="phone-text">+7 (495) 927-4-928</a>
 </div>
 
 <div class="fixed-bottom-menu hidden-desktop">
@@ -379,16 +382,6 @@
 </div>
 
 <?php wp_footer(); ?>
-
-<script>
-! function() {
-  var t = document.createElement("script");
-  t.type = "text/javascript", t.async = !0, t.src = 'https://vk.com/js/api/openapi.js?169', t.onload = function() {
-    VK.Retargeting.Init("VK-RTRG-1527673-1t4wP"), VK.Retargeting.Hit()
-  }, document.head.appendChild(t)
-}();
-</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1527673-1t4wP" style="position:fixed; left:-999px;" alt="" /></noscript>
-
 
 </body>
 
