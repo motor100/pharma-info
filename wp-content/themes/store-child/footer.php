@@ -265,7 +265,7 @@
     </div>
     <div class="menu-item cart-menu-item">
       <div class="menu-item__image">
-        <img src="/wp-content/themes/store-child/includes/images/svg/shopping-cart-white.svg" alt="">
+        <img src="/wp-content/themes/store-child/includes/images/svg/basket.svg" alt="">
       </div>
       <div class="menu-item__title">Корзина</div>
       <div id="mobile-cart-counter" class="badge-counter"><?php echo WC()->cart->get_cart_contents_count(); ?></div>
@@ -275,15 +275,15 @@
       <div class="menu-item__image">
         <img src="/wp-content/themes/store-child/includes/images/svg/select-dark.svg" alt="">
       </div>
-      <div class="menu-item__title">Подбор</div>
-      <a href="/expert-system" class="full-link"></a>
+      <div class="menu-item__title">Рецепт</div>
+      <a href="/lekarstva#personal-order-section" class="full-link"></a>
     </div>
     <div class="menu-item">
       <div class="menu-item__image">
-        <img src="/wp-content/themes/store-child/includes/images/svg/phone-call-black.svg" alt="">
+        <img src="/wp-content/themes/store-child/includes/images/svg/user.svg" alt="">
       </div>
-      <div class="menu-item__title">Звонок</div>
-      <a href="tel:+74959274928" class="full-link"></a>
+      <div class="menu-item__title">Войти</div>
+      <a href="/nn-cnt" class="full-link"></a>
     </div>
   </div>
 </div>

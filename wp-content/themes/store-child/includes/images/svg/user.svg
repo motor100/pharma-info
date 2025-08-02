@@ -1,11 +1,85 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_7_678)">
-<path d="M24 29C28.9706 29 33 24.9706 33 20C33 15.0294 28.9706 11 24 11C19.0294 11 15 15.0294 15 20C15 24.9706 19.0294 29 24 29Z" stroke="#294060" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12 37C14.4213 33.4139 18.8187 31 24 31C29.1813 31 33.5787 33.4139 36 37" stroke="#294060" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_7_678">
-<rect width="48" height="48" rx="24" fill="white"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="11.794178mm"
+   height="12.700002mm"
+   viewBox="0 0 11.794178 12.700002"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="user.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="4.1827231"
+     inkscape:cx="47.935279"
+     inkscape:cy="21.038926"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <clipPath
+       id="clip0_7_678">
+      <rect
+         width="48"
+         height="48"
+         rx="24"
+         fill="#ffffff"
+         id="rect830"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.828751,-175.92751)">
+    <g
+       style="fill:none;stroke-width:0.564455"
+       id="g844"
+       transform="matrix(0.46934698,0,0,0.46813535,19.461512,171.04226)">
+      <g
+         clip-path="url(#clip0_7_678)"
+         id="g828"
+         style="stroke-width:0.564455">
+        <path
+           d="m 24,29 c 4.9706,0 9,-4.0294 9,-9 0,-4.9706 -4.0294,-9 -9,-9 -4.9706,0 -9,4.0294 -9,9 0,4.9706 4.0294,9 9,9 z"
+           stroke="#294060"
+           stroke-opacity="0.6"
+           stroke-width="1.12891"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           id="path824" />
+        <path
+           d="m 12,37 c 2.4213,-3.5861 6.8187,-6 12,-6 5.1813,0 9.5787,2.4139 12,6"
+           stroke="#294060"
+           stroke-opacity="0.6"
+           stroke-width="1.12891"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           id="path826" />
+      </g>
+    </g>
+  </g>
 </svg>
