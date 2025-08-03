@@ -497,7 +497,7 @@ iframe {
   width: 100%;
 }
 
-/* Main advantages */
+/* main advantages */
 .main-advantages .main-advantages-item {
   display: flex;
   margin: 0 0 8px 0;
@@ -1093,7 +1093,7 @@ iframe {
   overflow: hidden;
 }
 
-/* Lekarstva page */
+/* lekarstva page */
 .lekarstva-page .order-online-section .flex-container {
   display: flex;
   gap: 80px;
@@ -1124,6 +1124,9 @@ iframe {
 .lekarstva-page .order-online-section .order-online-btn {
   margin: 0 0 20px 0;
   gap: 15px;
+}
+.lekarstva-page .order-online-section .order-online-btn__image {
+  width: 32px;
 }
 .lekarstva-page .desc-section .read-more-btn {
   display: flex;
@@ -1157,6 +1160,7 @@ iframe {
   margin: 0 0 5px 0;
   font-family: 'Roboto-Medium';
   font-size: 42px;
+  line-height: 1.1;
 }
 .lekarstva-page .personal-order-section .form-description {
   margin: 0 0 40px 0;
@@ -5082,31 +5086,8 @@ a.reset_variations::before {
     font-size: 18px;
   }
 
-  /* expert system page */
-  /*
-  .expert-system-page .pay-now-btn {
-    width: 267px;
-    height: 70px;
-    font-size: 26px;
-  }
-  .expert-system-page .o-nas-expert-system-section {
-    padding-bottom: 70px;
-  }
-  .expert-system-page .o-nas-expert-system-section .text {
-    font-size: 22px;
-  }
-  .expert-system-page .advantages-section .section-title {
-    font-size: 26px;
-  }
-  .expert-system-page .advantages-section .advantages-item {
-    height: 183px;
-  }
-  .expert-system-page .doctor-section .text {
-    font-size: 22px;
-  }
-  */
-
   /* service page */
+  /*
   .service-page .desc-section .text-bold {
     font-size: 22px;
   }
@@ -5144,8 +5125,10 @@ a.reset_variations::before {
   .service-page .testimonials-section .testimonials-item__title {
     font-size: 22px;
   }
+  /*
 
   /* faq page */
+  /*
   .faq-page .faq-description {
     font-size: 22px;
   }
@@ -5154,6 +5137,15 @@ a.reset_variations::before {
   }
   .faq-page .accordeon-section .accordeon-item-title {
     font-size: 22px;
+  }
+  */
+
+  /* lekarstva page */
+  .lekarstva-page .order-online-section .flex-container {
+    gap: 40px;
+  }
+  .lekarstva-page .personal-order-section .grid-container {
+    gap: 20px;
   }
 }
 
@@ -5478,9 +5470,11 @@ a.reset_variations::before {
   }
 
   /* where buy page */
+  /*
   .wherebuy-page .addresses-item {
     margin: 0 0 30px 0;
   }
+  */
 
   /* cart page */
   .cart-page .woocommerce-cart-form__contents .product-thumbnail {
@@ -5551,18 +5545,59 @@ a.reset_variations::before {
     -webkit-box-orient: vertical;
   }
 
-  /* faq page */
-  /*
-  .faq-page .faq-description {
-    font-size: 20px;
+  /* lekarstva page */
+  .lekarstva-page .order-online-section .flex-container {
+    gap: 20px;
   }
-  .faq-page .accordeon-section .section-title {
-    font-size: 28px;
+  .lekarstva-page .order-online-section .image {
+    border-radius: 25px;
   }
-  .faq-page .accordeon-section .accordeon-item-title {
-    font-size: 20px;
+  .lekarstva-page .order-online-section .description {
+    padding: 35px;
+    border-radius: 25px;
   }
-  */
+  .lekarstva-page .order-online-section .description-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .lekarstva-page .desc-section .read-more-btn {
+    width: 236px;
+    height: 55px;
+    border-radius: 25px;
+    font-size: 22px;
+  }
+  .lekarstva-page .personal-order-section .form-wrapper {
+    padding: 35px;
+    border-radius: 25px;
+  }
+  .lekarstva-page .personal-order-section .form-title {
+    font-size: 38px;
+  }
+  .lekarstva-page .personal-order-section .grid-container {
+    gap: 10px;
+  }
+  .lekarstva-page .personal-order-section .input-field {
+    height: 56px;
+    padding: 16px;
+    font-size: 18px;
+  }
+  .lekarstva-page .personal-order-section .custom-inputfile-label {
+    height: 56px;
+    padding: 16px;
+    font-size: 18px;
+  }
+  .lekarstva-page .personal-order-section .custom-inputfile-label-text {
+    width: 149px;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .vnutriaptechnye-propisi-title {
+    font-size: 38px;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .catalog-btn {
+    width: 270px;
+    height: 60px;
+    font-size: 22px;
+  }
+
 
   /* sostoyaniya ot a do ya page */
   .sostoyaniya-ot-a-do-ya-page .title {
@@ -5704,6 +5739,8 @@ a.reset_variations::before {
   .main-section .video-about-us-btn .video-about-us-btn__image {
     width: 28px;
   }
+
+  /* main advantages */
   .main-advantages .main-advantages-item {
     margin-bottom: 4px;
   }
@@ -5909,6 +5946,64 @@ a.reset_variations::before {
     padding: 30px;
   }
 
+  /* lekarstva page */
+  .lekarstva-page .order-online-section .description {
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .lekarstva-page .order-online-section .image {
+    height: auto;
+    border-radius: 20px;
+  }
+  .lekarstva-page .order-online-section .description-title {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  .lekarstva-page .desc-section .read-more-btn {
+    width: 210px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+  .lekarstva-page .personal-order-section .form-wrapper {
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .lekarstva-page .personal-order-section .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lekarstva-page .personal-order-section .form-title {
+    font-size: 32px;
+  }
+  .lekarstva-page .personal-order-section .form-description {
+    margin-bottom: 30px;
+  }
+  .lekarstva-page .personal-order-section .input-field {
+    height: 48px;
+  }
+  .lekarstva-page .personal-order-section .custom-inputfile-label {
+    height: 48px;
+    font-size: 16px;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .flex-container {
+    padding: 30px 25px;
+    border-radius: 20px;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .vnutriaptechnye-propisi-title {
+    font-size: 32px;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .catalog-btn {
+    width: 230px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+
+  /* main advantages */
+  .main-advantages .main-advantages-item__text {
+    font-size: 18px;
+  }
+
   /* single product page */
   .single-product .product .woocommerce-product-gallery {
     width: 50%;
@@ -5984,9 +6079,11 @@ a.reset_variations::before {
   }
 
   /* where buy page */
+  /*
   .wherebuy-page .addresses-item__description {
     min-height: auto;
   }
+  */
 
   /* cart page */
   .cart-page .woocommerce-cart-form__contents th {
@@ -6162,6 +6259,8 @@ a.reset_variations::before {
   .main-section .video-about-us-btn .video-about-us-btn__image {
     width: 26px;
   }
+
+  /* main advantages */
   .main-advantages .main-advantages-item__text {
     font-size: 18px;
   }
@@ -6396,6 +6495,45 @@ a.reset_variations::before {
     border-radius: 20px;
   }
 
+  /* lekarstva page */
+  .lekarstva-page .order-online-section .flex-container {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .lekarstva-page .order-online-section .description {
+    padding: 25px;
+  }
+  .lekarstva-page .order-online-section .description-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  .lekarstva-page .order-online-section .order-online-btn__image {
+    width: 28px;
+  }
+  .lekarstva-page .desc-section .read-more-btn {
+    font-size: 18px;
+  }
+  .lekarstva-page .personal-order-section .form-title {
+    font-size: 28px;
+  }
+  .lekarstva-page .personal-order-section .form-description {
+    margin-bottom: 20px;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .flex-container {
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .vnutriaptechnye-propisi-title {
+    font-size: 28px;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .catalog-btn {
+    width: 220px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+
   /* subcategories фильтр подкатегорий */
   .subcategories {
     margin: 0;
@@ -6579,60 +6717,6 @@ a.reset_variations::before {
   .checkout-page .woocommerce-billing-fields__field-wrapper {
     display: block;
   }
-
-  /* about salts page */
-  /*
-  .o-nas-salts-page .text {
-    font-size: 16px;
-  }
-  .o-nas-salts-page .frame .list {
-    padding: 0 0 0 20px;
-  }
-  .o-nas-salts-page .image {
-    width: 200px;
-  }
-  .o-nas-salts-page .image-right,
-  .o-nas-salts-page .image-left {
-    margin: 0 0 15px 0;
-    float: none;
-  }
-  .o-nas-salts-page .photo-section .photo {
-    width: 150px;
-  }
-  .o-nas-salts-page .photo-section .livetime {
-    font-size: 16px;
-  }
-  .o-nas-salts-page .salts-section .flex-row .number {
-    width: 25px;
-  }
-  .o-nas-salts-page .salts-section .flex-row .title {
-    width: 250px;
-    padding: 0 10px 0 0;
-  }
-  .o-nas-salts-page .section-title {
-    margin: 0 0 10px 0;
-    font-size: 20px;
-  }
-  .o-nas-salts-page .darkburgundy-bg {
-    height: 30px;
-  }
-  .o-nas-salts-page .use-section .white-frame {
-    height: auto;
-    margin: 0 0 10px 0;
-  }
-  .o-nas-salts-page .flex-container {
-    display: block;
-  }
-  .o-nas-salts-page .rule-section .text-medium {
-    font-size: 26px;
-  }
-  .o-nas-salts-page .list-item::marker {
-    font-size: 20px;
-  }
-  .o-nas-salts-page .reaction-section .list-item {
-    font-size: 16px;
-  }
-  */
 
   /* sostoyaniya ot a do ya page */
   .sostoyaniya-ot-a-do-ya-page .title {
@@ -7026,26 +7110,6 @@ a.reset_variations::before {
     font-size: 15px;
   }
 
-  /* about salts page */
-  /*
-  .o-nas-salts-page .image {
-    width: 150px;
-    border-radius: 20px;
-  }
-  .o-nas-salts-page .photo-section .flex-container {
-    display: block;
-  }
-  .o-nas-salts-page .salts-section .flex-row {
-    flex-wrap: wrap;
-  }
-  .o-nas-salts-page .salts-section .flex-row .function {
-    padding: 0 0 0 25px;
-  }
-  .o-nas-salts-page .use-section .white-frame {
-    font-size: 16px;
-  }
-  */
-
   /* o nas page */
   .o-nas-page .o-nas-section .flex-container-first {
     margin-bottom: 20px;
@@ -7121,6 +7185,28 @@ a.reset_variations::before {
     padding: 20px;
   }
 
+  /* lekarstva page */
+  .lekarstva-page .personal-order-section .form-wrapper {
+    padding: 20px 15px;
+  }
+  .lekarstva-page .personal-order-section .form-title {
+    font-size: 24px;
+  }
+  .lekarstva-page .personal-order-section .form-description {
+    font-size: 16px;
+  }
+  .lekarstva-page .personal-order-section .grid-container {
+    grid-template-columns: auto;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .vnutriaptechnye-propisi-title {
+    font-size: 24px;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .catalog-btn {
+    width: 210px;
+    height: 40px;
+    font-size: 16px;
+  }
+
   /* sostoyaniya ot a do ya page */
   .sostoyaniya-ot-a-do-ya-page .title {
     font-size: 16px;
@@ -7160,7 +7246,13 @@ a.reset_variations::before {
   }
   */
 
-  
+  /* agreement text галочка соглашения */
+  .agreement-text {
+    font-size: 13px;
+  }
+  .agreement-text a {
+    font-size: 13px;
+  }
 
   /* we use cookie */
   .we-use-cookie {
@@ -7196,6 +7288,8 @@ a.reset_variations::before {
   .main-section .order-online-btn {
     padding: 0 20px;
   }
+
+  /* main advantages */
   .main-advantages .main-advantages-item__image {
     width: 24px;
   }
@@ -7312,6 +7406,39 @@ a.reset_variations::before {
   .o-nas-page .delivery-section .delivery-list {
     margin-bottom: 20px;
   }
+
+  /* lekarstva page */
+  .lekarstva-page .order-online-section .description {
+    padding: 20px 15px;
+  }
+  .lekarstva-page .order-online-section .description-title {
+    font-size: 22px;
+  }
+  .lekarstva-page .order-online-section .order-online-btn {
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  .lekarstva-page .order-online-section .order-online-btn__image {
+    width: 24px;
+  }
+  .lekarstva-page .order-online-section .order-online-btn__text {
+    font-size: 15px;
+  }
+  .lekarstva-page .desc-section .read-more-btn {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .lekarstva-page .personal-order-section .form-title {
+    font-size: 22px;
+  }
+  .lekarstva-page .personal-order-section .input-field {
+    font-size: 16px;
+  }
+  .lekarstva-page .vnutriaptechnye-propisi-section .vnutriaptechnye-propisi-title {
+    font-size: 20px;
+  }
+
 
 }
 
