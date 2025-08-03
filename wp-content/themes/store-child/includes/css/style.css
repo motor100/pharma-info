@@ -6830,6 +6830,10 @@ a.reset_variations::before {
     font-size: 36px;
   }
 
+  .section-title {
+    font-size: 22px;
+  }
+
   /* main section */
   .main-section .main-section-frame {
     padding: 20px 20px 15px 20px;
@@ -6850,7 +6854,8 @@ a.reset_variations::before {
 
   /* custom page */
   .custom-page .page-title {
-    font-size: 36px;
+    margin-bottom: 20px;
+    font-size: 32px;
   }
 
   /* personal select section */
@@ -7022,6 +7027,7 @@ a.reset_variations::before {
   }
 
   /* about salts page */
+  /*
   .o-nas-salts-page .image {
     width: 150px;
     border-radius: 20px;
@@ -7037,6 +7043,82 @@ a.reset_variations::before {
   }
   .o-nas-salts-page .use-section .white-frame {
     font-size: 16px;
+  }
+  */
+
+  /* o nas page */
+  .o-nas-page .o-nas-section .flex-container-first {
+    margin-bottom: 20px;
+  }
+  .o-nas-page .o-nas-section .o-nas-section-description__big-text {
+    font-size: 18px;
+  }
+  .o-nas-page .o-nas-section .o-nas-image-vertikal {
+    width: 100px;
+    height: 128px;
+  }
+  .o-nas-page .o-nas-section .o-nas-image-horizontal {
+    width: 100px;
+    height: 79px;
+  }
+  .o-nas-page .o-nas-section .o-nas-section-description__small-text {
+    font-size: 16px;
+  }
+  .o-nas-page .frame {
+    padding: 20px 15px;
+    font-size: 14px;
+  }
+  .o-nas-page .text20 {
+    font-size: 15px;
+  }
+  .o-nas-page .list-item .list-item__text {
+    font-size: 14px;
+  }
+  .o-nas-page .subtitle {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .o-nas-page .mb20 {
+    margin-bottom: 10px;
+  }
+  .o-nas-page .tasks-section .grid-container {
+    gap: 10px;
+    grid-template-columns: auto;
+  }
+  .o-nas-page .list-item .checkbox {
+    width: 25px;
+  }
+  .for-whom-section .for-whom-item {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .o-nas-page .list-item .ellipse {
+    width: 6px;
+  }
+  .o-nas-page .how-to-order-section .how-to-order-section-subtitle {
+    font-size: 17px;
+  }
+  .o-nas-page .how-to-order-section .left-40 .frame {
+    padding: 15px 20px;
+  }
+  .o-nas-page .frame-title {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+  .o-nas-page .payment-section .flex-container {
+    padding: 20px;
+    gap: 15px;
+  }
+  .o-nas-page .list-item .truck {
+    width: 35px;
+  }
+  .o-nas-page .delivery-section .order-union {
+    font-size: 18px;
+  }
+
+  /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
+  .pink-blur {
+    padding: 20px;
   }
 
   /* sostoyaniya ot a do ya page */
@@ -7169,11 +7251,9 @@ a.reset_variations::before {
 
 
   /* custom page */
-  /*
   .custom-page .page-title {
     font-size: 32px;
   }
-  */
 
 
 
@@ -7191,6 +7271,46 @@ a.reset_variations::before {
   }
   .single-product .related > h2 {
     font-size: 22px;
+  }
+
+  /* o nas page */
+  .o-nas-page .o-nas-section .o-nas-image-vertikal {
+    width: 60px;
+    height: 77px;
+  }
+  .o-nas-page .o-nas-section .o-nas-section-description__big-text {
+    font-size: 17px;
+  }
+  .o-nas-page .o-nas-section .o-nas-image-horizontal {
+    width: 80px;
+    height: 64px;
+  }
+  .o-nas-page .o-nas-section .o-nas-section-description__small-text {
+    font-size: 15px;
+  }
+  .o-nas-page .text20 {
+    font-size: 14px;
+  }
+  .o-nas-page .subtitle {
+    font-size: 17px;
+  }
+  .o-nas-page .frame {
+    padding: 15px;
+  }
+  .o-nas-page .how-to-order-section .how-to-order-section-subtitle {
+    font-size: 16px;
+  }
+  .o-nas-page .how-to-order-section .left-40 .frame {
+    padding: 15px;
+  }
+  .o-nas-page .flex-container-column {
+    gap: 16px;
+  }
+  .o-nas-page .payment-section .flex-container {
+    padding: 15px;
+  }
+  .o-nas-page .delivery-section .delivery-list {
+    margin-bottom: 20px;
   }
 
 }
