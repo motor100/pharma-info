@@ -1750,22 +1750,6 @@ iframe {
   border: 2px solid var(--text-color);
   border-radius: 12px;
 }
-/*
-.filter-buttons-alphabet .eng-letters {
-  display: grid;
-  grid-template-columns: repeat(27, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0 10px;
-  margin-bottom: 20px;
-  position: relative;
-}
-.filter-buttons-alphabet .ru-letters {
-  display: grid;
-  grid-template-columns: repeat(28, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0px 10px;
-}
-*/
 .filter-buttons-alphabet .eng-letters,
 .filter-buttons-alphabet .ru-letters {
   display: flex;
@@ -3977,7 +3961,6 @@ a.reset_variations::before {
 }
 .catalog-page .cat-item {
   position: relative;
-  height: 238px;
   padding: 30px;
   border: 2px solid #C2C8D0;
   border-radius: 30px;
@@ -3994,6 +3977,13 @@ a.reset_variations::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.catalog-page .cat-icon {
+  width: 42px;
+  height: 42px;
+}
+.catalog-page .cat-icon img {
+  width: 100%;
 }
 .catalog-page .flex-container {
   display: flex;
@@ -5191,6 +5181,28 @@ a.reset_variations::before {
     gap: 20px;
   }
 
+  /* Catalog page */
+  .catalog-page .cat-item {
+    padding: 25px;
+    border-radius: 25px;
+  }
+  .catalog-page .cat-title {
+    height: 49px;
+    font-size: 22px;
+  }
+  .catalog-page .cat-view-more {
+    font-size: 18px;
+  }
+  .catalog-page .cat-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+  }
+  .catalog-page .cat-icon {
+    width: 38px;
+    height: 38px;
+  }
+
   /* Filter buttons alphabet */
   .filter-buttons-alphabet {
     margin-bottom: 70px;
@@ -5739,6 +5751,31 @@ a.reset_variations::before {
   }
   .filter-buttons-alphabet .eng-letters {
     margin-bottom: 15px;
+  }
+
+  /* Catalog page */
+  .catalog-page .cat-wrapper {
+    gap: 16px;
+  }
+  .catalog-page .cat-item {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .catalog-page .cat-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+  }
+  .catalog-page .cat-icon {
+    width: 34px;
+    height: 34px;
+  }
+  .catalog-page .cat-title {
+    height: 44px;
+    font-size: 20px;
+  }
+  .catalog-page .cat-view-more {
+    font-size: 16px;
   }
 
   /* breadcrumb */
@@ -6340,12 +6377,28 @@ a.reset_variations::before {
     height: 30px;
   }
 
-
-
+  /* Catalog page */
+  .catalog-page .cat-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .catalog-page .cat-item {
+    padding: 15px;
+  }
+  .catalog-page .cat-title {
+    height: 40px;
+    font-size: 18px;
+  }
 
   /* breadcrumb */
   .breadcrumbs-wrapper {
     margin-bottom: 40px;
+  }
+  .storefront-breadcrumb .woocommerce-breadcrumb {
+    font-size: 15px;
+  }
+  .storefront-breadcrumb .woocommerce-breadcrumb a:first-of-type::before {
+    width: 20px;
+    height: 20px;
   }
 
   /* we use cookie */
@@ -6699,7 +6752,6 @@ a.reset_variations::before {
     font-size: 18px;
   }
 
-
   /* subcategories фильтр подкатегорий */
   .subcategories {
     margin: 0;
@@ -6808,7 +6860,6 @@ a.reset_variations::before {
     top: 0;
     right: 0;
   }
-  /*.cart-page .woocommerce-cart-form__contents .actions .update-cart-btn {*/
   .cart-page .woocommerce-cart-form__contents .actions .button[name="update_cart"] {
     position: static;
     width: 170px;
@@ -6906,9 +6957,21 @@ a.reset_variations::before {
     font-size: 16px;
   }
 
+  /* Catalog page */
+  .catalog-page .cat-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* breadcrumb */
   .breadcrumbs-wrapper {
     margin-bottom: 30px;
+  }
+  .storefront-breadcrumb .woocommerce-breadcrumb {
+    font-size: 14px;
+  }
+  .storefront-breadcrumb .woocommerce-breadcrumb a:first-of-type::before {
+    width: 18px;
+    height: 18px;
   }
 
   /* we use cookie */
@@ -7062,7 +7125,6 @@ a.reset_variations::before {
   .sostoyaniya-ot-a-do-ya-page .title {
     font-size: 18px;
   }
-
 
   /* Filter buttons alphabet */
   .filter-buttons-alphabet .filtered-button:not(.filtered-button-all) {
@@ -7403,6 +7465,30 @@ a.reset_variations::before {
     width: 100%;
   }
 
+  /* Catalog page */
+  .catalog-page .cat-wrapper {
+    gap: 12px;
+  }
+  .catalog-page .cat-item {
+    border-radius: 15px;
+  }
+  .catalog-page .cat-image {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+  }
+  .catalog-page .cat-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .catalog-page .cat-title {
+    height: 36px;
+    font-size: 16px;
+  }
+  .catalog-page .cat-view-more {
+    font-size: 15px;
+  }
+
   /* service page */
   /*
   .service-page .desc-section .text-bold {
@@ -7520,13 +7606,10 @@ a.reset_variations::before {
     width: 38px;
   }
 
-
   /* custom page */
   .custom-page .page-title {
     font-size: 32px;
   }
-
-
 
   /* subcategories фильтр подкатегорий */
   .subcategories .subcategories-item {
@@ -7614,6 +7697,11 @@ a.reset_variations::before {
   }
   .lekarstva-page .vnutriaptechnye-propisi-section .vnutriaptechnye-propisi-title {
     font-size: 20px;
+  }
+
+  /* Catalog page */
+  .catalog-page .cat-wrapper {
+    grid-template-columns: auto;
   }
 
 
