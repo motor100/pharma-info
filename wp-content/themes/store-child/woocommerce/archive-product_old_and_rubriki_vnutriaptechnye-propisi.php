@@ -202,7 +202,7 @@ if (is_shop()) {
                   <a href="#" class="see-more-btn">Подробнее</a>
                 </div>
               </li>
-              <li class="product products-item">
+              <div class="products-item">
                 <div class="image-wrapper">
                   <div class="products-item__image">
                     <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
@@ -221,8 +221,8 @@ if (is_shop()) {
                 <div class="see-more-btn-wrapper">
                   <a href="#" class="see-more-btn">Подробнее</a>
                 </div>
-              </li>
-              <li class="product products-item">
+              </div>
+              <div class="products-item">
                 <div class="image-wrapper">
                   <div class="products-item__image">
                     <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
@@ -241,8 +241,8 @@ if (is_shop()) {
                 <div class="see-more-btn-wrapper">
                   <a href="#" class="see-more-btn">Подробнее</a>
                 </div>
-              </li>
-              <li class="product products-item">
+              </div>
+              <div class="products-item">
                 <div class="image-wrapper">
                   <div class="products-item__image">
                     <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
@@ -261,8 +261,8 @@ if (is_shop()) {
                 <div class="see-more-btn-wrapper">
                   <a href="#" class="see-more-btn">Подробнее</a>
                 </div>
-              </li>
-              <li class="product products-item">
+              </div>
+              <div class="products-item">
                 <div class="image-wrapper">
                   <div class="products-item__image">
                     <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
@@ -281,7 +281,27 @@ if (is_shop()) {
                 <div class="see-more-btn-wrapper">
                   <a href="#" class="see-more-btn">Подробнее</a>
                 </div>
-              </li>
+              </div>
+              <div class="products-item">
+                <div class="image-wrapper">
+                  <div class="products-item__image">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-image.png" alt="">
+                  </div>
+                  <div class="products-item__icon">
+                    <img src="/wp-content/themes/store-child/includes/images/product-item-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="products-item__title">Заголовок рубрики</div>
+                <ul class="list">
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                  <li class="list-item">описание 1</li>
+                </ul>
+                <div class="see-more-btn-wrapper">
+                  <a href="#" class="see-more-btn">Подробнее</a>
+                </div>
+              </div>
             </ul>
 
           <?php else : ?>

@@ -1248,16 +1248,18 @@ iframe {
 /* Страница с фильтром has filter */
 .has-filter .grid-container {
   display: grid;
-  grid-template-columns: 306px 1fr;
+  grid-template-columns: 250px 1fr;
   gap: 24px;
 }
 
 /* Рубрики */
+/*
 .rubriki-page .products {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
+
 .rubriki-page .products .products-item {
   position: relative;
   padding: 30px;
@@ -1265,6 +1267,7 @@ iframe {
   border-radius: 30px;
   overflow: hidden;
 }
+*/
 .rubriki-page .products .image-wrapper {
   display: flex;
   margin: 0 0 10px 0;
@@ -1293,7 +1296,15 @@ iframe {
   object-fit: cover;
 }
 .rubriki-page .products .products-item__title {
+  display: -webkit-box;
+  height: 27px;
+  margin: 0 0 40px 0;
   font-size: 24px;
+  line-height: 1.1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .rubriki-page .products .list {
   margin-bottom: 20px;
@@ -1302,6 +1313,7 @@ iframe {
 .rubriki-page .products .list-item {
   font-family: 'Roboto-light';  
   font-size: 20px;
+  list-style-type: disc;
 }
 .rubriki-page .products .see-more-btn-wrapper {
   text-align: right;
@@ -1336,7 +1348,6 @@ iframe {
   justify-content: center;
 }
 
-
 /* Filter */
 .filter .checkbox-group {
   margin: 0 0 15px 0;
@@ -1348,10 +1359,10 @@ iframe {
 .filter .checkbox-label {
   position: relative;
   display: block;
-  width: max-content;
-  margin: 5px 0;
+  margin: 8px 0;
   padding: 0 0 0 23px;
   font-size: 16px;
+  line-height: 1.2;
   color: var(--text-color);    
   user-select: none;
   cursor: pointer;
@@ -1378,7 +1389,7 @@ iframe {
 .filter .custom-checkbox {
   position: absolute;
   left: 0;
-  top: 4px;
+  top: 1px;
   display: block;
   width: 16px;
   height: 16px;
@@ -1406,18 +1417,10 @@ iframe {
   width: 3px;
 }
 .filter .submit-btn {
-  /*display: flex;*/
   width: 226px;
   height: 48px;
   margin: 40px 0 0 0;
-  /*
-  border-radius: 10px;
   font-size: 16px;
-  align-items: center;
-  justify-content: center;*/
-  font-family: 'Roboto-SemiBold';  
-  font-size: 16px;
-  color: var(--nero-color);
 }
 .filter .clear-btn {
   display: flex;
@@ -1737,7 +1740,6 @@ iframe {
   width: 100%;
 }
 
-
 /* Filter buttons alphabet */
 .filter-buttons-alphabet {
   margin: 0 0 80px 0;
@@ -1767,7 +1769,7 @@ iframe {
 .filter-buttons-alphabet .eng-letters,
 .filter-buttons-alphabet .ru-letters {
   display: flex;
-  gap: 0 5px;
+  gap: 5px;
   justify-content: space-between;
 }
 .filter-buttons-alphabet .eng-letters {
@@ -1777,6 +1779,7 @@ iframe {
   display: block;
   width: 40px;
   height: 40px;
+  padding: 0;
   border: 1px solid #C2C8D0;
   border-radius: 25px;
   background-color: var(--nero-color);
@@ -1933,7 +1936,6 @@ ul.products {
   display: grid;
   margin: 0;
   padding: 0;
-  list-style: none;
   gap: 40px 20px;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -1944,6 +1946,7 @@ ul.products li.product {
   padding: 20px 20px 30px 20px;
   border: 1px solid #EEEEEE;
   border-radius: 30px;
+  list-style: none;
 }
 ul.products li.product .woocommerce-loop-product__link {
   display: block;
@@ -1995,9 +1998,8 @@ ul.products li.product .price ins {
 ul.products li.product .button {
   display: flex;
   width: max-content;
-  height: 66px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 18px 36px;
   border: 1px solid var(--text-color);
   border-radius: 33px;
   background-color: var(--nero-color);
@@ -3891,9 +3893,11 @@ a.reset_variations::before {
 
 
 /* archive product */
+/*
 .archive-product.has-filter ul.products {
   grid-template-columns: repeat(3, 1fr);
 }
+*/
 
 /* text section */
 /*
@@ -4935,6 +4939,13 @@ a.reset_variations::before {
   }
 }
 
+@media only screen and (min-width : 992px) {
+  /* archive product */
+  .archive-product.has-filter ul.products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media only screen and (max-width : 1400px) {
 
   .section {
@@ -4944,6 +4955,11 @@ a.reset_variations::before {
   .section-with-anchor {
     margin-top: -70px;
     padding-top: 70px;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 40px;
   }
 
   .primary-btn {
@@ -5023,6 +5039,13 @@ a.reset_variations::before {
   }
 
   /* products card ul.products */
+  ul.products {
+    row-gap: 30px;
+  }
+  ul.products li.product {
+    padding: 20px;
+    border-radius: 25px;
+  }
   ul.products li.product .button {
     padding: 11px 20px;
     font-size: 16px;
@@ -5030,6 +5053,26 @@ a.reset_variations::before {
   ul.products li.product .attachment-woocommerce_thumbnail,
   ul.products li.product .woocommerce-placeholder {
     height: 252px;
+  }
+  ul.products li.product .woocommerce-loop-product__title {
+    margin-bottom: 30px;
+  }
+  ul.products li.product .price {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+
+  /* Рубрики */
+  .rubriki-page .products .products-item__title {
+    height: 25px;
+    margin-bottom: 35px;
+    font-size: 22px;
+  }
+  .rubriki-page .products .list-item {
+    font-size: 19px;
+  }
+  .rubriki-page .products .see-more-btn {
+    font-size: 19px;
   }
 
   /* single product page */
@@ -5147,6 +5190,23 @@ a.reset_variations::before {
   .lekarstva-page .personal-order-section .grid-container {
     gap: 20px;
   }
+
+  /* Filter buttons alphabet */
+  .filter-buttons-alphabet {
+    margin-bottom: 70px;
+  }
+  .filter-buttons-alphabet .filtered-button:not(.filtered-button-all) {
+    width: 35px;
+  }
+  .filter-buttons-alphabet .filtered-button {
+    height: 35px;
+    font-size: 15px;
+  }
+
+  /* breadcrumb */
+  .breadcrumbs-wrapper {
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width : 1200px) {
@@ -5161,8 +5221,8 @@ a.reset_variations::before {
   }
 
   .section-title {
-    margin-bottom: 30px;
-    font-size: 38px;
+    margin-bottom: 24px;
+    font-size: 34px;
   }
 
   .primary-btn {
@@ -5319,7 +5379,7 @@ a.reset_variations::before {
     gap: 30px;
   }
   .footer .footer-menu .footer-menu-item__title {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.1;
   }
   .footer .footer-menu .menu-item a {
@@ -5342,16 +5402,72 @@ a.reset_variations::before {
   }
 
   /* products card ul.products */
+  ul.products {
+    gap: 16px;
+  }
+  ul.products li.product {
+    padding: 15px;
+    border-radius: 20px;
+  }
   ul.products li.product .woocommerce-loop-product__title {
-    height: 60px;
+    height: 50px;
+    margin-bottom: 20px;
     font-size: 15px;
+    -webkit-line-clamp: 3;
   }
   ul.products li.product .price {
-    font-size: 22px;
+    font-size: 20px;
   }
   ul.products li.product .attachment-woocommerce_thumbnail,
   ul.products li.product .woocommerce-placeholder {
     height: 207px;
+    border-radius: 15px;
+  }
+  ul.products li.product .button {
+    padding: 9px 16px;
+    font-size: 15px;
+  }
+
+  /* Страница с фильтром has filter */
+  .has-filter .grid-container {
+    grid-template-columns: 214px 1fr;
+  }
+
+  /* Filter */
+  .filter .checkbox-group__title {
+    font-size: 16px;
+  }
+  .filter .checkbox-label {
+    font-size: 15px;
+  }
+  .filter .submit-btn {
+    width: 210px;
+    height: 42px;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .filter .clear-btn {
+    width: 210px;
+    height: 42px;
+    font-size: 15px;
+  }
+
+  /* Рубрики */
+  .rubriki-page .products .products-item__image {
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+  }
+  .rubriki-page .products .products-item__title {
+    height: 22px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  .rubriki-page .products .list-item {
+    font-size: 18px;
+  }
+  .rubriki-page .products .see-more-btn {
+    font-size: 18px;
   }
 
   /* subcategories фильтр подкатегорий */
@@ -5598,15 +5714,37 @@ a.reset_variations::before {
     font-size: 22px;
   }
 
-
   /* sostoyaniya ot a do ya page */
   .sostoyaniya-ot-a-do-ya-page .title {
     font-size: 22px;
   }
 
+  /* Filter buttons alphabet */
+  .filter-buttons-alphabet {
+    margin-bottom: 60px;
+  }
+  .filter-buttons-alphabet .eng-letters,
+  .filter-buttons-alphabet .ru-letters {
+    gap: 4px;
+  }
+  .filter-buttons-alphabet .filtered-button-all {
+    padding: 0 10px;
+  }
+   .filter-buttons-alphabet .filtered-button:not(.filtered-button-all) {
+    width: 28px;
+  }
+  .filter-buttons-alphabet .filtered-button {
+    height: 28px;
+    font-size: 13px;
+  }
+  .filter-buttons-alphabet .eng-letters {
+    margin-bottom: 15px;
+  }
+
   /* breadcrumb */
   .breadcrumbs-wrapper {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    padding-top: 20px;
   }
 
   /* we use cookie */
@@ -5849,11 +5987,10 @@ a.reset_variations::before {
 
   /* products card ul.products */
   ul.products {
-    gap: 40px 25px;
     grid-template-columns: repeat(3, 1fr);
   }
   ul.products li.product .price {
-    font-size: 20px;
+    font-size: 19px;
   }
   ul.products li.product .button {
     font-size: 15px;
@@ -5863,8 +6000,19 @@ a.reset_variations::before {
     height: 215px;
   }
   ul.products li.product .woocommerce-loop-product__title {
-    height: 55px;
+    height: 47px;
+    margin-bottom: 15px;
     font-size: 14px;
+  }
+
+  /* Страница с фильтром has filter */
+  .has-filter .grid-container {
+    grid-template-columns: auto;
+  }
+
+  /* Filter */
+  .filter {
+    display: none;
   }
 
   /* o nas page */
@@ -5997,7 +6145,6 @@ a.reset_variations::before {
     height: 50px;
     font-size: 20px;
   }
-
 
   /* main advantages */
   .main-advantages .main-advantages-item__text {
@@ -6176,6 +6323,25 @@ a.reset_variations::before {
     padding: 10px 28px;
     font-size: 16px;
   }
+
+  /* Filter buttons alphabet */
+   .filter-buttons-alphabet {
+    margin-bottom: 40px;
+  }
+  .filter-buttons-alphabet .eng-letters,
+  .filter-buttons-alphabet .ru-letters {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .filter-buttons-alphabet .filtered-button:not(.filtered-button-all) {
+    width: 30px;
+  }
+  .filter-buttons-alphabet .filtered-button {
+    height: 30px;
+  }
+
+
+
 
   /* breadcrumb */
   .breadcrumbs-wrapper {
@@ -6414,7 +6580,7 @@ a.reset_variations::before {
 
   /* products card ul.products */
   ul.products {
-    gap: 40px 12px;
+    gap: 12px;
     grid-template-columns: repeat(2, 1fr);
   }
   ul.products li.product .price {
@@ -6896,6 +7062,17 @@ a.reset_variations::before {
   .sostoyaniya-ot-a-do-ya-page .title {
     font-size: 18px;
   }
+
+
+  /* Filter buttons alphabet */
+  .filter-buttons-alphabet .filtered-button:not(.filtered-button-all) {
+    width: 26px;
+  }
+  .filter-buttons-alphabet .filtered-button {
+    height: 26px;
+    font-size: 13px;
+  }
+
 
   /* burger menu */
   .burger-menu-wrapper {
