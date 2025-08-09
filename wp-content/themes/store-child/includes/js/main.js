@@ -174,15 +174,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const singleProduct = document.querySelector('.single-product');
 
   if (singleProduct) {
-    const tabletkPo = document.getElementById('pa_tabletki-po');
+    const paTabletkiPo = document.getElementById('pa_tabletki-po');
+    const paTabletki = document.getElementById('pa_tabletki-po');
 
-    if (tabletkPo) {
+    if (paTabletkiPo) {
       new SlimSelect({
         select: '#pa_tabletki-po',
         showSearch: false,
         searchFocus: false,
       });
     }
+
+    if (pa_tabletki) {
+      new SlimSelect({
+        select: '#pa_tabletki',
+        showSearch: false,
+        searchFocus: false,
+      });
+    }
+    
   }
 
 

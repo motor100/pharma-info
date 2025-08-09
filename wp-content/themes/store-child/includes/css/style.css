@@ -3322,24 +3322,25 @@ ul.products li.product .added_to_cart:hover {
 .cart-page .woocommerce-cart-form__contents .cart_item {
   position: relative;
 }
-.cart-page .woocommerce-cart-form__contents .product-thumbnail {
-  width: 113px;
-}
 .cart-page .woocommerce-cart-form__contents .product-quantity {
   width: 160px;
 }
+.cart-page .woocommerce-cart-form__contents .product-thumbnail {
+  width: 97px;
+  padding: 0 10px 0 0;
+}
 .cart-page .woocommerce-cart-form__contents .product-thumbnail a {
   display: block;
-  margin: 0 10px 0 0;
-  padding: 0;
   border: 2px solid var(--text-color);
   border-radius: 20px;
   overflow: hidden;
 }
-.cart-page .woocommerce-cart-form__contents .attachment-woocommerce_thumbnail {
+.cart-page .woocommerce-cart-form__contents .attachment-woocommerce_thumbnail,
+.cart-page .woocommerce-cart-form__contents .woocommerce-placeholder {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .cart-page .woocommerce-cart-form__contents tbody .product-name,
 .cart-page .woocommerce-cart-form__contents tbody .product-price,
@@ -3558,6 +3559,7 @@ a.reset_variations::before {
   display: inline-block;
   width: 226px;
   height: 46px;
+  padding: 0;
   border: 1px solid var(--text-color);
   border-radius: 23px;
   background-color: var(--nero-color);
@@ -5127,10 +5129,10 @@ a.reset_variations::before {
 
   /* cart page */
   .cart-page .woocommerce-cart-form__contents .product-thumbnail {
-    width: 105px;
+    width: 80px;
   }
-  .cart-page .woocommerce-cart-form__contents .product-quantity {
-    width: 150px;
+  .cart-page .cart-collaterals {
+    padding: 30px 55px 45px 55px;
   }
 
   /* checkout page checkout page Оформление заказа и Заказ принят */
@@ -5662,8 +5664,14 @@ a.reset_variations::before {
   */
 
   /* cart page */
-  .cart-page .woocommerce-cart-form__contents .product-thumbnail {
-    width: 85px;
+  .cart-page .cart-content {
+    padding-top: 30px;
+  }
+  .cart-page .woocommerce-cart-form__contents th {
+    font-size: 18px;
+  }
+  .cart-page .woocommerce-cart-form__contents .product-name a {
+    font-size: 16px;
   }
   .cart-page .woocommerce-cart-form__contents .product-quantity {
     width: 140px;
@@ -5676,13 +5684,12 @@ a.reset_variations::before {
     height: 28px;
     font-size: 18px;
   }
-  /*.cart-page .woocommerce-cart-form__contents .actions .update-cart-btn {*/
   .cart-page .woocommerce-cart-form__contents .actions .button[name="update_cart"] {
     height: 40px;
     font-size: 18px;
   }
   .cart-page .cart-collaterals {
-    padding: 40px 50px;
+    padding: 30px 40px;
   }
 
   /* coupon корзина и оформление заказа */
@@ -6350,14 +6357,20 @@ a.reset_variations::before {
   */
 
   /* cart page */
+  .cart-page .cart-content {
+    padding-top: 10px;
+  }
   .cart-page .woocommerce-cart-form__contents th {
-    font-size: 18px;
+    font-size: 16px;
   }
   .cart-page .woocommerce-cart-form__contents .product-thumbnail {
     width: 70px;
   }
+  .cart-page .woocommerce-cart-form__contents .product-thumbnail a {
+    border-radius: 15px;
+  }
   .cart-page .woocommerce-cart-form__contents .product-name {
-    padding: 5px 15px;
+    padding: 5px 10px;
   }
   .cart-page .woocommerce-cart-form__contents .product-name a {
     font-size: 15px;
@@ -6374,7 +6387,6 @@ a.reset_variations::before {
     height: 23px;
     font-size: 14px;
   }
-  /*.cart-page .woocommerce-cart-form__contents .actions .update-cart-btn {*/
   .cart-page .woocommerce-cart-form__contents .actions .button[name="update_cart"] {
     width: 190px;
     font-size: 16px;
@@ -6391,6 +6403,14 @@ a.reset_variations::before {
   .cart-page .cart-collaterals .checkout-button {
     width: 195px;
     font-size: 18px;
+  }
+  .cart-page .quantity button {
+    width: 25px;
+    height: 25px;
+  }
+  .cart-page .quantity .qty {
+    height: 25px;
+    font-size: 16px;
   }
 
   /* coupon корзина и оформление заказа */
@@ -6896,10 +6916,12 @@ a.reset_variations::before {
   .cart-page .woocommerce-cart-form__contents thead {
     display: none;
   }
-  .cart-page .woocommerce-cart-form__contents td {
+  .cart-page .woocommerce-cart-form__contents td,
+  .cart-page .woocommerce-cart-form__contents th {
     display: block;
   }
-  .cart-page .woocommerce-cart-form__contents td[data-title]::before {
+  .cart-page .woocommerce-cart-form__contents td[data-title]::before,
+  .cart-page .woocommerce-cart-form__contents th[data-title]::before {
     content: attr(data-title) ": " " ";
     font-weight: 600;
   }
@@ -7162,6 +7184,27 @@ a.reset_variations::before {
   }
   .single-product .product .woocommerce-Tabs-panel {
     display: block;
+  }
+
+  /* cart page */
+  .cart-page .cart-collaterals {
+    padding: 15px 20px;
+    border-radius: 25px;
+  }
+   .cart-page .cart-collaterals h2 {
+    margin: 5px 0;
+    font-size: 22px;
+  }
+  .cart-page .cart-collaterals .shop_table {
+    margin-bottom: 20px;
+  }
+  .cart-page .cart-collaterals .shop_table {
+    border-spacing: 0 10px;
+  }
+  .cart-page .cart-collaterals .checkout-button {
+    width: 155px;
+    height: 40px;
+    font-size: 15px;
   }
 
   /* checkout page checkout page Оформление заказа и Заказ принят */
