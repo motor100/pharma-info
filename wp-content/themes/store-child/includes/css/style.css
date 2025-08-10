@@ -91,6 +91,9 @@ input:disabled,
 input[disabled] {
   color: #999999 !important;
 }
+textarea:focus-visible {
+  outline: none;
+}
 a {
   text-decoration: none;
 }
@@ -5136,6 +5139,10 @@ a.reset_variations::before {
   }
 
   /* checkout page checkout page Оформление заказа и Заказ принят */
+  .checkout-page .woocommerce-form-coupon-toggle {
+    padding: 25px 30px;
+    font-size: 20px;
+  }
   .checkout-page .checkout .billing-title {
     font-size: 54px;
   }
@@ -5144,6 +5151,20 @@ a.reset_variations::before {
   }
   .checkout-page .woocommerce-checkout-review-order {
     padding: 45px 55px;
+  }
+
+  /* coupon корзина и оформление заказа */
+  .coupon .input-text, .checkout-page .woocommerce-form-coupon .input-text {
+    width: 216px;
+    height: 38px;
+    padding: 6px 15px;
+    font-size: 18px;
+  }
+  .coupon .button,
+  .checkout-page .form-row .button {
+    width: 216px;
+    height: 38px;
+    font-size: 18px;
   }
 
   /* sw page города страницы специалисты и где купить */
@@ -5707,6 +5728,9 @@ a.reset_variations::before {
   }
 
   /* checkout page checkout page Оформление заказа и Заказ принят */
+  .checkout-page .checkout-content {
+    padding-top: 30px;
+  }
   .checkout-page .checkout .billing-title {
     font-size: 50px;
   }
@@ -5718,6 +5742,17 @@ a.reset_variations::before {
   }
   .checkout-page .woocommerce-billing-fields__field-wrapper {
     gap: 10px 25px;
+  }
+  .checkout-page .woocommerce-checkout-review-order {
+    margin-top: 50px;
+  }
+  .checkout-page .woocommerce-checkout-review-order-table th {
+    font-size: 20px;
+  }
+  .checkout-page .woocommerce-thankyou-order-received,
+  .checkout-page .woocommerce-order-details__title,
+  .checkout-page .woocommerce-column__title {
+    font-size: 24px;
   }
 
   /* specialisty page */
@@ -6426,8 +6461,17 @@ a.reset_variations::before {
   }
 
   /* checkout page checkout page Оформление заказа и Заказ принят */
+  .checkout-page .checkout-content {
+    padding-top: 20px;
+  }
+  .checkout-page .woocommerce-form-coupon-toggle {
+    font-size: 16px;
+  }
   .checkout-page .checkout .billing-title {
     font-size: 46px;
+  }
+  .checkout-page .thwcfd-field-paragraph {
+    font-size: 15px;
   }
   .checkout-page .woocommerce-checkout-review-order .order_review_heading {
     font-size: 46px;
@@ -6435,8 +6479,22 @@ a.reset_variations::before {
   .checkout-page .woocommerce-checkout-review-order {
     padding: 30px 40px;
   }
+  .checkout-page .woocommerce-checkout-review-order-table th {
+    font-size: 18px;
+  }
   .checkout-page .woocommerce-billing-fields__field-wrapper {
     gap: 0 15px;
+  }
+  .checkout-page .woocommerce-checkout-review-order {
+    margin-top: 40px;
+  }
+  .checkout-page .woocommerce-thankyou-order-received,
+  .checkout-page .woocommerce-order-details__title,
+  .checkout-page .woocommerce-column__title {
+    font-size: 22px;
+  }
+  .checkout-page .woocommerce-order {
+    font-size: 15px;
   }
 
   /* specialisty page */
@@ -7021,7 +7079,6 @@ a.reset_variations::before {
   .checkout-page .woocommerce-form-coupon-toggle {
     margin: 0 0 20px 0;
     padding: 20px 26px;
-    font-size: 20px;
   }
   .checkout-page .checkout_coupon .have-coupon-text {
     font-size: 20px;
@@ -7038,8 +7095,16 @@ a.reset_variations::before {
   .checkout-page .woocommerce-checkout-review-order {
     padding: 20px 30px;
   }
+  .checkout-page .woocommerce-checkout-review-order-table th {
+    font-size: 17px;
+  }
   .checkout-page .woocommerce-billing-fields__field-wrapper {
     display: block;
+  }
+  .checkout-page .woocommerce-thankyou-order-received,
+  .checkout-page .woocommerce-order-details__title,
+  .checkout-page .woocommerce-column__title {
+    font-size: 20px;
   }
 
   /* sostoyaniya ot a do ya page */
@@ -7208,25 +7273,30 @@ a.reset_variations::before {
   }
 
   /* checkout page checkout page Оформление заказа и Заказ принят */
+  /*
   .checkout-page .woocommerce-form-coupon-toggle {
     font-size: 18px;
   }
   .checkout-page .checkout_coupon .have-coupon-text {
     font-size: 18px;
   }
+  */
   .checkout-page .checkout {
     margin: 20px 0;
   }
   .checkout-page .checkout .billing-title {
     font-size: 36px;
   }
+  .checkout-page .woocommerce-billing-fields__field-wrapper input {
+    height: 40px;
+  }
   .checkout-page .woocommerce-checkout-review-order .order_review_heading {
+    margin-bottom: 10px;
     font-size: 36px;
   }
   .checkout-page .woocommerce-checkout-review-order {
-    padding: 0;
-    border-radius: 0;
-    box-shadow: none;
+    padding: 10px 16px;
+    border-radius: 20px;
   }
   .checkout-page .woocommerce-billing-fields__field-wrapper {
     display: block;
@@ -7237,8 +7307,16 @@ a.reset_variations::before {
   .checkout-page .woocommerce-checkout-review-order {
     margin: 30px 0;
   }
-  .checkout-page .woocommerce-checkout-review-order-table th {
-    font-size: 20px;
+  .checkout-page .woocommerce-thankyou-order-received,
+  .checkout-page .woocommerce-order-details__title,
+  .checkout-page .woocommerce-column__title {
+    font-size: 18px;
+  }
+
+  /* coupon корзина и оформление заказа */
+  .coupon .input-text,
+  .checkout-page .woocommerce-form-coupon .input-text {
+    margin-right: 10px;
   }
 
   /* o nas page */
@@ -7463,18 +7541,29 @@ a.reset_variations::before {
   /* coupon корзина и оформление заказа */
   .coupon .input-text,
   .checkout-page .woocommerce-form-coupon .input-text {
-    margin: 0 20px 10px 0;
+    margin: 0;
   }
 
   /* checkout page checkout page Оформление заказа и Заказ принят */
   .checkout-page .checkout .billing-title {
     font-size: 30px;
   }
+  .checkout-page .woocommerce-form-coupon-toggle {
+    padding: 15px;
+    border-radius: 20px;
+  }
   .checkout-page .woocommerce-checkout-review-order .order_review_heading {
-    font-size: 30px;
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+  .checkout-page .woocommerce-checkout-review-order-table {
+    border-spacing: 5px;
   }
   .checkout-page .woocommerce-checkout-review-order-table th {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .checkout-page .woocommerce-checkout-review-order {
+    font-size: 15px;
   }
   .checkout-page .woocommerce-table--order-downloads {
     font-size: 14px;
@@ -7485,11 +7574,6 @@ a.reset_variations::before {
   .checkout-page .woocommerce-table--order-downloads th,
   .checkout-page .woocommerce-table--order-downloads td {
     padding: 5px;
-  }
-  .checkout-page .woocommerce-thankyou-order-received,
-  .checkout-page .woocommerce-order-details__title,
-  .checkout-page .woocommerce-column__title {
-    font-size: 22px;
   }
 
   /* sw page города страницы специалисты и где купить */
@@ -7853,6 +7937,14 @@ a.reset_variations::before {
   /* Catalog page */
   .catalog-page .cat-wrapper {
     grid-template-columns: auto;
+  }
+
+  /* coupon корзина и оформление заказа */
+  .checkout-page .woocommerce-checkout-review-order .order_review_heading {
+    font-size: 24px;
+  }
+  .checkout-page .woocommerce-checkout-review-order-table {
+    border-spacing: 0 2px;
   }
 
 }
