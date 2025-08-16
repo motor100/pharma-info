@@ -7282,6 +7282,9 @@ a.reset_variations::before {
   .single-product .product .woocommerce-Tabs-panel {
     display: block;
   }
+  .single-product .product .to-page-btn {
+    margin: 20px 0;
+  }
 
   /* cart page */
   .cart-page .cart-collaterals {

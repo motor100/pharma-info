@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (singleProduct) {
     const paTabletkiPo = document.getElementById('pa_tabletki-po');
-    const paTabletki = document.getElementById('pa_tabletki-po');
+    const paTabletki = document.getElementById('pa_tabletki');
 
     if (paTabletkiPo) {
       new SlimSelect({
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    if (pa_tabletki) {
+    if (paTabletki) {
       new SlimSelect({
         select: '#pa_tabletki',
         showSearch: false,
