@@ -978,6 +978,7 @@ iframe {
   width: 48px;
 }
 .o-nas-page .list-item .list-item__image {
+  width: 42px;
   flex-shrink: 0;
 }
 .o-nas-page .list-item .list-item__image img {
@@ -1495,7 +1496,6 @@ iframe {
   color: var(--nero-color);
 }
 
-
 /* NaturaProf page */
 .naturaprof-page .about-section .flex-container {
   display: flex;
@@ -1504,14 +1504,12 @@ iframe {
 }
 .naturaprof-page .about-section .about-item {
   width: max-content;
-  height: 60px;
   padding: 8px 20px;
   border-radius: 30px;
   background-color: #EDF3FD;
   font-size: 32px;
   color: #607797;
 }
-
 .naturaprof-page .for-experts-section .flex-container {
   display: flex;
   justify-content: space-between;
@@ -1698,6 +1696,7 @@ iframe {
   font-family: 'Roboto-SemiBold';
   font-size: 24px;
   color: var(--nero-color);
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
 }
@@ -2521,9 +2520,7 @@ ul.products li.product .added_to_cart:hover {
 }
 .specialisty-page .specialists-item .specialists-item__link {
   display: flex;
-  width: 124px;
-  height: 48px;
-  padding: 10px 0;
+  padding: 12px 20px;
   border: 1px solid var(--purple-color);
   border-radius: 24px;
   color: var(--purple-color);
@@ -2567,21 +2564,26 @@ ul.products li.product .added_to_cart:hover {
   position: relative;
 }
 .bn-page .bn-item__image {
-  height: 180px;
+  position: relative;
+  height: 0;
   margin: 0 0 15px 0;
+  padding: 0 0 58% 0;
   border: 1px solid var(--text-color);
   border-radius: 20px;
   overflow: hidden;
 }
 .bn-page .bn-item__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 1;
 }
 .bn-page .bn-item__title {
   display: -webkit-box;
   height: 42px;
-  margin: 0 0 10px 0;
   font-size: 18px;
   color: var(--text-color);
   line-height: 1.1;
@@ -2644,6 +2646,10 @@ ul.products li.product .added_to_cart:hover {
 }
 .single-page h2 {
   line-height: 1.3;
+}
+.single-page figure img {
+  width: 100%;
+  height: auto;
 }
 /*
 .single-page .lead-form-section {
@@ -2713,6 +2719,7 @@ ul.products li.product .added_to_cart:hover {
   margin: 0 0 20px 0;
   font-family: 'Roboto-SemiBold';
   font-size: 28px;
+  line-height: 1.2;
 }
 .white-label-page .section-1 .rectangle-text {
   font-size: 20px;
@@ -2738,6 +2745,7 @@ ul.products li.product .added_to_cart:hover {
   margin: 0 0 20px 0;
   font-family: 'Roboto-SemiBold';
   font-size: 24px;
+  line-height: 1.2;
 }
 .white-label-page .section-3 .flex-container {
   display: flex;
@@ -2776,7 +2784,7 @@ ul.products li.product .added_to_cart:hover {
   display: grid;
   height: 100%;
   gap: 20px;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 40% auto;
 }
 .white-label-page .section-4 .for-whom-item {
   display: flex;
@@ -2796,6 +2804,9 @@ ul.products li.product .added_to_cart:hover {
 .white-label-page .section-4 .for-whom-item__text {
   font-size: 20px;
   line-height: 1.2;
+}
+.white-label-page .section-4 .o-nas-image img {
+  width: 100%;
 }
 .white-label-page .section-5 .frame {
   display: flex;
@@ -2921,7 +2932,7 @@ ul.products li.product .added_to_cart:hover {
     height: 36px;
     padding: 4px 11px;
     border-radius: 18px;
-    font-size: 18px;
+    font-size: 16px;
   }
   
 }
@@ -2944,8 +2955,6 @@ ul.products li.product .added_to_cart:hover {
   justify-content: space-between;
 }
 .kontakty-page .contacts-item {
-  /*width: 100%;*/
-  height: 266px;
   padding: 40px 45px;
   border: 1px solid var(--text-color);
   border-radius: 20px;
@@ -2961,6 +2970,7 @@ ul.products li.product .added_to_cart:hover {
 .kontakty-page .contacts-item__text {
   display: flex;
   width: max-content;
+  margin: 0 auto;
   height: 80px;
   padding: 0 40px;
   border: 1px solid var(--purple-color);
@@ -2973,17 +2983,23 @@ ul.products li.product .added_to_cart:hover {
 
 /* Страница Сообщество инфлюэнсеров */
 .soobshchestvo-inflyuehnserov-page .content-section .content-image {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0 0 25% 0;
   border: 1px solid var(--text-color);
   border-radius: 20px;
   overflow: hidden;
 }
 .soobshchestvo-inflyuehnserov-page .content-section .content-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 .soobshchestvo-inflyuehnserov-page .content-section .wide-image {
-  height: 320px;
   margin: 0 0 20px 0;
 }
 .soobshchestvo-inflyuehnserov-page .content-section .content-text {
@@ -2996,16 +3012,8 @@ ul.products li.product .added_to_cart:hover {
   gap: 20px;
   justify-content: space-between;
 }
-.soobshchestvo-inflyuehnserov-page .content-section .thin-image {
-  height: 300px;
-}
 
 /* Секция Оставьте заявку */
-.partner-section .section-title {
-  margin: 0 0 25px 0;
-  font-size: 42px;
-  line-height: 1.2;
-}
 .partner-section .flex-container {
   display: flex;
   margin: 0 0 20px 0;
@@ -4959,6 +4967,7 @@ a.reset_variations::before {
     font-size: 40px;
   }
 
+  .single-page .wp-block-button__link,
   .primary-btn {
     height: 62px;
     font-size: 22px;
@@ -5259,6 +5268,24 @@ a.reset_variations::before {
     height: 38px;
   }
 
+  /* Страница Контакты */
+  .kontakty-page .contacts-item {
+    padding: 35px 30px;
+  }
+  .kontakty-page .contacts-item__image .img {
+    width: 75px;
+  }
+  .kontakty-page .contacts-item__text {
+    height: 75px;
+    padding: 0px 30px;
+    font-size: 17px;
+  }
+
+  /* Страница Сообщество инфлюэнсеров */
+  .soobshchestvo-inflyuehnserov-page .content-section .content-text {
+    font-size: 22px;
+  }
+
   /* Filter buttons alphabet */
   .filter-buttons-alphabet {
     margin-bottom: 70px;
@@ -5279,6 +5306,95 @@ a.reset_variations::before {
   .resursy-page .resursy-category-item__link {
     padding: 0 35px;
     font-size: 22px;
+  }
+
+  /* NaturaProf page */
+  .naturaprof-page .about-section .about-item {
+    padding: 6px 18px;
+    font-size: 32px;
+  }
+  .naturaprof-page .for-experts-section .who-works-with-us-section-image {
+    border-radius: 25px;
+  }
+  .naturaprof-page .for-experts-section .description .description-clinics-item {
+    height: 125px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 19px;
+  }
+  .naturaprof-page .for-experts-section .description-nn-item {
+    height: 296px;
+    padding: 35px;
+    border-radius: 25px;
+  }
+  .naturaprof-page .partner-section .partner-section-frame {
+    height: 342px;
+    border-radius: 25px;
+  }
+  .naturaprof-page .professional-platform-section .platform-top-item {
+    padding: 35px;
+  }
+  .naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item__title {
+    font-size: 30px;
+  }
+  .naturaprof-page .digital-platform-section .o-nas-image {
+    height: 253px;
+  }
+  .naturaprof-page .digital-platform-section .for-whom-item {
+    font-size: 22px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item {
+    padding: 35px;
+  }
+  .naturaprof-page .white-label-section .white-label-frame {
+    padding: 35px;
+    border-radius: 25px;
+  }
+  .naturaprof-page .white-label-section .white-label-text {
+    font-size: 22px;
+  }
+  .naturaprof-page .white-label-section .form {
+    gap: 30px;
+  }
+
+  /* o nas page */
+  .o-nas-page .frame {
+    padding: 35px;
+    border-radius: 25px;
+  }
+  .o-nas-page .text20 {
+    font-size: 19px;
+  }
+
+  /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
+  .pink-blur {
+    padding: 35px;
+    border-radius: 25px;
+  }
+
+  /* Секция Оставьте заявку */
+  .partner-section .flex-container {
+    gap: 25px;
+  }
+  .partner-section .inputs-row {
+    gap: 25px;
+  }
+
+  /* single page */
+  .single-page .flex-container .single-image {
+    width: 400px;
+    height: 489px;
+  }
+
+  /* Страница White label */
+  .white-label-page .section-1 .frame {
+    padding: 50px;
+  }
+  .white-label-page .section-2 .item {
+    padding: 35px;
+  }
+  .white-label-page .section-5 .frame {
+    padding: 25px 50px;
   }
 
   /* breadcrumb */
@@ -5303,6 +5419,7 @@ a.reset_variations::before {
     font-size: 34px;
   }
 
+  .single-page .wp-block-button__link,
   .primary-btn {
     height: 56px;
     font-size: 20px;
@@ -5381,7 +5498,6 @@ a.reset_variations::before {
   .main-section .video-about-us-btn .video-about-us-btn__text {
     font-size: 20px;
   }
-  
   
   /* swiper slider */
   /*
@@ -5770,6 +5886,11 @@ a.reset_variations::before {
   /* specialisty page */
   .specialisty-page .specialists-item .specialists-item__image {
     margin: 0;
+    border-radius: 25px 25px 0 0;
+  }
+  .specialisty-page .specialists-item .specialists-item__content {
+    padding: 25px;
+    border-radius: 0 0 25px 25px;
   }
   .specialisty-page .specialists-item .specialists-item__title {
     height: 44px;
@@ -5777,6 +5898,7 @@ a.reset_variations::before {
   }
   .specialisty-page .specialists-item .specialists-item__excerpt {
     display: -webkit-box;
+    margin-bottom: 20px;
     height: 68px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -5853,7 +5975,7 @@ a.reset_variations::before {
   .filter-buttons-alphabet .filtered-button-all {
     padding: 0 10px;
   }
-   .filter-buttons-alphabet .filtered-button:not(.filtered-button-all) {
+  .filter-buttons-alphabet .filtered-button:not(.filtered-button-all) {
     width: 28px;
   }
   .filter-buttons-alphabet .filtered-button {
@@ -5899,6 +6021,178 @@ a.reset_variations::before {
     font-size: 20px;
   }
 
+  /* Страница Блог и Новости */
+  .bn-page .bn-item__title {
+    height: 38px;
+    font-size: 17px;
+  }
+
+  /* Страница Контакты */
+  .kontakty-page .flex-container {
+    flex-wrap: wrap;
+  }
+  .kontakty-page .contacts-item {
+    width: 49%;
+  }
+  .kontakty-page .contacts-item__text {
+    height: 70px;
+    line-height: 1.2;
+  }
+
+  /* Секция Оставьте заявку */
+  .soobshchestvo-inflyuehnserov-page .content-section .content-text {
+    font-size: 20px;
+  }
+  .partner-section .flex-container {
+    gap: 15px;
+  }
+  .partner-section .inputs-row {
+    margin-bottom: 15px;
+    gap: 15px;
+  }
+  .partner-section .input-field {
+    height: 42px;
+    padding: 12px;
+  }
+
+  /* NaturaProf page */
+  .naturaprof-page .about-section .about-item {
+    font-size: 28px;
+  }
+  .naturaprof-page .for-experts-section .description .for-experts-section-title {
+    font-size: 30px;
+  }
+  .naturaprof-page .for-experts-section .description .description-text {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  .naturaprof-page .for-experts-section .who-works-with-us-section-image {
+    height: auto;
+    border-radius: 20px;
+  }
+  .naturaprof-page .for-experts-section .description .description-clinics {
+    gap: 12px 0;
+  }
+  .naturaprof-page .for-experts-section .description .description-clinics-item {
+    width: 49%;
+    height: 111px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+  .naturaprof-page .for-experts-section .description-nn-item {
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .naturaprof-page .for-experts-section .description-nn-item__text {
+    font-size: 17px;
+  }
+  .naturaprof-page .for-experts-section .description-nn-view-more-btn {
+    width: 145px;
+    height: 55px;
+    font-size: 17px;
+  }
+  .naturaprof-page .partner-section .partner-section-frame {
+    height: 304px;
+  }
+  .naturaprof-page .partner-section .partner-section-frame .frame-content {
+    padding: 35px;
+  }
+  .naturaprof-page .professional-platform-section .platform-top-item {
+    padding: 30px;
+  }
+  .naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item {
+    padding: 15px 30px;
+  }
+  .naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item__title {
+    font-size: 26px;
+  }
+  .naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item__text {
+    font-size: 17px;
+  }
+  .naturaprof-page .digital-platform-section .for-whom-item {
+    font-size: 19px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item {
+    padding: 30px;
+    border-radius: 25px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item__btn {
+    width: 266px;
+    height: 58px;
+    font-size: 22px;
+  }
+  .naturaprof-page .white-label-section .white-label-frame {
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .naturaprof-page .white-label-section .white-label-text {
+    font-size: 20px;
+  }
+  .naturaprof-page .white-label-section .form {
+    gap: 16px;
+  }
+  .naturaprof-page .white-label-section .form .input-field {
+    height: 54px;
+    padding: 16px 20px;
+    font-size: 18px;
+  }
+
+  /* О нас секция Для кого и NaturaProf секция Для кого */
+  .for-whom-section .for-whom-item {
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+
+  /* o nas page */
+  .o-nas-page .list-item {
+    margin-bottom: 8px;
+  }
+  .o-nas-page .frame {
+    padding: 25px;
+  }
+  .o-nas-page .text20 {
+    font-size: 17px;
+  }
+
+  /* single page */
+  .single-page .flex-container {
+    gap: 25px;
+  }
+  .single-page .flex-container .single-image {
+    width: 350px;
+    height: 428px;
+  }
+
+  /* Страница White label */
+  .white-label-page .section-1 .frame {
+    padding: 40px;
+  }
+  .white-label-page .section-1 .rectangle-title {
+    font-size: 26px;
+  }
+  .white-label-page .section-1 .rectangle-text {
+    font-size: 18px;
+  }
+  .white-label-page .section-2 .grid-container {
+    gap: 25px;
+  }
+  .white-label-page .section-2 .item {
+    padding: 25px;
+  }
+  .white-label-page .section-4 .section-4-title {
+    font-size: 36px;
+  }
+  .white-label-page .section-4 .for-whom-item__text {
+    font-size: 18px;
+  }
+  .white-label-page .section-4 .for-whom-item {
+    padding: 25px;
+  }
+  .white-label-page .section-5 .frame {
+    padding: 20px 40px;
+  }
+
   /* breadcrumb */
   .breadcrumbs-wrapper {
     margin-bottom: 40px;
@@ -5933,6 +6227,7 @@ a.reset_variations::before {
     font-size: 34px;
   }
 
+  .single-page .wp-block-button__link,
   .primary-btn {
     height: 48px;
     font-size: 18px;
@@ -6520,8 +6815,16 @@ a.reset_variations::before {
   }
 
   /* specialisty page */
+  .specialisty-page .grid-container {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .specialisty-page .specialists-item .specialists-item__image {
+    border-radius: 20px 20px 0 0;
+  }
   .specialisty-page .specialists-item .specialists-item__content {
     padding: 15px;
+    border-radius: 0 0 20px 20px;
   }
   .specialisty-page .specialists-item .specialists-item__title {
     height: 39px;
@@ -6579,6 +6882,200 @@ a.reset_variations::before {
     font-size: 18px;
   }
 
+  /* Страница Блог и Новости */
+  .bn-page .grid-container {
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .bn-page .bn-item__title {
+    height: 36px;
+    font-size: 16px;
+  }
+  .bn-page .bn-item__image {
+    border-radius: 15px;
+  }
+
+  /* Страница Контакты */
+  .kontakty-page .contacts-item {
+    width: 48%;
+    padding: 30px;
+  }
+  .kontakty-page .contacts-item__image .img {
+    width: 65px;
+  }
+
+  /* Секция Оставьте заявку */
+  .partner-section .flex-container {
+    flex-direction: column;
+  }
+  .partner-section .input-field {
+    font-size: 15px;
+  }
+  .partner-section .textarea {
+    height: 100px;
+  }
+
+  /* NaturaProf page */
+  .naturaprof-page .about-section .about-item {
+    font-size: 24px;
+  }
+  .naturaprof-page .for-experts-section .flex-container-top {
+    flex-direction: column;
+  }
+  .naturaprof-page .for-experts-section .flex-container .w66 {
+    width: 100%;
+  }
+  .naturaprof-page .for-experts-section .description .description-text {
+    font-size: 20px;
+  }
+  .naturaprof-page .for-experts-section .description .description-clinics-item {
+    font-size: 17px;
+  }
+  .naturaprof-page .for-experts-section .flex-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .naturaprof-page .for-experts-section .flex-container .w32 {
+    width: 100%;
+  }
+  .naturaprof-page .for-experts-section .description-nn-item {
+    height: auto;
+    padding: 20px;
+  }
+  .naturaprof-page .for-experts-section .description-nn-view-more-btn {
+    width: 135px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .naturaprof-page .partner-section .partner-section-frame {
+    height: auto;
+    flex-direction: column;
+  }
+  .naturaprof-page .partner-section .partner-section-frame .frame-content {
+    width: 100%;
+    padding: 30px;
+  }
+  .naturaprof-page .professional-platform-section .platform-top-item {
+    padding: 25px;
+  }
+  .naturaprof-page .professional-platform-section .platform-top .flex-container,
+  .naturaprof-page .professional-platform-section .platform-top .left {
+    gap: 16px;
+  }
+  .naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item {
+    padding: 15px 20px;
+    margin-bottom: 16px;
+  }
+  .naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item__title {
+    font-size: 24px;
+  }
+  .naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item__text {
+    font-size: 16px;
+  }
+  .naturaprof-page .digital-platform-section .for-whom-item {
+    font-size: 17px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item {
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item .section-title {
+    font-size: 28px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item__btn {
+    width: 246px;
+    height: 48px;
+    font-size: 20px;
+  }
+  .naturaprof-page .white-label-section .flex-container {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .naturaprof-page .white-label-section .white-label-text {
+    font-size: 18px;
+  }
+  .naturaprof-page .white-label-section .form {
+    flex-wrap: wrap;
+  }
+
+  /* o nas page */
+  .o-nas-page .list-item .list-item__image {
+    width: 36px;
+  }
+  .o-nas-page .frame {
+    padding: 25px 20px;
+  }
+  .o-nas-page .frame .section-title {
+    font-size: 30px;
+  }
+  .o-nas-page .frame .section-title {
+    font-size: 24px;
+  }
+
+  /* О нас секция Для кого и NaturaProf секция Для кого */
+  .for-whom-section .for-whom-item {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
+  .pink-blur .section-title {
+    font-size: 28px;
+  }
+
+  /* single page */
+  .single-page .flex-container {
+    gap: 0;
+    flex-direction: column;
+  }
+  .single-page .single-content {
+    margin: 0 0 20px 0;
+  }
+
+  /* Страница White label */
+  .white-label-page .section-1 .frame {
+    padding: 30px;
+  }
+  .white-label-page .section-1 .rectangle-title {
+    font-size: 24px;
+  }
+  .white-label-page .section-1 .rectangle-text {
+    font-size: 16px;
+  }
+  .white-label-page .section-2 .grid-container {
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .white-label-page .section-2 .item {
+    padding: 20px;
+  }
+  .white-label-page .section-2 .item__title {
+    font-size: 22px;
+  }
+  .white-label-page .section-3 .content {
+    font-size: 16px;
+  }
+  .white-label-page .section-4 .section-4-title {
+    font-size: 32px;
+  }
+  .white-label-page .section-4 .for-whom-item__text {
+    font-size: 16px;
+  }
+  .white-label-page .section-4 .for-whom-item {
+    padding: 20px;
+  }
+  .white-label-page .section-5 .frame {
+    padding: 15px 20px;
+  }
+  .white-label-page .section-5 .content {
+    font-size: 50px;
+  }
+  .white-label-page .section-5 .image {
+    width: 140px;
+    height: 140px;
+  }
+
   /* breadcrumb */
   .breadcrumbs-wrapper {
     margin-bottom: 30px;
@@ -6606,6 +7103,7 @@ a.reset_variations::before {
     display: block;
   }
 
+  .single-page .wp-block-button__link,
   .primary-btn {
     height: 44px;
     font-size: 17px;
@@ -6862,7 +7360,7 @@ a.reset_variations::before {
     grid-template-columns: auto;
   }
   .o-nas-page .frame {
-    padding: 25px 20px;
+    padding: 20px 15px;
     font-size: 15px;
   }
   .o-nas-page .list-item .ellipse {
@@ -7083,11 +7581,6 @@ a.reset_variations::before {
     font-size: 16px;
   }
 
-  /* single page */
-  .single-page .single-image {
-    margin: 0 0 20px 0;
-  }
-
   /* coupon корзина и оформление заказа */
   .coupon .input-text,
   .checkout-page .woocommerce-form-coupon .input-text {
@@ -7144,7 +7637,18 @@ a.reset_variations::before {
     font-size: 20px;
   }
 
-  /* рекомендуемые товары в карточке блога */
+  /* single page */
+  .single-page .single-image {
+    margin: 0 0 20px 0;
+    border-radius: 25px;
+  }
+  .single-page p {
+    font-size: 17px;
+  }
+  .single-page figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .single-page .wc-block-grid .wc-block-grid__products {
     gap: 40px 12px;
     grid-template-columns: repeat(2, 1fr);
@@ -7166,6 +7670,12 @@ a.reset_variations::before {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Страница Блог и Новости */
+  .bn-page .grid-container {
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* breadcrumb */
   .breadcrumbs-wrapper {
     margin-bottom: 30px;
@@ -7176,6 +7686,159 @@ a.reset_variations::before {
   .storefront-breadcrumb .woocommerce-breadcrumb a:first-of-type::before {
     width: 18px;
     height: 18px;
+  }
+
+  /* Страница Контакты */
+  .kontakty-page .contacts-item {
+    width: 100%;
+    padding: 20px;
+  }
+  .kontakty-page .contacts-item__image {
+    margin-bottom: 10px;
+  }
+  .kontakty-page .contacts-item__text {
+    height: 60px;
+  }
+  .kontakty-page .contacts-item__image .img {
+    width: 60px;
+  }
+
+  /* Секция Оставьте заявку */
+  .soobshchestvo-inflyuehnserov-page .content-section .flex-container {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .soobshchestvo-inflyuehnserov-page .content-section .thin-image {
+    width: 48%;
+  }
+  .soobshchestvo-inflyuehnserov-page .content-section .content-text {
+    font-size: 18px;
+  }
+
+  /* Секция Оставьте заявку */
+  .partner-section .input-field {
+    height: 38px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .partner-section .textarea {
+    font-size: 14px;
+  }
+
+  /* NaturaProf page */
+  .naturaprof-page .about-section .about-item {
+    font-size: 20px;
+  }
+  .naturaprof-page .for-experts-section .flex-container .who-works-with-us-section-image {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .naturaprof-page .for-experts-section .description .description-text {
+    font-size: 18px;
+  }
+  .naturaprof-page .for-experts-section .description .description-clinics-item {
+    font-size: 16px;
+  }
+  .naturaprof-page .partner-section .partner-section-frame .frame-content {
+    padding: 25px;
+  }
+  .naturaprof-page .partner-section .partner-section-frame .frame-content .section-title {
+    font-size: 24px;
+  }
+  .naturaprof-page .professional-platform-section .platform-top .flex-container,
+  .naturaprof-page .professional-platform-section .platform-top .left {
+    flex-direction: column;
+  }
+  .naturaprof-page .professional-platform-section .platform-top-item {
+    padding: 20px;
+  }
+  .naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item__title {
+    font-size: 22px;
+  }
+  .naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item__text {
+    font-size: 15px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item {
+    padding: 20px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item .section-title {
+    font-size: 24px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item__btn {
+    width: 226px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .naturaprof-page .white-label-section .white-label-frame {
+    padding: 25px;
+  }
+  .naturaprof-page .white-label-section .white-label-text {
+    font-size: 17px;
+  }
+  .naturaprof-page .white-label-section .form .input-field {
+    height: 50px;
+    padding: 12px 16px;
+    font-size: 17px;
+  }
+
+  /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
+  .pink-blur .section-title {
+    font-size: 24px;
+  }
+
+  /* o nas page */
+  .o-nas-page .list-item .list-item__image {
+    width: 30px;
+  }
+
+  /* sw page города страницы специалисты и где купить */
+  .sw-page .cities .cities-item {
+    padding: 8px 25px;
+  }
+
+  /* specialisty page страница Специалисты */
+  .specialisty-page .grid-container {
+    gap: 16px;
+  }
+  .specialisty-page .specialists-item .specialists-item__link {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+
+  /* Страница White label */
+  .white-label-page .section-1 .frame {
+    padding: 25px;
+    flex-direction: column;
+  }
+  .white-label-page .section-1 .frame .image {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .white-label-page .section-1 .content {
+    width: 100%;
+  }
+  .white-label-page .section-2 .item__title {
+    font-size: 20px;
+  }
+  .white-label-page .section-3 .content {
+    font-size: 15px;
+  }
+  .white-label-page .section-4 .section-4-title {
+    font-size: 28px;
+  }
+  .white-label-page .section-4 .grid-container4060 {
+    gap: 16px;
+    grid-template-columns: auto;
+  }
+  .white-label-page .section-4 .grid-container4060 .o-nas-image {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .white-label-page .section-4 .for-whom-item__title {
+    font-size: 18px;
+  }
+  .white-label-page .section-5 .content {
+    font-size: 38px;
   }
 
   /* we use cookie */
@@ -7291,7 +7954,7 @@ a.reset_variations::before {
     padding: 15px 20px;
     border-radius: 25px;
   }
-   .cart-page .cart-collaterals h2 {
+  .cart-page .cart-collaterals h2 {
     margin: 5px 0;
     font-size: 22px;
   }
@@ -7398,6 +8061,147 @@ a.reset_variations::before {
     padding: 10px 20px;
   }
 
+  /* single page */
+  .single-page p {
+    font-size: 16px;
+  }
+
+  /* NaturaProf page */
+  .naturaprof-page .about-section .about-item {
+    font-size: 18px;
+  }
+  .naturaprof-page .for-experts-section .description .description-text {
+    font-size: 17px;
+  }
+  .naturaprof-page .for-experts-section .description .description-clinics-item {
+    height: 96px;
+    padding: 12px 15px;
+    border-radius: 15px;
+    font-size: 15px;
+  }
+  .naturaprof-page .for-experts-section .description-nn-item {
+    padding: 15px;
+  }
+  .naturaprof-page .for-experts-section .description-nn-view-more-btn {
+    width: 125px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+  }
+  .naturaprof-page .partner-section .partner-section-frame .frame-content .section-title {
+    font-size: 22px;
+  }
+  .naturaprof-page .partner-section .partner-section-frame .frame-content,
+  .naturaprof-page .partner-section .partner-section-frame .frame-image {
+    margin: 0 auto;
+  }
+  .naturaprof-page .professional-platform-section .platform-top-item {
+    padding: 15px;
+  }
+  .naturaprof-page .professional-platform-section .platform-bottom .platform-bottom-item__title {
+    font-size: 20px;
+  }
+  .naturaprof-page .digital-platform-section .for-whom-item {
+    font-size: 16px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item .section-title {
+    font-size: 20px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item__btn {
+    width: 216px;
+    height: 35px;
+    font-size: 17px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item {
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .naturaprof-page .white-label-section .white-label-frame {
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .naturaprof-page .white-label-section .white-label-text {
+    font-size: 16px;
+  }
+  .naturaprof-page .white-label-section .form .input-field {
+    height: 45px;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
+  .pink-blur .section-title {
+    font-size: 20px;
+  }
+
+  /* specialisty page страница Специалисты */
+  .specialisty-page .specialists-item .specialists-item__content {
+    padding: 12px;
+  }
+  .specialisty-page .specialists-item .specialists-item__title {
+    height: 36px;
+    font-size: 15px;
+  }
+  .specialisty-page .specialists-item .specialists-item__icon {
+    width: 35px;
+    height: 35px;
+  }
+  .specialisty-page .specialists-item .specialists-item__excerpt {
+    margin-bottom: 15px;
+  }
+  .specialisty-page .specialists-item .specialists-item__excerpt {
+    height: 40px;
+    font-size: 14px;
+    -webkit-line-clamp: 2;
+  }
+  .specialisty-page .specialists-item .specialists-item__image {
+    height: 185px;
+    padding: 0;
+  }  
+
+  /* sw page города страницы специалисты и где купить */
+  .sw-page .cities .cities-item {
+    padding: 6px 20px;
+    font-size: 15px;
+  }
+
+  /* Страница White label */
+  .white-label-page .section-1 .frame {
+    padding: 20px;
+  }
+  .white-label-page .section-1 .rectangle {
+    padding: 20px;
+  }
+  .white-label-page .section-2 .grid-container {
+    grid-template-columns: auto;
+  }
+  .white-label-page .section-3 .flex-container {
+    gap: 16px;
+    flex-direction: column;
+  }
+  .white-label-page .section-4 .section-4-title {
+    font-size: 24px;
+  }
+  .white-label-page .section-4 .for-whom-item__title {
+    font-size: 17px;
+  }
+  .white-label-page .section-4 .for-whom-item__text {
+    font-size: 15px;
+  }
+  .white-label-page .section-4 .for-whom-item {
+    margin-bottom: 16px;
+    padding: 15px;
+    border-radius: 20px;
+    gap: 20px;
+  }
+  .white-label-page .section-5 .image {
+    width: 120px;
+    height: 120px;
+  }
+  .white-label-page .section-5 .content {
+    font-size: 32px;
+  }
+
   /* breadcrumb */
   .breadcrumbs-wrapper {
     margin-bottom: 20px;
@@ -7411,6 +8215,7 @@ a.reset_variations::before {
 
 @media only screen and (max-width : 480px) {
 
+  .single-page .wp-block-button__link,
   .primary-btn {
     height: 38px;
     font-size: 16px;
@@ -7624,8 +8429,17 @@ a.reset_variations::before {
 
   /* sw page города страницы специалисты и где купить */
   .sw-page .cities .cities-item {
-    font-size: 15px;
+    padding: 4px 16px;
   }
+
+  /* specialisty page страница Специалисты */
+  .specialisty-page .grid-container {
+    grid-template-columns: auto;
+  }
+  .specialisty-page .specialists-item .specialists-item__image {
+    height: 225px;
+  }
+
 
   /* o nas page */
   .o-nas-page .o-nas-section .flex-container-first {
@@ -7669,10 +8483,6 @@ a.reset_variations::before {
   .o-nas-page .list-item .checkbox {
     width: 25px;
   }
-  .for-whom-section .for-whom-item {
-    padding: 10px;
-    font-size: 14px;
-  }
   .o-nas-page .list-item .ellipse {
     width: 6px;
   }
@@ -7695,6 +8505,12 @@ a.reset_variations::before {
   }
   .o-nas-page .delivery-section .order-union {
     font-size: 18px;
+  }
+
+  /* О нас секция Для кого и NaturaProf секция Для кого */
+  .for-whom-section .for-whom-item {
+    padding: 10px;
+    font-size: 14px;
   }
 
   /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
@@ -7732,9 +8548,12 @@ a.reset_variations::before {
   /* single page */
   .single-page .single-image {
     margin: 0 0 10px 0;
+    border-radius: 20px;
   }
-
-  /* рекомендуемые товары в карточке блога */
+  .single-page .flex-container .single-image {
+    width: 330px;
+    height: 404px;
+  }
   .single-page .wc-block-grid .wc-block-grid__products {
     display: grid !important;
     grid-template-columns: repeat(1, 1fr);
@@ -7766,6 +8585,98 @@ a.reset_variations::before {
   .catalog-page .cat-view-more {
     font-size: 15px;
   }
+
+  /* Страница Блог и Новости */
+  .bn-page .grid-container {
+    grid-template-columns: auto;
+  }
+
+  /* Страница Контакты */
+  .kontakty-page .contacts-item__image .img {
+    width: 55px;
+  }
+  .kontakty-page .contacts-item__text {
+    font-size: 16px;
+  }
+
+  /* Страница Сообщество инфлюэнсеров */
+  .soobshchestvo-inflyuehnserov-page .content-section .content-image {
+    padding-bottom: 50%;
+  }
+  .soobshchestvo-inflyuehnserov-page .content-section .content-text {
+    font-size: 16px;
+  }
+  .soobshchestvo-inflyuehnserov-page .content-section .thin-image {
+    width: 100%;
+  }
+  .partner-section .inputs-row {
+    flex-wrap: wrap;
+  }
+
+  /* NaturaProf page */
+  .naturaprof-page .about-section .about-item {
+    font-size: 16px;
+  }
+  .naturaprof-page .for-experts-section .description .description-text {
+    font-size: 16px;
+  }
+  .naturaprof-page .for-experts-section .description .description-clinics {
+    flex-direction: column;
+  }
+  .naturaprof-page .for-experts-section .description .description-clinics-item {
+    width: 100%;
+    height: auto;
+  }
+  .naturaprof-page .for-experts-section .description-nn-item__text {
+    font-size: 16px;
+  }
+  .naturaprof-page .partner-section .partner-section-frame .frame-content {
+    padding: 20px;
+  }
+  .naturaprof-page .naturaprof-items-section .naturaprof-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
+  .pink-blur .section-title {
+    font-size: 18px;
+  }
+
+  /* Страница White label */
+  .white-label-page .section-1 .frame {
+    padding: 15px;
+  }
+  .white-label-page .section-1 .rectangle {
+    padding: 15px;
+  }
+  .white-label-page .section-1 .rectangle-title {
+    font-size: 22px;
+  }
+  .white-label-page .section-2 .item {
+    padding: 15px;
+  }
+  .white-label-page .section-2 .item__title {
+    font-size: 18px;
+  }
+  .white-label-page .section-4 .section-4-title {
+    font-size: 22px;
+  }
+  .white-label-page .section-4 .for-whom-item__title {
+    font-size: 16px;
+  }
+  .white-label-page .section-5 .frame {
+    padding: 15px;
+    flex-direction: column;
+  }
+  .white-label-page .section-5 .image {
+    width: 100px;
+    height: 100px;
+  }
+  .white-label-page .section-5 .content {
+    font-size: 23px;
+  }
+
 
   /* service page */
   /*
@@ -7886,7 +8797,7 @@ a.reset_variations::before {
 
   /* custom page */
   .custom-page .page-title {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   /* subcategories фильтр подкатегорий */
@@ -7901,6 +8812,7 @@ a.reset_variations::before {
   .breadcrumbs-wrapper {
     margin-bottom: 10px;
   }
+
   .single-product .product .product_title {
     font-size: 22px;
   }
@@ -7996,6 +8908,33 @@ a.reset_variations::before {
   /* Страница Ресурсы resursy-page */
   .resursy-page .resursy-category-item__link {
     font-size: 16px;
+  }
+
+  /* single page */
+  .single-page .single-image {
+    width: 290px;
+    height: 290px;
+  }
+  .single-page p {
+    font-size: 15px;
+  }
+  .single-page .flex-container .single-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* NaturaProf page */
+  .naturaprof-page .about-section .about-item {
+    font-size: 15px;
+  }
+  .naturaprof-page .professional-platform-section .platform-top .left,
+  .naturaprof-page .professional-platform-section .platform-top .right {
+    font-size: 15px;
+  }
+
+  /* o nas page */
+  .o-nas-page .frame .section-title {
+    font-size: 20px;
   }
 
 }

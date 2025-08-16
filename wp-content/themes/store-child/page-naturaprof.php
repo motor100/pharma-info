@@ -52,7 +52,9 @@
       <div class="flex-container">
         <div class="description-nn-slim w32">
           <div class="description-nn-item">
-            <div class="description-nn-item__text">Лекарственные средства для индивидуального изготовления или классические аптечные прописи могут быть выписаны на бумажном рецепте в форме 107/у или через программное обеспечение</div>
+            <div class="description-nn-item__text">
+              <p>Лекарственные средства для индивидуального изготовления или классические аптечные прописи могут быть выписаны на бумажном рецепте в форме 107/у или через программное обеспечение</p>
+            </div>
             <a href="/catalog/product-category/vnutriaptechnye-propisi/" class="description-nn-view-more-btn">Подробнее</a>
           </div>
         </div>
