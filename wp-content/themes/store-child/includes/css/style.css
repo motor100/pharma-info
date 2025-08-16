@@ -1477,15 +1477,17 @@ iframe {
   overflow: hidden;
 }
 .resursy-page .resursy-category-item__link {
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%;
-  padding: 40px;
+  padding: 0 40px;
   background-color: var(--nero-color);
   font-family: 'Roboto-light';
   font-size: 24px;
   color: var(--text-color);
   line-height: 1.2;
+  align-items: center;
+  justify-content: center;
   transition: background-color .2s, color .2s;
 }
 .resursy-page .resursy-category-item__link:hover {
@@ -5269,6 +5271,16 @@ a.reset_variations::before {
     font-size: 15px;
   }
 
+  /* Страница Ресурсы resursy-page */
+  .resursy-page .resursy-category-item {
+    height: 88px;
+    border-radius: 35px;
+  }
+  .resursy-page .resursy-category-item__link {
+    padding: 0 35px;
+    font-size: 22px;
+  }
+
   /* breadcrumb */
   .breadcrumbs-wrapper {
     margin-bottom: 50px;
@@ -5875,6 +5887,16 @@ a.reset_variations::before {
   }
   .catalog-page .cat-view-more {
     font-size: 16px;
+  }
+
+  /* Страница Ресурсы resursy-page */
+  .resursy-page .resursy-category-item {
+    height: 68px;
+    border-radius: 30px;
+  }
+  .resursy-page .resursy-category-item__link {
+    padding: 0 30px;
+    font-size: 20px;
   }
 
   /* breadcrumb */
@@ -6544,6 +6566,16 @@ a.reset_variations::before {
   }
   .catalog-page .cat-title {
     height: 40px;
+    font-size: 18px;
+  }
+
+  /* Страница Ресурсы resursy-page */
+  .resursy-page .resursy-category-item {
+    height: 58px;
+    border-radius: 25px;
+  }
+  .resursy-page .resursy-category-item__link {
+    padding: 0 25px;
     font-size: 18px;
   }
 
@@ -7352,6 +7384,17 @@ a.reset_variations::before {
     font-size: 13px;
   }
 
+  /* Страница Ресурсы resursy-page */
+  .resursy-page .resursy-category-item {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    text-align: center;
+  }
+  .resursy-page .resursy-category-item__link {
+    padding: 10px 20px;
+  }
+
   /* breadcrumb */
   .breadcrumbs-wrapper {
     margin-bottom: 20px;
@@ -7945,6 +7988,11 @@ a.reset_variations::before {
   }
   .checkout-page .woocommerce-checkout-review-order-table {
     border-spacing: 0 2px;
+  }
+
+  /* Страница Ресурсы resursy-page */
+  .resursy-page .resursy-category-item__link {
+    font-size: 16px;
   }
 
 }
