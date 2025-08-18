@@ -141,7 +141,7 @@
       <div class="partner-section-frame">
         <div class="frame-content">
           <div class="section-title">Станьте партнёром NaturaProf и монетизируйте свою экспертность!</div>
-          <div class="frame-btn primary-btn">Стать партнером</div>
+          <button class="frame-btn primary-btn js-callback-form-btn">Стать партнером</button>
         </div>
         <div class="frame-image">
           <img src="/wp-content/themes/store-child/includes/images/who-works-with-us-doctor1.png" alt="">
@@ -167,7 +167,7 @@
           <div class="right platform-top-item">
             <p>NaturaProf — это платформа, позволяющая специалистам составлять персонализированные схемы длительного приема препаратов, натуропатии, нутрицевтиков, адаптированные к уникальным потребностям здоровья каждого пациента.</p>
             <p>Благодаря сервису NaturaProf  практикующие врачи и специалисты помогающих профессий получают возможность использовать………, которые улучшают результаты лечения и поддержания здоровья и позволяют строить долгосрочные отношения пациент- специалист.</p>
-            <div class="start-btn primary-btn">Начать работу</div>
+            <button class="start-btn primary-btn js-callback-form-btn">Начать работу</button>
           </div>
         </div>
       </div>
@@ -216,11 +216,11 @@
     <div class="container">
       <div class="naturaprof-item">
         <div class="naturaprof-item__title section-title">Прописи</div>
-        <a href="#" class="naturaprof-item__btn">Узнать подробнее</a>
+        <a href="/catalog/product-category/vnutriaptechnye-propisi/" class="naturaprof-item__btn">Узнать подробнее</a>
       </div>
       <div class="naturaprof-item">
         <div class="naturaprof-item__title section-title">Обучающие материалы</div>
-        <a href="#" class="naturaprof-item__btn">Узнать подробнее</a>
+        <a href="/catalog/product-category/obuchenie/" class="naturaprof-item__btn">Узнать подробнее</a>
       </div>
       <div class="naturaprof-item">
         <div class="naturaprof-item__title section-title">Консультации</div>
@@ -247,11 +247,25 @@
             <img src="/wp-content/themes/store-child/includes/images/who-works-with-us-doctor1.png" alt="">
           </div>
         </div>
-        <form class="form">
-          <input type="text" name="name" class="input-field" required placeholder="Ваше имя">
-          <input type="text" name="phone" class="input-field js-input-phone-mask" required placeholder="+7 (000) 000 00 00">
-          <input type="email" name="email" class="input-field" required placeholder="Ваше email">
-          <button type="button" class="submit-btn primary-btn">Отправить</button>
+        <form id="white-label-form" class="form">
+          <div class="flex-container">
+            <input type="text" name="name" class="input-field js-required-name" required placeholder="Ваше имя" autocomplete="on">
+            <input type="text" name="phone" class="input-field js-input-phone-mask js-required-phone" required placeholder="+7 (000) 000 00 00" autocomplete="on">
+            <input type="email" name="email" class="input-field js-required-email" required placeholder="Ваше email" autocomplete="on">
+            <button type="button" id="white-label-submit-btn" class="submit-btn primary-btn">Отправить</button>
+          </div>
+          
+          <div class="agreement-text">
+            <input type="checkbox" name="checkbox-read" class="custom-checkbox js-required-checkbox" id="checkbox-read-callback6" checked required onchange="document.getElementById('white-label-submit-btn').disabled = !this.checked;">
+            <label for="checkbox-read-callback6" class="custom-checkbox-label"></label>
+            <span class="checkbox-text">Я согласен (-на) с <a href="/politika-v-otnoshenii-obrabotki-personalnyh-dannyh/" class="privacy-policy-link" target="_blank">политикой конфиденциальности</a></span>
+          </div>
+          <div class="agreement-text">
+            <input type="checkbox" name="checkbox-agree" class="custom-checkbox js-required-checkbox" id="checkbox-agree-callback7" checked required onchange="document.getElementById('white-label-submit-btn').disabled = !this.checked;">
+            <label for="checkbox-agree-callback7" class="custom-checkbox-label"></label>
+            <span class="checkbox-text">Я согласен (-на) с <a href="/soglasie-posetitelya-sajta-na-obrabotku-personalnyh-dannyh/" class="agreement-link" target="_blank">обработку персональных данных</a></span>
+          </div>
+
         </form>
       </div>
     </div>

@@ -425,7 +425,7 @@
               <div class="image">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-image4.jpg" alt="">
               </div>
-              <a href="#" class="catalog-btn primary-btn">Перейти в каталог</a>
+              <a href="/catalog/" class="catalog-btn primary-btn">Перейти в каталог</a>
             </div>
           </div>
         </div>
@@ -449,7 +449,7 @@
           <div class="section-title">Оплата</div>
           <div class="text20">Пожалуйста, оставьте контакты, и мы обсудим с вами условия сотрудничества</div>
         </div>
-        <div class="payment-btn primary-btn">Перейти к оплате</div>
+        <div class="payment-btn primary-btn js-callback-form-btn">Перейти к оплате</div>
       </div>
     </div>
   </div>

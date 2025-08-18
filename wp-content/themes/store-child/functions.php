@@ -278,6 +278,75 @@ function home_page_slider_save_metabox( $post_id, $post ) {
 add_action( 'save_post', 'home_page_slider_save_metabox', 10, 2 );
 
 
+// Добавление метабокса expert_email на тип поля post
+add_action( 'add_meta_boxes', 'post_add_metabox' );
+ 
+function post_add_metabox() {
+    add_meta_box(
+        'expert_email', // ID нашего метабокса
+        'Email специалиста', // заголовок
+        'expert_email_metabox_callback', // функция, которая будет выводить поля в мета боксе
+        'post', // типы постов, для которых его подключим
+        'normal', // расположение (normal, side, advanced)
+        'default' // приоритет (default, low, high, core)
+    );
+}
+ 
+function expert_email_metabox_callback( $post ) {
+    // сначала получаем значения этих полей
+    // Email специалиста
+    $expert_email = get_post_meta( $post->ID, 'expert_email', true );
+ 
+    // одноразовые числа, кстати тут нет супер-большой необходимости их использовать
+    wp_nonce_field( 'seopostsettingsupdate-' . $post->ID, '_truenonce' );
+ 
+    echo '<table class="form-table">
+        <tbody>
+            <tr>
+                <th><label for="seo_title">Email</label></th>
+                <td><input type="email" id="expert_email" name="expert_email" value="' . esc_attr( $expert_email ) . '" class="regular-text"></td>
+            </tr>
+        </tbody>
+    </table>';
+}
+
+add_action( 'save_post', 'expert_email_save_metabox', 10, 2 );
+ 
+function expert_email_save_metabox( $post_id, $post ) {
+ 
+    // проверка одноразовых полей
+    if ( ! isset( $_POST[ '_truenonce' ] ) || ! wp_verify_nonce( $_POST[ '_truenonce' ], 'seopostsettingsupdate-' . $post->ID ) ) {
+        return $post_id;
+    }
+ 
+    // проверяем, может ли текущий юзер редактировать пост
+    $post_type = get_post_type_object( $post->post_type );
+ 
+    if ( ! current_user_can( $post_type->cap->edit_post, $post_id ) ) {
+        return $post_id;
+    }
+ 
+    // ничего не делаем для автосохранений
+    if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) {
+        return $post_id;
+    }
+ 
+    // проверяем тип записи
+    if( 'post' !== $post->post_type ) {
+        return $post_id;
+    }
+ 
+    if( isset( $_POST[ 'expert_email' ] ) ) {
+        $email = $_POST[ 'expert_email' ];
+        update_post_meta( $post_id, 'expert_email', sanitize_text_field( $email ) );
+    } else {
+        delete_post_meta( $post_id, 'expert_email' );
+    }
+ 
+    return $post_id;
+}
+
+
 /**
  * Вывод записей по буквам на странице Состояния от А до Я
  *

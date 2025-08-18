@@ -82,7 +82,7 @@
           <div class="agreement-text">
             <input type="checkbox" name="checkbox-agree" class="custom-checkbox js-required-checkbox" id="checkbox-agree-callback1" checked required onchange="document.getElementById('callback-top-submit-btn').disabled = !this.checked;">
             <label for="checkbox-agree-callback1" class="custom-checkbox-label"></label>
-            <span class="checkbox-text">Я согласен (-на) с <a href="/soglasie-posetitelya-sajta-na-obrabotku-personalnyh-dannyh/" class="agreement-link" target="_blank">обработку персональных данных</a></span>
+            <span class="checkbox-text">Я согласен (-на) на <a href="/soglasie-posetitelya-sajta-na-obrabotku-personalnyh-dannyh/" class="agreement-link" target="_blank">обработку персональных данных</a></span>
           </div>
 
         </form>
@@ -94,7 +94,7 @@
     <div class="container">
       <div class="flex-container">
         <div class="vnutriaptechnye-propisi-title">Внутриаптечные прописи</div>
-        <a href="/catalog" class="catalog-btn">Перейти в каталог</a>
+        <a href="/catalog/product-category/vnutriaptechnye-propisi/" class="catalog-btn">Перейти в каталог</a>
       </div>
     </div>
   </div>

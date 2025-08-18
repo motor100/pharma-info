@@ -2,7 +2,7 @@
   <div class="container">
     <div class="main-section-frame">
       <div class="main-title">Портал персонализированной медицины</div>
-      <div class="main-buttons">
+      <div class="main-buttons main-buttons-desktop">
         <a href="/lekarstva#personal-order-section" class="order-online-btn primary-btn">
           <img src="/wp-content/themes/store-child/includes/images/svg/notepad-light.svg" class="order-online-btn__image" alt="">
           <span class="order-online-btn__text">Закажи рецепт онлайн</span>
@@ -25,6 +25,16 @@
           <img src="/wp-content/themes/store-child/includes/images/svg/advantages-check.svg" class="main-advantages-item__image" alt="">
           <span class="main-advantages-item__text">Доставка по всей России</span>
         </div>
+      </div>
+      <div class="main-buttons main-buttons-mobile">
+        <a href="/lekarstva#personal-order-section" class="order-online-btn primary-btn">
+          <img src="/wp-content/themes/store-child/includes/images/svg/notepad-light.svg" class="order-online-btn__image" alt="">
+          <span class="order-online-btn__text">Закажи рецепт онлайн</span>
+        </a>
+        <a href="#video-section" class="video-about-us-btn">
+          <img src="/wp-content/themes/store-child/includes/images/svg/play-circle.svg" class="video-about-us-btn__image" alt="">
+          <span class="video-about-us-btn__text">Видео о нас</span>
+        </a>
       </div>
       <div class="main-image">
         <img src="/wp-content/themes/store-child/includes/images/main-image.png" alt="">

@@ -119,7 +119,8 @@ if (is_shop()) {
       <div class="grid-container">
 
         <div class="filter">
-          <form class="filter" action="" method="get">
+          <button class="open-filter-btn hidden-desktop">Открыть фильтр</button>
+          <form class="form" action="" method="get">
             <div class="checkbox-group">
               <div class="checkbox-group__title">Рубрика</div>
               <label class="checkbox-label">

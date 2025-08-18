@@ -51,28 +51,28 @@
         <div class="footer-menu-item">
           <div class="footer-menu-item__title">Добавки</div>
           <div class="menu-item">
-            <a href="#">Минералы</a>
+            <a href="/catalog/product-category/dobavki/mineraly/">Минералы</a>
           </div>
           <div class="menu-item">
-            <a href="#">Витамины</a>
+            <a href="/catalog/product-category/dobavki/vitaminy/">Витамины</a>
           </div>
           <div class="menu-item">
-            <a href="#">БАД</a>
+            <a href="/catalog/product-category/dobavki/bad/">БАД</a>
           </div>
         </div>
         <div class="footer-menu-item">
           <div class="footer-menu-item__title">Натуропатия</div>
           <div class="menu-item">
-            <a href="#">Соли Шюсслера</a>
+            <a href="/catalog/product-category/soli-schuesslera/">Соли Шюсслера</a>
           </div>
           <div class="menu-item">
-            <a href="#">Цветочные эссенции Баха</a>
+            <a href="/catalog/product-category/cvetochnye-ehssencii-baha/">Цветочные эссенции Баха</a>
           </div>
           <div class="menu-item">
-            <a href="#">Гомеопатия</a>
+            <a href="/catalog/product-category/gomeopatiya/">Гомеопатия</a>
           </div>
           <div class="menu-item">
-            <a href="#">Травы</a>
+            <a href="/catalog/product-category/travy/">Травы</a>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
             <a href="/substanczii/">Субстанции</a>
           </div>
           <div class="menu-item">
-            <a href="#">Натуропатия для животных</a>
+            <a href="/catalog/product-category/dlya-zhivotnyh/">Натуропатия для животных</a>
           </div>
           <div class="menu-item">
             <a href="/catalog/product-category/naruzhnye-sredstva/">Наружные средства</a>
@@ -149,13 +149,13 @@
     <div class="contacts">
       <div class="flex-container">
         <div class="phone-wrapper pe-wrapper">
-          <a href="#" class="pe-link">
+          <a href="tel:+74959274928" class="pe-link">
             <img src="/wp-content/themes/store-child/includes/images/svg/circle-call.svg" class="pe-image" alt="">
           </a>
-          <a href="#" class="pe-link">
+          <a href="https://t.me/biosalts" class="pe-link">
             <img src="/wp-content/themes/store-child/includes/images/svg/circle-tg.svg" class="pe-image" alt="">
           </a>
-          <a href="#" class="pe-link">
+          <a href="https://wa.me/79629880861" class="pe-link">
             <img src="/wp-content/themes/store-child/includes/images/svg/circle-wa.svg" class="pe-image" alt="">
           </a>
           <span class="footer-phone pe-text">+7 (495) 927-4-928</span>
@@ -390,10 +390,15 @@
         <input type="hidden" name="email" class="js-required-email" value="нет">
         <input type="button" id="callback-modal-btn" class="submit-btn" value="Отправить">
         <div class="agreement-text">
-          <input type="checkbox" id="cb-checkbox-input" name="checkbox" class="custom-checkbox js-required-checkbox" checked onchange="document.getElementById('callback-modal-btn').disabled = !this.checked;">
-          <label for="cb-checkbox-input" class="custom-checkbox-label"></label>
-          <span>Нажимая кнопку вы соглашаетесь с <a href="/politika-v-otnoshenii-obrabotki-personalnyh-dannyh">политикой обработки данных</a></span>
-        </div>
+            <input type="checkbox" name="checkbox-read" class="custom-checkbox js-required-checkbox" id="checkbox-read-callback" checked required onchange="document.getElementById('callback-modal-btn').disabled = !this.checked;">
+            <label for="checkbox-read-callback" class="custom-checkbox-label"></label>
+            <span class="checkbox-text">Я согласен (-на) с <a href="/politika-v-otnoshenii-obrabotki-personalnyh-dannyh/" class="privacy-policy-link" target="_blank">политикой конфиденциальности</a></span>
+          </div>
+          <div class="agreement-text">
+            <input type="checkbox" name="checkbox-agree" class="custom-checkbox js-required-checkbox" id="checkbox-agree-callback" checked required onchange="document.getElementById('callback-modal-btn').disabled = !this.checked;">
+            <label for="checkbox-agree-callback" class="custom-checkbox-label"></label>
+            <span class="checkbox-text">Я согласен (-на) на <a href="/soglasie-posetitelya-sajta-na-obrabotku-personalnyh-dannyh/" class="agreement-link" target="_blank">обработку персональных данных</a></span>
+          </div>
       </form>
     </div>
   </div>

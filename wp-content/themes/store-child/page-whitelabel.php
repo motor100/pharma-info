@@ -100,7 +100,7 @@
           <img src="/wp-content/themes/store-child/includes/images/temp-image.jpg" alt="">
         </div>
       </div>
-      <div class="primary-btn submit-btn">Отправить форму</div>
+      <a href="#partner-section" class="primary-btn submit-btn">Отправить форму</a>
     </div>
   </div>
 
@@ -160,39 +160,40 @@
     </div>
   </div>
 
-  <div class="partner-section section">
+  <div id="partner-section" class="partner-section section section-with-anchor">
     <div class="container">
       <div class="section-title">Подайте заявку, чтобы стать партнером</div>
-      <form action="" class="form">
+      <form id="partner-form" class="form partner-form">
+      <!-- <form id="partner-form" class="form partner-form" method="post" action="/wp-content/themes/store-child/phpmailer/partner.php"> -->
         <div class="flex-container">
           <div class="inputs">
             <div class="inputs-row">
               <div class="form-group">
-                <input type="text" name="first-name" id="first-name" class="input-field">
+                <input type="text" name="name" id="first-name" class="input-field js-required-name" autocomplete="on">
                 <label for="first-name" class="label">Имя<span class="purple-color">*</span></label>
               </div>
               <div class="form-group">
-                <input type="text" name="second-name" id="second-name" class="input-field">
+                <input type="text" name="surname" id="second-name" class="input-field js-required-surname" autocomplete="on">
                 <label for="second-name" class="label">Фамилия<span class="purple-color">*</span></label>
               </div>
             </div>
             <div class="inputs-row">
               <div class="form-group">
-                <input type="text" name="country" id="country" class="input-field">
+                <input type="text" name="country" id="country" class="input-field js-required-country" autocomplete="on">
                 <label for="country" class="label">Страна<span class="purple-color">*</span></label>
               </div>
               <div class="form-group">
-                <input type="text" name="city" id="city" class="input-field">
+                <input type="text" name="city" id="city" class="input-field js-required-city" autocomplete="on">
                 <label for="city" class="label">Город<span class="purple-color">*</span></label>
               </div>
             </div>
             <div class="inputs-row">
               <div class="form-group">
-                <input type="text" name="phone" id="phone" class="input-field js-input-phone-mask">
+                <input type="text" name="phone" id="phone" class="input-field js-input-phone-mask js-required-phone" autocomplete="on">
                 <label for="phone" class="label">Телефон<span class="purple-color">*</span></label>
               </div>
               <div class="form-group">
-                <input type="email" name="email" id="email" class="input-field">
+                <input type="email" name="email" id="email" class="input-field js-required-email" autocomplete="on">
                 <label for="email" class="label">Эл.почта<span class="purple-color">*</span></label>
               </div>
             </div>
@@ -204,17 +205,18 @@
         </div>
 
         <div class="agreement-text">
-          <input type="checkbox" name="checkbox-read" class="custom-checkbox js-required-checkbox" id="checkbox-read-callback" checked required onchange="document.getElementById('callback-top-submit-btn').disabled = !this.checked;">
-          <label for="checkbox-read-callback" class="custom-checkbox-label"></label>
+          <input type="checkbox" name="checkbox-read" class="custom-checkbox js-required-checkbox" id="checkbox-read-callback5" checked required onchange="document.getElementById('partner-submit-btn').disabled = !this.checked;">
+          <label for="checkbox-read-callback5" class="custom-checkbox-label"></label>
           <span class="checkbox-text">Я согласен (-на) с <a href="/politika-v-otnoshenii-obrabotki-personalnyh-dannyh/" class="privacy-policy-link" target="_blank">политикой конфиденциальности</a></span>
         </div>
         <div class="agreement-text">
-          <input type="checkbox" name="checkbox-agree" class="custom-checkbox js-required-checkbox" id="checkbox-agree-callback" checked required onchange="document.getElementById('callback-top-submit-btn').disabled = !this.checked;">
-          <label for="checkbox-agree-callback" class="custom-checkbox-label"></label>
+          <input type="checkbox" name="checkbox-agree" class="custom-checkbox js-required-checkbox" id="checkbox-agree-callback5" checked required onchange="document.getElementById('partner-submit-btn').disabled = !this.checked;">
+          <label for="checkbox-agree-callback5" class="custom-checkbox-label"></label>
           <span class="checkbox-text">Я согласен (-на) с <a href="/soglasie-posetitelya-sajta-na-obrabotku-personalnyh-dannyh/" class="agreement-link" target="_blank">обработку персональных данных</a></span>
         </div>
 
-        <button type="button" class="submit-btn primary-btn">Отправить форму</button>
+        <button type="button" id="partner-submit-btn" class="submit-btn primary-btn">Отправить форму</button>
+        <!-- <button type="submit" id="partner-submit-btn" class="submit-btn primary-btn">Отправить форму</button> -->
 
       </form>
     </div>

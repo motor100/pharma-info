@@ -61,6 +61,42 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+  // Filter mobile
+  const openFilterBtn = document.querySelector('.archive-product .open-filter-btn');
+
+  if (openFilterBtn) {
+    const filterForm = document.querySelector('.filter .form');
+
+    openFilterBtn.onclick = function() {
+
+      if(openFilterBtn.innerText == 'Открыть фильтр') {
+        openFilterBtn.innerText = 'Скрыть фильтр';
+      } else {
+        openFilterBtn.innerText = 'Открыть фильтр';
+      }
+
+      filterForm.classList.toggle('active');
+    }
+  }
+
+
+  // Отключение кнопок если только один товар
+  const cartPage = document.querySelector('.cart-page');
+
+  if (cartPage) {
+    const qtys = cartPage.querySelectorAll('.quantity');
+
+    qtys.forEach((item) => {
+      const inputQty = item.querySelector('input.qty');
+
+      if (inputQty.type == 'hidden') {
+        item.querySelector('.minus').classList.add('hidden');
+        item.querySelector('.plus').classList.add('hidden');
+      }
+    });
+  }
+
+
   // Mobile menu
   const body = document.querySelector('body');
   const burgerMenuWrapper = document.querySelector('.burger-menu-wrapper');
@@ -102,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Окна
   const modalWindows = document.querySelectorAll('.modal-window');
-  const callbackFormBtns = document.querySelectorAll('.callback-form-btn');
+  const callbackFormBtns = document.querySelectorAll('.js-callback-form-btn');
   const callbackModal = document.querySelector('#callback-modal');
   const modalCloseBtns = document.querySelectorAll('.modal-window .modal-close');
 
@@ -366,6 +402,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // AJAX фильтр городов на странице Где купить
+  /*
   const wherebuyPage = document.querySelector('.wherebuy-page');
 
   if (wherebuyPage) {
@@ -395,6 +432,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  */
 
 
   // AJAX Отправка формы Персональный рецепт на странице Лекарства
@@ -444,7 +482,7 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 0; i < inputs.length; i++) {
           inputs[i].classList.remove('required');
         }
-        console.log(new FormData(form));
+
         fetch('/wp-content/themes/store-child/phpmailer/sendform.php', {
           method: 'POST',
           cache: 'no-cache',
@@ -485,7 +523,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-
   // AJAX обновление количество товара у значка корзины в хэдере и нижнем мобильном меню add to cart
   jQuery(document).ready(function($) {
     /**
@@ -517,10 +554,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+  // AJAX Отправка формы Заказать звонок
   const callbackForm = document.getElementById('callback-modal-form');
   const callbackSubmitBtn = document.getElementById('callback-modal-btn');
-  const clubForm = document.getElementById('club-form');
-  const clubSubmitBtn = document.getElementById('club-submit-btn');
 
   function ajaxCallback(form) {
 
@@ -534,8 +570,222 @@ document.addEventListener("DOMContentLoaded", () => {
       inputName.classList.remove('required');
     }
 
+    const inputPhone = form.querySelector('.js-required-phone');
+    if (inputPhone.value.length != 18) {
+      inputPhone.classList.add('required');
+      arr.push(false);
+    } else {
+      inputPhone.classList.remove('required');
+    }
+
+    const inputCheckboxes = form.querySelectorAll('.js-required-checkbox');
+    inputCheckboxes.forEach((item) => {
+      if (!item.checked) {
+        arr.push(false);
+      }
+    });
+
+    if (arr.length == 0) {
+
+      fetch('/wp-content/themes/store-child/phpmailer/mailer.php', {
+        method: 'POST',
+        cache: 'no-cache',
+        body: new FormData(form)
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+
+      alert("Спасибо. Мы свяжемся с вами.");
+
+      form.reset();
+
+    }
+
+    return false;
+  }
+
+  if (callbackSubmitBtn) {
+    callbackSubmitBtn.onclick = function() {
+      ajaxCallback(callbackForm);
+    }
+  }
+
+
+  // AJAX Отправка формы Стать партнером
+  const partnerForm = document.getElementById('partner-form');
+  const partnerSubmitBtn = document.getElementById('partner-submit-btn');
+
+  function ajaxPartner(form) {
+
+    let arr = [];
+
+    const inputName = form.querySelector('.js-required-name');
+    if (inputName.value.length < 3 || inputName.value.length > 50) {
+      inputName.classList.add('required');
+      arr.push(false);
+    } else {
+      inputName.classList.remove('required');
+    }
+
     const inputSurname = form.querySelector('.js-required-surname');
-    if (inputSurname.value.length < 3 || inputSurname.value.length > 20) {
+    if (inputSurname.value.length < 3 || inputSurname.value.length > 50) {
+      inputSurname.classList.add('required');
+      arr.push(false);
+    } else {
+      inputSurname.classList.remove('required');
+    }
+
+    const inputCountry = form.querySelector('.js-required-country');
+    if (inputCountry.value.length < 3 || inputCountry.value.length > 50) {
+      inputCountry.classList.add('required');
+      arr.push(false);
+    } else {
+      inputCountry.classList.remove('required');
+    }
+
+    const inputCity = form.querySelector('.js-required-city');
+    if (inputCity.value.length < 3 || inputCity.value.length > 50) {
+      inputCity.classList.add('required');
+      arr.push(false);
+    } else {
+      inputCity.classList.remove('required');
+    }
+
+    const inputPhone = form.querySelector('.js-required-phone');
+    if (inputPhone.value.length != 18) {
+      inputPhone.classList.add('required');
+      arr.push(false);
+    } else {
+      inputPhone.classList.remove('required');
+    }
+
+    const inputEmail = form.querySelector('.js-required-email');
+    if (inputEmail.value.length < 3 || inputEmail.value.length > 50) {
+      inputEmail.classList.add('required');
+      arr.push(false);
+    } else {
+      inputEmail.classList.remove('required');
+    }
+
+    const inputCheckboxes = form.querySelectorAll('.js-required-checkbox');
+    inputCheckboxes.forEach((item) => {
+      if (!item.checked) {
+        arr.push(false);
+      }
+    });
+
+    if (arr.length == 0) {
+
+      fetch('/wp-content/themes/store-child/phpmailer/partner.php', {
+        method: 'POST',
+        cache: 'no-cache',
+        body: new FormData(form)
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+
+      alert("Спасибо. Мы свяжемся с вами.");
+
+      form.reset();
+
+    }
+
+    return false;
+  }
+
+  if (partnerSubmitBtn) {
+    partnerSubmitBtn.onclick = function() {
+      ajaxPartner(partnerForm);
+    }
+  }
+
+
+  // AJAX Отправка формы White label
+  const whiteLabelForm = document.getElementById('white-label-form');
+  const whiteLabelSubmitBtn = document.getElementById('white-label-submit-btn');
+
+  function ajaxWhiteLabel(form) {
+
+    let arr = [];
+
+    const inputName = form.querySelector('.js-required-name');
+    if (inputName.value.length < 3 || inputName.value.length > 50) {
+      inputName.classList.add('required');
+      arr.push(false);
+    } else {
+      inputName.classList.remove('required');
+    }
+
+    const inputPhone = form.querySelector('.js-required-phone');
+    if (inputPhone.value.length != 18) {
+      inputPhone.classList.add('required');
+      arr.push(false);
+    } else {
+      inputPhone.classList.remove('required');
+    }
+
+    const inputEmail = form.querySelector('.js-required-email');
+    if (inputEmail.value.length < 3 || inputEmail.value.length > 50) {
+      inputEmail.classList.add('required');
+      arr.push(false);
+    } else {
+      inputEmail.classList.remove('required');
+    }
+
+    const inputCheckboxes = form.querySelectorAll('.js-required-checkbox');
+    inputCheckboxes.forEach((item) => {
+      if (!item.checked) {
+        arr.push(false);
+      }
+    });
+
+    if (arr.length == 0) {
+
+      fetch('/wp-content/themes/store-child/phpmailer/whitelabel.php', {
+        method: 'POST',
+        cache: 'no-cache',
+        body: new FormData(form)
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+
+      alert("Спасибо. Мы свяжемся с вами.");
+
+      form.reset();
+
+    }
+
+    return false;
+  }
+
+  if (whiteLabelSubmitBtn) {
+    whiteLabelSubmitBtn.onclick = function() {
+      ajaxWhiteLabel(whiteLabelForm);
+    }
+  }
+
+
+  // AJAX отправка формы Записаться на консультацию на странице специалиста
+  const lfsForm = document.getElementById('lfs-form');
+  const lfsSubmitBtn = document.getElementById('lfs-submit-btn');
+
+  function ajaxLfs(form) {
+
+    let arr = [];
+
+    const inputName = form.querySelector('.js-required-name');
+    if (inputName.value.length < 3 || inputName.value.length > 50) {
+      inputName.classList.add('required');
+      arr.push(false);
+    } else {
+      inputName.classList.remove('required');
+    }
+
+    const inputSurname = form.querySelector('.js-required-surname');
+    if (inputSurname.value.length < 3 || inputSurname.value.length > 50) {
       inputSurname.classList.add('required');
       arr.push(false);
     } else {
@@ -565,7 +815,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (arr.length == 0) {
 
-      fetch('/wp-content/themes/store-child/phpmailer/mailer.php', {
+      fetch('/wp-content/themes/store-child/phpmailer/specialist.php', {
         method: 'POST',
         cache: 'no-cache',
         body: new FormData(form)
@@ -583,20 +833,14 @@ document.addEventListener("DOMContentLoaded", () => {
     return false;
   }
 
-  if (clubSubmitBtn) {
-    clubSubmitBtn.onclick = function() {
-      ajaxCallback(clubForm);
+  if (lfsSubmitBtn) {
+    lfsSubmitBtn.onclick = function() {
+      ajaxLfs(lfsForm);
     }
   }
-
-  if (callbackSubmitBtn) {
-    callbackSubmitBtn.onclick = function() {
-      ajaxCallback(callbackForm);
-    }
-  }
-
 
   // Аккордеон на странице Частые вопрос faq-page
+  /*
   const faqPage = document.querySelector('.faq-page');
 
   if (faqPage) {
@@ -610,5 +854,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  */
 
 });
