@@ -87,9 +87,11 @@
     <?php else : ?>
 
       <div class="container">
-        <div class="single-image">
-          <?php the_post_thumbnail(''); ?>
-        </div>
+        <?php if (get_the_post_thumbnail()) { ?>
+          <div class="single-image">
+            <?php the_post_thumbnail(''); ?>
+          </div>
+        <?php } ?>
         <div class="single-content">
           <?php the_content(); ?>
         </div>

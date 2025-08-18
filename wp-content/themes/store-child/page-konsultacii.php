@@ -30,7 +30,7 @@
     'cat' => [
       $specialisty_cat_id,
       -$doctors_cat_id, // исключить дочернюю категорию
-      -$Psychologists_cat_id // исключить дочернюю категорию
+      -$psychologists_cat_id // исключить дочернюю категорию
     ],
     'posts_per_page' => -1,
   );

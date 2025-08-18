@@ -83,19 +83,19 @@
         <div class="footer-menu-item">
           <div class="footer-menu-item__title">Для животных</div>
           <div class="menu-item">
-            <a href="#">Персональный рецепт</a>
+            <a href="/lekarstva/#personal-order-section">Персональный рецепт</a>
           </div>
           <div class="menu-item">
-            <a href="#">Внутриаптечные прописи</a>
+            <a href="/catalog/product-category/vnutriaptechnye-propisi/">Внутриаптечные прописи</a>
           </div>
           <div class="menu-item">
-            <a href="#">Субстанции</a>
+            <a href="/substanczii/">Субстанции</a>
           </div>
           <div class="menu-item">
             <a href="#">Натуропатия для животных</a>
           </div>
           <div class="menu-item">
-            <a href="#">Наружные средства</a>
+            <a href="/catalog/product-category/naruzhnye-sredstva/">Наружные средства</a>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
             <a href="/naturaprof#partner-section">Партнерская программа</a>
           </div>
           <div class="menu-item">
-            <a href="#">Обучающие материалы</a>
+            <a href="/catalog/product-category/obuchenie/">Обучающие материалы</a>
           </div>
           <div class="menu-item">
             <a href="/naturaprof#white-label-section">Сотрудничество</a>
@@ -264,7 +264,7 @@
         <img src="/wp-content/themes/store-child/includes/images/svg/catalog-lens.svg" alt="">
       </div>
       <div class="menu-item__title">Каталог</div>
-      <a href="/catalog/product-category/soli-schuesslera/" class="full-link"></a>
+      <a href="/catalog/catalog/" class="full-link"></a>
     </div>
     <div class="menu-item cart-menu-item">
       <div class="menu-item__image">

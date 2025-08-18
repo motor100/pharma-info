@@ -160,7 +160,6 @@ iframe {
   color: var(--text-color);
 }
 
-
 .link-button,
 .wpb-pcf-btn {
   border-radius: 60px;
@@ -415,7 +414,6 @@ iframe {
   border-bottom-color: var(--text-color);
 }
 
-
 /* header search */
 .dgwt-wcas-search-wrapp {
   max-width: 100% !important;
@@ -597,8 +595,6 @@ iframe {
 .category-section .category-item .category-item__image img {
   width: 100%;
 }
-
-
 
 /* personal select section */
 .personal-select-section .flex-container {
@@ -978,7 +974,6 @@ iframe {
   width: 48px;
 }
 .o-nas-page .list-item .list-item__image {
-  width: 42px;
   flex-shrink: 0;
 }
 .o-nas-page .list-item .list-item__image img {
@@ -1453,8 +1448,8 @@ iframe {
 /* Субстанции substanczii */
 .substanczii-page .substanczii-btn {
   display: flex;
-  width: 307px;
-  height: 68px;
+  width: max-content;
+  padding: 17px 40px;
   border: none;
   border-radius: 34px;
   background-color: var(--text-color);
@@ -2439,13 +2434,13 @@ ul.products li.product .added_to_cart:hover {
 /* sw page города страницы специалисты и где купить */
 .sw-page .cities .flex-container {
   display: flex;
+  gap: 10px;
   align-items: center;
   flex-wrap: wrap;
 }
 .sw-page .cities .cities-item {
   display: block;
   width: max-content;
-  margin: 5px;
   padding: 8px 20px;
   border: 1px solid #EDF3FD;
   border-radius: 32px;
@@ -3262,7 +3257,6 @@ ul.products li.product .added_to_cart:hover {
   font-weight: bold;
   cursor: pointer;
 }
-
 
 /* we use cookie */
 .we-use-cookie {
@@ -4148,10 +4142,11 @@ a.reset_variations::before {
   list-style: none;
 }
 .mobile-menu .menu-item {
-  padding: 5px 0;
+  padding: 8px 0;
 }
 .mobile-menu .menu-item a {
   font-family: 'Roboto-Medium';
+  font-size: 18px;
   color: var(--text-color);
   text-decoration: none;
 }
@@ -5223,20 +5218,13 @@ a.reset_variations::before {
   .service-page .testimonials-section .testimonials-item__title {
     font-size: 22px;
   }
-  /*
-
-  /* faq page */
-  /*
-  .faq-page .faq-description {
-    font-size: 22px;
-  }
-  .faq-page .accordeon-section .section-title {
-    font-size: 30px;
-  }
-  .faq-page .accordeon-section .accordeon-item-title {
-    font-size: 22px;
-  }
   */
+
+  /* Субстанции substanczii */
+  .substanczii-page .substanczii-btn {
+    padding: 14px 35px;
+    font-size: 22px;
+  }
 
   /* lekarstva page */
   .lekarstva-page .order-online-section .flex-container {
@@ -5644,6 +5632,12 @@ a.reset_variations::before {
     width: 210px;
     height: 42px;
     font-size: 15px;
+  }
+
+  /* Субстанции substanczii */
+  .substanczii-page .substanczii-btn {
+    padding: 10px 28px;
+    font-size: 20px;
   }
 
   /* Рубрики */
@@ -6292,9 +6286,8 @@ a.reset_variations::before {
 
   /* header search */
   .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp input[type="search"].dgwt-wcas-search-input {
-    padding: 13px 20px 13px 42px !important;
+    padding: 13px 20px 13px 52px !important;
     line-height: 19px;
-    font-size: 14px;
   }
   .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp {
     padding: 0 10px;
@@ -6632,20 +6625,10 @@ a.reset_variations::before {
     margin: 0 0 8px 0;
     font-size: 24px;
   }
-  .ss-main {
-    font-size: 14px;
-  }
-  .ss-main .ss-single-selected {
-    height: 36px;
-  }
   .single-product .quantity button {
     width: 40px;
     height: 40px;
     font-size: 20px;
-  }
-  .single-product .product .single_add_to_cart_button {
-    height: 36px;
-    font-size: 15px;
   }
   .single-product .product .product_meta .meta-subtitle {
     margin: 0 0 8px 0;
@@ -6724,15 +6707,11 @@ a.reset_variations::before {
   .cart-page .woocommerce-cart-form__contents .product-name {
     padding: 5px 10px;
   }
-  .cart-page .woocommerce-cart-form__contents .product-name a {
-    font-size: 15px;
-  }
   .cart-page .woocommerce-cart-form__contents tbody .product-price,
   .cart-page .woocommerce-cart-form__contents tbody .product-quantity,
   .cart-page .woocommerce-cart-form__contents tbody .product-subtotal,
   .cart-page .woocommerce-cart-form__contents tbody .product-remove {
     padding: 0 5px;
-    font-size: 15px;
   }
   .cart-page .woocommerce-cart-form__contents .product-remove a {
     width: 23px;
@@ -6879,7 +6858,6 @@ a.reset_variations::before {
   }
   .resursy-page .resursy-category-item__link {
     padding: 0 25px;
-    font-size: 18px;
   }
 
   /* Страница Блог и Новости */
@@ -6999,7 +6977,7 @@ a.reset_variations::before {
   }
 
   /* o nas page */
-  .o-nas-page .list-item .list-item__image {
+  .o-nas-page .list-item .checkbox {
     width: 36px;
   }
   .o-nas-page .frame {
@@ -7134,6 +7112,11 @@ a.reset_variations::before {
   }
   .header .header-content .header-search {
     width: 100%;
+  }
+
+  /* header search */
+  .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp {
+    padding: 0;
   }
   
   /* custom page */
@@ -7400,6 +7383,12 @@ a.reset_variations::before {
   .pink-blur {
     padding: 25px;
     border-radius: 20px;
+  }
+
+  /* Субстанции substanczii */
+  .substanczii-page .substanczii-btn {
+    padding: 8px 24px;
+    font-size: 18px;
   }
 
   /* lekarstva page */
@@ -7787,7 +7776,7 @@ a.reset_variations::before {
   }
 
   /* o nas page */
-  .o-nas-page .list-item .list-item__image {
+  .o-nas-page .list-item .checkbox {
     width: 30px;
   }
 
@@ -7843,7 +7832,7 @@ a.reset_variations::before {
 
   /* we use cookie */
   .we-use-cookie {
-    right: 20%;
+    bottom: 165px;
   }
   .we-use-cookie .we-use-cookie-wrapper {
     padding: 12px 15px;
@@ -8058,7 +8047,7 @@ a.reset_variations::before {
     text-align: center;
   }
   .resursy-page .resursy-category-item__link {
-    padding: 10px 20px;
+    padding: 15px 20px;
   }
 
   /* single page */
@@ -8315,7 +8304,11 @@ a.reset_variations::before {
 
   /* products card ul.products */
   ul.products {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: auto;
+  }
+  ul.products li.product {
+    padding: 12px 10px;
+    border-radius: 15px;
   }
   ul.products li.product .attachment-woocommerce_thumbnail,
   ul.products li.product .woocommerce-placeholder {
@@ -8373,17 +8366,21 @@ a.reset_variations::before {
   .single-product .product th.label label {
     font-size: 16px;
   }
+  .single-product ul.products {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .single-product ul.products li.product .woocommerce-loop-product__title {
-    height: auto;
+    height: 66;
     font-size: 15px;
+    -webkit-line-clamp: 4;
   }
 
   /* cart page */
   .cart-page .cart-collaterals {
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
   .cart-page .cart-collaterals .shop_table {
-    font-size: 13px;
+    font-size: 14px;
   }
   .cart-page .cart-collaterals .shop_table th {
     width: 37%;
@@ -8440,7 +8437,6 @@ a.reset_variations::before {
     height: 225px;
   }
 
-
   /* o nas page */
   .o-nas-page .o-nas-section .flex-container-first {
     margin-bottom: 20px;
@@ -8461,13 +8457,9 @@ a.reset_variations::before {
   }
   .o-nas-page .frame {
     padding: 20px 15px;
-    font-size: 14px;
   }
   .o-nas-page .text20 {
     font-size: 15px;
-  }
-  .o-nas-page .list-item .list-item__text {
-    font-size: 14px;
   }
   .o-nas-page .subtitle {
     margin-bottom: 10px;
@@ -8510,12 +8502,17 @@ a.reset_variations::before {
   /* О нас секция Для кого и NaturaProf секция Для кого */
   .for-whom-section .for-whom-item {
     padding: 10px;
-    font-size: 14px;
   }
 
   /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
   .pink-blur {
     padding: 20px;
+  }
+
+  /* Субстанции substanczii */
+  .substanczii-page .substanczii-btn {
+    padding: 5px 20px;
+    font-size: 16px;
   }
 
   /* lekarstva page */
@@ -8677,7 +8674,6 @@ a.reset_variations::before {
     font-size: 23px;
   }
 
-
   /* service page */
   /*
   .service-page .desc-section .text-bold {
@@ -8813,11 +8809,15 @@ a.reset_variations::before {
     margin-bottom: 10px;
   }
 
+  /* single product page */
   .single-product .product .product_title {
     font-size: 22px;
   }
   .single-product .related > h2 {
     font-size: 22px;
+  }
+  .single-product ul.products {
+    grid-template-columns: auto;
   }
 
   /* o nas page */

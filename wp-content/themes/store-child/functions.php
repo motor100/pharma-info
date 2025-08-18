@@ -1035,7 +1035,6 @@ add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_arg
 
 
 // AJAX получить специалистов по городу на странице Специалисты
-/*
 add_action( 'wp_ajax_get_specialists', 'get_specialists_from_city' ); // хук wp_ajax
 add_action( 'wp_ajax_nopriv_get_specialists', 'get_specialists_from_city' ); // хук wp_ajax для незалогиненных пользователей
 
@@ -1076,7 +1075,6 @@ function get_specialists_from_city() {
     
     wp_die(); // выход нужен для того, чтобы в ответе не было ничего лишнего (0), только то что возвращает функция
 }
-*/
 
 add_action('wp_ajax_start_payment', 'start_payment');
 add_action('wp_ajax_nopriv_start_payment', 'start_payment');
