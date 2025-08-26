@@ -790,7 +790,6 @@ iframe {
   gap: 16px;
   border: 1px solid var(--text-color);
   border-radius: 15px;
-  flex-wrap: wrap;
   align-items: center;
 }
 .advantages-section .advantages-item__image {
@@ -6412,6 +6411,7 @@ a.reset_variations::before {
   }
   .advantages-section .advantages-item {
     padding: 20px;
+    flex-wrap: wrap;
   }
   .advantages-section .advantages-item__title {
     font-size: 16px;
