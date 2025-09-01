@@ -185,8 +185,28 @@
                   </li>
                 </ul>
               </li>
-              <li class="menu-item">
+              <li class="menu-item menu-item-has-children">
                 <a href="/naturaproff/">NaturaProff</a>
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/konsultacii/">Консультации</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/naturaproff#partner-section">Партнерская программа</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/obuchenie/">Обучающие материалы</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/naturaproff#white-label-section">Сотрудничество</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/naturaproff#for-experts-section">Партнеры</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/naturaproff#white-label-section">White lable</a>
+                  </li>
+                </ul>
               </li>                
             </ul>
           </div>
