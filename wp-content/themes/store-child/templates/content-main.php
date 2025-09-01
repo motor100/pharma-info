@@ -19,11 +19,11 @@
         </div>
         <div class="main-advantages-item">
           <img src="/wp-content/themes/store-child/includes/images/svg/advantages-check.svg" class="main-advantages-item__image" alt="">
-          <span class="main-advantages-item__text">Приоритетная доставка</span>
+          <span class="main-advantages-item__text">Доставка по всей России</span>
         </div>
         <div class="main-advantages-item">
           <img src="/wp-content/themes/store-child/includes/images/svg/advantages-check.svg" class="main-advantages-item__image" alt="">
-          <span class="main-advantages-item__text">Доставка по всей России</span>
+          <span class="main-advantages-item__text">Бесплатная доставка<br> при заказе от 7000р</span>
         </div>
       </div>
       <div class="main-buttons main-buttons-mobile">

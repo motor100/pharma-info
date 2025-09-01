@@ -517,6 +517,10 @@ iframe {
 .main-advantages .main-advantages-item__text {
   font-family: 'Roboto-Light';
   font-size: 24px;
+  line-height: 1.2;
+}
+.main-advantages .main-advantages-item__text br {
+  display: none;
 }
 
 /* category section */
@@ -5125,6 +5129,11 @@ a.reset_variations::before {
     font-size: 20px;
   }
 
+  /* main advantages */
+  .main-advantages .main-advantages-item__text {
+    font-size: 22px;
+  }
+
   /* category section */
   .category-section .flex-container {
     gap: 16px;
@@ -5925,9 +5934,6 @@ a.reset_variations::before {
   }
   .main-advantages .main-advantages-item__image {
     width: 28px;
-  }
-  .main-advantages .main-advantages-item__text {
-    font-size: 20px;
   }
 
   /* category section */
@@ -6735,8 +6741,8 @@ a.reset_variations::before {
   }
 
   /* main advantages */
-  .main-advantages .main-advantages-item__text {
-    font-size: 18px;
+  .main-advantages .main-advantages-item__text br {
+    display: initial;
   }
 
   /* category section */
