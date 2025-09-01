@@ -441,8 +441,6 @@ iframe {
   padding-left: 0 !important;
 }
 
-
-
 /* main section */
 .main-section {
   padding: 60px 0 20px 0;
@@ -521,55 +519,7 @@ iframe {
   font-size: 24px;
 }
 
-
-/* swiper slider */
-/*
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 5px;
-  left: 80%;
-  width: auto;
-}
-.swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
-  background-color: var(--text-color);
-  opacity: 1;
-}
-.swiper-pagination-bullet-active {
-  background-color: var(--purple-color);
-}
-.swiper-button-next {
-  top: auto;
-  right: auto;
-  bottom: 0;
-  left: 522px;
-  width: 42px;
-  height: 42px;
-  background: url(../images/svg/arrow-circle-right.svg) center no-repeat;
-}
-.swiper-button-prev {
-  top: auto;
-  right: auto;
-  bottom: 0;
-  left: 470px;
-  width: 42px;
-  height: 42px;
-  background: url(../images/svg/arrow-circle-left.svg) center no-repeat;
-}
-.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
-  content: '';
-}
-.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
-  content: '';
-}
-*/
-
 /* category section */
-/*
-.category-section {
-  padding: 20px 0;
-}
-*/
 .category-section .flex-container {
   display: grid;
   gap: 20px;
@@ -661,11 +611,6 @@ iframe {
 }
 
 /* description section */
-/*
-.description-section {
-  padding: 40px 0;
-}
-*/
 .description-section .flex-container {
   display: flex;
   gap: 20px;
@@ -696,11 +641,6 @@ iframe {
 }
 
 /* manufacture section */
-/*
-.manufacture-section {
-  padding: 40px 0;
-}
-*/
 .manufacture-section .manufacture-description {
   padding: 0 0 40px 0;
 }
@@ -757,21 +697,7 @@ iframe {
   z-index: 1;
 }
 
-
-/* home page view more btn */
-/*
-.home .view-more-btn {
-  padding: 0 30px;
-}
-*/
-
-
 /* advantages section */
-/*
-.advantages-section {
-  padding: 40px 0 0 0;
-}
-*/
 .advantages-section .advantages-section-title {
   margin: 0 0 40px 0;
   font-family: 'Roboto-Medium';
@@ -1142,12 +1068,6 @@ iframe {
   align-items: center;
   justify-content: center;
 }
-/*
-.lekarstva-page .personal-order-section {
-  margin-top: -80px;
-  padding-top: 80px;
-}
-*/
 .lekarstva-page .personal-order-section .grid-container {
   display: grid;
   margin: 0 0 15px 0;
@@ -1256,21 +1176,6 @@ iframe {
 }
 
 /* Рубрики */
-/*
-.rubriki-page .products {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.rubriki-page .products .products-item {
-  position: relative;
-  padding: 30px;
-  border: 1px solid #EEEEEE;
-  border-radius: 30px;
-  overflow: hidden;
-}
-*/
 .rubriki-page .products .image-wrapper {
   display: flex;
   margin: 0 0 10px 0;
@@ -1808,8 +1713,6 @@ iframe {
   color: var(--text-color);
 }
 
-
-
 /* sticky desktop menu */
 .sticky-desktop-menu {
   position: fixed;
@@ -1891,56 +1794,6 @@ iframe {
   transform: none;
 }
 
-/* catalog section title */
-/*
-.catalog-section-title {
-  margin: 0 0 40px 0;
-  font-family: "Roboto-Medium";
-  font-size: 42px;
-  line-height: 1.1;
-}
-*/
-
-/* subcategories */
-/*
-.subcategories {
-  display: flex;
-  flex-wrap: wrap;
-}
-.subcategories .subcategories-item {
-  display: flex;
-  width: max-content;
-  min-width: 95px;
-  height: 45px;
-  margin: 0 10px 20px 0;
-  padding: 0 15px;
-  border: 1px solid #44324C;
-  background-color: #fff;
-  border-radius: 40px;
-  color: var(--text-color);
-  text-align: center;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  transition: background-color .2s , border .1s, ;
-}
-.subcategories .subcategories-item:hover {
-  border: 1px solid var(--purple-color);
-  background-color: var(--purple-color);
-  color: var(--nero-color);
-}
-.subcategories .subcategories-item:hover .subcategories-item__title {
-  color: var(--nero-color);
-}
-.subcategories .subcategories-item.active {
-  border: 1px solid var(--purple-color);
-  background-color: var(--purple-color);
-}
-.subcategories .subcategories-item.active .subcategories-item__title {
-  color: var(--nero-color);
-}
-*/
-
 /* products card ul.products */
 ul.products {
   display: grid;
@@ -1972,12 +1825,6 @@ ul.products li.product .woocommerce-placeholder {
   overflow: hidden;
   transition: border .3s;
 }
-/*
-ul.products li.product .attachment-woocommerce_thumbnail:hover,
-ul.products li.product .woocommerce-placeholder:hover {
-  border: 2px solid var(--text-color);
-}
-*/
 ul.products li.product .woocommerce-loop-product__title {
   display: -webkit-box;
   height: 44px;
@@ -2550,7 +2397,6 @@ ul.products li.product .added_to_cart:hover {
   align-items: center;
 }
 
-
 /* sostoyaniya ot a do ya page */
 .sostoyaniya-ot-a-do-ya-page .letter {
   margin: 20px 0;
@@ -2673,49 +2519,6 @@ ul.products li.product .added_to_cart:hover {
   width: 100%;
   height: auto;
 }
-/*
-.single-page .lead-form-section {
-  margin: 80px 0 0 0;
-}
-.single-page .lead-form-section .lead-form-section-title {
-  margin: 0 0 20px 0;
-  font-family: 'roboto-medium';
-  font-size: 20px;
-  text-transform: uppercase;
-}
-.single-page .lead-form-section .form-group {
-  margin: 0 0 20px 0;
-}
-.single-page .lead-form-section .input-field {
-  display: block;
-  width: 100%;
-  height: 50px;
-  margin: 0 0 10px 0;
-  padding: 15px 20px;
-  border: 1px solid var(--white-rock-color);
-  border-radius: 25px;
-  font-family: inherit;
-}
-.single-page .lead-form-section .label {
-  display: block;
-}
-.single-page .lead-form-section .textarea {
-  height: 246px;
-  resize: none;
-}
-.single-page .lead-form-section .submit-btn {
-  display: block;
-  width: 100%;
-  height: 66px;
-  margin: 30px 0 0 0;
-  padding: 0;
-  border: none;  
-  border-radius: 33px;
-  background-color: var(--text-color);
-  font-family: 'roboto-medium';
-  font-size: 20px;
-}
-*/
 .single-page .wp-block-button__link {
   border-radius: 34px !important;
   text-decoration: none !important;
@@ -3038,8 +2841,6 @@ ul.products li.product .added_to_cart:hover {
   margin-top: 30px;
 }
 
-
-
 /* to top */
 .to-top {
   position: fixed;
@@ -3174,12 +2975,6 @@ ul.products li.product .added_to_cart:hover {
 .modal-window .required {
   border-bottom: 1px solid #FF7272;
 }
-/*
-.modal-window .checkbox-text {
-  display: block;
-  line-height: 1.4;
-}
-*/
 .modal-window .privacy-policy-btn {
   color: #3E3E3E;
   text-decoration: underline;
@@ -3553,7 +3348,6 @@ a.reset_variations::before {
   display: block;
 }
 
-
 /* checkout page Оформление заказа и Заказ принят */
 .checkout-page .checkout-content {
   padding: 40px 0 0 0;
@@ -3844,7 +3638,6 @@ a.reset_variations::before {
   content: '';
 }
 
-
 /* custom page */
 .custom-page .page-title {
   margin: 0 0 40px 0;
@@ -3853,81 +3646,6 @@ a.reset_variations::before {
   line-height: 1.1;
   color: var(--text-color);
 }
-
-
-/* archive product */
-/*
-.archive-product.has-filter ul.products {
-  grid-template-columns: repeat(3, 1fr);
-}
-*/
-
-/* text section */
-/*
-.text-section {
-  padding: 70px 0 0 0;
-}
-.text-section .text-section-title {
-  margin: 0 0 40px 0;
-  font-family: "Roboto-SemiBold";
-  font-size: 56px;
-  text-align: center;
-}
-.text-section .paragraph-wrapper {
-  margin: 0 0 40px 0;
-}
-.text-section .p {
-  font-size: 18px;
-}
-.text-section .order-text {
-  font-style: italic;
-}
-.text-section .order-phone {
-  margin: 0 0 40px 0;
-  font-family: "Roboto-SemiBold";
-  font-size: 24px;
-  font-style: italic;
-}
-.text-section .flex-container {
-  display: flex;
-}
-.text-section .callback-form-btn {
-  display: flex;
-  width: 290px;
-  height: 78px;
-  margin: 0 16px 0 0;
-  padding: 0 35px;
-  border-radius: 20px;
-  background-color: var(--purple-color);
-  cursor: pointer;
-  align-items: center;
-  justify-content: space-between;
-}
-.text-section .callback-form-btn .callback-form-btn__image {
-  width: 38px;
-  height: 38px;
-}
-.text-section .callback-form-btn .callback-form-btn__text {
-  font-size: 20px;
-  color: var(--nero-color);
-  font-weight: 600;
-}
-.text-section .detailed-o-nas-us-btn {
-  display: flex;
-  width: 270px;
-  height: 68px;
-  padding: 10px 0;
-  border: 1px solid var(--text-color);
-  border-radius: 34px;
-  font-size: 20px;
-  color: var(--text-color);
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-}
-*/
 
 /* Catalog page */
 .catalog-page .cat-wrapper {
@@ -3986,7 +3704,6 @@ a.reset_variations::before {
   font-family: 'Roboto-Light';
   font-size: 20px;
 }
-
 
 /* Page 404 */
 .page-404 {
@@ -4232,7 +3949,6 @@ a.reset_variations::before {
   top: -5px;
   right: 5px;
 }
-
 
 /* Личный кабинет */
 .post-9 #customer_login h1,
@@ -4901,7 +4617,6 @@ a.reset_variations::before {
   }
 }
 
-
 @media only screen and (min-width : 1400px) {
   /* subcategories фильтр подкатегорий */
   .subcategories .subcategories-item {
@@ -5091,12 +4806,6 @@ a.reset_variations::before {
   .single-product .related > h2 {
     padding: 18px 0;
   }
-  /*
-  .single-product ul.products li.product .woocommerce-loop-product__title {
-    height: 62px;
-    font-size: 16px;
-  }
-  */
   .single-product .product .wc-tabs-wrapper {
     margin-bottom: 25px;
     padding-bottom: 25px;
@@ -5148,47 +4857,6 @@ a.reset_variations::before {
     padding: 10px 36px;
     font-size: 18px;
   }
-
-  /* service page */
-  /*
-  .service-page .desc-section .text-bold {
-    font-size: 22px;
-  }
-  .service-page .desc-section .sotrudnichestvo-subtitle {
-    font-size: 40px;
-  }
-  .service-page .partnership-section .partnership-text {
-    font-size: 40px;
-  }
-  .service-page .frames-section .frames-item {
-    height: 166px;
-  }
-  .service-page .frames-section .frames-item__title {
-    font-size: 19px;
-  }
-  .service-page .partnership-section .partnership-btn {
-    font-size: 18px;
-  }
-  .service-page .pharmacy-section .pharmacy-description {
-    font-size: 22px;
-  }
-  .service-page .pn-title {
-    font-size: 52px;
-  }
-  .service-page .news-section .news-item__title {
-    font-size: 22px;
-  }
-  .service-page .news-section .news-item__excerpt {
-    height: 39px;
-    font-size: 16px;
-  }
-  .service-page .faq-section .faq-description {
-    font-size: 22px;
-  }
-  .service-page .testimonials-section .testimonials-item__title {
-    font-size: 22px;
-  }
-  */
 
   /* Субстанции substanczii */
   .substanczii-page .substanczii-btn {
@@ -5456,16 +5124,6 @@ a.reset_variations::before {
   .main-section .video-about-us-btn .video-about-us-btn__text {
     font-size: 20px;
   }
-  
-  /* swiper slider */
-  /*
-  .swiper-button-next {
-    left: 422px;
-  }
-  .swiper-button-prev {
-    left: 370px;
-  }
-  */
 
   /* category section */
   .category-section .flex-container {
@@ -5670,38 +5328,6 @@ a.reset_variations::before {
     font-size: 17px;
   }
 
-  /* text section */
-  /*
-  .text-section {
-    padding: 50px 0 0 0;
-  }
-  .text-section .text-section-title {
-    font-size: 48px;
-  }
-  .text-section .text-section-title {
-    margin: 0 0 30px 0;
-  }
-  .text-section .paragraph-wrapper {
-    margin: 0 0 30px 0;
-  }
-  .text-section .p {
-    font-size: 17px;
-  }
-  .text-section .order-phone {
-    font-size: 22px;
-  }
-  .text-section .callback-form-btn {
-    width: 250px;
-  }
-  .text-section .callback-form-btn .callback-form-btn__text {
-    font-size: 18px;
-  }
-  .text-section .detailed-o-nas-us-btn {
-    width: 250px;
-    font-size: 18px;
-  }
-  */
-
   /* single product page */
   .single-product .product .product_title {
     font-size: 28px;
@@ -5768,13 +5394,6 @@ a.reset_variations::before {
     padding: 12px 0;
     font-size: 28px;
   }
-
-  /* where buy page */
-  /*
-  .wherebuy-page .addresses-item {
-    margin: 0 0 30px 0;
-  }
-  */
 
   /* cart page */
   .cart-page .cart-content {
@@ -6621,12 +6240,6 @@ a.reset_variations::before {
   .single-product .product .woocommerce-tabs .panel {
     font-size: 17px;
   }
-  /*
-  .single-product ul.products li.product .woocommerce-loop-product__title {
-    height: 55px;
-    font-size: 14px;
-  }
-  */
   .single-product .woocommerce-Tabs-panel--description p {
     margin: 0 0 8px 0;
     line-height: 1.4;
@@ -7866,19 +7479,6 @@ a.reset_variations::before {
     height: 222px;
   }
 
-  /* catalog section */
-  /*
-  .text-section .order-phone {
-    font-size: 20px;
-  }
-  .text-section .flex-container {
-    display: block;
-  }
-  .text-section .callback-form-btn {
-    margin: 0 0 15px 0;
-  }
-  */
-
   /* single product page */
   .single-product .product table.variations {
     width: 60%;
@@ -7923,14 +7523,6 @@ a.reset_variations::before {
   }
 
   /* checkout page checkout page Оформление заказа и Заказ принят */
-  /*
-  .checkout-page .woocommerce-form-coupon-toggle {
-    font-size: 18px;
-  }
-  .checkout-page .checkout_coupon .have-coupon-text {
-    font-size: 18px;
-  }
-  */
   .checkout-page .checkout {
     margin: 20px 0;
   }
@@ -8196,11 +7788,6 @@ a.reset_variations::before {
   .main-section .video-about-us-btn {
     width: 100%;
   }
-  /*
-  .main-section .video-about-us-btn {
-    height: 38px;
-  }
-  */
   .main-section .video-about-us-btn .video-about-us-btn__text {
     font-size: 16px;
   }
@@ -8288,24 +7875,6 @@ a.reset_variations::before {
     font-size: 15px;
   }
 
-  /* text section */
-  /*
-  .text-section {
-    padding: 20px 0 0 0;
-  }
-  .text-section .text-section-title {
-    margin: 0 0 10px 0;
-  }
-  .text-section .callback-form-btn {
-    width: 100%;
-    gap: 15px;
-    justify-content: center;
-  }
-  .text-section .detailed-o-nas-us-btn {
-    width: 100%;
-  }
-  */
-
   /* catalog section */
   .catalog-section .catalog-tabs-contents .cat-wrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -8315,11 +7884,6 @@ a.reset_variations::before {
   .single-product .product .product_title {
     font-size: 24px;
   }
-  /*
-  .single-product .product .summary .product_title {
-    font-size: 16px;
-  }
-  */
   .single-product .product .price {
     font-size: 20px;
   }
@@ -8642,26 +8206,6 @@ a.reset_variations::before {
   .white-label-page .section-5 .content {
     font-size: 23px;
   }
-
-  /* service page */
-  /*
-  .service-page .desc-section .text-bold {
-    font-size: 16px;
-  }
-  .service-page .desc-section .sotrudnichestvo-subtitle {
-    font-size: 28px;
-  }
-  .service-page .testimonials-section .hidden-small {
-    display: none;
-  }
-  .service-page .testimonials-section .testimonials-item {
-    width: 100%;
-  }
-  .service-page .partners-section .flex-container {
-    gap: 20px;
-    flex-direction: column;
-  }
-  */
 
   /* modal */
   .modal-window .modal-area {
@@ -8993,8 +8537,6 @@ a.reset_variations::before {
 .catalog-shop .term-96 {
   display: none;
 }
-
-
 
 /* Скрытие вкладок в карточке товара для категори Акционные предложения на наборы солей Шюсслера по направлениям */
 .single-product .product_cat-akczionnye-predlozheniya-na-nabory-solej-shyusslera-po-napravleniyam .woocommerce-tabs .tabs {
