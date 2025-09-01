@@ -172,7 +172,7 @@
                     <a href="/catalog/product-category/obuchenie/">Обучение</a>
                   </li>
                   <li class="sub-menu-item">
-                    <a href="/blog/">Блог Статьи</a>
+                    <a href="/blog/">Блог</a>
                   </li>
                   <li class="sub-menu-item">
                     <a href="/novosti/">Новости</a>

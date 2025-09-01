@@ -138,10 +138,10 @@
             <a href="/catalog/product-category/obuchenie/">Обучение</a>
           </div>
           <div class="menu-item">
-            <a href="/blog/">Блог Статьи</a>
+            <a href="/novosti/">Новости</a>
           </div>
           <div class="menu-item">
-            <a href="/novosti/">Новости</a>
+            <a href="/blog/">Блог</a>
           </div>
           <div class="menu-item">
             <a href="/kontakty/">Контакты</a>
@@ -356,9 +356,6 @@
               </li>
               <li class="sub-menu-item">
                 <a href="/catalog/product-category/obuchenie/">Обучение</a>
-              </li>
-              <li class="sub-menu-item">
-                <a href="/blog/">Блог Статьи</a>
               </li>
               <li class="sub-menu-item">
                 <a href="/novosti/">Новости</a>
