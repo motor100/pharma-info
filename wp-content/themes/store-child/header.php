@@ -88,20 +88,79 @@
                   </li>
                 </ul>
               </li>
-              <li class="menu-item">
+              <li class="menu-item menu-item-has-children">
                 <a href="/lekarstva">Лекарства</a>
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/lekarstva/#personal-order-section">Персональный рецепт</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/vnutriaptechnye-propisi/">Внутриаптечные прописи</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/substanczii/">Субстанции</a>
+                  </li>
+                </ul>
               </li>
-              <li class="menu-item">
+              <li class="menu-item menu-item-has-children">
                 <a href="/catalog/product-category/dobavki/">Добавки</a>
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/dobavki/mineraly/">Минералы</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/dobavki/vitaminy/">Витамины</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/dobavki/bad/">БАД</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Суперфуды</a>
+                  </li>
+                </ul>
               </li>
-              <li class="menu-item">
+              <li class="menu-item menu-item-has-children">
                 <a href="/catalog/product-category/naturopatiya/">Натуропатия</a>
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/soli-schuesslera/">Соли Шюсслера</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/cvetochnye-ehssencii-baha/">Цветочные эссенции Баха</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/gomeopatiya/">Гомеопатия</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Медицина низких доз</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/travy/">Травы</a>
+                  </li>
+                </ul>
               </li>
               <li class="menu-item">
                 <a href="/catalog/product-category/naruzhnye-sredstva/">Наружные средства</a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item menu-item-has-children">
                 <a href="/catalog/product-category/dlya-zhivotnyh/">Для животных</a>
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/lekarstva/#personal-order-section">Персональный рецепт</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/vnutriaptechnye-propisi/">Внутриаптечные прописи</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/substanczii/">Субстанции</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/dlya-zhivotnyh/">Натуропатия для животных</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/catalog/product-category/naruzhnye-sredstva/">Наружные средства</a>
+                  </li>
+                </ul>
               </li>
               <li class="menu-item menu-item-has-children">
                 <a href="/resursy/">Ресурсы</a>

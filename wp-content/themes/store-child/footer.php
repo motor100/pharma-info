@@ -59,6 +59,9 @@
           <div class="menu-item">
             <a href="/catalog/product-category/dobavki/bad/">БАД</a>
           </div>
+          <div class="menu-item">
+            <a href="#">Суперфуды</a>
+          </div>
         </div>
         <div class="footer-menu-item">
           <div class="footer-menu-item__title">Натуропатия</div>
@@ -70,6 +73,9 @@
           </div>
           <div class="menu-item">
             <a href="/catalog/product-category/gomeopatiya/">Гомеопатия</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Медицина низких доз</a>
           </div>
           <div class="menu-item">
             <a href="/catalog/product-category/travy/">Травы</a>
