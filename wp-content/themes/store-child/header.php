@@ -127,7 +127,7 @@
                 </ul>
               </li>
               <li class="menu-item">
-                <a href="/naturaprof/">NaturaProf</a>
+                <a href="/naturaproff/">NaturaProff</a>
               </li>                
             </ul>
           </div>

@@ -101,24 +101,24 @@
       </div>
       <div class="footer-menu-column">
         <div class="footer-menu-item">
-          <div class="footer-menu-item__title">NaturaProf</div>
+          <div class="footer-menu-item__title">NaturaProff</div>
           <div class="menu-item">
             <a href="/konsultacii/">Консультации</a>
           </div>
           <div class="menu-item">
-            <a href="/naturaprof#partner-section">Партнерская программа</a>
+            <a href="/naturaproff#partner-section">Партнерская программа</a>
           </div>
           <div class="menu-item">
             <a href="/catalog/product-category/obuchenie/">Обучающие материалы</a>
           </div>
           <div class="menu-item">
-            <a href="/naturaprof#white-label-section">Сотрудничество</a>
+            <a href="/naturaproff#white-label-section">Сотрудничество</a>
           </div>
           <div class="menu-item">
-            <a href="/naturaprof#for-experts-section">Партнеры</a>
+            <a href="/naturaproff#for-experts-section">Партнеры</a>
           </div>
           <div class="menu-item">
-            <a href="/naturaprof#white-label-section">White lable</a>
+            <a href="/naturaproff#white-label-section">White lable</a>
           </div>
         </div>
       </div>
@@ -232,7 +232,7 @@
         <a href="/resursy/">Ресурсы</a>
       </li>
       <li class="menu-item">
-        <a href="/naturaprof/">NaturaProf</a>
+        <a href="/naturaproff/">NaturaProff</a>
       </li>
     </ul>
   </div>
@@ -366,7 +366,7 @@
             </ul>
           </li>
           <li class="menu-item">
-            <a href="/naturaprof/">NaturaProf</a>
+            <a href="/naturaproff/">NaturaProff</a>
           </li>                
         </ul>
       </div>
