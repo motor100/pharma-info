@@ -31,7 +31,7 @@
             <a href="/o-nas#how-to-order">Как сделать заказ</a>
           </div>
           <div class="menu-item">
-            <a href="/o-nas#faq">Вопрос-ответ</a>
+            <a href="/faq">Вопрос-ответ</a>
           </div>
         </div>
         <div class="footer-menu-item">
@@ -328,7 +328,7 @@
                 <a href="/o-nas#how-to-order">Как сделать заказ</a>
               </li>
               <li class="sub-menu-item">
-                <a href="/o-nas#faq">Вопрос-ответ</a>
+                <a href="/faq">Вопрос-ответ</a>
               </li>
             </ul>
           </li>

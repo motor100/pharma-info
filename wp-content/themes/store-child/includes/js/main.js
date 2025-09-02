@@ -379,40 +379,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  // AJAX фильтр городов на странице Где купить
-  /*
-  const wherebuyPage = document.querySelector('.wherebuy-page');
-
-  if (wherebuyPage) {
-    const cityBtns = document.querySelectorAll('.js-city-btn');
-    const aItems = document.querySelectorAll('.js-a-item');
-
-    cityBtns.forEach((item) => {
-      item.onclick = function() {
-
-        // удаление active у всех кнопок
-        const citiesItems = document.querySelectorAll('.cities-item');
-        for (var i = 0; i < citiesItems.length; i++) {
-          citiesItems[i].classList.remove('active');
-        }
-
-        // добавление active у текущей кнопки
-        item.classList.add('active');
-
-        item.classList.add('active');
-
-        for (var i = 0; i < aItems.length; i++) {
-          aItems[i].classList.remove('hidden');
-          if (item.dataset.name !== aItems[i].dataset.name) {
-            aItems[i].classList.add('hidden');
-          }
-        }
-      }
-    });
-  }
-  */
-
-
   // AJAX Отправка формы Персональный рецепт на странице Лекарства
   const lekarstvaPage = document.querySelector('.lekarstva-page');
 
@@ -817,8 +783,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Аккордеон на странице Частые вопрос faq-page
-  /*
+  // Аккордеон на странице Вопрос ответ faq-page
   const faqPage = document.querySelector('.faq-page');
 
   if (faqPage) {
@@ -832,6 +797,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-  */
 
 });
