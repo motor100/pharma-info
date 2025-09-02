@@ -47,12 +47,8 @@ add_action( 'wp_enqueue_scripts', 'add_scripts' );
 
 function add_scripts() {
     global $ver;
-	// wp_enqueue_script( 'fancy', get_stylesheet_directory_uri() . '/includes/js/fancy.js' );
-	// wp_enqueue_script( 'isotope', get_stylesheet_directory_uri() . '/includes/js/isotope.js' );
-  	wp_enqueue_script( 'custom', get_stylesheet_directory_uri() . '/includes/js/app.min.js' );
-    wp_enqueue_script( 'jquery-ui', get_stylesheet_directory_uri() . '/includes/js/jquery-ui.min.js' );
-	// wp_enqueue_script( 'iso', get_stylesheet_directory_uri() . '/includes/js/iso.js' );
-
+  	//wp_enqueue_script( 'custom', get_stylesheet_directory_uri() . '/includes/js/app.min.js' );
+    //wp_enqueue_script( 'jquery-ui', get_stylesheet_directory_uri() . '/includes/js/jquery-ui.min.js' );
     wp_enqueue_script( 'imask', get_stylesheet_directory_uri() . '/includes/js/imask.min.js' );
 
     if ( is_product() ) {
@@ -853,100 +849,6 @@ function rk_remove_product_tabs( $tabs ) {
  
 	return $tabs;
 }
-
-/*
-add_filter( 'woocommerce_product_tabs', 'ql_reorder_product_tabs', 98 );
-
-function ql_reorder_product_tabs( $tabs ) {
-    $tabs['description']['priority'] = 0; // Description first
-    return $tabs;
-}
-
-
-add_filter('woocommerce_product_tabs', 'rk_new_product_tab', 1);
-function rk_new_product_tab( $tabs ) {
-	if ( get_field('sostavnoj_tovar') ) {
-		$tabs['sostav_tab'] = array(
-			'title' =>  'Состав комплекса',
-			'priority' => 1,
-			'callback' => 'rk_new_tab_content',
-			'content' => get_field('sostav_kompleksa'),
-		);
-	} else unset( $tabs['sostav_tab'] );
-	return $tabs;
-}
-function rk_new_tab_content($tab_name, $tab) {
-    echo $tab['content'];
-}
-
-add_filter('woocommerce_product_tabs', 'rk_new_product_tab_2', 2);
-function rk_new_product_tab_2( $tabs ) {
-	if ( get_field('sostavnoj_tovar') ) {
-		$tabs['pokazakia_tab'] = array(
-			'title' =>  'Показания и противопоказания',
-			'priority' => 2,
-			'callback' => 'rk_new_tab_content_2',
-			'content' => get_field('pokazaniya_i_protivopokazaniya'),
-		);
-	} else unset( $tabs['pokazakia_tab'] );
-	return $tabs;
-}
-
-function rk_new_tab_content_2($tab_name, $tab) {
-    echo $tab['content'];
-}
-
-add_filter('woocommerce_product_tabs', 'rk_new_product_tab_4', 4);
-function rk_new_product_tab_4( $tabs ) {
-	if ( get_field('sostavnoj_tovar') ) {
-		$tabs['fiz_tab'] = array(
-			'title' =>  'Физиология и психосоматика',
-			'priority' => 4,
-			'callback' => 'rk_new_tab_content_4',
-			'content' => get_field('fiziologiya_i_psihosomatika'),
-		);
-	} else unset( $tabs['fiz_tab'] );
-	return $tabs;
-}
-function rk_new_tab_content_4($tab_name, $tab) {
-        echo $tab['content'];
-}
-
-add_filter('woocommerce_product_tabs', 'rk_new_product_tab_5', 5);
-function rk_new_product_tab_5( $tabs ) {
-	$tabs[ 'doz_tab' ] = array(
-		'title' 	=> 'Дозирование',
-		'priority' 	=> 5,
-		'callback' 	=> 'rk_new_tab_content_5'
-	);
-	return $tabs;
-}
-
-function rk_new_tab_content_5() {
-	if(get_field('dozirovanie')) { 
-		echo '<div class="">';
-		the_field('dozirovanie');
-		echo '</div>';
-	}
-}
-
-add_filter('woocommerce_product_tabs', 'rk_new_product_tab_6', 6);
-function rk_new_product_tab_6( $tabs ) {
-	if ( !get_field('sostavnoj_tovar') ) {
-		$tabs['pok_tab'] = array(
-			'title' =>  'Показания',
-			'priority' => 4,
-			'callback' => 'rk_new_tab_content_6',
-			'content' => get_field('pokazaniya'),
-		);
-	} else unset( $tabs['pok_tab'] );
-	return $tabs;
-}
-
-function rk_new_tab_content_6($tab_name, $tab) {
-    echo $tab['content'];
-}
-*/
 
 add_action( 'woocommerce_before_quantity_input_field', 'truemisha_quantity_plus', 25 );
 add_action( 'woocommerce_after_quantity_input_field', 'truemisha_quantity_minus', 25 );
