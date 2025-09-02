@@ -160,10 +160,32 @@
         <img src="/wp-content/themes/store-child/includes/images/shyussler.jpg" alt="">
       </div>
       <div class="description-content">
-        <div class="description-content__title">Заголовок</div>
         <div class="description-content__text">
-          <p>Тканевая биохимическая терапия разработана доктором Шюсслером в середине 19 века.</p>
-          <p>Основана на доказанной потребности организма в небольших дозах минеральных веществ, которые используются в качестве катализаторов химических реакций в клетках, строительного неорганического матрикса организма. Различные жизненные ситуации, эмоциональные переживания, нагрузки, заболевания приводят к дефициту отдельных минералов, в результате чего нарушаются биохимические процессы и развивается гипоксия тканей.</p>
+          <p>Мы создали пространство, где рождается индивидуальный подход к здоровью. Наш портал объединяет лучших производителей лекарственных средств и нутрицевтиков, компаундинги, экспертов в области фармации, врачей, специалистов помогающих профессий и преподавателей для одной цели — сделать персональную медицину доступной реальностью.</p>
+          <div class="list-item o-nas-list-item">
+            <div class="list-item__image ellipse">
+              <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text"><strong>Компаундинг:</strong> изготовление персональных лекарств с уникальной дозировкой и составом, созданных исключительно под ваши потребности.</div>
+          </div>
+          <div class="list-item o-nas-list-item">
+            <div class="list-item__image ellipse">
+              <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text"><strong>Сила сообщества:</strong> единая платформа для диалога между пациентом, врачом, производителем и экспертом.</div>
+          </div>
+          <div class="list-item o-nas-list-item">
+            <div class="list-item__image ellipse">
+              <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text"><strong>Знания и обучение:</strong> мы учим специалистов и пациентов принципам персонализированного подхода, потому что Ваше здоровье — это уникальная история.</div>
+          </div>
+          <div class="list-item o-nas-list-item">
+            <div class="list-item__image ellipse">
+              <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text">Мы обеспечиваем бережный,  холистический подход к здоровью. Добро пожаловать в экосистему, где на первом месте — Вы.</div>
+          </div>
         </div>
         <div class="view-more-btn primary-btn">подробнее</div>
       </div>
