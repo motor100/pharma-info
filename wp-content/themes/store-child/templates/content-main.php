@@ -46,26 +46,13 @@
 <div class="category-section section">
   <div class="container">
     <div class="flex-container">
-      <div class="category-item">
-        <div class="category-item__title">Соли Шюсслера</div>
-        <div class="category-item__image">
-          <img src="/wp-content/themes/store-child/includes/images/temp-placeholder.png" alt="">
-        </div>
-        <a href="/catalog/product-category/soli-schuesslera/" class="full-link"></a>
-      </div>
+
       <div class="category-item">
         <div class="category-item__title">Внутриаптечные<br>прописи</div>
         <div class="category-item__image">
           <img src="/wp-content/themes/store-child/includes/images/temp-placeholder.png" alt="">
         </div>
         <a href="/catalog/product-category/vnutriaptechnye-propisi/" class="full-link"></a>
-      </div>
-      <div class="category-item">
-        <div class="category-item__title">Гомеопатия</div>
-        <div class="category-item__image">
-          <img src="/wp-content/themes/store-child/includes/images/temp-placeholder.png" alt="">
-        </div>
-        <a href="/catalog/product-category/gomeopatiya/" class="full-link"></a>
       </div>
       <div class="category-item">
         <div class="category-item__title">Лекарства</div>
@@ -89,11 +76,18 @@
         <a href="/catalog/product-category/naturopatiya/" class="full-link"></a>
       </div>
       <div class="category-item">
-        <div class="category-item__title">Наружные<br>средства</div>
+        <div class="category-item__title">Для специалистов</div>
         <div class="category-item__image">
           <img src="/wp-content/themes/store-child/includes/images/temp-placeholder.png" alt="">
         </div>
-        <a href="/catalog/product-category/naruzhnye-sredstva/" class="full-link"></a>
+        <a href="/catalog/product-category/dlya-specialistov/" class="full-link"></a>
+      </div>
+      <div class="category-item">
+        <div class="category-item__title">Литература</div>
+        <div class="category-item__image">
+          <img src="/wp-content/themes/store-child/includes/images/temp-placeholder.png" alt="">
+        </div>
+        <a href="/catalog/product-category/obuchenie/" class="full-link"></a>
       </div>
       <div class="category-item">
         <div class="category-item__title">Для животных</div>
