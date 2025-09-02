@@ -211,7 +211,7 @@
 
 <div class="mobile-menu">
   <div class="mobile-menu-logo">
-    <img src="/wp-content/themes/store-child/includes/images/logo_header.png" alt="лого">
+    <img src="/wp-content/themes/store-child/includes/images/logo-header.svg" alt="лого">
   </div>
   <div class="working-time">Пн-Пт: 10:00 до 20:00, Сб-Вс: выходной</div>
   <div class="menu-header_menu-container">

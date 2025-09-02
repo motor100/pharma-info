@@ -37,7 +37,7 @@
           <div class="flex-container">
             <div class="header-logo">
               <a href="/" class="header-logo__link">
-                <img src="/wp-content/themes/store-child/includes/images/logo_header.png" alt="лого">
+                <img src="/wp-content/themes/store-child/includes/images/logo-header.svg" alt="лого">
               </a>
             </div>
             <a href="/catalog/" class="catalog-btn header-content-btn hidden-mobile">
@@ -51,7 +51,7 @@
             <div class="header-search">
               <?php echo do_shortcode('[fibosearch]'); ?>
             </div>
-            <div class="header-login hidden-mobile">
+            <div class="header-login">
               <img src="/wp-content/themes/store-child/includes/images/svg/user.svg" class="header-login__image" alt="">
               <a href="/nn-cnt" class="full-link"></a>
             </div>
