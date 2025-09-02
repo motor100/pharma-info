@@ -28,7 +28,7 @@
             'taxonomy'     => 'product_cat',
             'orderby'      => 'ID',
             'show_count'   => 0,
-            // 'parent'       => 25,
+            'parent'       => 0, // Если указать 0, то будут выведены только элементы верхнего уровня.
             'pad_counts'   => 0,
             'hierarchical' => 1,
             'title_li'     => '',
@@ -41,7 +41,6 @@
           foreach ($categories as $cat) {
             $thumbnail_id = get_term_meta( $cat->term_id, 'thumbnail_id', true );
             $image = wp_get_attachment_url( $thumbnail_id );
-            //$img = $image ? $image : '/wp-content/uploads/woocommerce-placeholder.png';
             $img = $image ? $image : '/wp-content/themes/store-child/includes/images/temp-placeholder.png';
             ?>
 
