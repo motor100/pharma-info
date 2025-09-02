@@ -673,8 +673,10 @@ iframe {
 }
 .manufacture-section .manufacture-description .manufacture-content__text {
   font-family: 'Roboto-Light';
-  font-size: 20px;
-  line-height: 1.1;
+}
+.manufacture-section .manufacture-description .manufacture-content__text p {
+  font-size: 18px;
+  line-height: 1.3;
 }
 .manufacture-section .manufacture-description .manufacture-image {
   width: 650px;
@@ -5195,6 +5197,9 @@ a.reset_variations::before {
   .manufacture-section .manufacture-description .manufacture-content__title {
     font-size: 32px;
   }
+  .manufacture-section .manufacture-description .manufacture-content__text p {
+    font-size: 17px;
+  }
 
   /* advantages section */
   .advantages-section .advantages-section-title {
@@ -6006,6 +6011,9 @@ a.reset_variations::before {
   }
   .manufacture-section .manufacture-description .flex-container {
     flex-direction: column;
+  }
+  .manufacture-section .manufacture-description .manufacture-content__text p {
+    font-size: 16px;
   }
 
   /* advantages section */
@@ -6850,9 +6858,6 @@ a.reset_variations::before {
   .manufacture-section .manufacture-description .manufacture-content__title {
     font-size: 26px;
   }
-  .manufacture-section .manufacture-description .manufacture-content__text {
-    font-size: 18px;
-  }
   .manufacture-section .manufacture-description .manufacture-image {
     width: 500px;
     height: 281px;
@@ -6865,6 +6870,9 @@ a.reset_variations::before {
   }
   .manufacture-section .manufacture-image .image {
     border-radius: 20px;
+  }
+  .manufacture-section .manufacture-description .manufacture-content__text p {
+    font-size: 15px;
   }
 
   /* advantages section */
@@ -7880,9 +7888,6 @@ a.reset_variations::before {
   .manufacture-section .manufacture-description .manufacture-content__title {
     font-size: 24px;
   }
-  .manufacture-section .manufacture-description .manufacture-content__text {
-    font-size: 17px;
-  }
   .manufacture-section .manufacture-description .manufacture-image {
     width: 330px;
     height: 186px;
@@ -8359,7 +8364,7 @@ a.reset_variations::before {
   .manufacture-section .manufacture-description .manufacture-content__title {
     font-size: 22px;
   }
-  .manufacture-section .manufacture-description .manufacture-content__text {
+  .manufacture-section .manufacture-description .manufacture-content__text p {
     font-size: 16px;
   }
   .manufacture-section .manufacture-description .manufacture-image {

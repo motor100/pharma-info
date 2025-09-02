@@ -200,8 +200,32 @@
         <div class="manufacture-content">
           <div class="manufacture-content__title">Изготовление персональных лекарств и натуропатии</div>
           <div class="manufacture-content__text">
-            <p>Соли Шюсслера производятся в Европе на протяжении 150 лет.</p>
-            <p>В России производителем солей Шюсслера по оригинальной технологии является специализированная натуропатическая производственная аптека NaturaPharma.</p>
+            <p>Не бывает двух одинаковых людей. Особенности метаболизма, генетика, образ жизни и жизненные ситуации  уникальны. Универсальные схемы лечения и стандартные дозировки не учитывают эту индивидуальность.</p>
+            <div class="list-item o-nas-list-item">
+              <div class="list-item__image ellipse">
+                <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text"><strong>Точная доза:</strong> врач подбирает подбираем именно ту концентрацию, которая эффективна и безопасна именно для вас.</div>
+            </div>
+            <div class="list-item o-nas-list-item">
+              <div class="list-item__image ellipse">
+                <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text"><strong>Чистота и качество:</strong> компаундинги используют только сертифицированные субстанции высшего качества без балластных наполнителей.</div>
+            </div>
+            <div class="list-item o-nas-list-item">
+              <div class="list-item__image ellipse">
+                <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text"><strong>Персональная формула:</strong> в препаратах только необходимые вам компоненты, исключая лишнее.</div>
+            </div>
+            <div class="list-item o-nas-list-item">
+              <div class="list-item__image ellipse">
+                <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+              </div>
+              <div class="list-item__text"><strong>Максимальная эффективность:</strong> индивидуальный подход обеспечивает лучший результат и минимальный риск побочных эффектов.</div>
+            </div>
+            <p>Ваше здоровье заслуживает решения, созданного исключительно для вас.</p>
           </div>
           <div class="view-more-btn primary-btn">подробнее</div>
         </div>
