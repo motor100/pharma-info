@@ -576,7 +576,7 @@ iframe {
 }
 .personal-select-section .personal-select-content {
   width: 100%;
-  padding: 40px;
+  padding: 30px 35px;
   border: 1px solid var(--text-color);
   border-radius: 30px;
 }
@@ -589,13 +589,12 @@ iframe {
 .personal-select-section .personal-select-content__description {
   margin: 0 0 30px 0;
   font-family: 'Roboto-Light';
-  font-size: 20px;
-  line-height: 1.1;  
 }
 .personal-select-section .content-flex-container {
   display: flex;
   gap: 20px;
 }
+/*
 .personal-select-section .example-report-btn {
   display: flex;
   width: 296px;
@@ -608,6 +607,7 @@ iframe {
   align-items: center;
   justify-content: center;
 }
+*/
 
 /* video section */
 .video-section .video {
@@ -893,34 +893,6 @@ iframe {
 .o-nas-page .text-light {
   font-family: 'Roboto-light';  
 }
-.o-nas-page .list-item {
-  display: flex;
-  margin: 0 0 16px 0;
-  gap: 10px;
-  align-items: center;
-}
-.o-nas-page .list-item:last-child {
-  margin-bottom: 0;
-}
-.o-nas-page .list-item .checkbox {
-  width: 42px;
-}
-.o-nas-page .list-item .ellipse {
-  width: 12px;
-}
-.o-nas-page .list-item .truck {
-  width: 48px;
-}
-.o-nas-page .list-item .list-item__image {
-  flex-shrink: 0;
-}
-.o-nas-page .list-item .list-item__image img {
-  width: 100%;
-}
-.o-nas-page .list-item .list-item__text {
-  font-size: 18px;
-  line-height: 1.3;
-}
 .o-nas-page .flex-container-column {
   display: flex;
   height: 100%;
@@ -1007,6 +979,36 @@ iframe {
   font-family: 'Roboto-Medium';
   font-size: 20px;
   line-height: 1.1;
+}
+
+/* o nas list item */
+.o-nas-list-item {
+  display: flex;
+  margin: 0 0 16px 0;
+  gap: 10px;
+  align-items: center;
+}
+.o-nas-list-item:last-child {
+  margin-bottom: 0;
+}
+.o-nas-list-item .checkbox {
+  width: 42px;
+}
+.o-nas-list-item .ellipse {
+  width: 12px;
+}
+.o-nas-list-item .truck {
+  width: 48px;
+}
+.o-nas-list-item .list-item__image {
+  flex-shrink: 0;
+}
+.o-nas-list-item .list-item__image img {
+  width: 100%;
+}
+.o-nas-list-item .list-item__text {
+  font-size: 18px;
+  line-height: 1.3;
 }
 
 /* О нас секция Для кого и NaturaProf секция Для кого */
@@ -4703,10 +4705,12 @@ a.reset_variations::before {
   }
 
   /* personal select section */
+  /*
   .personal-select-section .example-report-btn {
     height: 62px;
     font-size: 22px;
   }
+  */
 
   /* manufacture section */
   .manufacture-section .manufacture-description .manufacture-image {
@@ -5153,13 +5157,14 @@ a.reset_variations::before {
     font-size: 28px;
   }
   .personal-select-section .personal-select-content {
-    padding: 30px 35px;
     border-radius: 25px;
   }
+  /*
   .personal-select-section .example-report-btn {
     height: 56px;
     font-size: 20px;
   }
+  */
 
   /* description section */
   .description-section .description-content {
@@ -5322,9 +5327,6 @@ a.reset_variations::before {
   .o-nas-page .frame {
     padding: 35px;
   }
-  .o-nas-page .list-item .list-item__text {
-    font-size: 17px;
-  }
   .o-nas-page .subtitle {
     margin-bottom: 30px;
     font-size: 28px;
@@ -5333,6 +5335,11 @@ a.reset_variations::before {
     gap: 20px;
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  /* o nas list item */
+  .o-nas-list-item .list-item__text {
+    font-size: 17px;
   }
 
   /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
@@ -5746,14 +5753,16 @@ a.reset_variations::before {
   }
 
   /* o nas page */
-  .o-nas-page .list-item {
-    margin-bottom: 8px;
-  }
   .o-nas-page .frame {
     padding: 25px;
   }
   .o-nas-page .text20 {
     font-size: 17px;
+  }
+
+  /* o nas list item */
+  .o-nas-list-item {
+    margin-bottom: 8px;
   }
 
   /* single page */
@@ -5952,11 +5961,13 @@ a.reset_variations::before {
   .personal-select-section .flex-container {
     flex-direction: column;
   }
+  /*
   .personal-select-section .example-report-btn {
     width: 246px;
     height: 48px;
     font-size: 18px;
   }
+  */
     
   /* description section */
   .description-section .description-content {
@@ -6094,12 +6105,6 @@ a.reset_variations::before {
   .o-nas-page .text20 {
     font-size: 16px;
   }
-  .o-nas-page .list-item {
-    margin-bottom: 10px;
-  }
-  .o-nas-page .list-item .list-item__text {
-    font-size: 16px;
-  }
   .o-nas-page .o-nas-image {
     border-radius: 20px;
   }
@@ -6109,12 +6114,6 @@ a.reset_variations::before {
   }
   .o-nas-page .tasks-section .grid-container {
     gap: 60px;
-  }
-  .o-nas-page .list-item .checkbox {
-    width: 36px;
-  }
-  .o-nas-page .list-item .truck {
-    width: 40px;
   }
   .o-nas-page .how-to-order-section .how-to-order-section-subtitle {
     margin-bottom: 25px;
@@ -6131,6 +6130,20 @@ a.reset_variations::before {
   .o-nas-page .payment-section .flex-container {
     padding: 30px;
     border-radius: 20px;
+  }
+
+  /* o nas list item */
+  .o-nas-list-item {
+    margin-bottom: 10px;
+  }
+  .o-nas-list-item .list-item__text {
+    font-size: 16px;
+  }
+  .o-nas-list-item .checkbox {
+    width: 36px;
+  }
+  .o-nas-list-item .truck {
+    width: 40px;
   }
 
   /* О нас секция Для кого и NaturaProf секция Для кого */
@@ -6566,10 +6579,12 @@ a.reset_variations::before {
     font-size: 18px;
   }
 
-  /* o nas page */
-  .o-nas-page .list-item .checkbox {
+  /* o nas list item */
+  .o-nas-list-item .checkbox {
     width: 36px;
   }
+
+  /* o nas page */
   .o-nas-page .frame {
     padding: 25px 20px;
   }
@@ -6788,11 +6803,13 @@ a.reset_variations::before {
     margin-bottom: 20px;
     font-size: 17px;
   }
+  /*
   .personal-select-section .example-report-btn {
     width: 216px;
     height: 44px;
     font-size: 16px;
   }
+  */
 
   /* description section */
   .description-section .flex-container {
@@ -6933,21 +6950,12 @@ a.reset_variations::before {
     padding: 20px 15px;
     font-size: 15px;
   }
-  .o-nas-page .list-item .ellipse {
-    width: 8px;
-  }
   .o-nas-page .subtitle {
     margin-bottom: 15px;
     font-size: 20px;
   }
-  .o-nas-page .list-item .list-item__text {
-    font-size: 15px;
-  }
   .o-nas-page .tasks-section .grid-container {
     gap: 16px;
-  }
-  .o-nas-page .list-item .checkbox {
-    width: 30px;
   }
   .o-nas-page .how-to-order-section .how-to-order-section-subtitle {
     margin-bottom: 20px;
@@ -6964,6 +6972,17 @@ a.reset_variations::before {
     gap: 20px;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  /* o nas list item */
+  .o-nas-list-item .ellipse {
+    width: 8px;
+  }
+  .o-nas-list-item .list-item__text {
+    font-size: 15px;
+  }
+  .o-nas-list-item .checkbox {
+    width: 30px;
   }
 
   /* О нас секция Задачи и NaturaProf секция Мы создали платформу */
@@ -7362,8 +7381,8 @@ a.reset_variations::before {
     font-size: 24px;
   }
 
-  /* o nas page */
-  .o-nas-page .list-item .checkbox {
+  /* o nas list item */
+  .o-nas-list-item .checkbox {
     width: 30px;
   }
 
@@ -7819,9 +7838,11 @@ a.reset_variations::before {
   .personal-select-section .personal-select-content {
     padding: 20px;
   }
+  /*
   .personal-select-section .example-report-btn {
     width: 100%;
   }
+  */
   .personal-select-section .view-more-btn {
     width: 100%;
   }
@@ -8018,12 +8039,6 @@ a.reset_variations::before {
     gap: 10px;
     grid-template-columns: auto;
   }
-  .o-nas-page .list-item .checkbox {
-    width: 25px;
-  }
-  .o-nas-page .list-item .ellipse {
-    width: 6px;
-  }
   .o-nas-page .how-to-order-section .how-to-order-section-subtitle {
     font-size: 17px;
   }
@@ -8038,11 +8053,19 @@ a.reset_variations::before {
     padding: 20px;
     gap: 15px;
   }
-  .o-nas-page .list-item .truck {
-    width: 35px;
-  }
   .o-nas-page .delivery-section .order-union {
     font-size: 18px;
+  }
+
+  /* o nas list item */
+  .o-nas-list-item .checkbox {
+    width: 25px;
+  }
+  .o-nas-list-item .ellipse {
+    width: 6px;
+  }
+  .o-nas-list-item .truck {
+    width: 35px;
   }
 
   /* О нас секция Для кого и NaturaProf секция Для кого */

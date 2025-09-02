@@ -54,49 +54,49 @@
         </div>
         <div class="right-60">
           <div class="frame h100">
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image ellipse">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
               </div>
               <div class="list-item__text">Наши Аптеки построены в соответствии с Надлежащей аптечной практикой производственных аптек (GPP).</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image ellipse">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
               </div>
               <div class="list-item__text">Наши Производственные площадки добавок и натуропатии имеют сертификаты ХААСП и ISO.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image ellipse">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
               </div>
               <div class="list-item__text">Единственный в России R&D центр по разработке и валидации экстемпоральных лекарственных средств на базе независимой экспертной аналитической лаборатории.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image ellipse">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
               </div>
               <div class="list-item__text">Мы используем технологии и рецептуры, валидированные международным сообществом.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image ellipse">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
               </div>
               <div class="list-item__text">Все процессы от выписывания рецепта до отпуска лекарства пациенту у нас автоматизированы  и интегрированы в систему учета, что позволяет изготавливать препараты максимально быстро и точно.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image ellipse">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
               </div>
               <div class="list-item__text">Наши сотрудники проходят обучение, медицинские осмотры и соблюдают все требования для обеспечения санитарно-эпидемиологического режима.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image ellipse">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
               </div>
               <div class="list-item__text">Все сырье поступает из сертифицированной и аккредитованной цепочки поставок, хранится в соответствии со строгими протоколами и проходит тестирование для обеспечения качества.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image ellipse">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
               </div>
@@ -164,37 +164,37 @@
         <div class="section-title">Задачи</div>
         <div class="grid-container">
           <div class="tasks-list">
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
               <div class="list-item__text">Позволяем реализовать персонализированный подход в медицине.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
               <div class="list-item__text">Готовим нужные лекарства в нужной форме с минимальным количеством вспомогательных веществ.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
               <div class="list-item__text">Адаптируем лекарства к потребностям каждого человека.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
               <div class="list-item__text">Изготавливаем препараты, не имеющих промышленных аналогов или недоступные в России, в том числе в нужной форме или дозе.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
               <div class="list-item__text">Лекарства для клинических исследований: плацебо до титрования доз и разработки удобной формы выпуска.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
@@ -202,31 +202,31 @@
             </div>
           </div>
           <div class="tasks-list">
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
               <div class="list-item__text">Автоматизируем рецептурное назначения, возвращая творчество в практику врача.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
               <div class="list-item__text">Обеспечиваем сервис составления рецептур, компаундинга и доставки препаратов до двери пациента.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
               <div class="list-item__text">Легализуем альтернативные и ранее не доступные методы.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
               <div class="list-item__text">Способствуем выполнению указа Президента по развитию профилактической и персонализированной медицины.</div>
             </div>
-            <div class="list-item">
+            <div class="list-item o-nas-list-item">
               <div class="list-item__image checkbox">
                 <img src="/wp-content/themes/store-child/includes/images/o-nas-list-check.png" alt="">
               </div>
@@ -277,25 +277,25 @@
         </div>
         <div class="frame">
           <div class="subtitle">Для пациента</div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Качественный лекарственный препарат, БАД, питание в нужной форме и дозе.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Отсутствие нежелательных красителей, консервантов, наполнителей, вспомогательных веществ.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Сервис изготовления и доставки.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
@@ -306,37 +306,37 @@
       <div class="grid-container6040 mb20">
         <div class="frame">
           <div class="subtitle">Для врача</div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Уверенность в качестве лекарственного средства.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Продвижение личного бренда.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Назначение препаратов, которых нет в реестре.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Дополнительный доход за участие в программе мониторинга персональных рецептур.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Возможность работы в рамках персонифицированной медицины.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
@@ -353,37 +353,37 @@
         </div>
         <div class="frame">
           <div class="subtitle">Для клиники</div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Возможность внедрения направления персонифицированной медицины.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Сервис лекарственного обеспечения для нужд клиники и пациентов.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Препараты, БАД, специализированное питание под брендом клиники.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Дополнительный доход.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
             <div class="list-item__text">Повышение статуса и привлечение высококвалифицированных кадров.</div>
           </div>
-          <div class="list-item">
+          <div class="list-item o-nas-list-item">
             <div class="list-item__image ellipse">
               <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
             </div>
@@ -466,19 +466,19 @@
             <div class="frame">
               <div class="frame-title">Способы доставки:</div>
               <div class="delivery-list">
-                <div class="list-item">
+                <div class="list-item o-nas-list-item">
                   <div class="list-item__image truck">
                     <img src="/wp-content/themes/store-child/includes/images/truck.png" alt="">
                   </div>
                   <div class="text20 text-light">Наши Аптеки построены в соответствии с Надлежащей аптечной практикой производственных аптек (GPP).</div>
                 </div>
-                <div class="list-item">
+                <div class="list-item o-nas-list-item">
                   <div class="list-item__image truck">
                     <img src="/wp-content/themes/store-child/includes/images/truck.png" alt="">
                   </div>
                   <div class="text20 text-light">Забрать препараты можно по адресу: ….</div>
                 </div>
-                <div class="list-item">
+                <div class="list-item o-nas-list-item">
                   <div class="list-item__image truck">
                     <img src="/wp-content/themes/store-child/includes/images/truck.png" alt="">
                   </div>

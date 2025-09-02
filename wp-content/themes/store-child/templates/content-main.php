@@ -107,10 +107,34 @@
         <img src="/wp-content/themes/store-child/includes/images/personal-select-image.jpg" alt="">
       </div>
       <div class="personal-select-content">
-        <div class="personal-select-content__title">Персональный подбор</div>
-        <div class="personal-select-content__description">Экспертная система подбора солей Шюсслера для тканевой биохимической терапии. Медицинский ассистент для диагностики дефицитов минералов в организме человека, подбора персонифицированной комбинации с проверкой совместимости.</div>
+        <div class="personal-select-content__title">Профессиональное сопровождение</div>
+        <div class="personal-select-content__description">
+          <div class="list-item o-nas-list-item">
+            <div class="list-item__image ellipse">
+              <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text"><strong>Консультации врачей</strong> по подбору персональной терапии с учетом особенностей вашего организма.</div>
+          </div>
+          <div class="list-item o-nas-list-item">
+            <div class="list-item__image ellipse">
+              <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text"><strong>Экспертиза провизорами и клиническими фармакологами</strong> по совместимости компонентов и корректировке схем лечения для максимальной эффективности и безопасности.</div>
+          </div>
+          <div class="list-item o-nas-list-item">
+            <div class="list-item__image ellipse">
+              <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text"><strong>Подбор оптимальной формы выпуска</strong> (капсулы, суппозитории, таблетки, капли и др) для повышения приверженности лечению (комплаенса), особенно у пациентов с особыми потребностями. </div>
+          </div>
+          <div class="list-item o-nas-list-item">
+            <div class="list-item__image ellipse">
+              <img src="/wp-content/themes/store-child/includes/images/o-nas-list-ellipse.png" alt="">
+            </div>
+            <div class="list-item__text"><strong>Дистанционные программы</strong> для пациентов и специалистов, позволяющие составлять и контролировать индивидуальные планы лечения в онлайн-формате.</div>
+          </div>
+        </div>
         <div class="content-flex-container">
-          <a href="/wp-content/themes/store-child/includes/pdf/maket-zaklyucheniya.pdf" class="example-report-btn" target="_blank">пример заключения</a>
           <div class="view-more-btn primary-btn">подробнее</div>
         </div>
       </div>
