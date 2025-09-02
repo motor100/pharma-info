@@ -158,7 +158,7 @@
           <a href="tel:+74959274928" class="pe-link">
             <img src="/wp-content/themes/store-child/includes/images/svg/circle-call.svg" class="pe-image" alt="">
           </a>
-          <a href="https://t.me/biosalts" class="pe-link">
+          <a href="https://t.me/naturaproff" class="pe-link">
             <img src="/wp-content/themes/store-child/includes/images/svg/circle-tg.svg" class="pe-image" alt="">
           </a>
           <a href="https://wa.me/79629880861" class="pe-link">
@@ -242,7 +242,7 @@
     </ul>
   </div>
   <div class="phone-wrapper">
-    <a href="https://t.me/biosalts" class="social-icons__link" rel="nofollow noopener" target="_blank">
+    <a href="https://t.me/naturaproff" class="social-icons__link" rel="nofollow noopener" target="_blank">
       <img src="/wp-content/themes/store-child/includes/images/svg/circle-tg.svg" class="social-icons__image social-icons__tg" alt="телеграм">
     </a>
     <a href="https://wa.me/79629880861" class="social-icons__link" rel="nofollow noopener" target="_blank">
