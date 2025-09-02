@@ -172,7 +172,6 @@
         </div>
       </div>
       <div class="working-time">Пн, Вт, Ср, Чт, Пт: С 10:00 до 20:00<br>Сб, Вс: выходной</div>
-      <div class="footer-address">Московская область, совхоз им. Ленина, Техцентр</div>
     </div>
     <div class="required-links">
       <div class="required-links-item">
