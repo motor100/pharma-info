@@ -11,10 +11,12 @@ if (isset($_POST["name"]) &&
 
     $name = htmlspecialchars($_POST["name"]);
     $surname = htmlspecialchars($_POST["surname"]);
+    $telegram = htmlspecialchars($_POST["telegram"]);
     $phone = htmlspecialchars($_POST["phone"]);
     $email = htmlspecialchars($_POST["email"]);
     $message = htmlspecialchars($_POST["message"]);
     $cc = htmlspecialchars($_POST["cc"]);
+    $expert = htmlspecialchars($_POST["expert"]);
     $checkbox_read = $_POST["checkbox-read"];
     $checkbox_agree = $_POST["checkbox-agree"];
 
@@ -48,7 +50,7 @@ if (isset($_POST["name"]) &&
     }
 
     // Тема письма
-    $mail->Subject = 'Сообщение с сайта Информационный';
+    $mail->Subject = 'Запись к специалисту с сайта naturapharma.ru';
 
     $mail->isHTML(true);
 
@@ -56,15 +58,19 @@ if (isset($_POST["name"]) &&
       strlen($name) <= 50 &&
       strlen($surname) >= 3 &&
       strlen($surname) <= 50 &&
+      strlen($telegram) >= 3 &&
+      strlen($telegram) <= 100 &&
       strlen($phone) == 18 && 
       strlen($email) >= 3 &&
       strlen($email) <= 50 &&
+      strlen($message) >= 3 &&
+      strlen($message) <= 300 &&
       $checkbox_read == "on" &&
       $checkbox_agree == "on") {
 
         // Тело письма
-        $mail->Body = "Имя: $name<br> Фамилия: $name<br> Телефон: $phone<br> Email: $email<br> Сообщение: $message<br>";
-        $mail->AltBody = "Имя: $name\r\n Фамилия: $name\r\n Телефон: $phone\r\n Email: $email\r\n Сообщение: $message\r\n";
+        $mail->Body = "Имя: $name<br> Фамилия: $surname<br> Телеграм: $telegram<br> Телефон: $phone<br> Email: $email<br> Сообщение: $message<br> Специалист: $expert<br>";
+        $mail->AltBody = "Имя: $name\r\n Фамилия: $surname\r\n Телеграм: $telegram\r\n Телефон: $phone\r\n Email: $email\r\n Сообщение: $message\r\n Специалист: $expert\r\n";
 
         $mail->send();
     }
